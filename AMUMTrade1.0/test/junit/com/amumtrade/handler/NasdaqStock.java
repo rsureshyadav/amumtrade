@@ -13,7 +13,7 @@ public void fetchNasdaqStock() throws Exception{
 	System.out.println("Downloading  Nasdaq_list.csv file...");
 	DownloadLinkHandler.execute(StringConstant.NASDAQ_URL,StringConstant.NASDAQ_INPUT_PATH);
 	System.out.println("Executing Nasdaq process...");
-    StockHandler.execute(StringConstant.NASDAQ_INPUT_PATH, 0.5, 1.5, StringConstant.NASDAQ_NAME, StringConstant.NASDAQ_OUTPUT_PATH);
+    StockHandler.execute(StringConstant.NASDAQ_INPUT_PATH, 1, 1.1, StringConstant.NASDAQ_NAME, StringConstant.NASDAQ_OUTPUT_PATH);
     System.out.println("Completed Nasdaq quote output file...");
     long endTime= System.currentTimeMillis();
 	long elapsedTime = endTime - startTime;

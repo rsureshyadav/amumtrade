@@ -12,8 +12,8 @@ public void fetchNasdaqStock() throws Exception{
 	long startTime= System.currentTimeMillis();
 	System.out.println("Downloading  Amex_list.csv file...");
 	DownloadLinkHandler.execute(StringConstant.AMEX_URL,StringConstant.AMEX_INPUT_PATH);
-	System.out.println("Executing Nasdaq process...");
-    StockHandler.execute(StringConstant.AMEX_INPUT_PATH, 1, 1.5, StringConstant.AMEX_NAME, StringConstant.AMEX_OUTPUT_PATH);
+	System.out.println("Executing Amex process...");
+    StockHandler.execute(StringConstant.AMEX_INPUT_PATH, 0.5, 1.1, StringConstant.AMEX_NAME, StringConstant.AMEX_OUTPUT_PATH);
     System.out.println("Completed Amex quote output file...");
     long endTime= System.currentTimeMillis();
 	long elapsedTime = endTime - startTime;

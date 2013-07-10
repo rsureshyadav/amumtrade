@@ -12,8 +12,8 @@ public void fetchNasdaqStock() throws Exception{
 	long startTime= System.currentTimeMillis();
 	System.out.println("Downloading  Nyse_list.csv file...");
 	DownloadLinkHandler.execute(StringConstant.NYSE_URL,StringConstant.NYSE_INPUT_PATH);
-	System.out.println("Executing Nasdaq process...");
-    StockHandler.execute(StringConstant.NYSE_INPUT_PATH, StringConstant.ONE, StringConstant.TWO, StringConstant.NYSE_NAME, StringConstant.NYSE_OUTPUT_PATH);
+	System.out.println("Executing Nyse process...");
+    StockHandler.execute(StringConstant.NYSE_INPUT_PATH, StringConstant.ONE, 1.1, StringConstant.NYSE_NAME, StringConstant.NYSE_OUTPUT_PATH);
     System.out.println("Completed Nyse quote output file...");
     long endTime= System.currentTimeMillis();
 	long elapsedTime = endTime - startTime;
