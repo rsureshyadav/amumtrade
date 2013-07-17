@@ -1,0 +1,14 @@
+AMUMTrade
+Creator: Suresh Yadav Ramamurthy
+Date: 17-07-2013
+
+Description:
+
+This is the first internal release of AMUMTrade application. This has the following features
+
+* Will able to read the nasdaq.com and able to fetch the list of company symbols of AMEX,NYSE and NASDAQ stock exchange
+* Based on the user amount input selection able to sort out the symbol and able to able to deliver more details
+* This has a features of able to read the Yahoo.com, CNN, Thestreet and marketwatch websites and able to share there analyst opinion
+
+Note: This is failed in several internal test and so threading been implemented and still the final result not able to give perfect result
+so come up with the next version under the branch AMUMTrade1.1.    
