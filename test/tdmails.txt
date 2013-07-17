@@ -1,0 +1,1363 @@
+CONTENT: 
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+    	<title>Market Alert: Stocks hitting a new 52-week high or low for NASDAQ, NYSE, and AMEX</title>
+	</head>
+	<body>
+	
+	
+	<table width="541" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+    	<td valign="top">
+			<table cellpadding="0" cellspacing="0" border="0" width="541" style="width:541px;">
+				<tr>
+					<td valign="top"><a href="http://www.tdameritrade.com/" target="_blank"><img src="https://research.ameritrade.com/wwws/alerts/templates/images/tdam_logo_head.gif" width="130" height="35" border="0" alt="TD Ameritrade Logo" /></a></td>
+					<td>
+						<table width="290" border="0" cellspacing="0" cellpadding="0">
+						  <tr>
+							<td style="font:bold 15px Arial, sans-serif; padding-left:10px">Market Alert</td>
+						  </tr>
+						  <tr>
+							<td style="padding-left:10px"><img src="https://research.ameritrade.com/wwws/alerts/templates/images/mod_logo.gif" width="181" height="12" border="0" alt="Delivered by Markit On Demand" /></td>
+						  </tr>
+						  <tr>
+						    <td>&nbsp;</td>
+						  </tr>
+						</table>
+					</td>
+					<td valign="top" style="font:normal 12px Verdana, sans-serif;margin-right:12px;;"><a href="https://wwws.ameritrade.com/cgi-bin/apps/LogIn" target="_blank" style="color:#3366cc;; font-family: Verdana, sans-serif; padding-right:3px; font-size: 12px; font-weight: bold;">Account Log On</a></td>
+				</tr>
+			</table>
+	
+			<table border="0" cellpadding="0" cellspacing="0" width="541" style="width:541px;">
+			  <tr>
+				<td bgcolor="#00B106" style="background-color:#00B106;height:8px;font-size:1px;">&nbsp;</td>
+			  </tr>
+			  <tr>
+				<td bgcolor="#F3F3F3" style="background:#F3F3F3;height:18px;text-align:left;padding-left:12px;font:normal 10px Verdana, sans-serif;color:#666;">Sent: Fri Sep 7 2012 9:50:09 AM - 9:55:43 AM EDT
+				</td>
+			 </tr>
+			</table>
+			<table cellpadding="0" cellspacing="0" border="0" style="padding:0px 10px;">
+					<tr>
+						<td valign="top" style="padding-top:15px;font:normal 11px Verdana, sans-serif;">
+						 <table width="531" border="0" cellpadding="0" cellspacing="0">
+						 	<tr>
+								<td valign="bottom" style="font:bold 12px Arial, sans-serif;padding-bottom:10px; vertical-align:bottom;">
+								Stocks hitting a new 52-week high or low for NASDAQ, NYSE, and AMEX
+								</td>
+								<td align="right" style="font:bold 12px Arial, sans-serif;padding-bottom:10px; text-align:right;">
+									&nbsp;</td>
+							</tr>
+						 </table>
+						
+
+<span style="margin-top:25px;">&nbsp;</span>
+			<table cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%;">
+			
+	<tr> 
+      <td colspan="6" style="width:100%; background-color:#EEEEEE; font-weight:bold; font-size:11px; font-family:Verdana,sans-serif; border-top: 1px solid #808080; border-bottom: 1px solid #808080; padding:6px 12px 6px 12px;"><strong>Today's New 52 Week High Stocks</strong></td>	
+	</tr>
+	
+	<tr>	
+	
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:left; ">Symbol</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">New High</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Prev 52wk High</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Last</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Volume</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Today's Change</td>
+			
+    </tr>
+	<tbody>
+	
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=COO">COO</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">94.86</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">89.31</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$93.37</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">403,630</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">7.34</span> <span style="color:#0d9023">(8.53%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=ULTA">ULTA</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">103.52</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">98.42</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$103.18</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">781,400</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">7.92</span> <span style="color:#0d9023">(8.31%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=CHUY">CHUY</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">24.30</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">23.23</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$24.23</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">9,098</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">1.16</span> <span style="color:#0d9023">(5.03%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=GMED">GMED</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">16.95</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">16.68</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$16.95</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">13,415</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">0.49</span> <span style="color:#0d9023">(2.98%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=BNNY">BNNY</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">45.89</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">45.00</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$45.08</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">69,794</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">1.23</span> <span style="color:#0d9023">(2.81%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=WXS">WXS</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">74.93</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">73.50</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$74.93</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">71,073</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">1.98</span> <span style="color:#0d9023">(2.71%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=CAB">CAB</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">52.40</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">51.31</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$52.28</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">132,459</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">1.38</span> <span style="color:#0d9023">(2.71%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=NOW">NOW</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">37.31</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">36.08</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$36.96</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">87,137</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">0.9001</span> <span style="color:#0d9023">(2.50%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=WYN">WYN</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">54.63</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">53.84</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$54.61</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">145,603</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">0.96</span> <span style="color:#0d9023">(1.79%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=AMZN">AMZN</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">256.48</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">252.70</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$255.83</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">1,078,258</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">4.45</span> <span style="color:#0d9023">(1.77%)</span></td>
+			
+		</tr>
+		
+	</tbody>
+	
+		</table>
+		<span style="margin-top:25px;">&nbsp;</span>
+			<table cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%;">
+			
+	<tr> 
+      <td colspan="6" style="width:100%; background-color:#EEEEEE; font-weight:bold; font-size:11px; font-family:Verdana,sans-serif; border-top: 1px solid #808080; border-bottom: 1px solid #808080; padding:6px 12px 6px 12px;"><strong>Today's New 52 Week Low Stocks</strong></td>	
+	</tr>
+	
+	<tr>	
+	
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:left; ">Symbol</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">New Low</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Prev 52wk Low</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Last</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Volume</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Today's Change</td>
+			
+    </tr>
+	<tbody>
+	
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=ADNC">ADNC</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">5.81</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">15.15</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$6.22</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">2,559,524</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">12.64</span> <span style="color:#DA0000">(67.02%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=ENVI">ENVI</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">2.21</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">2.32</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$2.26</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">294,777</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">0.4199</span> <span style="color:#DA0000">(15.67%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=IRG">IRG</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">12.50</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">12.77</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$13.89</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">10,301</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">0.55</span> <span style="color:#DA0000">(3.81%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=PGNX">PGNX</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">3.43</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">3.49</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$3.48</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">51,091</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">0.0399</span> <span style="color:#DA0000">(1.13%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=MAXY">MAXY</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">2.64</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">5.25</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$2.67</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">180,946</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">0.02</span> <span style="color:#0d9023">(0.75%)</span></td>
+			
+		</tr>
+		
+	</tbody>
+	
+		</table>
+		<span style="margin-top:25px;">&nbsp;</span>
+			<table cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%;">
+			
+	<tr> 
+      <td colspan="3" style="width:100%; background-color:#EEEEEE; font-weight:bold; font-size:11px; font-family:Verdana,sans-serif; border-top: 1px solid #808080; border-bottom: 1px solid #808080; padding:6px 12px 6px 12px;"><strong>Markets Snapshot</strong></td>	
+	</tr>
+	
+	<tr>	
+	
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:left; ">Name</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Last</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Today's Change</td>
+			
+    </tr>
+	<tbody>
+	
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; ">NASDAQ</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">3,138.74</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">2.93</span> <span style="color:#0d9023">(0.09%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; ">S&P 500</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">1,436.44</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">4.32</span> <span style="color:#0d9023">(0.30%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; ">DJIA</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">13,306.22</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">14.22</span> <span style="color:#0d9023">(0.11%)</span></td>
+			
+		</tr>
+		
+	</tbody>
+	
+		</table>
+		
+						<div style="border-bottom:1px dotted #999;width:100%">&nbsp;</div>
+						
+						<p style="font: normal 11px Verdana, sans-serif; color:#999;line-height:17px;">The Dow Jones Indexes<sup>SM</sup> are proprietary to and distributed by Dow Jones &amp; Company, Inc. and have been licensed for use. All content of the Dow Jones Indexes<sup>SM</sup> &copy; 2012 is proprietary to Dow Jones &amp; Company, Inc.</p>
+						
+						<p style="font: normal 11px Verdana, sans-serif; color:#999;line-height:17px;">Please do not reply to this e-mail from Markit On Demand. Markit On Demand and TD Ameritrade are separate unaffiliated companies and are not responsible for each other's service.  For questions regarding your brokerage account, please contact TD Ameritrade Client Services at 1-800-669-3900.</p>
+						
+						
+						<p style="font: normal 11px Verdana, sans-serif; color:#999;line-height:17px;">To stop receiving this alert from TD Ameritrade, please <a href="https://research.ameritrade.com/wwws/alerts/unsubscribe.asp?YYY600_43YYGH1ZYxCdI7TjCYzdUh0XiqQFTX0oUHjOHg5G88mZm664KQx4Btso4Pf3xD3QUJMSUTXFW/6jLRl60kEK78jR03K6uO8Z0goA2Fn0M0pjrg6TolJNx2S4jZb7HY+1pRyoYLm3H4OoQc821CZlh88DFhqsK3wU&a=" target="_blank" style="color:#3366cc;">click here</a> to update your subscription settings. You may also unsubscribe from all of your alerts using the link above. As always, you can manage all of your alert settings by logging into your TD Ameritrade account and navigating to Research & Ideas > Alerts. </p>
+						
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+CONTENT: 
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+    	<title>Market Alert: Stocks hitting a new 52-week high or low for NASDAQ, NYSE, and AMEX</title>
+	</head>
+	<body>
+	
+	
+	<table width="541" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+    	<td valign="top">
+			<table cellpadding="0" cellspacing="0" border="0" width="541" style="width:541px;">
+				<tr>
+					<td valign="top"><a href="http://www.tdameritrade.com/" target="_blank"><img src="https://research.ameritrade.com/wwws/alerts/templates/images/tdam_logo_head.gif" width="130" height="35" border="0" alt="TD Ameritrade Logo" /></a></td>
+					<td>
+						<table width="290" border="0" cellspacing="0" cellpadding="0">
+						  <tr>
+							<td style="font:bold 15px Arial, sans-serif; padding-left:10px">Market Alert</td>
+						  </tr>
+						  <tr>
+							<td style="padding-left:10px"><img src="https://research.ameritrade.com/wwws/alerts/templates/images/mod_logo.gif" width="181" height="12" border="0" alt="Delivered by Markit On Demand" /></td>
+						  </tr>
+						  <tr>
+						    <td>&nbsp;</td>
+						  </tr>
+						</table>
+					</td>
+					<td valign="top" style="font:normal 12px Verdana, sans-serif;margin-right:12px;;"><a href="https://wwws.ameritrade.com/cgi-bin/apps/LogIn" target="_blank" style="color:#3366cc;; font-family: Verdana, sans-serif; padding-right:3px; font-size: 12px; font-weight: bold;">Account Log On</a></td>
+				</tr>
+			</table>
+	
+			<table border="0" cellpadding="0" cellspacing="0" width="541" style="width:541px;">
+			  <tr>
+				<td bgcolor="#00B106" style="background-color:#00B106;height:8px;font-size:1px;">&nbsp;</td>
+			  </tr>
+			  <tr>
+				<td bgcolor="#F3F3F3" style="background:#F3F3F3;height:18px;text-align:left;padding-left:12px;font:normal 10px Verdana, sans-serif;color:#666;">Sent: Fri Sep 7 2012 3:38:42 PM - 3:49:10 PM EDT
+				</td>
+			 </tr>
+			</table>
+			<table cellpadding="0" cellspacing="0" border="0" style="padding:0px 10px;">
+					<tr>
+						<td valign="top" style="padding-top:15px;font:normal 11px Verdana, sans-serif;">
+						 <table width="531" border="0" cellpadding="0" cellspacing="0">
+						 	<tr>
+								<td valign="bottom" style="font:bold 12px Arial, sans-serif;padding-bottom:10px; vertical-align:bottom;">
+								Stocks hitting a new 52-week high or low for NASDAQ, NYSE, and AMEX
+								</td>
+								<td align="right" style="font:bold 12px Arial, sans-serif;padding-bottom:10px; text-align:right;">
+									&nbsp;</td>
+							</tr>
+						 </table>
+						
+
+<span style="margin-top:25px;">&nbsp;</span>
+			<table cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%;">
+			
+	<tr> 
+      <td colspan="6" style="width:100%; background-color:#EEEEEE; font-weight:bold; font-size:11px; font-family:Verdana,sans-serif; border-top: 1px solid #808080; border-bottom: 1px solid #808080; padding:6px 12px 6px 12px;"><strong>Today's New 52 Week High Stocks</strong></td>	
+	</tr>
+	
+	<tr>	
+	
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:left; ">Symbol</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">New High</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Prev 52wk High</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Last</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Volume</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Today's Change</td>
+			
+    </tr>
+	<tbody>
+	
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=COO">COO</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">94.89</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">89.31</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$93.88</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">2,030,790</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">7.85</span> <span style="color:#0d9023">(9.12%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=ULTA">ULTA</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">103.52</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">98.42</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$101.91</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">2,911,442</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">6.65</span> <span style="color:#0d9023">(6.98%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=BNNY">BNNY</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">47.26</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">45.00</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$46.67</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">541,821</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">2.82</span> <span style="color:#0d9023">(6.43%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=EPL">EPL</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">18.87</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">18.49</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$18.76</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">458,087</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">0.91</span> <span style="color:#0d9023">(5.10%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=CHUY">CHUY</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">24.30</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">23.23</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$23.75</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">191,065</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">0.68</span> <span style="color:#0d9023">(2.95%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=CAB">CAB</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">52.50</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">51.31</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$52.32</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">692,358</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">1.42</span> <span style="color:#0d9023">(2.79%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=AMZN">AMZN</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">259.42</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">252.70</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$258.35</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">4,483,180</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">6.97</span> <span style="color:#0d9023">(2.77%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=SPLK">SPLK</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">38.25</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">37.75</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$38.25</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">708,697</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">1.02</span> <span style="color:#0d9023">(2.74%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=TDG">TDG</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">143.60</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">143.15</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$143.37</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">381,197</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">2.96</span> <span style="color:#0d9023">(2.11%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=BOFI">BOFI</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">25.21</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">24.70</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$25.16</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">82,706</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">0.50</span> <span style="color:#0d9023">(2.03%)</span></td>
+			
+		</tr>
+		
+	</tbody>
+	
+		</table>
+		<span style="margin-top:25px;">&nbsp;</span>
+			<table cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%;">
+			
+	<tr> 
+      <td colspan="6" style="width:100%; background-color:#EEEEEE; font-weight:bold; font-size:11px; font-family:Verdana,sans-serif; border-top: 1px solid #808080; border-bottom: 1px solid #808080; padding:6px 12px 6px 12px;"><strong>Today's New 52 Week Low Stocks</strong></td>	
+	</tr>
+	
+	<tr>	
+	
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:left; ">Symbol</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">New Low</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Prev 52wk Low</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Last</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Volume</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Today's Change</td>
+			
+    </tr>
+	<tbody>
+	
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=ADNC">ADNC</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">5.81</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">15.15</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$6.89</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">8,634,401</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">11.9682</span> <span style="color:#DA0000">(63.46%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=ENVI">ENVI</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">2.11</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">2.32</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$2.19</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">1,263,753</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">0.49</span> <span style="color:#DA0000">(18.28%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=ENPH">ENPH</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">4.32</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">4.66</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$4.54</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">502,123</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">0.44</span> <span style="color:#DA0000">(8.84%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=LIWA">LIWA</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">3.57</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">3.69</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$3.68</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">214,840</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">0.138</span> <span style="color:#DA0000">(3.61%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=PGNX">PGNX</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">3.40</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">3.49</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$3.44</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">167,973</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">0.08</span> <span style="color:#DA0000">(2.27%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=MANU">MANU</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">12.59</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">12.75</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$12.62</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">273,700</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">0.2599</span> <span style="color:#DA0000">(2.02%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=IRG">IRG</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">12.50</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">12.77</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$14.31</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">99,042</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">0.13</span> <span style="color:#DA0000">(0.90%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=MAXY">MAXY</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">2.64</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">5.25</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$2.71</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">1,427,699</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">0.06</span> <span style="color:#0d9023">(2.26%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=OSH">OSH</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">14.00</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">14.02</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$14.38</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">14,883</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">0.36</span> <span style="color:#0d9023">(2.57%)</span></td>
+			
+		</tr>
+		
+	</tbody>
+	
+		</table>
+		<span style="margin-top:25px;">&nbsp;</span>
+			<table cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%;">
+			
+	<tr> 
+      <td colspan="3" style="width:100%; background-color:#EEEEEE; font-weight:bold; font-size:11px; font-family:Verdana,sans-serif; border-top: 1px solid #808080; border-bottom: 1px solid #808080; padding:6px 12px 6px 12px;"><strong>Markets Snapshot</strong></td>	
+	</tr>
+	
+	<tr>	
+	
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:left; ">Name</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Last</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Today's Change</td>
+			
+    </tr>
+	<tbody>
+	
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; ">NASDAQ</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">3,136.42</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">0.61</span> <span style="color:#0d9023">(0.02%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; ">S&P 500</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">1,437.92</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">5.80</span> <span style="color:#0d9023">(0.40%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; ">DJIA</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">13,306.64</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">14.64</span> <span style="color:#0d9023">(0.11%)</span></td>
+			
+		</tr>
+		
+	</tbody>
+	
+		</table>
+		
+						<div style="border-bottom:1px dotted #999;width:100%">&nbsp;</div>
+						
+						<p style="font: normal 11px Verdana, sans-serif; color:#999;line-height:17px;">The Dow Jones Indexes<sup>SM</sup> are proprietary to and distributed by Dow Jones &amp; Company, Inc. and have been licensed for use. All content of the Dow Jones Indexes<sup>SM</sup> &copy; 2012 is proprietary to Dow Jones &amp; Company, Inc.</p>
+						
+						<p style="font: normal 11px Verdana, sans-serif; color:#999;line-height:17px;">Please do not reply to this e-mail from Markit On Demand. Markit On Demand and TD Ameritrade are separate unaffiliated companies and are not responsible for each other's service.  For questions regarding your brokerage account, please contact TD Ameritrade Client Services at 1-800-669-3900.</p>
+						
+						
+						<p style="font: normal 11px Verdana, sans-serif; color:#999;line-height:17px;">To stop receiving this alert from TD Ameritrade, please <a href="https://research.ameritrade.com/wwws/alerts/unsubscribe.asp?YYY600_43YYGH1ZYxCdI7TjCYzdUh0XiqQFTX0oUHjOHg5G88mZm664KQx4Btso4Pf3xD3QUJMSUTXFW/6jLRl60kEK78jR03K6uO8Z0goA2Fn0M0pjrg6TolJNx2S4jZb7HY+1pRyoYLm3H4OoQc821CZlh88DFhqsK3wU&a=" target="_blank" style="color:#3366cc;">click here</a> to update your subscription settings. You may also unsubscribe from all of your alerts using the link above. As always, you can manage all of your alert settings by logging into your TD Ameritrade account and navigating to Research & Ideas > Alerts. </p>
+						
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+CONTENT: 
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+    	<title>Market Alert: Stocks hitting a new 52-week high or low for NASDAQ, NYSE, and AMEX</title>
+	</head>
+	<body>
+	
+	
+	<table width="541" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+    	<td valign="top">
+			<table cellpadding="0" cellspacing="0" border="0" width="541" style="width:541px;">
+				<tr>
+					<td valign="top"><a href="http://www.tdameritrade.com/" target="_blank"><img src="https://research.ameritrade.com/wwws/alerts/templates/images/tdam_logo_head.gif" width="130" height="35" border="0" alt="TD Ameritrade Logo" /></a></td>
+					<td>
+						<table width="290" border="0" cellspacing="0" cellpadding="0">
+						  <tr>
+							<td style="font:bold 15px Arial, sans-serif; padding-left:10px">Market Alert</td>
+						  </tr>
+						  <tr>
+							<td style="padding-left:10px"><img src="https://research.ameritrade.com/wwws/alerts/templates/images/mod_logo.gif" width="181" height="12" border="0" alt="Delivered by Markit On Demand" /></td>
+						  </tr>
+						  <tr>
+						    <td>&nbsp;</td>
+						  </tr>
+						</table>
+					</td>
+					<td valign="top" style="font:normal 12px Verdana, sans-serif;margin-right:12px;;"><a href="https://wwws.ameritrade.com/cgi-bin/apps/LogIn" target="_blank" style="color:#3366cc;; font-family: Verdana, sans-serif; padding-right:3px; font-size: 12px; font-weight: bold;">Account Log On</a></td>
+				</tr>
+			</table>
+	
+			<table border="0" cellpadding="0" cellspacing="0" width="541" style="width:541px;">
+			  <tr>
+				<td bgcolor="#00B106" style="background-color:#00B106;height:8px;font-size:1px;">&nbsp;</td>
+			  </tr>
+			  <tr>
+				<td bgcolor="#F3F3F3" style="background:#F3F3F3;height:18px;text-align:left;padding-left:12px;font:normal 10px Verdana, sans-serif;color:#666;">Sent: Fri Sep 7 2012 10:08:35 AM - 11:46:23 AM EDT
+				</td>
+			 </tr>
+			</table>
+			<table cellpadding="0" cellspacing="0" border="0" style="padding:0px 10px;">
+					<tr>
+						<td valign="top" style="padding-top:15px;font:normal 11px Verdana, sans-serif;">
+						 <table width="531" border="0" cellpadding="0" cellspacing="0">
+						 	<tr>
+								<td valign="bottom" style="font:bold 12px Arial, sans-serif;padding-bottom:10px; vertical-align:bottom;">
+								Stocks hitting a new 52-week high or low for NASDAQ, NYSE, and AMEX
+								</td>
+								<td align="right" style="font:bold 12px Arial, sans-serif;padding-bottom:10px; text-align:right;">
+									&nbsp;</td>
+							</tr>
+						 </table>
+						
+
+<span style="margin-top:25px;">&nbsp;</span>
+			<table cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%;">
+			
+	<tr> 
+      <td colspan="6" style="width:100%; background-color:#EEEEEE; font-weight:bold; font-size:11px; font-family:Verdana,sans-serif; border-top: 1px solid #808080; border-bottom: 1px solid #808080; padding:6px 12px 6px 12px;"><strong>Today's New 52 Week High Stocks</strong></td>	
+	</tr>
+	
+	<tr>	
+	
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:left; ">Symbol</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">New High</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Prev 52wk High</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Last</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Volume</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Today's Change</td>
+			
+    </tr>
+	<tbody>
+	
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=COO">COO</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">94.89</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">89.31</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$93.45</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">1,204,030</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">7.42</span> <span style="color:#0d9023">(8.62%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=ULTA">ULTA</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">103.52</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">98.42</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$100.93</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">1,769,928</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">5.67</span> <span style="color:#0d9023">(5.95%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=EPL">EPL</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">18.58</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">18.49</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$18.51</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">146,158</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">0.661</span> <span style="color:#0d9023">(3.70%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=CHUY">CHUY</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">24.30</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">23.23</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$23.86</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">64,964</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">0.79</span> <span style="color:#0d9023">(3.42%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=MDSO">MDSO</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">37.71</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">36.98</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$37.65</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">44,584</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">1.06</span> <span style="color:#0d9023">(2.90%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=AMZN">AMZN</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">259.42</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">252.70</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$258.58</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">2,918,673</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">7.21</span> <span style="color:#0d9023">(2.87%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=BNNY">BNNY</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">45.89</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">45.00</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$45.10</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">189,967</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">1.25</span> <span style="color:#0d9023">(2.85%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=CAB">CAB</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">52.50</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">51.31</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$52.02</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">319,620</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">1.12</span> <span style="color:#0d9023">(2.20%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=WYN">WYN</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">54.95</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">53.84</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$54.78</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">460,966</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">1.13</span> <span style="color:#0d9023">(2.11%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=CVI">CVI</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">33.42</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">32.85</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$33.37</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">109,385</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">0.58</span> <span style="color:#0d9023">(1.77%)</span></td>
+			
+		</tr>
+		
+	</tbody>
+	
+		</table>
+		<span style="margin-top:25px;">&nbsp;</span>
+			<table cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%;">
+			
+	<tr> 
+      <td colspan="6" style="width:100%; background-color:#EEEEEE; font-weight:bold; font-size:11px; font-family:Verdana,sans-serif; border-top: 1px solid #808080; border-bottom: 1px solid #808080; padding:6px 12px 6px 12px;"><strong>Today's New 52 Week Low Stocks</strong></td>	
+	</tr>
+	
+	<tr>	
+	
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:left; ">Symbol</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">New Low</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Prev 52wk Low</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Last</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Volume</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Today's Change</td>
+			
+    </tr>
+	<tbody>
+	
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=ADNC">ADNC</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">5.81</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">15.15</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$6.07</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">5,051,839</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">12.79</span> <span style="color:#DA0000">(67.82%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=ENVI">ENVI</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">2.18</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">2.32</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$2.19</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">737,167</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">0.49</span> <span style="color:#DA0000">(18.28%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=LIWA">LIWA</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">3.57</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">3.69</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$3.70</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">129,925</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">0.12</span> <span style="color:#DA0000">(3.14%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=PGNX">PGNX</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">3.40</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">3.49</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$3.45</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">98,790</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">0.07</span> <span style="color:#DA0000">(1.99%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=MANU">MANU</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">12.75</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">12.75</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$12.75</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">120,242</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">0.13</span> <span style="color:#DA0000">(1.01%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=IRG">IRG</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">12.50</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">12.77</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$14.30</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">55,488</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">0.14</span> <span style="color:#DA0000">(0.97%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=MAXY">MAXY</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">2.64</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">5.25</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$2.70</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">727,160</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">0.05</span> <span style="color:#0d9023">(1.89%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; "><a href="http://research.tdameritrade.com/public/stocks/overview/overview.asp?symbol=OSH">OSH</a></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">14.00</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><span style="color:#666;">14.02</span></td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">$14.37</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">4,408</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">0.35</span> <span style="color:#0d9023">(2.50%)</span></td>
+			
+		</tr>
+		
+	</tbody>
+	
+		</table>
+		<span style="margin-top:25px;">&nbsp;</span>
+			<table cellspacing="0" cellpadding="0" border="0" width="100%" style="width:100%;">
+			
+	<tr> 
+      <td colspan="3" style="width:100%; background-color:#EEEEEE; font-weight:bold; font-size:11px; font-family:Verdana,sans-serif; border-top: 1px solid #808080; border-bottom: 1px solid #808080; padding:6px 12px 6px 12px;"><strong>Markets Snapshot</strong></td>	
+	</tr>
+	
+	<tr>	
+	
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:left; ">Name</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Last</td>
+			
+			<td style="background-color:#F7F7F7; border-bottom:1px solid #808080; font-size:10px;  font-family:Verdana,sans-serif; padding:4px 4px 4px 8px;  text-align:right;">Today's Change</td>
+			
+    </tr>
+	<tbody>
+	
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; ">NASDAQ</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">3,134.33</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">1.48</span> <span style="color:#DA0000">(0.05%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; ">S&P 500</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">1,435.83</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/up.gif" />&nbsp;<span style="color:#0d9023">3.71</span> <span style="color:#0d9023">(0.26%)</span></td>
+			
+		</tr>
+		
+		<tr >
+		
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: left; ">DJIA</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;">13,285.40</td>
+			
+			<td style="font-family: Verdana, sans-serif; font-size: 11px; color: #444444; border-bottom: 1px solid #D8D8D8; padding: 4px 4px 4px 8px; text-align: right;"><img style="display:inline-block;" src="https://tdameritrade.cache.wallst.com/images/down.gif" />&nbsp;<span style="color:#DA0000">6.60</span> <span style="color:#DA0000">(0.05%)</span></td>
+			
+		</tr>
+		
+	</tbody>
+	
+		</table>
+		
+						<div style="border-bottom:1px dotted #999;width:100%">&nbsp;</div>
+						
+						<p style="font: normal 11px Verdana, sans-serif; color:#999;line-height:17px;">The Dow Jones Indexes<sup>SM</sup> are proprietary to and distributed by Dow Jones &amp; Company, Inc. and have been licensed for use. All content of the Dow Jones Indexes<sup>SM</sup> &copy; 2012 is proprietary to Dow Jones &amp; Company, Inc.</p>
+						
+						<p style="font: normal 11px Verdana, sans-serif; color:#999;line-height:17px;">Please do not reply to this e-mail from Markit On Demand. Markit On Demand and TD Ameritrade are separate unaffiliated companies and are not responsible for each other's service.  For questions regarding your brokerage account, please contact TD Ameritrade Client Services at 1-800-669-3900.</p>
+						
+						
+						<p style="font: normal 11px Verdana, sans-serif; color:#999;line-height:17px;">To stop receiving this alert from TD Ameritrade, please <a href="https://research.ameritrade.com/wwws/alerts/unsubscribe.asp?YYY600_43YYGH1ZYxCdI7TjCYzdUh0XiqQFTX0oUHjOHg5G88mZm664KQx4Btso4Pf3xD3QUJMSUTXFW/6jLRl60kEK78jR03K6uO8Z0goA2Fn0M0pjrg6TolJNx2S4jZb7HY+1pRyoYLm3H4OoQc821CZlh88DFhqsK3wU&a=" target="_blank" style="color:#3366cc;">click here</a> to update your subscription settings. You may also unsubscribe from all of your alerts using the link above. As always, you can manage all of your alert settings by logging into your TD Ameritrade account and navigating to Research & Ideas > Alerts. </p>
+						
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
