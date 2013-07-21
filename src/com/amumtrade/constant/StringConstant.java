@@ -3,13 +3,13 @@ package com.amumtrade.constant;
 
 public class StringConstant {
 
-	public static final String AMEX_INPUT_PATH="config/input/amex_list.csv";
-	public static final String NASDAQ_INPUT_PATH="config/input/nasdaq_list.csv";
-	public static final String NYSE_INPUT_PATH="config/input/nyse_list.csv";
+	public static final String AMEX_INPUT_PATH="config/input/amex_list_";
+	public static final String NASDAQ_INPUT_PATH="config/input/nasdaq_list_";
+	public static final String NYSE_INPUT_PATH="config/input/nyse_list_";
 
-	public static final String AMEX_NAME="config/temp/AMEX";
-	public static final String NASDAQ_NAME="config/temp/NASDAQ";
-	public static final String NYSE_NAME="config/temp/NYSE";
+	public static final String AMEX_NAME="AMEX";
+	public static final String NASDAQ_NAME="NASDAQ";
+	public static final String NYSE_NAME="NYSE";
 
 	public static final String AMEX_OUTPUT_PATH="config/output/amex_output";
 	public static final String NASDAQ_OUTPUT_PATH="config/output/nasdaq_output";

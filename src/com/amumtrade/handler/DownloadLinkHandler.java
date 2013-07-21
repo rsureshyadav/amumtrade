@@ -13,7 +13,6 @@ public class DownloadLinkHandler {
 		    ReadableByteChannel rbc = Channels.newChannel(website.openStream()); 
 		    FileOutputStream fos = new FileOutputStream(filePath); 
 		    fos.getChannel().transferFrom(rbc, 0, 1 << 24); 
-		    System.out.println("success............");
 	}
 	
 	public static void columnRemover(String filePath){

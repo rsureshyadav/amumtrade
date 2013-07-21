@@ -1,37 +1,66 @@
 package com.amumtrade.handler;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-import java.util.Map;
+import java.io.File;
 
-import com.amumtrade.bean.StockWebBean;
-import com.amumtrade.engine.StockEngine;
+import com.amumtrade.helper.StockRouteHelper;
 
 public class StockHandler {
 
-	public static void execute(String inputPath, double firstValue, double lastValue, String marketName, String outputPath) throws Exception{
-		SimpleDateFormat dateFormat1 = new SimpleDateFormat("dd_MM_yyyy_HH_mm");
-		 Calendar cal = Calendar.getInstance();
+	 double startRange;
+	 double endRange;
+	 String exchName;
+    
+
+	public StockHandler(double startRange, double endRange, 
+			String exchName) {
+		this.startRange = startRange;
+		this.endRange = endRange;
+		this.exchName = exchName;
+	}
+
+	public void execute(String nsdqURL, String inputPath, String outputPath) throws Exception{
+		long startTime= System.currentTimeMillis();
+
 		 try {
-			 StockWebBean webBean =null;
-			 List<String> symbolList = new ArrayList<String>();
-			 Map<String, StockWebBean> webStockMap=StockEngine.getQuoteFromInputFile(inputPath, webBean);
-			 for (String  symbol : webStockMap.keySet()) {
-				 webBean=webStockMap.get(symbol);
-				 Double price = Double.valueOf(webBean.getLastSale());
-				 if(price>= firstValue&& price<=lastValue && !webBean.getSymbol().contains("/") && !webBean.getSymbol().contains("^")){
-					 symbolList.add(webBean.getSymbol());
-				 }
-			 }
-			 String fileName= marketName+"_"+dateFormat1.format(cal.getTime())+".txt";
-			 StockEngine.writeQuoteToTempFile(symbolList, fileName);
-			 StockEngine.getStockQuote(outputPath, fileName);
-			
+				File f = new File(inputPath);
+				if(f.exists()) { 
+					System.out.println(exchName+" exchange file avilable");
+				}else{
+					removeFile("config/input/");
+					System.out.println(exchName+" exchange file not avilable, downloading .csv file...");
+					DownloadLinkHandler.execute(nsdqURL,inputPath);
+				}
+				
+				
+			 StockRouteHelper helper = new StockRouteHelper(inputPath, outputPath);
+			 helper.digest();
+
 		} catch (Exception e) {
-			e.printStackTrace();
+			e.getLocalizedMessage();
+			//e.getMessage();
+			//e.printStackTrace();
 		}
 		
+		 System.out.println("Completed "+exchName+" quote output file...");
+		    long endTime= System.currentTimeMillis();
+			long elapsedTime = endTime - startTime;
+			
+			int s = (int) ((elapsedTime / 1000) % 60);
+			int m = (int) ((elapsedTime / (1000 * 60)) % 60);
+			int h = (int) ((elapsedTime / (1000 * 60 * 60)) % 24);
+			
+			 System.out.println("Execution of "+exchName+" total time  ==> "+ h +" : "+ m +" : "+ s);
 	}
+	
+	private void removeFile(String path) throws Exception{
+		File f = new File(path);
+
+		if (f.isDirectory()) {
+			for (File c : f.listFiles())
+				c.delete();
+		}
+
+	}
+
+
 }
