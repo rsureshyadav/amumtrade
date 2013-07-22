@@ -6,19 +6,16 @@ import com.amumtrade.helper.StockRouteHelper;
 
 public class StockHandler {
 
-	 double startRange;
-	 double endRange;
+	
 	 String exchName;
     
 
-	public StockHandler(double startRange, double endRange, 
-			String exchName) {
-		this.startRange = startRange;
-		this.endRange = endRange;
+	public StockHandler(String exchName) {
+		
 		this.exchName = exchName;
 	}
 
-	public void execute(String nsdqURL, String inputPath, String outputPath) throws Exception{
+	public void execute(double startRange, double endRange, String nsdqURL, String inputPath, String outputPath) throws Exception{
 		long startTime= System.currentTimeMillis();
 
 		 try {
@@ -32,7 +29,7 @@ public class StockHandler {
 				}
 				
 				
-			 StockRouteHelper helper = new StockRouteHelper(inputPath, outputPath);
+			 StockRouteHelper helper = new StockRouteHelper(startRange, endRange ,inputPath, outputPath);
 			 helper.digest();
 
 		} catch (Exception e) {

@@ -15,17 +15,21 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import com.amumtrade.bean.StockBean;
-import com.amumtrade.dao.EpsTtmServiceDao;
+import com.amumtrade.dao.EPSTTMServiceDao;
 
 public class StockRouteHelper {
 
     private List<StockBean> beanList = new ArrayList<StockBean>();
     private String inputPath;
     private String outputPath;
+    private double startRange;
+    private double endRange;
     private String line = null;
     private List<String> lineItem  = null;
 
-	public StockRouteHelper(String inputPath, String outputPath) {
+	public StockRouteHelper(double startRange, double endRange, String inputPath, String outputPath) {
+	this.startRange = startRange;
+	this.endRange = endRange;
 	this.inputPath = inputPath;
 	this.outputPath = outputPath;
 	}
@@ -33,13 +37,22 @@ public class StockRouteHelper {
 	public void digest() {
 		try {
 			beanList =	filterStock ();
-			ExecutorService eService = Executors.newFixedThreadPool(beanList.size());
+			ExecutorService executor = Executors.newFixedThreadPool(beanList.size());
+			int count =1;
 			for (StockBean stockBean : beanList) {
-				EpsTtmServiceDao epsTtmRun = new EpsTtmServiceDao(stockBean);
-				eService.submit(epsTtmRun);
+				if(stockBean.getLastSale()>= startRange && stockBean.getLastSale()<= endRange){
+					Runnable epsWorker = new EPSTTMServiceDao(stockBean);
+					executor.execute(epsWorker);
+					count++;
+				}
 			}
+			executor.shutdown();
+		    while (!executor.isTerminated()) {
+		    	 
+	        }
+	        System.out.println("\nFinished all threads");
 			//shutdown(eService, "EPS TTM Service");
-			eService.shutdown();
+			//eService.shutdown();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

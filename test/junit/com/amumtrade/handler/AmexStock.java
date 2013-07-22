@@ -12,8 +12,8 @@ public class AmexStock {
 public void fetchNasdaqStock() throws Exception{
 	double startRange = 0.8;
 	double endRange = 3;
-	StockHandler handler = new StockHandler(startRange, endRange, StringConstant.AMEX_NAME);
-	handler.execute(StringConstant.AMEX_URL,StringConstant.AMEX_INPUT_PATH+getTodayDate()+".csv", StringConstant.AMEX_OUTPUT_PATH);
+	StockHandler handler = new StockHandler(StringConstant.AMEX_NAME);
+	handler.execute(startRange, endRange, StringConstant.AMEX_URL,StringConstant.AMEX_INPUT_PATH+getTodayDate()+".csv", StringConstant.AMEX_OUTPUT_PATH);
 	}
 
 

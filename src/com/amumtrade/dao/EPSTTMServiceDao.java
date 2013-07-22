@@ -7,10 +7,10 @@ import java.net.URLConnection;
 
 import com.amumtrade.bean.StockBean;
 
-public class EpsTtmServiceDao implements Runnable {
+public class EPSTTMServiceDao implements Runnable {
 
 	StockBean stockBean;
-	public EpsTtmServiceDao(StockBean stockBean) {
+	public EPSTTMServiceDao(StockBean stockBean) {
 		this.stockBean = stockBean;
 	}
 	
