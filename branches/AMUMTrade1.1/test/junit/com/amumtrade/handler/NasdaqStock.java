@@ -14,8 +14,8 @@ public class NasdaqStock{
 	public void fetchNasdaqStock() throws Exception{
 		double startRange = 0.8;
 		double endRange = 3;
-		StockHandler handler = new StockHandler(startRange, endRange, StringConstant.NASDAQ_NAME);
-		handler.execute(StringConstant.NASDAQ_URL,StringConstant.NASDAQ_INPUT_PATH+getTodayDate()+".csv", StringConstant.NASDAQ_OUTPUT_PATH);
+		StockHandler handler = new StockHandler( StringConstant.NASDAQ_NAME);
+		handler.execute(startRange, endRange, StringConstant.NASDAQ_URL,StringConstant.NASDAQ_INPUT_PATH+getTodayDate()+".csv", StringConstant.NASDAQ_OUTPUT_PATH);
 		}
 
 
