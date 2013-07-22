@@ -38,12 +38,13 @@ public class StockRouteHelper {
 		try {
 			beanList =	filterStock ();
 			ExecutorService executor = Executors.newFixedThreadPool(beanList.size());
-			int count =1;
 			for (StockBean stockBean : beanList) {
-				if(stockBean.getLastSale()>= startRange && stockBean.getLastSale()<= endRange){
+		
+				if(stockBean.getLastSale()>= startRange && stockBean.getLastSale()<= endRange
+						&& !stockBean.getSymbol().contains("/")
+						&& !stockBean.getSymbol().contains("^")){
 					Runnable epsWorker = new EPSTTMServiceDao(stockBean);
 					executor.execute(epsWorker);
-					count++;
 				}
 			}
 			executor.shutdown();
