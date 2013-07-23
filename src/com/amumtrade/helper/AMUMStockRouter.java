@@ -14,6 +14,7 @@ import java.util.concurrent.Executors;
 import com.amumtrade.bean.AMUMStockBean;
 import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.dao.AMUMStockDAO;
+import com.ricebridge.csvman.CsvManager;
 
 public class AMUMStockRouter {
 
@@ -24,7 +25,8 @@ public class AMUMStockRouter {
     private double endRange;
     private String line = null;
     private List<String> lineItem  = null;
-
+    private String path = null;
+    
 	public AMUMStockRouter(double startRange, double endRange, String inputPath, String outputPath) {
 	this.startRange = startRange;
 	this.endRange = endRange;
@@ -35,20 +37,25 @@ public class AMUMStockRouter {
 	public void digest() throws IOException {
 		BufferedWriter bwObj = null;
 		try {
-			FileWriter fwo = new FileWriter( outputPath+"_"+AMUMStockConstant.dateFormat.format(AMUMStockConstant.cal.getTime())+".csv", false );
+			path = outputPath+"_"+AMUMStockConstant.dateFormat.format(AMUMStockConstant.cal.getTime())+".csv";
+			FileWriter fwo = new FileWriter( path, false );
 			bwObj = new BufferedWriter( fwo );
 			bwObj.write(getHeader());
 			bwObj.newLine();
-			
+			System.out.println(getHeader());
 			beanList =	readNASDAQFile();
-			ExecutorService executor = Executors.newFixedThreadPool(beanList.size());
+			System.out.println(beanList.size());
+			ExecutorService executor = Executors.newFixedThreadPool(10);
+			int totalCount=0;
+					
 			for (AMUMStockBean stockBean : beanList) {
 		
 				if(stockBean.getLastSale()>= startRange && stockBean.getLastSale()<= endRange
 						&& !stockBean.getSymbol().contains("/")
 						&& !stockBean.getSymbol().contains("^")){
+					stockBean.setTotalCount(totalCount++);		
 					Runnable epsWorker = new AMUMStockDAO(stockBean,bwObj);
-					executor.execute(epsWorker);					
+					executor.execute(epsWorker);	
 				}
 			}
 			executor.shutdown();
@@ -56,6 +63,29 @@ public class AMUMStockRouter {
 		    	 
 	        }
 	        System.out.println("\nFinished all threads");
+	        
+	        CsvManager   csvManager = new CsvManager();
+	        System.out.println(">>>Path>>>"+path);
+	        List         data       = csvManager.load( path );
+	        StringBuffer htmlTable  = new StringBuffer("<html><body><table>\n");
+
+	        for( int line = 0; line < data.size(); line++ ) {
+	          htmlTable.append( "<tr>\n" );
+
+	          String[] fields = (String[]) data.get(line);
+	          for( int field = 0; field < fields.length; field++ ) {
+	            String celltype = (0==line?"th":"td");
+	            htmlTable.append( "<"+celltype+" align=\"left\">"+fields[field]+"</"+celltype+">\n" );
+	          }
+
+	          htmlTable.append( "</tr>\n" );
+	        }
+	        htmlTable.append( "</table></body></html>\n" );
+
+	        FileWriter htmlFile = new FileWriter( "config/output/AMUMTrade.html" );
+	        htmlFile.write( htmlTable.toString() );
+	        htmlFile.close();
+	        
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{

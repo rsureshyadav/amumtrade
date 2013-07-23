@@ -16,6 +16,8 @@ public class AMUMStockBean {
 	private String revenuePerShare; 
 	private String dilutedEPS;
 	
+	private int totalCount;
+	
 	public String getSymbol() {
 		return symbol;
 	}
@@ -88,11 +90,18 @@ public class AMUMStockBean {
 	public void setRevenuePerShare(String revenuePerShare) {
 		this.revenuePerShare = revenuePerShare;
 	}
+	public int getTotalCount() {
+		return totalCount;
+	}
+	public void setTotalCount(int totalCount) {
+		this.totalCount = totalCount;
+	}
 	public String getDilutedEPS() {
 		return dilutedEPS;
 	}
 	public void setDilutedEPS(String dilutedEPS) {
 		this.dilutedEPS = dilutedEPS;
 	}
+
 	
 }

@@ -25,7 +25,8 @@ public class AMUMStockHandler {
 					DownloadLinkHandler.execute(nsdqURL,inputPath);
 				}
 				
-			 outputPath = outputPath.replace("@", exchName);	
+			 outputPath = outputPath.replace("@", exchName);
+			// System.out.println(">>"+outputPath);
 			 AMUMStockRouter helper = new AMUMStockRouter(startRange, endRange ,inputPath, outputPath);
 			 helper.digest();
 
