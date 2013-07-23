@@ -5,17 +5,17 @@ import java.util.Date;
 
 import org.junit.Test;
 
-import com.amumtrade.constant.StringConstant;
+import com.amumtrade.constant.AMUMStockConstant;
 
 public class NasdaqStockTest{
 	
 
 	@Test
 	public void fetchNasdaqStock() throws Exception{
-		double startRange = 0.8;
+		double startRange = 3;
 		double endRange = 3;
-		StockHandler handler = new StockHandler( StringConstant.NASDAQ_NAME);
-		handler.execute(startRange, endRange, StringConstant.NASDAQ_URL,StringConstant.NASDAQ_INPUT_PATH+getTodayDate()+".csv", StringConstant.NASDAQ_OUTPUT_PATH);
+		AMUMStockHandler handler = new AMUMStockHandler( AMUMStockConstant.NASDAQ_NAME);
+		handler.execute(startRange, endRange, AMUMStockConstant.NASDAQ_URL,AMUMStockConstant.NASDAQ_INPUT_PATH+getTodayDate()+".csv", AMUMStockConstant.NASDAQ_OUTPUT_PATH);
 		}
 
 

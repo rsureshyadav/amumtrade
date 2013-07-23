@@ -1,7 +1,11 @@
 package com.amumtrade.constant;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
-public class StringConstant {
+
+public class AMUMStockConstant {
 
 	public static final String AMEX_INPUT_PATH="config/input/amex_list_";
 	public static final String NASDAQ_INPUT_PATH="config/input/nasdaq_list_";
@@ -11,9 +15,11 @@ public class StringConstant {
 	public static final String NASDAQ_NAME="NASDAQ";
 	public static final String NYSE_NAME="NYSE";
 
-	public static final String AMEX_OUTPUT_PATH="config/output/amex_output";
-	public static final String NASDAQ_OUTPUT_PATH="config/output/nasdaq_output";
-	public static final String NYSE_OUTPUT_PATH="config/output/nyse_output";
+	public static final String AMEX_OUTPUT_PATH="config/output/@";
+	public static final String NASDAQ_OUTPUT_PATH="config/output/@";
+	public static final String NYSE_OUTPUT_PATH="config/output/@";
+	public static final DateFormat dateFormat = new SimpleDateFormat("dd_MM_yyyy_HH_mm");
+	public static final Calendar cal = Calendar.getInstance();
 	
 	public static final String AMEX_URL="http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=amex&render=download";
 	public static final String NASDAQ_URL="http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=nasdaq&render=download";

@@ -1,25 +1,23 @@
 package com.amumtrade.helper;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.net.URLConnection;
-import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import com.amumtrade.bean.StockBean;
-import com.amumtrade.dao.EPSTTMServiceDao;
+import com.amumtrade.bean.AMUMStockBean;
+import com.amumtrade.constant.AMUMStockConstant;
+import com.amumtrade.dao.AMUMStockDAO;
 
-public class StockRouteHelper {
+public class AMUMStockRouter {
 
-    private List<StockBean> beanList = new ArrayList<StockBean>();
+    private List<AMUMStockBean> beanList = new ArrayList<AMUMStockBean>();
     private String inputPath;
     private String outputPath;
     private double startRange;
@@ -27,24 +25,30 @@ public class StockRouteHelper {
     private String line = null;
     private List<String> lineItem  = null;
 
-	public StockRouteHelper(double startRange, double endRange, String inputPath, String outputPath) {
+	public AMUMStockRouter(double startRange, double endRange, String inputPath, String outputPath) {
 	this.startRange = startRange;
 	this.endRange = endRange;
 	this.inputPath = inputPath;
 	this.outputPath = outputPath;
 	}
 
-	public void digest() {
+	public void digest() throws IOException {
+		BufferedWriter bwObj = null;
 		try {
-			beanList =	filterStock ();
+			FileWriter fwo = new FileWriter( outputPath+"_"+AMUMStockConstant.dateFormat.format(AMUMStockConstant.cal.getTime())+".csv", false );
+			bwObj = new BufferedWriter( fwo );
+			bwObj.write(getHeader());
+			bwObj.newLine();
+			
+			beanList =	readNASDAQFile();
 			ExecutorService executor = Executors.newFixedThreadPool(beanList.size());
-			for (StockBean stockBean : beanList) {
+			for (AMUMStockBean stockBean : beanList) {
 		
 				if(stockBean.getLastSale()>= startRange && stockBean.getLastSale()<= endRange
 						&& !stockBean.getSymbol().contains("/")
 						&& !stockBean.getSymbol().contains("^")){
-					Runnable epsWorker = new EPSTTMServiceDao(stockBean);
-					executor.execute(epsWorker);
+					Runnable epsWorker = new AMUMStockDAO(stockBean,bwObj);
+					executor.execute(epsWorker);					
 				}
 			}
 			executor.shutdown();
@@ -52,17 +56,29 @@ public class StockRouteHelper {
 		    	 
 	        }
 	        System.out.println("\nFinished all threads");
-			//shutdown(eService, "EPS TTM Service");
-			//eService.shutdown();
 		} catch (Exception e) {
 			e.printStackTrace();
+		}finally{
+			if(bwObj!=null)
+			bwObj.close();
 		}
 		
 	}
 
 	
-	private List<StockBean> filterStock() throws IOException {
-		StockBean bean;
+	private String getHeader() {
+		return
+		AMUMStockConstant.SYMBOL + AMUMStockConstant.COMMA+
+		AMUMStockConstant.PRICE + AMUMStockConstant.COMMA+
+		"Diluted EPS" + AMUMStockConstant.COMMA+
+		"Operating Margin" + AMUMStockConstant.COMMA+
+		"Return On Assets" + AMUMStockConstant.COMMA+
+		"Return On Equity" + AMUMStockConstant.COMMA+
+		"Revenue Per Share";
+	}
+
+	private List<AMUMStockBean> readNASDAQFile() throws IOException {
+		AMUMStockBean bean;
 		BufferedReader br = null;
 		try {
 			br = new BufferedReader(new FileReader(inputPath));
@@ -73,7 +89,7 @@ public class StockRouteHelper {
 					count++;
 					continue;
 				}
-				bean = new StockBean();
+				bean = new AMUMStockBean();
 				line = validateLine(line);
 				lineItem = Arrays.asList(line.split("\\s*,\\s*"));
 				bean.setSymbol(lineItem.get(0));
@@ -119,13 +135,5 @@ public class StockRouteHelper {
 		return value;
 	}
 	
-	private void shutdown(ExecutorService executor, String label) {
-		executor.shutdown();
-        while (!executor.isTerminated()) {
- 
-        }
-        System.out.println("\nFinished "+label+" threads execution");
-        
-		
-	}
+	
 }

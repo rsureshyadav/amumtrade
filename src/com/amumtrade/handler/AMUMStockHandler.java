@@ -2,16 +2,13 @@ package com.amumtrade.handler;
 
 import java.io.File;
 
-import com.amumtrade.helper.StockRouteHelper;
+import com.amumtrade.helper.AMUMStockRouter;
 
-public class StockHandler {
-
+public class AMUMStockHandler {
 	
-	 String exchName;
-    
+	private String exchName;
 
-	public StockHandler(String exchName) {
-		
+	 public AMUMStockHandler(String exchName) {
 		this.exchName = exchName;
 	}
 
@@ -28,14 +25,12 @@ public class StockHandler {
 					DownloadLinkHandler.execute(nsdqURL,inputPath);
 				}
 				
-				
-			 StockRouteHelper helper = new StockRouteHelper(startRange, endRange ,inputPath, outputPath);
+			 outputPath = outputPath.replace("@", exchName);	
+			 AMUMStockRouter helper = new AMUMStockRouter(startRange, endRange ,inputPath, outputPath);
 			 helper.digest();
 
 		} catch (Exception e) {
 			e.getLocalizedMessage();
-			//e.getMessage();
-			//e.printStackTrace();
 		}
 		
 		 System.out.println("Completed "+exchName+" quote output file...");

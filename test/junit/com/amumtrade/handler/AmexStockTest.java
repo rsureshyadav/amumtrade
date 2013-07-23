@@ -5,15 +5,15 @@ import java.util.Date;
 
 import org.junit.Test;
 
-import com.amumtrade.constant.StringConstant;
+import com.amumtrade.constant.AMUMStockConstant;
 
 public class AmexStockTest {
 @Test
 public void fetchNasdaqStock() throws Exception{
 	double startRange = 0.8;
 	double endRange = 3;
-	StockHandler handler = new StockHandler(StringConstant.AMEX_NAME);
-	handler.execute(startRange, endRange, StringConstant.AMEX_URL,StringConstant.AMEX_INPUT_PATH+getTodayDate()+".csv", StringConstant.AMEX_OUTPUT_PATH);
+	AMUMStockHandler handler = new AMUMStockHandler(AMUMStockConstant.AMEX_NAME);
+	handler.execute(startRange, endRange, AMUMStockConstant.AMEX_URL,AMUMStockConstant.AMEX_INPUT_PATH+getTodayDate()+".csv", AMUMStockConstant.AMEX_OUTPUT_PATH);
 	}
 
 
