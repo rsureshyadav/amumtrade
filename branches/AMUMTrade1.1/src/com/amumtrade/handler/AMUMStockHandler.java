@@ -27,7 +27,7 @@ public class AMUMStockHandler {
 				
 			 outputPath = outputPath.replace("@", exchName);
 			// System.out.println(">>"+outputPath);
-			 AMUMStockRouter helper = new AMUMStockRouter(startRange, endRange ,inputPath, outputPath);
+			 AMUMStockRouter helper = new AMUMStockRouter(startRange, endRange ,inputPath, outputPath, exchName);
 			 helper.digest();
 
 		} catch (Exception e) {

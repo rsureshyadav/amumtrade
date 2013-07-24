@@ -33,15 +33,17 @@ public class AMUMStockRouter {
     private String outputPath;
     private double startRange;
     private double endRange;
+    private String exchName;
     private String line = null;
     private List<String> lineItem  = null;
     private String path = null;
     
-	public AMUMStockRouter(double startRange, double endRange, String inputPath, String outputPath) {
+	public AMUMStockRouter(double startRange, double endRange, String inputPath, String outputPath, String exchName) {
 	this.startRange = startRange;
 	this.endRange = endRange;
 	this.inputPath = inputPath;
 	this.outputPath = outputPath;
+	this.exchName = exchName;
 	}
 
 	public void digest() throws IOException {
@@ -119,20 +121,27 @@ public class AMUMStockRouter {
 
 	private void createHTMLTable(BufferedReader br, String htmlText, FileWriter fwo, BufferedWriter bwObj)throws IOException {
 		path = "config/template/amumtrade.html";
-		String outputPath = "index.html";
+		String outputPath = exchName+"Report.html";
+		StringBuffer buffer = new StringBuffer();
 		try {
 			fwo = new FileWriter( outputPath, false );
 			bwObj = new BufferedWriter( fwo );
 			
 			br = new BufferedReader(new FileReader(path));
 			while ((line = br.readLine()) != null) {
-				if(line.contains("@REPLACE_TABLE")){
+				if(line.contains("@AMUMTradeStockName")){
+					line = line.replace("@AMUMTradeStockName", exchName+" Stock Exchange Analysis Report");
+					bwObj.write(line);
+					buffer.append(line);
+				}else if(line.contains("@REPLACE_TABLE")){
 					bwObj.write(htmlText);
+					buffer.append(htmlText);
 				}else{
 					bwObj.write(line);
+					buffer.append(line);
 				}
 			}
-			sendEmail(htmlText);
+			sendEmail(htmlText, buffer);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
@@ -142,113 +151,39 @@ public class AMUMStockRouter {
 		
 	}
 
-	private void sendEmail(String htmlText) {
+	private void sendEmail(String htmlText, StringBuffer buffer) {
 		 String EMAIL_FROM = "admin@amumtrade.com";
 		 String EMAIL_TO = "rsureshyadav@gmail.com";
-		 String EMAIL_CC = "rsureshyadav@gmail.com";
 		try {
-			// Create properties, get Session
-			 Properties props = new Properties();
+			Properties props = new Properties();
+			props.put("mail.smtp.auth", "true");
+			props.put("mail.smtp.starttls.enable", "true");
+			props.put("mail.smtp.host", "smtp.gmail.com");
+			props.put("mail.smtp.port", "587");
+			Session session = Session.getInstance(props,
+					  new javax.mail.Authenticator() {
+						protected PasswordAuthentication getPasswordAuthentication() {
+							return new PasswordAuthentication("amumtrade@gmail.com", "welcomeamum");
+						}
+					  });
+			 
+			Message message = new MimeMessage(session);
+			message.setFrom(new InternetAddress(EMAIL_FROM));
+			message.setRecipients(Message.RecipientType.TO,
+				InternetAddress.parse(EMAIL_TO));
+			 message.setSubject("AMUMTrade "+exchName+" stock alert!!!");
+			 message.setContent(buffer.toString(),"text/html" );
 
-			 props.put("mail.smtp.ssl.enable", "true");
-			 props.put("mail.transport.protocol", "smtps");
-			 props.put("mail.debug", "true");
-
-			 // If using static Transport.send(),
-			 // Need to specify which host to send it to
-			 String host = "smtp.gmail.com"; //gmail SMTP server name
-			 props.put("mail.smtps.host", host);
-
-			 //Specify which port to connect to
-			 int port = 465; //port for SSL connection
-			 props.put("mail.smtps.port", port);
-
-			 //Enable SSL
-			 props.put("mail.smtps.socketFactory.port", Integer.toString(port));
-			 props.put("mail.smtps.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-			 props.put("mail.smtps.socketFactory.fallback", "false");
-			 props.put("mail.smtps.auth", "true");
-
-			 //Enable authentication by providing your Gmail account and password
-			 final String senderAccount = "rsureshyadav2@gmail.com";
-			 final String senderAccountPassword = "hclt1981";
-			 Session session = Session.getInstance(props);
-			 session = Session.getInstance(props, new javax.mail.Authenticator() {
-			 protected PasswordAuthentication getPasswordAuthentication() {
-			 return new PasswordAuthentication(senderAccount, senderAccountPassword);
-			 }
-			 });
-
-			// Transport transport = session.getTransport("smtps");
-			 //Connect to the host with the specified sender
-			 //transport.connect(host, senderAccount);
-				System.out.println(">>>>sendEmail>>>"+htmlText);
-
-				Message message = new MimeMessage(session);
-		            message.setFrom(new InternetAddress(EMAIL_FROM));
-		            message.setRecipients(Message.RecipientType.TO,
-		                InternetAddress.parse(EMAIL_TO));
-		            message.setSubject("AMUMTrade stock alert!!!");
-		             message.setContent(htmlText,"text/html" );
-		             Transport.send(message);
-
-						System.out.println(">>>>sendEmail>>>"+htmlText);
-
-		
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-		/*
-		System.out.println(">>>>sendEmail>>>"+htmlText);
-		
-		 String MAIL_SMTP_HOST = "smtp.gmail.com";
-		 String DEFAULT_SMTP_SERVER = "nawinmsx021.enterprisenet.org";
-		 String EMAIL_FROM = "admin@amumtrade.com";
-		 String EMAIL_TO = "rsureshyadav@gmail.com";
-		 String EMAIL_CC = "rsureshyadav@gmail.com";
-		 Message message;
-		 MimeBodyPart msgBodyPart;
-		 Multipart multiPartMsg;
-		 Session session;
-		
-		try {
-		      String to = "rsureshyadav@gmail.com";
-		      String from = "admin@amumtrade.com";
-
-		      Properties props = System.getProperties();
-		      props.put("mail.smtp.starttls.enable", "true");
-		        props.put("mail.smtp.auth", "true");
-		        props.put("mail.smtp.host", "smtp.gmail.com");
-		        props.put("mail.smtp.port", "587");
-				
-				Session session = Session.getDefaultInstance(props,
-						new javax.mail.Authenticator() {
-							protected PasswordAuthentication getPasswordAuthentication() {
-								return new PasswordAuthentication("rsureshyadav2@gmail.com","hclt1981");
-							}
-						});
-				try {
-					Message message = new MimeMessage(session);
-		            message.setFrom(new InternetAddress(to));
-		            message.setRecipients(Message.RecipientType.TO,
-		                InternetAddress.parse("to_email_address@domain.com"));
-		            message.setSubject("AMUMTrade stock alert!!!");
-		            message.setText("Dear Mail Crawler,"
-		                + "\n\n No spam to my email, please!");
-		           // message.setContent(htmlText,"text/html" );
-		            Transport.send(message);
-
-		            System.out.println("Done");
-				} catch (MessagingException  e) {
-					// TODO: handle exception
-				}
-				
-  	     
-		} catch (Exception e) {
+ 
+			Transport.send(message);
+ 
+			System.out.println("Email send !!!");
+			
+			} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-	*/}
+	}
 
 	private String getHeader() {
 		return
