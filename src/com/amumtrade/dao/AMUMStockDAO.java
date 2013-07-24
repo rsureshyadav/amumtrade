@@ -4,8 +4,6 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.math.BigDecimal;
-import java.math.MathContext;
 import java.net.URL;
 
 import sun.net.www.protocol.http.HttpURLConnection;
@@ -44,12 +42,13 @@ public class AMUMStockDAO implements Runnable {
 				
 		      }
 		      br.close();
-			//int count = stockBean.getTotalCount();
-			bwObj.write(stockBean.getSymbol()+","+stockBean.getLastSale()
-					+","+stockBean.getDilutedEPS()+","+stockBean.getOperatingMargin()
-					+","+stockBean.getReturnOnAssets()+","+stockBean.getReturnOnEquity()
-					+","+stockBean.getRevenuePerShare());
-			bwObj.newLine();  
+		      if(isValidLine(stockBean)){
+		    	  bwObj.write(stockBean.getSymbol()+","+stockBean.getLastSale()
+		    			  +","+stockBean.getDilutedEPS()+","+stockBean.getOperatingMargin()
+		    			  +","+stockBean.getReturnOnAssets()+","+stockBean.getReturnOnEquity()
+		    			  +","+stockBean.getRevenuePerShare());
+		    	  bwObj.newLine();  
+		      }
 			
 			System.out.println("[ "+( stockBean.getTotalCount())+" ]"+stockBean.getSymbol()+","+stockBean.getLastSale()
 					+","+stockBean.getDilutedEPS()+","+stockBean.getOperatingMargin()
@@ -67,6 +66,21 @@ public class AMUMStockDAO implements Runnable {
 		
 	}
 
+	private boolean isValidLine(AMUMStockBean stockBean2) {
+
+		if(!stockBean.getDilutedEPS().contains("-") && !stockBean.getDilutedEPS().contains("No Data") 
+				&& !stockBean.getDilutedEPS().contains("N/A") 
+				&&!stockBean.getOperatingMargin().contains("-")&&
+	    		!stockBean.getReturnOnAssets().contains("-")&&!stockBean.getReturnOnEquity().contains("-")
+	    		&& !stockBean.getReturnOnEquity().contains("No Data") 
+				&& !stockBean.getReturnOnEquity().contains("N/A") &&
+	    		! stockBean.getRevenuePerShare().contains("-")){
+			return true;
+		}
+	    		
+		return false;
+	}
+
 	private void findDilutedEPS(String line) {
 		try {
 			if (line.contains("Diluted EPS (ttm):")) {
@@ -76,14 +90,6 @@ public class AMUMStockDAO implements Runnable {
 				line = line.replace("Diluted EPS (ttm):", "");
 				line = line.substring(0, line.indexOf("</td>"));
 				line = line.replace(",", "");
-				//divide EPS / 100
-				/*if(!line.equalsIgnoreCase("N/A")){
-					double dValue = Double.valueOf(line);
-					BigDecimal decimal1 = BigDecimal.valueOf(dValue);
-					BigDecimal decimal2 = new BigDecimal(100); 
-					BigDecimal total = decimal1.divide(decimal2, new MathContext(4));
-					line = String.valueOf(total);
-				}*/
 				stockBean.setDilutedEPS(line);
 			} else if (line
 					.contains("There is no Key Statistics data available")) {
