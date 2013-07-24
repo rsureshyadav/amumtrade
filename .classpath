@@ -12,12 +12,10 @@
 	<classpathentry kind="lib" path="lib/javamail-1.4.5/mail.jar"/>
 	<classpathentry kind="lib" path="lib/junit/junit-4.1.jar"/>
 	<classpathentry kind="lib" path="lib/j2ee/j2ee.jar"/>
-	<classpathentry kind="lib" path="lib/commons-logging.jar"/>
-	<classpathentry kind="lib" path="lib/log4j.jar"/>
-	<classpathentry kind="lib" path="lib/yahoofinanceapi-0.0.5-SNAPSHOT.jar"/>
-	<classpathentry kind="lib" path="lib/javacsv-2.0.jar"/>
 	<classpathentry kind="lib" path="lib/http/httpclient-4.2.5.jar"/>
 	<classpathentry kind="lib" path="lib/http/httpcore-4.2.4.jar"/>
 	<classpathentry kind="lib" path="lib/http/httpmime-4.2.5.jar"/>
+	<classpathentry kind="lib" path="lib/common/commons-logging.jar"/>
+	<classpathentry kind="lib" path="lib/common/log4j.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
