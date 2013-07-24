@@ -14,7 +14,6 @@ import java.util.concurrent.Executors;
 import com.amumtrade.bean.AMUMStockBean;
 import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.dao.AMUMStockDAO;
-import com.ricebridge.csvman.CsvManager;
 
 public class AMUMStockRouter {
 
@@ -63,29 +62,7 @@ public class AMUMStockRouter {
 		    	 
 	        }
 	        System.out.println("\nFinished all threads");
-	        
-	        CsvManager   csvManager = new CsvManager();
-	        System.out.println(">>>Path>>>"+path);
-	        List         data       = csvManager.load( path );
-	        StringBuffer htmlTable  = new StringBuffer("<html><body><table>\n");
-
-	        for( int line = 0; line < data.size(); line++ ) {
-	          htmlTable.append( "<tr>\n" );
-
-	          String[] fields = (String[]) data.get(line);
-	          for( int field = 0; field < fields.length; field++ ) {
-	            String celltype = (0==line?"th":"td");
-	            htmlTable.append( "<"+celltype+" align=\"left\">"+fields[field]+"</"+celltype+">\n" );
-	          }
-
-	          htmlTable.append( "</tr>\n" );
-	        }
-	        htmlTable.append( "</table></body></html>\n" );
-
-	        FileWriter htmlFile = new FileWriter( "config/output/AMUMTrade.html" );
-	        htmlFile.write( htmlTable.toString() );
-	        htmlFile.close();
-	        
+	 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
