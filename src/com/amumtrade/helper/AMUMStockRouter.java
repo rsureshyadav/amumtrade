@@ -8,8 +8,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.Multipart;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
 
 import com.amumtrade.bean.AMUMStockBean;
 import com.amumtrade.constant.AMUMStockConstant;
@@ -34,10 +45,11 @@ public class AMUMStockRouter {
 	}
 
 	public void digest() throws IOException {
+		FileWriter fwo = null;
 		BufferedWriter bwObj = null;
 		try {
 			path = outputPath+"_"+AMUMStockConstant.dateFormat.format(AMUMStockConstant.cal.getTime())+".csv";
-			FileWriter fwo = new FileWriter( path, false );
+			fwo = new FileWriter( path, false );
 			bwObj = new BufferedWriter( fwo );
 			bwObj.write(getHeader());
 			bwObj.newLine();
@@ -62,17 +74,182 @@ public class AMUMStockRouter {
 		    	 
 	        }
 	        System.out.println("\nFinished all threads");
-
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
 			if(bwObj!=null)
 			bwObj.close();
+	        createHTML(fwo, bwObj);
 		}
 		
 	}
 
 	
+	private void createHTML(FileWriter fwo, BufferedWriter bwObj) throws IOException {
+		StringBuffer buffer = new StringBuffer(); 
+		BufferedReader br = null;
+		try {
+			br = new BufferedReader(new FileReader(path));
+	
+			String tableHeader = getHeader();
+			tableHeader = tableHeader.replace(",", "</td><td>");
+			tableHeader = "<tr><td>"+tableHeader+"</td></tr>";
+			buffer.append(tableHeader);
+			int count = 0;
+			while ((line = br.readLine()) != null) {
+				if (count == 0) {
+					count++;
+					continue;
+				}
+			String tableBody = line;
+			tableBody = tableBody.replace(",", "</td><td>");
+			tableBody = "<tr><td>"+tableBody+"</td></tr>";
+			buffer.append(tableBody);
+			}
+			createHTMLTable(br, buffer.toString(),  fwo,  bwObj);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally{
+			if(br != null){
+				br.close();
+			}
+		}
+		
+	}
+
+	private void createHTMLTable(BufferedReader br, String htmlText, FileWriter fwo, BufferedWriter bwObj)throws IOException {
+		path = "config/template/amumtrade.html";
+		String outputPath = "index.html";
+		try {
+			fwo = new FileWriter( outputPath, false );
+			bwObj = new BufferedWriter( fwo );
+			
+			br = new BufferedReader(new FileReader(path));
+			while ((line = br.readLine()) != null) {
+				if(line.contains("@REPLACE_TABLE")){
+					bwObj.write(htmlText);
+				}else{
+					bwObj.write(line);
+				}
+			}
+			sendEmail(htmlText);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally{
+			if(bwObj!=null)
+				bwObj.close();
+		}
+		
+	}
+
+	private void sendEmail(String htmlText) {
+		 String EMAIL_FROM = "admin@amumtrade.com";
+		 String EMAIL_TO = "rsureshyadav@gmail.com";
+		 String EMAIL_CC = "rsureshyadav@gmail.com";
+		try {
+			// Create properties, get Session
+			 Properties props = new Properties();
+
+			 props.put("mail.smtp.ssl.enable", "true");
+			 props.put("mail.transport.protocol", "smtps");
+			 props.put("mail.debug", "true");
+
+			 // If using static Transport.send(),
+			 // Need to specify which host to send it to
+			 String host = "smtp.gmail.com"; //gmail SMTP server name
+			 props.put("mail.smtps.host", host);
+
+			 //Specify which port to connect to
+			 int port = 465; //port for SSL connection
+			 props.put("mail.smtps.port", port);
+
+			 //Enable SSL
+			 props.put("mail.smtps.socketFactory.port", Integer.toString(port));
+			 props.put("mail.smtps.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+			 props.put("mail.smtps.socketFactory.fallback", "false");
+			 props.put("mail.smtps.auth", "true");
+
+			 //Enable authentication by providing your Gmail account and password
+			 final String senderAccount = "rsureshyadav2@gmail.com";
+			 final String senderAccountPassword = "hclt1981";
+			 Session session = Session.getInstance(props);
+			 session = Session.getInstance(props, new javax.mail.Authenticator() {
+			 protected PasswordAuthentication getPasswordAuthentication() {
+			 return new PasswordAuthentication(senderAccount, senderAccountPassword);
+			 }
+			 });
+
+			// Transport transport = session.getTransport("smtps");
+			 //Connect to the host with the specified sender
+			 //transport.connect(host, senderAccount);
+				System.out.println(">>>>sendEmail>>>"+htmlText);
+
+				Message message = new MimeMessage(session);
+		            message.setFrom(new InternetAddress(EMAIL_FROM));
+		            message.setRecipients(Message.RecipientType.TO,
+		                InternetAddress.parse(EMAIL_TO));
+		            message.setSubject("AMUMTrade stock alert!!!");
+		             message.setContent(htmlText,"text/html" );
+		             Transport.send(message);
+
+						System.out.println(">>>>sendEmail>>>"+htmlText);
+
+		
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		/*
+		System.out.println(">>>>sendEmail>>>"+htmlText);
+		
+		 String MAIL_SMTP_HOST = "smtp.gmail.com";
+		 String DEFAULT_SMTP_SERVER = "nawinmsx021.enterprisenet.org";
+		 String EMAIL_FROM = "admin@amumtrade.com";
+		 String EMAIL_TO = "rsureshyadav@gmail.com";
+		 String EMAIL_CC = "rsureshyadav@gmail.com";
+		 Message message;
+		 MimeBodyPart msgBodyPart;
+		 Multipart multiPartMsg;
+		 Session session;
+		
+		try {
+		      String to = "rsureshyadav@gmail.com";
+		      String from = "admin@amumtrade.com";
+
+		      Properties props = System.getProperties();
+		      props.put("mail.smtp.starttls.enable", "true");
+		        props.put("mail.smtp.auth", "true");
+		        props.put("mail.smtp.host", "smtp.gmail.com");
+		        props.put("mail.smtp.port", "587");
+				
+				Session session = Session.getDefaultInstance(props,
+						new javax.mail.Authenticator() {
+							protected PasswordAuthentication getPasswordAuthentication() {
+								return new PasswordAuthentication("rsureshyadav2@gmail.com","hclt1981");
+							}
+						});
+				try {
+					Message message = new MimeMessage(session);
+		            message.setFrom(new InternetAddress(to));
+		            message.setRecipients(Message.RecipientType.TO,
+		                InternetAddress.parse("to_email_address@domain.com"));
+		            message.setSubject("AMUMTrade stock alert!!!");
+		            message.setText("Dear Mail Crawler,"
+		                + "\n\n No spam to my email, please!");
+		           // message.setContent(htmlText,"text/html" );
+		            Transport.send(message);
+
+		            System.out.println("Done");
+				} catch (MessagingException  e) {
+					// TODO: handle exception
+				}
+				
+  	     
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	*/}
+
 	private String getHeader() {
 		return
 		AMUMStockConstant.SYMBOL + AMUMStockConstant.COMMA+
@@ -107,8 +284,6 @@ public class AMUMStockRouter {
 				bean.setIndustry(lineItem.get(7));
 				bean.setSummaryQuote(lineItem.get(8));
 				beanList.add(bean);
-
-				count++;
 			}
 			
 		} catch (Exception e) {
