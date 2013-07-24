@@ -1,0 +1,46 @@
+<project name="${project.name}" basedir="." default="build-jar">
+	<property file="build.properties" />
+	<property environment="env" />
+
+	<target name="clean">
+		<property name="JAVA_HOME" value="C:\Local setup\jdk1.6.0_20" />
+		<property name="JAVAC_VERSION" value="javac1.6" />
+		<echo message="Clean executed" />
+		<delete dir="${build.dir}" />
+	</target>
+
+	<path id="full.class.path">
+		<fileset dir="${lib.dir}\common" includes="*.jar" />
+		<fileset dir="${lib.dir}\http" includes="*.jar" />
+		<fileset dir="${lib.dir}\j2ee" includes="*.jar" />
+		<fileset dir="${lib.dir}\javamail-1.4.5" includes="*.jar" />
+		<fileset dir="${lib.dir}\javamail-1.4.5\lib" includes="*.jar" />
+		<fileset dir="${lib.dir}\junit" includes="*.jar" />
+	</path>
+
+	<target name="init" depends="clean">
+		<echo message="basedir = ${basedir}" />
+	</target>
+
+	<target name="compile" depends="init">
+		<mkdir dir="${build.dir}/classes" />
+
+		<javac destdir="${build.dir}/classes" debug="on" fork="true" taskname="${JAVAC_VERSION}">
+			<src path="${project.dir}/src/" />
+			<classpath>
+				<path refid="full.class.path" />
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="build-jar" depends="compile">
+		<mkdir dir="${build.dir}/lib" />
+		<jar jarfile="${build.dir}/lib/${project.name}.jar">
+			<fileset dir="${build.dir}/classes" />
+			<fileset dir="${config.dir}/template" />
+			<manifest>
+				<attribute name="Built-By" value="Stock Analyzis,  AMUMTrade 1.1" />
+			</manifest>
+		</jar>
+	</target>
+</project>
