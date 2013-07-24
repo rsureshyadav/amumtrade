@@ -31,10 +31,10 @@ public class AMUMStockDAO implements Runnable {
 		      connection = (HttpURLConnection)url.openConnection();
 		      connection.setReadTimeout(5000);
 		      
-		      
 		      InputStream is = connection.getInputStream();
 		      BufferedReader br = new BufferedReader(new InputStreamReader(is));
 		      String line;
+		      
 		      while((line = br.readLine()) != null) {
 		        findDilutedEPS(line);
 				findOperatingMargin(line);
