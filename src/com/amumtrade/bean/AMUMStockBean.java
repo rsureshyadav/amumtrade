@@ -2,106 +2,81 @@ package com.amumtrade.bean;
 
 
 public class AMUMStockBean {
-	private String symbol;
-	private String name;
-	private double lastSale;
-	private String marketCap;
-	private String sector;
+	private String scripCode;
+	private String scripId;
+	private String scripName;
+	private String status;
+	private String group;
+	private String faceValue;
+	private String ISINNo;
+	private String lastScale;
+	
+	
+	public String getLastScale() {
+		return lastScale;
+	}
+	public void setLastScale(String lastScale) {
+		this.lastScale = lastScale;
+	}
+	public String getISINNo() {
+		return ISINNo;
+	}
+	public void setISINNo(String iSINNo) {
+		ISINNo = iSINNo;
+	}
 	private String industry;
-	private String summaryQuote;
-	private String eps;
-	private String operatingMargin;
-	private String returnOnAssets;
-	private String returnOnEquity; 
-	private String revenuePerShare; 
-	private String dilutedEPS;
+	private String instrument;
 	
-	private int totalCount;
+	public String getScripCode() {
+		return scripCode;
+	}
+	public void setScripCode(String scripCode) {
+		this.scripCode = scripCode;
+	}
+	public String getScripId() {
+		return scripId;
+	}
+	public void setScripId(String scripId) {
+		this.scripId = scripId;
+	}
+	public String getScripName() {
+		return scripName;
+	}
+	public void setScripName(String scripName) {
+		this.scripName = scripName;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public String getGroup() {
+		return group;
+	}
+	public void setGroup(String group) {
+		this.group = group;
+	}
+	public String getFaceValue() {
+		return faceValue;
+	}
+	public void setFaceValue(String faceValue) {
+		this.faceValue = faceValue;
+	}
 	
-	public String getSymbol() {
-		return symbol;
-	}
-	public void setSymbol(String symbol) {
-		this.symbol = symbol;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public double getLastSale() {
-		return lastSale;
-	}
-	public void setLastSale(double lastSale) {
-		this.lastSale = lastSale;
-	}
-	public String getMarketCap() {
-		return marketCap;
-	}
-	public void setMarketCap(String marketCap) {
-		this.marketCap = marketCap;
-	}
-	public String getSector() {
-		return sector;
-	}
-	public void setSector(String sector) {
-		this.sector = sector;
-	}
 	public String getIndustry() {
 		return industry;
 	}
 	public void setIndustry(String industry) {
 		this.industry = industry;
 	}
-	public String getSummaryQuote() {
-		return summaryQuote;
+	public String getInstrument() {
+		return instrument;
 	}
-	public void setSummaryQuote(String summaryQuote) {
-		this.summaryQuote = summaryQuote;
+	public void setInstrument(String instrument) {
+		this.instrument = instrument;
 	}
-	public String getEps() {
-		return eps;
-	}
-	public void setEps(String eps) {
-		this.eps = eps;
-	}
-	public String getOperatingMargin() {
-		return operatingMargin;
-	}
-	public void setOperatingMargin(String operatingMargin) {
-		this.operatingMargin = operatingMargin;
-	}
-	public String getReturnOnAssets() {
-		return returnOnAssets;
-	}
-	public void setReturnOnAssets(String returnOnAssets) {
-		this.returnOnAssets = returnOnAssets;
-	}
-	public String getReturnOnEquity() {
-		return returnOnEquity;
-	}
-	public void setReturnOnEquity(String returnOnEquity) {
-		this.returnOnEquity = returnOnEquity;
-	}
-	public String getRevenuePerShare() {
-		return revenuePerShare;
-	}
-	public void setRevenuePerShare(String revenuePerShare) {
-		this.revenuePerShare = revenuePerShare;
-	}
-	public int getTotalCount() {
-		return totalCount;
-	}
-	public void setTotalCount(int totalCount) {
-		this.totalCount = totalCount;
-	}
-	public String getDilutedEPS() {
-		return dilutedEPS;
-	}
-	public void setDilutedEPS(String dilutedEPS) {
-		this.dilutedEPS = dilutedEPS;
-	}
-
 	
+	
+
 }

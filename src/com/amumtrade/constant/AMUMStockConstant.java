@@ -7,21 +7,33 @@ import java.util.Calendar;
 
 public class AMUMStockConstant {
 
-	public static final String AMEX_INPUT_PATH="config/input/amex_list_";
-	public static final String NASDAQ_INPUT_PATH="config/input/nasdaq_list_";
-	public static final String NYSE_INPUT_PATH="config/input/nyse_list_";
+	public static final String BSE_A_INPUT_PATH="config/input/BSE_A.csv";
+	public static final String BSE_B_INPUT_PATH="config/input/BSE_B.csv";
+	public static final String BSE_E_INPUT_PATH="config/input/BSE_E.csv";
+	public static final String BSE_F_INPUT_PATH="config/input/BSE_F.csv";
+	public static final String BSE_I_INPUT_PATH="config/input/BSE_I.csv";
+	public static final String BSE_M_INPUT_PATH="config/input/BSE_M.csv";
+	public static final String BSE_MT_INPUT_PATH="config/input/BSE_MT.csv";
+	public static final String BSE_T_INPUT_PATH="config/input/BSE_T.csv";
+	public static final String BSE_Z_INPUT_PATH="config/input/BSE_Z.csv";
 
-	public static final String AMEX_NAME="AMEX";
+	
+
+	public static final String BSE_NAME="BSE";
 	public static final String NASDAQ_NAME="NASDAQ";
 	public static final String NYSE_NAME="NYSE";
 
-	public static final String AMEX_OUTPUT_PATH="config/output/@";
+	public static final String BSE_OUTPUT_PATH="config/output/";
 	public static final String NASDAQ_OUTPUT_PATH="config/output/@";
 	public static final String NYSE_OUTPUT_PATH="config/output/@";
 	public static final DateFormat dateFormat = new SimpleDateFormat("dd_MM_yyyy_HH_mm");
 	public static final Calendar cal = Calendar.getInstance();
 	
-	public static final String AMEX_URL="http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=amex&render=download";
+	// http://in.finance.yahoo.com/gainers?e=bo
+	//http://in.finance.yahoo.com/losers?e=bo
+	//http://download.finance.yahoo.com/d/quotes.csv?s=BOBSL.BO,JAIPAN.BO,SANGHIIN.BO&f=snl1d1t1ohgdrx
+	
+	public static final String BSE_URL="http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=amex&render=download";
 	public static final String NASDAQ_URL="http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=nasdaq&render=download";
 	public static final String NYSE_URL="http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=nyse&render=download";
 

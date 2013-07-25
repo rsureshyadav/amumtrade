@@ -1,67 +1,145 @@
 package com.amumtrade.helper;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Properties;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.Multipart;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
 
 import com.amumtrade.bean.AMUMStockBean;
 import com.amumtrade.constant.AMUMStockConstant;
-import com.amumtrade.dao.AMUMStockDAO;
 
 public class AMUMStockRouter {
 
     private List<AMUMStockBean> beanList = new ArrayList<AMUMStockBean>();
-    private String inputPath;
-    private String outputPath;
+
     private double startRange;
     private double endRange;
-    private String exchName;
     private String line = null;
     private List<String> lineItem  = null;
-    private String path = null;
+    private String outputPath;
     
-	public AMUMStockRouter(double startRange, double endRange, String inputPath, String outputPath, String exchName) {
+	public AMUMStockRouter(double startRange, double endRange) {
 	this.startRange = startRange;
 	this.endRange = endRange;
-	this.inputPath = inputPath;
-	this.outputPath = outputPath;
-	this.exchName = exchName;
 	}
 
 	public void digest() throws IOException {
 		FileWriter fwo = null;
-		BufferedWriter bwObj = null;
+	//	BufferedWriter bwObj = null;
 		try {
-			path = outputPath+"_"+AMUMStockConstant.dateFormat.format(AMUMStockConstant.cal.getTime())+".csv";
-			fwo = new FileWriter( path, false );
-			bwObj = new BufferedWriter( fwo );
-			bwObj.write(getHeader());
-			bwObj.newLine();
-			System.out.println(getHeader());
-			beanList =	readNASDAQFile();
+			//outputPath = AMUMStockConstant.BSE_OUTPUT_PATH+"_"+AMUMStockConstant.dateFormat.format(AMUMStockConstant.cal.getTime())+".csv";
+			//fwo = new FileWriter( outputPath, false );
+			//bwObj = new BufferedWriter( fwo );
+			
+	/*		beanList =	readBSEFile();
 			System.out.println(beanList.size());
-			ExecutorService executor = Executors.newFixedThreadPool(10);
-			int totalCount=0;
-					
 			for (AMUMStockBean stockBean : beanList) {
+				System.out.println(stockBean.getScripCode()+" >> "+ stockBean.getScripId()+" >> "+
+				stockBean.getScripName()+" >> "+
+				stockBean.getStatus()+" >> "+
+				stockBean.getGroup()+" >> "+
+				stockBean.getFaceValue()+" >> "+
+				stockBean.getISINNo()+" >> "+
+				stockBean.getIndustry()+" >> "+
+				stockBean.getInstrument());
+			}
+	*/		//for testing http request
+			List<String> httpList = new ArrayList<String>();
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=A");
+/*			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=B");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=C");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=D");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=E");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=F");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=G");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=H");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=I");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=J");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=K");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=L");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=M");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=N");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=O");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=P");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=Q");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=R");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=S");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=T");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=U");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=V");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=W");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=X");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=Y");
+			httpList.add("http://msn.bankbazaar.com/welcome/stocksStartingWith?q=Z");*/
+			
+			URL url;
+		    HttpURLConnection connection = null;
+		    int count =0;
+			for(String httpUrl : httpList){
+					++count;
+					 url = new URL(httpUrl);
+				      connection = (HttpURLConnection)url.openConnection();
+				      connection.setReadTimeout(5000);
+				      
+				      InputStream is = connection.getInputStream();
+				      BufferedReader br = new BufferedReader(new InputStreamReader(is));
+				      String line;
+				     StringBuffer buffer = new StringBuffer();
+				      boolean isCapture = false;
+				      boolean isExit = false;
+				  //    String newLine = null;
+				      while((line = br.readLine()) != null) {
+				    	  if(line.contains("<tbody>")){
+				    		  buffer.append(line+"\n");
+				    		  isCapture=true;
+				    	  }else if(isCapture){
+				    		  buffer.append(line+"\n");
+				    		  if(line.contains("</tbody>")){
+				    			  isExit = true;
+				    		  }
+				    	  }else if(isExit){
+				    		  break;
+				    	  }
+				    	/*  if(line.contains("<td class=\"first\">")){
+				    		  line =  line.replace("<td class=\"first\">","");
+				    		  line = line.substring(line.indexOf("\">"), line.lastIndexOf("</a>"));
+				    		  line = line.replace("\">", "");
+				    	      line = line.replace(",", "");
+				    		  line = line.replace(".", "");
+				    	  }*/
+				    	  
+				    	  
+				    	  
+				    	  
+				    	  /*else if(isCapture){
+				    		  //buffer.append(line+"\n");
+				    		  if(line.contains("</tbody>")){
+				    			  isCapture = false;
+				    			  isExit = true;
+				    		  }
+				    	  }else if(isExit){
+				    		  break;
+				    	  }*/
+				      }
+				     System.out.println("<><><><>>>>>>>>"+buffer.toString());
+				      
+				      System.out.println("*************************[ "+ count +" ]*****************************");
+			}
+			
+			
+			
+			
+			//ExecutorService executor = Executors.newFixedThreadPool(10);
+		//	int totalCount=0;
+					
+	/*		for (AMUMStockBean stockBean : beanList) {
 		
 				if(stockBean.getLastSale()>= startRange && stockBean.getLastSale()<= endRange
 						&& !stockBean.getSymbol().contains("/")
@@ -70,24 +148,24 @@ public class AMUMStockRouter {
 					Runnable epsWorker = new AMUMStockDAO(stockBean,bwObj);
 					executor.execute(epsWorker);	
 				}
-			}
-			executor.shutdown();
-		    while (!executor.isTerminated()) {
+			}*/
+			//executor.shutdown();
+		   // while (!executor.isTerminated()) {
 		    	 
-	        }
-	        System.out.println("\nFinished all threads");
+	      //  }
+	     //   System.out.println("\nFinished all threads");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
-			if(bwObj!=null)
-			bwObj.close();
-	        createHTML(fwo, bwObj);
+			//if(bwObj!=null)
+			//bwObj.close();
+	       // createHTML(fwo, bwObj);
 		}
 		
 	}
 
 	
-	private void createHTML(FileWriter fwo, BufferedWriter bwObj) throws IOException {
+/*	private void createHTML(FileWriter fwo, BufferedWriter bwObj) throws IOException {
 		StringBuffer buffer = new StringBuffer(); 
 		BufferedReader br = null;
 		try {
@@ -117,9 +195,9 @@ public class AMUMStockRouter {
 			}
 		}
 		
-	}
+	}*/
 
-	private void createHTMLTable(BufferedReader br, String htmlText, FileWriter fwo, BufferedWriter bwObj)throws IOException {
+	/*private void createHTMLTable(BufferedReader br, String htmlText, FileWriter fwo, BufferedWriter bwObj)throws IOException {
 		path = "config/template/amumtrade.html";
 		String outputPath = exchName+"Report.html";
 		StringBuffer buffer = new StringBuffer();
@@ -149,9 +227,9 @@ public class AMUMStockRouter {
 				bwObj.close();
 		}
 		
-	}
+	}*/
 
-	private void sendEmail(String htmlText, StringBuffer buffer) {
+	/*private void sendEmail(String htmlText, StringBuffer buffer) {
 		 String EMAIL_FROM = "admin@amumtrade.com";
 		 String EMAIL_TO = "rsureshyadav@gmail.com";
 		try {
@@ -183,9 +261,9 @@ public class AMUMStockRouter {
 			e.printStackTrace();
 		}
 		
-	}
+	}*/
 
-	private String getHeader() {
+/*	private String getHeader() {
 		return
 		AMUMStockConstant.SYMBOL + AMUMStockConstant.COMMA+
 		AMUMStockConstant.PRICE + AMUMStockConstant.COMMA+
@@ -194,13 +272,13 @@ public class AMUMStockRouter {
 		"Return On Assets" + AMUMStockConstant.COMMA+
 		"Return On Equity" + AMUMStockConstant.COMMA+
 		"Revenue Per Share";
-	}
+	}*/
 
-	private List<AMUMStockBean> readNASDAQFile() throws IOException {
+	private List<AMUMStockBean> readBSEFile() throws IOException {
 		AMUMStockBean bean;
 		BufferedReader br = null;
 		try {
-			br = new BufferedReader(new FileReader(inputPath));
+			br = new BufferedReader(new FileReader(AMUMStockConstant.BSE_A_INPUT_PATH));
 			int count = 0;
 			while ((line = br.readLine()) != null) {
 				if (count == 0) {
@@ -208,7 +286,22 @@ public class AMUMStockRouter {
 					count++;
 					continue;
 				}
+				count++;
 				bean = new AMUMStockBean();
+				lineItem = Arrays.asList(line.split("\\s*,\\s*"));
+				System.out.println("[ "+count+" ] ==> "+lineItem);
+				bean.setScripCode(lineItem.get(0));
+				bean.setScripId(lineItem.get(1));
+				bean.setScripName(lineItem.get(2));
+				bean.setStatus(lineItem.get(3));
+				bean.setGroup(lineItem.get(4));
+				bean.setFaceValue(lineItem.get(5));
+				bean.setISINNo(lineItem.get(6));
+				bean.setIndustry(lineItem.get(7));
+				bean.setInstrument(lineItem.get(8));
+				beanList.add(bean);
+				
+		/*		bean = new AMUMStockBean();
 				line = validateLine(line);
 				lineItem = Arrays.asList(line.split("\\s*,\\s*"));
 				bean.setSymbol(lineItem.get(0));
@@ -218,7 +311,7 @@ public class AMUMStockRouter {
 				bean.setSector(lineItem.get(6));
 				bean.setIndustry(lineItem.get(7));
 				bean.setSummaryQuote(lineItem.get(8));
-				beanList.add(bean);
+				beanList.add(bean);*/
 			}
 			
 		} catch (Exception e) {
@@ -232,7 +325,7 @@ public class AMUMStockRouter {
 		return beanList;
 	}
 	
-	private String validateLine(String line) {
+/*	private String validateLine(String line) {
 		StringBuffer newLine = new StringBuffer();
 		for (String s : line.split("\",")) {
 			s = s.replace(",", "");
@@ -241,8 +334,8 @@ public class AMUMStockRouter {
 		}
 		return newLine.toString();
 	}
-	
-	private double validateLastSale(String lastSale) {
+	*/
+/*	private double validateLastSale(String lastSale) {
 		double value;
 		if (lastSale.equalsIgnoreCase("n/a")) {
 			value = 0;
@@ -250,7 +343,7 @@ public class AMUMStockRouter {
 			value = Double.valueOf(lastSale);
 		}
 		return value;
-	}
+	}*/
 	
 	
 }

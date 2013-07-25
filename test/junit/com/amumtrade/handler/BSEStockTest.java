@@ -7,13 +7,13 @@ import org.junit.Test;
 
 import com.amumtrade.constant.AMUMStockConstant;
 
-public class AmexStockTest {
+public class BSEStockTest {
 @Test
 public void fetchNasdaqStock() throws Exception{
 	double startRange = 2.9;
 	double endRange = 3;
-	AMUMStockHandler handler = new AMUMStockHandler(AMUMStockConstant.AMEX_NAME);
-	handler.execute(startRange, endRange, AMUMStockConstant.AMEX_URL,AMUMStockConstant.AMEX_INPUT_PATH+getTodayDate()+".csv", AMUMStockConstant.AMEX_OUTPUT_PATH);
+	AMUMBSEStockHandler handler = new AMUMBSEStockHandler(AMUMStockConstant.BSE_NAME);
+	handler.execute(startRange, endRange);
 	}
 
 
