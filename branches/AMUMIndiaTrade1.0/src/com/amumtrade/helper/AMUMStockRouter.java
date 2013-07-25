@@ -38,13 +38,18 @@ public class AMUMStockRouter {
 		    outputPath = AMUMStockConstant.BSE_OUTPUT_PATH+"_"+AMUMStockConstant.dateFormat.format(AMUMStockConstant.cal.getTime())+".csv";
 			fwo = new FileWriter( outputPath, false );
 			bwObj = new BufferedWriter( fwo );
-			bwObj.write("Script Name,Last Scale Price");
+			bwObj.write("Stock Name,Last Scale Price, Stock URL");
 
 			ExecutorService executor = Executors.newFixedThreadPool(10);
+			int tmpCount =0;
 			for( alphabets = 'A' ; alphabets <= 'Z' ; alphabets++ ){
-		         String httpUrl = AMUMStockConstant.MSN_URL.replace("@", String.valueOf(alphabets));
-		         Runnable worker = new AMUMStockDAO(httpUrl, bwObj);
-				 executor.execute(worker);	
+				tmpCount++;
+				if(tmpCount==1){
+					
+					String httpUrl = AMUMStockConstant.MSN_URL.replace("@", String.valueOf(alphabets));
+					Runnable worker = new AMUMStockDAO(httpUrl, bwObj);
+					executor.execute(worker);	
+				}
 		   }
 			executor.shutdown();
 			while (!executor.isTerminated()) {
