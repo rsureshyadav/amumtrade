@@ -49,17 +49,14 @@ public class AMUMStockDAO implements Runnable {
 						line = line.substring(line.indexOf("\">"), line.lastIndexOf("</a>"));
 						line = line.replace("\">", "");
 						stockName = line;
-						System.out.println(line);
 					}
 					if (count == 3) {
 						line = line.replace("<td align=\"right\">", "");
 						line = line.replace("</td>", "");
 						lastScalePrice = line.replace(",", "");
-						System.out.println(lastScalePrice);
-
 						bwObj.write("\n");
 						bwObj.write(stockName+","+lastScalePrice.trim()+","+stockUrl);
-						//System.out.println(stockName+","+lastScalePrice.trim()+","+stockUrl);
+						System.out.println(stockName+","+lastScalePrice.trim()+","+stockUrl);
 					}
 					count++;
 					if (line.contains("</tbody>")) {
