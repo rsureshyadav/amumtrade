@@ -97,9 +97,23 @@ public class AMUMStockRouter {
 				  //    String newLine = null;
 				      while((line = br.readLine()) != null) {
 				    	  if(line.contains("<tbody>")){
-				    		  buffer.append(line+"\n");
 				    		  isCapture=true;
 				    	  }else if(isCapture){
+				    		  if(line.contains("<td class=\"first\">")){
+				    			  count=1;
+					    		  line =  line.replace("<td class=\"first\">","");
+					    		  line = line.substring(line.indexOf("\">"), line.lastIndexOf("</a>"));
+					    		  line = line.replace("\">", "");
+					    	      line = line.replace(",", "");
+					    		  line = line.replace(".", "");
+					    		  System.out.println(">>>>>>>>>>>>>>>"+line);
+					    		  
+					    	  }
+				    		  if (count == 5){
+				    			  System.out.println(">>>>>>>>>>>>>>>>>"+line);
+				    			  count =0;
+				    		  }
+				    		  count++;
 				    		  buffer.append(line+"\n");
 				    		  if(line.contains("</tbody>")){
 				    			  isExit = true;
