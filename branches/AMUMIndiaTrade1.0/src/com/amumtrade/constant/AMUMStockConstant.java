@@ -34,7 +34,7 @@ public class AMUMStockConstant {
 	//http://download.finance.yahoo.com/d/quotes.csv?s=BOBSL.BO,JAIPAN.BO,SANGHIIN.BO&f=snl1d1t1ohgdrx
 	
 	public static final String BSE_URL="http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=amex&render=download";
-	public static final String NASDAQ_URL="http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=nasdaq&render=download";
+	public static final String MSN_URL="http://msn.bankbazaar.com/welcome/stocksStartingWith?q=@";
 	public static final String NYSE_URL="http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=nyse&render=download";
 
 	public static final String YAHOO_URL="http://finance.yahoo.com/d/quotes.csv?s=";
