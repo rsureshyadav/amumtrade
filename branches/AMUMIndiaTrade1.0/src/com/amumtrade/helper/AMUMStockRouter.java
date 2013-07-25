@@ -41,22 +41,22 @@ public class AMUMStockRouter {
 			bwObj.write("Stock Name,Last Scale Price, Stock URL");
 
 			ExecutorService executor = Executors.newFixedThreadPool(10);
-			int tmpCount =0;
-			for( alphabets = 'A' ; alphabets <= 'Z' ; alphabets++ ){
-				tmpCount++;
-				if(tmpCount==1){
+		//	int tmpCount =0;
+			for( alphabets = 'A' ; alphabets <= 'T' ; alphabets++ ){
+			//	tmpCount++;
+				//if(tmpCount==1){
 					
 					String httpUrl = AMUMStockConstant.MSN_URL.replace("@", String.valueOf(alphabets));
 					Runnable worker = new AMUMStockDAO(httpUrl, bwObj);
 					executor.execute(worker);	
-				}
+			//	}
 		   }
 			executor.shutdown();
 			while (!executor.isTerminated()) {
 		    	 
 		    }
 			System.out.println("\nFinished all threads");
-			fileCompare();
+			//fileCompare();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
