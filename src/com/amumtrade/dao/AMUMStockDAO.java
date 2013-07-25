@@ -23,8 +23,9 @@ public class AMUMStockDAO implements Runnable {
 	public void run() {
 		URL url;
 	    HttpURLConnection connection = null;  
-	    String stripName = null;
+	    String stockName = null;
 	    String lastScalePrice = null;
+	    String stockUrl = null;
 		try {
 			 url = new URL(targetURL);
 		      connection = (HttpURLConnection)url.openConnection();
@@ -42,18 +43,19 @@ public class AMUMStockDAO implements Runnable {
 					if (line.contains("<td class=\"first\">")) {
 						count = 1;
 						line = line.replace("<td class=\"first\">", "");
-						line = line.substring(line.indexOf("\">"), line
-								.lastIndexOf("</a>"));
+						stockUrl = line.substring(line.indexOf("<a href=\""), line.lastIndexOf("\">"));
+						stockUrl = stockUrl.replace("<a href=\"", "");
+						line = line.substring(line.indexOf("\">"), line.lastIndexOf("</a>"));
 						line = line.replace("\">", "");
-						stripName = line;
+						stockName = line;
 					}
 					if (count == 3) {
 						line = line.replace("<td align=\"right\">", "");
 						line = line.replace("</td>", "");
 						lastScalePrice = line;
-						System.out.println(stripName+","+lastScalePrice.trim());
 						bwObj.write("\n");
-						bwObj.write(stripName+","+lastScalePrice.trim());
+						bwObj.write(stockName+","+lastScalePrice.trim()+","+stockUrl);
+						System.out.println(stockName+","+lastScalePrice.trim()+","+stockUrl);
 					}
 					count++;
 					if (line.contains("</tbody>")) {
