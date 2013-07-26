@@ -2,81 +2,51 @@ package com.amumtrade.bean;
 
 
 public class AMUMStockBean {
-	private String scripCode;
-	private String scripId;
-	private String scripName;
-	private String status;
-	private String group;
-	private String faceValue;
-	private String ISINNo;
-	private String lastScale;
+	private String stockName;
+	private double lastScalePrice;;
+	private String stockURL;
+	private String PERatio;
+	private String EPS;
+	private String revenue; 
 	
-	
-	public String getLastScale() {
-		return lastScale;
+	public String getStockName() {
+		return stockName;
 	}
-	public void setLastScale(String lastScale) {
-		this.lastScale = lastScale;
+	public void setStockName(String stockName) {
+		this.stockName = stockName;
 	}
-	public String getISINNo() {
-		return ISINNo;
-	}
-	public void setISINNo(String iSINNo) {
-		ISINNo = iSINNo;
-	}
-	private String industry;
-	private String instrument;
-	
-	public String getScripCode() {
-		return scripCode;
-	}
-	public void setScripCode(String scripCode) {
-		this.scripCode = scripCode;
-	}
-	public String getScripId() {
-		return scripId;
-	}
-	public void setScripId(String scripId) {
-		this.scripId = scripId;
-	}
-	public String getScripName() {
-		return scripName;
-	}
-	public void setScripName(String scripName) {
-		this.scripName = scripName;
-	}
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}
-	public String getGroup() {
-		return group;
-	}
-	public void setGroup(String group) {
-		this.group = group;
-	}
-	public String getFaceValue() {
-		return faceValue;
-	}
-	public void setFaceValue(String faceValue) {
-		this.faceValue = faceValue;
-	}
-	
-	public String getIndustry() {
-		return industry;
-	}
-	public void setIndustry(String industry) {
-		this.industry = industry;
-	}
-	public String getInstrument() {
-		return instrument;
-	}
-	public void setInstrument(String instrument) {
-		this.instrument = instrument;
-	}
-	
-	
 
+	public double getLastScalePrice() {
+		return lastScalePrice;
+	}
+	public void setLastScalePrice(double lastScalePrice) {
+		this.lastScalePrice = lastScalePrice;
+	}
+	public String getStockURL() {
+		return stockURL;
+	}
+	public void setStockURL(String stockURL) {
+		this.stockURL = stockURL;
+	}
+	public String getPERatio() {
+		return PERatio;
+	}
+	public void setPERatio(String ratio) {
+		PERatio = ratio;
+	}
+	public String getEPS() {
+		return EPS;
+	}
+	public void setEPS(String eps) {
+		EPS = eps;
+	}
+	public String getRevenue() {
+		return revenue;
+	}
+	public void setRevenue(String revenue) {
+		this.revenue = revenue;
+	}
+
+	
+	
 }
