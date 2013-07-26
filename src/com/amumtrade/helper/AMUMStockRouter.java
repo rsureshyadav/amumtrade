@@ -13,7 +13,8 @@ import java.util.concurrent.Executors;
 
 import com.amumtrade.bean.AMUMStockBean;
 import com.amumtrade.constant.AMUMStockConstant;
-import com.amumtrade.dao.AMUMStockDAO;
+import com.amumtrade.dao.AMUMStockFilterDAO;
+import com.amumtrade.dao.AMUMStockMetricsDAO;
 
 public class AMUMStockRouter {
 
@@ -24,39 +25,35 @@ public class AMUMStockRouter {
     private String line = null;
     private List<String> lineItem  = null;
     private String outputPath;
-    
+    private FileWriter fwo = null;
+    private BufferedWriter bwObj = null;
+	
 	public AMUMStockRouter(double startRange, double endRange) {
 	this.startRange = startRange;
 	this.endRange = endRange;
 	}
 
 	public void digest() throws IOException {
-		FileWriter fwo = null;
-		BufferedWriter bwObj = null;
-	      char alphabets;
+		
+	    char alphabets;
 		try {
-		    outputPath = AMUMStockConstant.BSE_OUTPUT_PATH+"_"+AMUMStockConstant.dateFormat.format(AMUMStockConstant.cal.getTime())+".csv";
-			fwo = new FileWriter( outputPath, false );
-			bwObj = new BufferedWriter( fwo );
-			bwObj.write("Stock Name,Last Scale Price, Stock URL");
-
+		    outputPath = AMUMStockConstant.BSE_OUTPUT_PATH+"BSE_"+AMUMStockConstant.dateFormat.format(AMUMStockConstant.cal.getTime())+".csv";
+			writeFile();
 			ExecutorService executor = Executors.newFixedThreadPool(10);
-		//	int tmpCount =0;
-			for( alphabets = 'A' ; alphabets <= 'T' ; alphabets++ ){
-			//	tmpCount++;
-				//if(tmpCount==1){
-					
+			for( alphabets = 'A' ; alphabets <= 'Z' ; alphabets++ ){
 					String httpUrl = AMUMStockConstant.MSN_URL.replace("@", String.valueOf(alphabets));
-					Runnable worker = new AMUMStockDAO(httpUrl, bwObj);
+					Runnable worker = new AMUMStockFilterDAO(httpUrl, bwObj);
 					executor.execute(worker);	
-			//	}
 		   }
 			executor.shutdown();
 			while (!executor.isTerminated()) {
 		    	 
 		    }
 			System.out.println("\nFinished all threads");
-			//fileCompare();
+			bwObj.close();
+			//filterFile();
+			List<AMUMStockBean> filterList = filterFile();
+			runKeyMetric(filterList);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
@@ -66,11 +63,74 @@ public class AMUMStockRouter {
 		
 	}
 
-	private List<AMUMStockBean> fileCompare() throws IOException {
+	private void runKeyMetric(List<AMUMStockBean> filterList) {
+	
+			int tmpCount =0;
+
+		try {
+			ExecutorService executor = Executors.newFixedThreadPool(10);
+			for(AMUMStockBean bean : filterList){
+				System.out.println(tmpCount+">>"+bean.getStockName());
+				Runnable worker = new AMUMStockMetricsDAO(bean);
+				executor.execute(worker);
+				tmpCount++;
+			}
+				
+			executor.shutdown();
+			while (!executor.isTerminated()) {
+		    	 
+		    }
+			System.out.println("\nFinished runKeyMetric threads");
+			bwObj.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
+
+	private List<AMUMStockBean> filterFile() {
+		List<AMUMStockBean> filterList = new ArrayList<AMUMStockBean>();
+		try {
+			List<AMUMStockBean> beanInputList = readFile();
+			AMUMStockBean filterBean = null;
+			writeFile();
+			int count =0;
+			for(AMUMStockBean bean : beanInputList){
+				if(bean.getLastScalePrice() >= startRange && bean.getLastScalePrice() <= endRange){
+					filterBean = new AMUMStockBean();
+					count++;
+					bwObj.write("\n");
+					bwObj.write(bean.getStockName()+","+ bean.getLastScalePrice()+","+ bean.getStockURL());
+					
+					filterBean.setStockName(bean.getStockName());
+					filterBean.setLastScalePrice(bean.getLastScalePrice());
+					filterBean.setStockURL(bean.getStockURL());
+					filterList.add(filterBean);
+					//System.out.println("[ "+count+" ]"+bean.getStockName()+","+ bean.getLastScalePrice()+","+ bean.getStockURL());
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return filterList;
+	}
+
+	private void writeFile() throws IOException{
+		try {
+			fwo = new FileWriter( outputPath, false );
+			bwObj = new BufferedWriter( fwo );
+			bwObj.write("Stock Name,Last Scale Price, Stock URL");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+	private List<AMUMStockBean> readFile() throws IOException {
 		AMUMStockBean bean;
 		BufferedReader br = null;
 		try {
-			br = new BufferedReader(new FileReader(AMUMStockConstant.BSE_A_INPUT_PATH));
+			br = new BufferedReader(new FileReader(outputPath));
 			int count = 0;
 			while ((line = br.readLine()) != null) {
 				if (count == 0) {
@@ -81,16 +141,15 @@ public class AMUMStockRouter {
 				count++;
 				bean = new AMUMStockBean();
 				lineItem = Arrays.asList(line.split("\\s*,\\s*"));
-				System.out.println("[ "+count+" ] ==> "+lineItem);
-				bean.setScripCode(lineItem.get(0));
-				bean.setScripId(lineItem.get(1));
-				bean.setScripName(lineItem.get(2));
-				bean.setStatus(lineItem.get(3));
-				bean.setGroup(lineItem.get(4));
-				bean.setFaceValue(lineItem.get(5));
-				bean.setISINNo(lineItem.get(6));
-				bean.setIndustry(lineItem.get(7));
-				bean.setInstrument(lineItem.get(8));
+				bean.setStockName(lineItem.get(0));
+				try {
+					bean.setLastScalePrice(Double.valueOf(lineItem.get(1)));
+				} catch (Exception e) {
+				//	System.out.println("Error in readFile(),"+bean.getStockName());
+					throw new Exception("Error in readFile(),"+bean.getStockName());
+					//e.printStackTrace();
+				}
+				bean.setStockURL(lineItem.get(2));
 				beanList.add(bean);
 			}
 			
