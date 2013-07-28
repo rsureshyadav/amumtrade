@@ -2,18 +2,25 @@ package com.amumtrade.helper;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
+import javax.activation.FileDataSource;
+import javax.mail.BodyPart;
 import javax.mail.Message;
-import javax.mail.MessagingException;
 import javax.mail.Multipart;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
@@ -21,10 +28,18 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 
 import com.amumtrade.bean.AMUMStockBean;
 import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.dao.AMUMStockDAO;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.Phrase;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
 
 public class AMUMStockRouter {
 
@@ -37,7 +52,10 @@ public class AMUMStockRouter {
     private String line = null;
     private List<String> lineItem  = null;
     private String path = null;
-    
+    private FileWriter fwo = null;
+    private BufferedWriter bwObj = null;
+	private List<String> pdfList  = null;
+	private String pdfPath = null;
 	public AMUMStockRouter(double startRange, double endRange, String inputPath, String outputPath, String exchName) {
 	this.startRange = startRange;
 	this.endRange = endRange;
@@ -47,8 +65,7 @@ public class AMUMStockRouter {
 	}
 
 	public void digest() throws IOException {
-		FileWriter fwo = null;
-		BufferedWriter bwObj = null;
+		
 		try {
 			path = outputPath+"_"+AMUMStockConstant.dateFormat.format(AMUMStockConstant.cal.getTime())+".csv";
 			fwo = new FileWriter( path, false );
@@ -76,23 +93,25 @@ public class AMUMStockRouter {
 		    	 
 	        }
 	        System.out.println("\nFinished all threads");
+	        bwObj.close();
+	        createHTMLTag(fwo);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
 			if(bwObj!=null)
 			bwObj.close();
-	        createHTML(fwo, bwObj);
+	       // createHTML(fwo, bwObj);
 		}
 		
 	}
 
 	
-	private void createHTML(FileWriter fwo, BufferedWriter bwObj) throws IOException {
+	private void createHTMLTag(FileWriter fwo) throws IOException {
 		StringBuffer buffer = new StringBuffer(); 
 		BufferedReader br = null;
 		try {
 			br = new BufferedReader(new FileReader(path));
-	
+			pdfList = new ArrayList<String>();
 			String tableHeader = getHeader();
 			tableHeader = tableHeader.replace(",", "</td><td>");
 			tableHeader = "<tr><td>"+tableHeader+"</td></tr>";
@@ -103,12 +122,14 @@ public class AMUMStockRouter {
 					count++;
 					continue;
 				}
+				
 			String tableBody = line;
+			pdfList.addAll(  Arrays.asList(line.split("\\s*,\\s*")));
 			tableBody = tableBody.replace(",", "</td><td>");
 			tableBody = "<tr><td>"+tableBody+"</td></tr>";
 			buffer.append(tableBody);
 			}
-			createHTMLTable(br, buffer.toString(),  fwo,  bwObj);
+			createHTMLTable(br, buffer.toString());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
@@ -119,15 +140,16 @@ public class AMUMStockRouter {
 		
 	}
 
-	private void createHTMLTable(BufferedReader br, String htmlText, FileWriter fwo, BufferedWriter bwObj)throws IOException {
-		path = "config/template/amumtrade.html";
-		String outputPath = exchName+"Report.html";
+	private void createHTMLTable(BufferedReader br, String htmlText)throws IOException {
+
+		String templatePath = "config/template/amumtrade.html";
+		String outputPath = "config/output/html/"+exchName+"Report.html";
 		StringBuffer buffer = new StringBuffer();
 		try {
 			fwo = new FileWriter( outputPath, false );
 			bwObj = new BufferedWriter( fwo );
 			
-			br = new BufferedReader(new FileReader(path));
+			br = new BufferedReader(new FileReader(templatePath));
 			while ((line = br.readLine()) != null) {
 				if(line.contains("@AMUMTradeStockName")){
 					line = line.replace("@AMUMTradeStockName", exchName+" Stock Exchange Analysis Report");
@@ -141,7 +163,10 @@ public class AMUMStockRouter {
 					buffer.append(line);
 				}
 			}
-			sendEmail(htmlText, buffer);
+			//htmlToPdfFile(htmlText);
+			createSecurePDF(buffer.toString());
+			sendEmail(htmlText);
+			createQRCode();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
@@ -151,7 +176,81 @@ public class AMUMStockRouter {
 		
 	}
 
-	private void sendEmail(String htmlText, StringBuffer buffer) {
+
+	private void createQRCode() {
+		
+	}
+
+	private void createSecurePDF(String metricData) {
+		 pdfPath = "config/output/html/amumtrade.pdf";
+                	  
+			try {
+				OutputStream file = new FileOutputStream(new File(pdfPath));
+				 Document document = new Document();
+		         PdfWriter.getInstance(document, file);
+		         PdfWriter writer=PdfWriter.getInstance(document,new FileOutputStream(path));
+		         writer.setEncryption(PdfWriter.STRENGTH128BITS, "Hello", "World", PdfWriter.AllowCopy | PdfWriter.AllowPrinting);
+		         document.open();
+		            document.add(new Paragraph("AMUMTrade "+exchName+" stock metric!!!"));
+		            document.add(new Paragraph(new Date().toString()));
+		            document.add(new Paragraph(""));
+		  
+		          /*  Anchor anchor = new Anchor("First Chapter", catFont);
+		            anchor.setName("First Chapter");
+
+		            Chapter catPart = new Chapter(new Paragraph(anchor), 1);
+
+		            Paragraph subPara = new Paragraph("Subcategory 1", subFont);
+		            Section subCatPart = catPart.addSection(subPara);*/
+		            PdfPTable table = new PdfPTable(7);
+
+		            PdfPCell c1 = new PdfPCell(new Phrase("Symbol"));
+		            c1.setHorizontalAlignment(Element.ALIGN_CENTER);
+		            table.addCell(c1);
+
+		            c1 = new PdfPCell(new Phrase("Last Sale Price"));
+		            c1.setHorizontalAlignment(Element.ALIGN_CENTER);
+		            table.addCell(c1);
+
+		            c1 = new PdfPCell(new Phrase("Diluted EPS"));
+		            c1.setHorizontalAlignment(Element.ALIGN_CENTER);
+		            table.addCell(c1);
+		            table.setHeaderRows(1);
+
+		            c1 = new PdfPCell(new Phrase("Operating Margin"));
+		            c1.setHorizontalAlignment(Element.ALIGN_CENTER);
+		            table.addCell(c1);
+		            table.setHeaderRows(1);
+
+		            c1 = new PdfPCell(new Phrase("Return On Assets"));
+		            c1.setHorizontalAlignment(Element.ALIGN_CENTER);
+		            table.addCell(c1);
+		            table.setHeaderRows(1);
+
+		            c1 = new PdfPCell(new Phrase("Return On Equity"));
+		            c1.setHorizontalAlignment(Element.ALIGN_CENTER);
+		            table.addCell(c1);
+		            table.setHeaderRows(1);
+
+		            c1 = new PdfPCell(new Phrase("Revenue Per Share"));
+		            c1.setHorizontalAlignment(Element.ALIGN_CENTER);
+		            table.addCell(c1);
+		            table.setHeaderRows(1);
+		   
+		            for(String value : pdfList){
+		            	table.addCell(value);
+		            }
+	             document.add(table);
+		         document.close();
+		         file.close();
+		System.out.println("PDF creation completed...");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+	private void sendEmail(String htmlText) {
 		 String EMAIL_FROM = "admin@amumtrade.com";
 		 String EMAIL_TO = "rsureshyadav@gmail.com";
 		try {
@@ -172,10 +271,35 @@ public class AMUMStockRouter {
 			message.setRecipients(Message.RecipientType.TO,
 				InternetAddress.parse(EMAIL_TO));
 			 message.setSubject("AMUMTrade "+exchName+" stock alert!!!");
-			 message.setContent(buffer.toString(),"text/html" );
+			// message.setContent(htmlText,"text/html" );
+			//Transport.send(message);
+			
+			  // Create the message part 
+	         BodyPart messageBodyPart = new MimeBodyPart();
 
- 
-			Transport.send(message);
+	         messageBodyPart.setContent(htmlText,"text/html");
+	         // Fill the message
+	         //messageBodyPart.setText("AMUMTrade "+exchName+" stock alert!!!");
+	         
+	         // Create a multipar message
+	         Multipart multipart = new MimeMultipart();
+
+	         // Set text message part
+	         multipart.addBodyPart(messageBodyPart);
+
+	         // Part two is attachment
+	         messageBodyPart = new MimeBodyPart();
+	       //  String filename = "file.txt";
+	         DataSource source = new FileDataSource(pdfPath);
+	         messageBodyPart.setDataHandler(new DataHandler(source));
+	         messageBodyPart.setFileName("amumtrade.pdf");
+	         multipart.addBodyPart(messageBodyPart);
+
+	         // Send the complete message parts
+	         message.setContent(multipart );
+
+	         // Send message
+	         Transport.send(message);
  
 			System.out.println("Email send !!!");
 			
