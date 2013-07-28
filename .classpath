@@ -17,5 +17,9 @@
 	<classpathentry kind="lib" path="lib/http/httpmime-4.2.5.jar"/>
 	<classpathentry kind="lib" path="lib/common/commons-logging.jar"/>
 	<classpathentry kind="lib" path="lib/common/log4j.jar"/>
+	<classpathentry kind="lib" path="lib/pdfwriter/bcmail-jdk16-1.46.jar"/>
+	<classpathentry kind="lib" path="lib/pdfwriter/bcprov-jdk16-1.46.jar"/>
+	<classpathentry kind="lib" path="lib/pdfwriter/bctsp-jdk16-1.46.jar"/>
+	<classpathentry kind="lib" path="lib/pdfwriter/itextpdf-5.2.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
