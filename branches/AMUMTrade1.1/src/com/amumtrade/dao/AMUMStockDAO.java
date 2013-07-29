@@ -35,6 +35,7 @@ public class AMUMStockDAO implements Runnable {
 		      
 		      while((line = br.readLine()) != null) {
 		        findDilutedEPS(line);
+		        findPERatio(line);
 				findOperatingMargin(line);
 				findReturnOnAssets(line);
 				findReturnOnEquity(line);
@@ -44,14 +45,14 @@ public class AMUMStockDAO implements Runnable {
 		      br.close();
 		      if(isValidLine(stockBean)){
 		    	  bwObj.write(stockBean.getSymbol()+","+stockBean.getLastSale()
-		    			  +","+stockBean.getDilutedEPS()+","+stockBean.getOperatingMargin()
+		    			  +","+stockBean.getDilutedEPS()+","+stockBean.getPeRatio()+","+stockBean.getOperatingMargin()
 		    			  +","+stockBean.getReturnOnAssets()+","+stockBean.getReturnOnEquity()
-		    			  +","+stockBean.getRevenuePerShare());
+		    			  +","+stockBean.getRevenuePerShare()+","+stockBean.getSector()+","+stockBean.getIndustry());
 		    	  bwObj.newLine();  
 		      }
 			
 			System.out.println("[ "+( stockBean.getTotalCount())+" ]"+stockBean.getSymbol()+","+stockBean.getLastSale()
-					+","+stockBean.getDilutedEPS()+","+stockBean.getOperatingMargin()
+					+","+stockBean.getDilutedEPS()+","+stockBean.getPeRatio()+","+stockBean.getOperatingMargin()
 					+","+stockBean.getReturnOnAssets()+","+stockBean.getReturnOnEquity()
 					+","+stockBean.getRevenuePerShare());
 			
@@ -101,6 +102,29 @@ public class AMUMStockDAO implements Runnable {
 
 	}
 
+
+	private void findPERatio(String line) {
+		try {
+
+			if (line.contains("Trailing P/E (ttm, intraday):")) {
+				line = line.substring(line.indexOf("Trailing P/E (ttm, intraday):"),
+						line.lastIndexOf("Forward P/E"));
+				line = line.replace("</td><td class=\"yfnc_tabledata1\">", "");
+				line = line.replace("Trailing P/E (ttm, intraday):", "");
+				line = line.substring(0, line.indexOf("</td>"));
+				line = line.replace(",", "");
+				//System.out.println(">>>>>>>>>>>P/ERatio>>>>>>>>>"+line);
+				stockBean.setPeRatio(line);
+			} else if (line
+					.contains("There is no Key Statistics data available")) {
+				stockBean.setPeRatio("No Data");
+			}
+		
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
 private void findRevenuePerShare(String line) {
 		try {
 			if(line.contains("Revenue Per Share (ttm):")){

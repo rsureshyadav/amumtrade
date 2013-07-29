@@ -15,9 +15,17 @@ public class AMUMStockBean {
 	private String returnOnEquity; 
 	private String revenuePerShare; 
 	private String dilutedEPS;
+	private String peRatio;
 	
 	private int totalCount;
+
 	
+	public String getPeRatio() {
+		return peRatio;
+	}
+	public void setPeRatio(String peRatio) {
+		this.peRatio = peRatio;
+	}
 	public String getSymbol() {
 		return symbol;
 	}
