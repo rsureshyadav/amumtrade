@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.math.BigDecimal;
 import java.net.URL;
 
 import sun.net.www.protocol.http.HttpURLConnection;
@@ -79,9 +80,7 @@ public class AMUMStockMetricsDAO implements Runnable {
 				}
 			
 			}
-			bwObj.write("\n");
-			bwObj.write(bean.getStockName()+","+bean.getLastScalePrice()+","+bean.getPERatio()+","+bean.getEPS()+","+bean.getRevenue());
-			System.out.println(bean.getStockName()+","+bean.getLastScalePrice()+","+bean.getPERatio()+","+bean.getEPS()+","+bean.getRevenue());
+			checkPEValidation(bwObj);
 			br.close();
 			
 		} catch (Exception e) {
@@ -94,6 +93,27 @@ public class AMUMStockMetricsDAO implements Runnable {
 		    }
 		
 	
+		
+	}
+
+	private void checkPEValidation(BufferedWriter bwObj) {
+		try {
+			if(!bean.getPERatio().contains("-") && !bean.getPERatio().contains("0") 
+					&& !bean.getEPS().contains("-") && !bean.getEPS().contains("0") ){
+				double peratio = Double.valueOf(bean.getPERatio());
+				double sharePrice = Double.valueOf(bean.getLastScalePrice());
+				double amumtradeRate = (peratio * sharePrice * 100);
+				if(peratio >= 10){
+					bean.setAmumtradePercent(String.valueOf(amumtradeRate));
+					bwObj.write("\n");
+					bwObj.write(bean.getStockName()+","+bean.getLastScalePrice()+","+bean.getPERatio()+","+bean.getAmumtradePercent()+","+bean.getEPS()+","+bean.getRevenue());
+					System.out.println(bean.getStockName()+","+bean.getLastScalePrice()+","+bean.getPERatio()+","+bean.getEPS()+","+bean.getRevenue());
+				}
+				
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 	}
 
