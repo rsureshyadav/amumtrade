@@ -64,14 +64,13 @@ public class AMUMStockRouter {
 	}
 
 	private void runKeyMetric(List<AMUMStockBean> filterList) {
-	
-			int tmpCount =0;
-
+		int tmpCount =0;
 		try {
+			writeFile();
+			bwObj.write(getMetricHeader());
 			ExecutorService executor = Executors.newFixedThreadPool(10);
 			for(AMUMStockBean bean : filterList){
-				System.out.println(tmpCount+">>"+bean.getStockName());
-				Runnable worker = new AMUMStockMetricsDAO(bean);
+				Runnable worker = new AMUMStockMetricsDAO(bean, bwObj);
 				executor.execute(worker);
 				tmpCount++;
 			}
@@ -83,7 +82,7 @@ public class AMUMStockRouter {
 			System.out.println("\nFinished runKeyMetric threads");
 			bwObj.close();
 		} catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 		
 	}
@@ -106,7 +105,6 @@ public class AMUMStockRouter {
 					filterBean.setLastScalePrice(bean.getLastScalePrice());
 					filterBean.setStockURL(bean.getStockURL());
 					filterList.add(filterBean);
-					//System.out.println("[ "+count+" ]"+bean.getStockName()+","+ bean.getLastScalePrice()+","+ bean.getStockURL());
 				}
 			}
 		} catch (Exception e) {
@@ -119,7 +117,6 @@ public class AMUMStockRouter {
 		try {
 			fwo = new FileWriter( outputPath, false );
 			bwObj = new BufferedWriter( fwo );
-			bwObj.write("Stock Name,Last Scale Price, Stock URL");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -133,12 +130,12 @@ public class AMUMStockRouter {
 			br = new BufferedReader(new FileReader(outputPath));
 			int count = 0;
 			while ((line = br.readLine()) != null) {
-				if (count == 0) {
+				/*if (count == 0) {
 					// skip first line to ignore the header
 					count++;
 					continue;
 				}
-				count++;
+				count++;*/
 				bean = new AMUMStockBean();
 				lineItem = Arrays.asList(line.split("\\s*,\\s*"));
 				bean.setStockName(lineItem.get(0));
@@ -146,7 +143,7 @@ public class AMUMStockRouter {
 					bean.setLastScalePrice(Double.valueOf(lineItem.get(1)));
 				} catch (Exception e) {
 				//	System.out.println("Error in readFile(),"+bean.getStockName());
-					throw new Exception("Error in readFile(),"+bean.getStockName());
+					throw new Exception("Error in List<AMUMStockBean> readFile(),"+bean.getStockName());
 					//e.printStackTrace();
 				}
 				bean.setStockURL(lineItem.get(2));
@@ -154,7 +151,9 @@ public class AMUMStockRouter {
 			}
 			
 		} catch (Exception e) {
+			
 			System.out.println("StockRouteHelper exception occured: "+e.getMessage());
+			e.printStackTrace();
 		}finally{
 			if(br != null){
 				br.close();
@@ -164,4 +163,8 @@ public class AMUMStockRouter {
 		return beanList;
 	}
 	
+	private String getMetricHeader(){
+		return "Name,Last Scale Price, P/E Ratio, EPS, Revenue";
+	}
+
 }

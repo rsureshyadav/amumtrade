@@ -1,6 +1,7 @@
 package com.amumtrade.dao;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -12,11 +13,13 @@ import com.amumtrade.bean.AMUMStockBean;
 public class AMUMStockMetricsDAO implements Runnable {
 
 	AMUMStockBean bean;
-	String EPS = null;
+/*	String EPS = null;
 	String Revenue = null;
-	String PE_Ratio = null;
-	public AMUMStockMetricsDAO(AMUMStockBean bean) {
+	String PE_Ratio = null;*/
+	BufferedWriter bwObj;
+	public AMUMStockMetricsDAO(AMUMStockBean bean, BufferedWriter bwObj) {
 		this.bean = bean;
+		this.bwObj = bwObj;
 	}
 
 	@Override
@@ -42,7 +45,9 @@ public class AMUMStockMetricsDAO implements Runnable {
 					name ="P/E Ratio";
 				}else if(isCapture && name.equalsIgnoreCase("P/E Ratio")){
 					line = line.substring(line.indexOf("\">"),line.lastIndexOf("</td>"));
-					PE_Ratio = line.replace("\">", "");
+					line = line.replace("\">", "").trim();
+					line = line.replace(",", "");
+					bean.setPERatio(line);
 				//	System.out.println("P/E Ratio>>"+PE_Ratio);
 					isCapture = false;
 					name=null;
@@ -52,7 +57,9 @@ public class AMUMStockMetricsDAO implements Runnable {
 					name = "EPS";
 				}else if(isCapture && name.equalsIgnoreCase("EPS") ){
 					line = line.replace("<td>", "");
-					EPS = line.replace("</td>", "");
+					line = line.replace("</td>", "").trim();
+					line = line.replace(",", "");
+					bean.setEPS(line);
 				//	System.out.println("EPS>>"+EPS);
 					isCapture= false;
 					name = null;
@@ -63,15 +70,19 @@ public class AMUMStockMetricsDAO implements Runnable {
 					name = "Revenue";
 				}else if(isCapture && name.equalsIgnoreCase("Revenue") ){
 					line = line.replace("<td>", "");
-					Revenue = line.replace("</td>", "");
+					line = line.replace("</td>", "").trim();
+					line = line.replace(",", "");
+					bean.setRevenue(line);
 					//System.out.println("Revenue>>"+Revenue);
 					isCapture = false;
 					break;
 				}
 			
 			}
-			System.out.println(bean.getStockName()+", "+PE_Ratio.trim()+", "+EPS.trim()+", "+Revenue.trim());
-		      br.close();
+			bwObj.write("\n");
+			bwObj.write(bean.getStockName()+","+bean.getLastScalePrice()+","+bean.getPERatio()+","+bean.getEPS()+","+bean.getRevenue());
+			System.out.println(bean.getStockName()+","+bean.getLastScalePrice()+","+bean.getPERatio()+","+bean.getEPS()+","+bean.getRevenue());
+			br.close();
 			
 		} catch (Exception e) {
 			e.printStackTrace();

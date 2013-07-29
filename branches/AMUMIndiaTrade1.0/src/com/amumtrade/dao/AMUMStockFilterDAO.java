@@ -29,7 +29,7 @@ public class AMUMStockFilterDAO implements Runnable {
 		try {
 			 url = new URL(targetURL);
 		      connection = (HttpURLConnection)url.openConnection();
-		      connection.setReadTimeout(20000);
+		      connection.setReadTimeout(30000);
 		      
 		    InputStream is = connection.getInputStream();
 			BufferedReader br = new BufferedReader(new InputStreamReader(is));
@@ -54,9 +54,8 @@ public class AMUMStockFilterDAO implements Runnable {
 						line = line.replace("<td align=\"right\">", "");
 						line = line.replace("</td>", "");
 						lastScalePrice = line.replace(",", "");
-						bwObj.write("\n");
 						bwObj.write(stockName+","+lastScalePrice.trim()+","+stockUrl);
-						//System.out.println(stockName+","+lastScalePrice.trim()+","+stockUrl);
+						bwObj.write("\n");
 					}
 					count++;
 					if (line.contains("</tbody>")) {
