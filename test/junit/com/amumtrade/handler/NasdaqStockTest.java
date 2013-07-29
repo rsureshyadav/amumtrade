@@ -12,7 +12,7 @@ public class NasdaqStockTest{
 
 	@Test
 	public void fetchNasdaqStock() throws Exception{
-		double startRange = 1;
+		double startRange = 0.5;
 		double endRange = 2;
 		AMUMStockHandler handler = new AMUMStockHandler( AMUMStockConstant.NASDAQ_NAME);
 		handler.execute(startRange, endRange, AMUMStockConstant.NASDAQ_URL,AMUMStockConstant.NASDAQ_INPUT_PATH+getTodayDate()+".csv", AMUMStockConstant.NASDAQ_OUTPUT_PATH);

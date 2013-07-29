@@ -79,7 +79,6 @@ public class AMUMStockRouter {
 			int totalCount=0;
 					
 			for (AMUMStockBean stockBean : beanList) {
-		
 				if(stockBean.getLastSale()>= startRange && stockBean.getLastSale()<= endRange
 						&& !stockBean.getSymbol().contains("/")
 						&& !stockBean.getSymbol().contains("^")){
@@ -129,7 +128,7 @@ public class AMUMStockRouter {
 			tableBody = "<tr><td>"+tableBody+"</td></tr>";
 			buffer.append(tableBody);
 			}
-			createHTMLTable(br, buffer.toString());
+			createHTML(br, buffer.toString());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
@@ -140,7 +139,7 @@ public class AMUMStockRouter {
 		
 	}
 
-	private void createHTMLTable(BufferedReader br, String htmlText)throws IOException {
+	private void createHTML(BufferedReader br, String htmlText)throws IOException {
 
 		String templatePath = "config/template/amumtrade.html";
 		String outputPath = "config/output/html/"+exchName+"Report.html";
@@ -156,8 +155,9 @@ public class AMUMStockRouter {
 					bwObj.write(line);
 					buffer.append(line);
 				}else if(line.contains("@REPLACE_TABLE")){
-					bwObj.write(htmlText);
-					buffer.append(htmlText);
+					line = line.replace("@REPLACE_TABLE",htmlText);
+					bwObj.write(line);
+					buffer.append(line);
 				}else{
 					bwObj.write(line);
 					buffer.append(line);
@@ -165,7 +165,7 @@ public class AMUMStockRouter {
 			}
 			//htmlToPdfFile(htmlText);
 			createSecurePDF(buffer.toString());
-			sendEmail(htmlText);
+			sendEmail(buffer.toString());
 			createQRCode();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -188,7 +188,7 @@ public class AMUMStockRouter {
 				OutputStream file = new FileOutputStream(new File(pdfPath));
 				 Document document = new Document();
 		         PdfWriter.getInstance(document, file);
-		         PdfWriter writer=PdfWriter.getInstance(document,new FileOutputStream(path));
+		         PdfWriter writer=PdfWriter.getInstance(document,new FileOutputStream(pdfPath));
 		         writer.setEncryption(PdfWriter.STRENGTH128BITS, "Hello", "World", PdfWriter.AllowCopy | PdfWriter.AllowPrinting);
 		         document.open();
 		            document.add(new Paragraph("AMUMTrade "+exchName+" stock metric!!!"));
@@ -217,6 +217,11 @@ public class AMUMStockRouter {
 		            table.addCell(c1);
 		            table.setHeaderRows(1);
 
+		            c1 = new PdfPCell(new Phrase("P/E Ratio"));
+		            c1.setHorizontalAlignment(Element.ALIGN_CENTER);
+		            table.addCell(c1);
+		            table.setHeaderRows(1);
+		            
 		            c1 = new PdfPCell(new Phrase("Operating Margin"));
 		            c1.setHorizontalAlignment(Element.ALIGN_CENTER);
 		            table.addCell(c1);
@@ -314,10 +319,13 @@ public class AMUMStockRouter {
 		AMUMStockConstant.SYMBOL + AMUMStockConstant.COMMA+
 		AMUMStockConstant.PRICE + AMUMStockConstant.COMMA+
 		"Diluted EPS" + AMUMStockConstant.COMMA+
+		"P/E Ratio" + AMUMStockConstant.COMMA+
 		"Operating Margin" + AMUMStockConstant.COMMA+
 		"Return On Assets" + AMUMStockConstant.COMMA+
 		"Return On Equity" + AMUMStockConstant.COMMA+
-		"Revenue Per Share";
+		"Revenue Per Share" + AMUMStockConstant.COMMA+
+		"Sector" + AMUMStockConstant.COMMA+
+		"Industry" + AMUMStockConstant.COMMA;
 	}
 
 	private List<AMUMStockBean> readNASDAQFile() throws IOException {
