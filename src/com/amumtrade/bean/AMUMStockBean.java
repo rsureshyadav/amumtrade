@@ -1,5 +1,7 @@
 package com.amumtrade.bean;
 
+import java.math.BigDecimal;
+
 
 public class AMUMStockBean {
 	private String stockName;
@@ -8,6 +10,7 @@ public class AMUMStockBean {
 	private String PERatio;
 	private String EPS;
 	private String revenue; 
+	private String amumtradePercent; 
 	
 	public String getStockName() {
 		return stockName;
@@ -45,6 +48,12 @@ public class AMUMStockBean {
 	}
 	public void setRevenue(String revenue) {
 		this.revenue = revenue;
+	}
+	public String getAmumtradePercent() {
+		return amumtradePercent;
+	}
+	public void setAmumtradePercent(String amumtradePercent) {
+		this.amumtradePercent = amumtradePercent;
 	}
 
 	
