@@ -167,7 +167,7 @@ public class AMUMStockRouter {
 	}
 	
 	private String getMetricHeader(){
-		return "Name,Last Scale Price, P/E Ratio, AMUM Ratio, EPS, Revenue";
+		return "Name,Last Scale Price, P/E Ratio, EPS, Revenue";
 	}
 
 }
