@@ -33,7 +33,7 @@ public class AMUMStockMetricsDAO implements Runnable {
 			//String targetURL="http://msn.bankbazaar.com/tata-consultancy-services-ltd/stock?scid=16467";
 			 url = new URL(targetURL);
 		      connection = (HttpURLConnection)url.openConnection();
-		      connection.setReadTimeout(20000);
+		      connection.setReadTimeout(10000);
 		      
 		    InputStream is = connection.getInputStream();
 			BufferedReader br = new BufferedReader(new InputStreamReader(is));
@@ -80,7 +80,11 @@ public class AMUMStockMetricsDAO implements Runnable {
 				}
 			
 			}
-			checkPEValidation(bwObj);
+		//	checkPEValidation(bwObj);
+			bwObj.write("\n");
+			bwObj.write(bean.getStockName()+","+bean.getLastScalePrice()+","+bean.getPERatio()+","+bean.getEPS()+","+bean.getRevenue());
+			System.out.println(bean.getStockName()+","+bean.getLastScalePrice()+","+bean.getPERatio()+","+bean.getEPS()+","+bean.getRevenue());
+
 			br.close();
 			
 		} catch (Exception e) {
