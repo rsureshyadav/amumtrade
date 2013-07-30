@@ -42,6 +42,7 @@ public class AMUMStockRouter {
 			ExecutorService executor = Executors.newFixedThreadPool(10);
 			for( alphabets = 'A' ; alphabets <= 'Z' ; alphabets++ ){
 					String httpUrl = AMUMStockConstant.MSN_URL.replace("@", String.valueOf(alphabets));
+					System.out.println(httpUrl);
 					Runnable worker = new AMUMStockFilterDAO(httpUrl, bwObj);
 					executor.execute(worker);	
 		   }
@@ -50,6 +51,7 @@ public class AMUMStockRouter {
 		    	 
 		    }
 			System.out.println("\nFinished all threads");
+			if(bwObj!=null)
 			bwObj.close();
 			//filterFile();
 			List<AMUMStockBean> filterList = filterFile();
@@ -129,7 +131,7 @@ public class AMUMStockRouter {
 		try {
 			br = new BufferedReader(new FileReader(outputPath));
 			int count = 0;
-			while ((line = br.readLine()) != null) {
+			while ((line = br.readLine()) != null && line.length()>0) {
 				/*if (count == 0) {
 					// skip first line to ignore the header
 					count++;
@@ -138,6 +140,7 @@ public class AMUMStockRouter {
 				count++;*/
 				bean = new AMUMStockBean();
 				lineItem = Arrays.asList(line.split("\\s*,\\s*"));
+				System.out.println(lineItem);
 				bean.setStockName(lineItem.get(0));
 				try {
 					bean.setLastScalePrice(Double.valueOf(lineItem.get(1)));
