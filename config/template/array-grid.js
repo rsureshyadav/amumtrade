@@ -17,7 +17,7 @@ Ext.onReady(function() {
 
     var store = Ext.create('Ext.data.ArrayStore', {
         fields: [
-           //{name: 'sno',      type: 'float'},
+           {name: 'sno',      type: 'float'},
            {name: 'symbol'},
            {name: 'price',      type: 'float'},
            {name: 'dilutedEPS',      type: 'float'},
@@ -38,13 +38,13 @@ Ext.onReady(function() {
         stateful: true,
         stateId: 'stateGrid',
         columns: [
-        /*    {
+           {
                  text     : 'S.No',
                  width    : 75,
                  //flex     : 1,
                  sortable : false,
                  dataIndex: 'sno'
-            },*/
+            },
             {
                 text     : 'Symbol',
                 width    : 75,
@@ -101,8 +101,8 @@ Ext.onReady(function() {
             },
             
         ],
-        height: 500,
-        width: '100%',
+        //height: 500,
+        //width: '100%',
         title: 'AMUMTrade Key Metric...',
         renderTo: 'grid-example',
         viewConfig: {
