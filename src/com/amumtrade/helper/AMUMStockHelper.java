@@ -57,7 +57,6 @@ public class AMUMStockHelper {
 			 }
 			 resultMap = new  HashMap<String, String>();
 			 for(String s : nameList){
-				 System.out.println(s);
 				 String finalStr = validateStrLine(s);
 				 resultMap.put(currentPrice, finalStr);
 			 }
