@@ -7,8 +7,8 @@ import com.amumtrade.constant.AMUMStockConstant;
 public class BSEStockTest {
 @Test
 public void fetchNasdaqStock() throws Exception{
-	double startRange = 40;
-	double endRange = 60;
+	double startRange = 14;
+	double endRange = 15;
 	AMUMBSEStockHandler handler = new AMUMBSEStockHandler(AMUMStockConstant.BSE_NAME);
 	handler.execute(startRange, endRange);
 	}

@@ -33,7 +33,7 @@ public class AMUMStockMetricsDAO implements Runnable {
 			//String targetURL="http://msn.bankbazaar.com/tata-consultancy-services-ltd/stock?scid=16467";
 			 url = new URL(targetURL);
 		      connection = (HttpURLConnection)url.openConnection();
-		      connection.setReadTimeout(10000);
+		      connection.setReadTimeout(50000);
 		      
 		    InputStream is = connection.getInputStream();
 			BufferedReader br = new BufferedReader(new InputStreamReader(is));
