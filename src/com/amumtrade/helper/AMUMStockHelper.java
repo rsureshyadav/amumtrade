@@ -48,7 +48,8 @@ public class AMUMStockHelper {
 			 str = str.replaceAll("\\s+","");
 			 str = str.replaceAll("</tr><tr>", "</tr>^<tr>");
 			 str = str.replaceAll("\"", "");
-
+			 str = str.replaceAll(",", "");
+			 
 			 StringTokenizer strTokenizer = new StringTokenizer(str,"^");
 			 nameList = new ArrayList<String>();
 			while (strTokenizer.hasMoreElements()){
@@ -56,6 +57,7 @@ public class AMUMStockHelper {
 			 }
 			 resultMap = new  HashMap<String, String>();
 			 for(String s : nameList){
+				 System.out.println(s);
 				 String finalStr = validateStrLine(s);
 				 resultMap.put(currentPrice, finalStr);
 			 }
