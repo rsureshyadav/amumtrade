@@ -48,8 +48,8 @@ public class AMUMTimerStock {
 
 		private void execute()throws Exception {
 			
-			double startRange = 5.0;
-			double endRange = 10.0;
+			double startRange = 50.0;
+			double endRange = 150.0;
 			
 			long startTime= System.currentTimeMillis();
 			String fileName = "./config/amumMoney.csv";
