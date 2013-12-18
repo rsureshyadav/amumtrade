@@ -18,7 +18,8 @@ public class AMUMStockHelper {
 	public static String currentPrice = null;
 	
 	public Map<String, String> digest() throws IOException {
-		String httpUrl="http://money.rediff.com/gainers/bse/daily/groupall";
+		//String httpUrl="http://money.rediff.com/gainers/bse/daily/groupall";
+		String httpUrl="http://money.rediff.com/losers/bse/daily/groupall";
 		URL url = null;
 	    HttpURLConnection connection = null;  
 	    StringBuffer strBuffer = new StringBuffer();
@@ -79,6 +80,9 @@ public class AMUMStockHelper {
 		try {
 			companyUrl = str1.substring(str1.indexOf("ahref")+6, str1.lastIndexOf("</a>"));
 			companyName = companyUrl.substring(companyUrl.indexOf(">")+1);
+			companyName  = companyName.replace(".", "");
+			companyName  = companyName.replace("(", "");
+			companyName = companyName.replaceAll("(\\p{Ll})(\\p{Lu})","$1 $2");//add white space between the capital letter
 			companyUrl = companyUrl.substring(0, companyUrl.indexOf(">"));
 			companyGroup=str1.substring(str1.indexOf("</td><td>"), str1.lastIndexOf("<FONT"));
 			companyGroup=companyGroup.replace("</td><td>", ",");
@@ -86,16 +90,15 @@ public class AMUMStockHelper {
 			
 			String[] strSplit = companyGroup.split(",");
 			companyGroup = strSplit[0];
-			companyPrevClose = strSplit[1].trim(); 
-			companyCurrentPrice = strSplit[2].trim(); 
+			companyPrevClose = strSplit[1]; 
+			companyCurrentPrice = strSplit[2]; 
 			currentPrice = companyCurrentPrice;
 			
 			
 			double prevPrice =  Double.valueOf(companyPrevClose);
-			double currPrice = Double.valueOf(companyCurrentPrice);
-			diff = prevPrice - currPrice;
+			double currPrice = Double.valueOf(currentPrice);
+			diff =  currPrice - prevPrice;
 			priceRoundOff = Math.round(diff * 100.0) / 100.0;
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

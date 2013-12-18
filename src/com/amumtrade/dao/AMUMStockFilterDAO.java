@@ -37,6 +37,7 @@ public class AMUMStockFilterDAO implements Runnable {
 			boolean isCapture = false;
 			boolean isExit = false;
 			while ((line = br.readLine()) != null) {
+				System.out.println(">>>>>>>>>"+br.readLine());
 				if (line.contains("<tbody>")) {
 					isCapture = true;
 				} else if (isCapture) {

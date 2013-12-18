@@ -27,6 +27,8 @@ public class AMUMStockConstant {
 	public static final String NASDAQ_OUTPUT_PATH="config/output/@";
 	public static final String NYSE_OUTPUT_PATH="config/output/@";
 	public static final DateFormat dateFormat = new SimpleDateFormat("dd_MM_yyyy_HH_mm");
+	public static final DateFormat timerDateFormat = new SimpleDateFormat("dd_MM_yyyy");
+
 	public static final Calendar cal = Calendar.getInstance();
 	
 	// http://in.finance.yahoo.com/gainers?e=bo
