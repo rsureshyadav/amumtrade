@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.helper.AMUMStockHelper;
 
 public class AMUMTimerStock {
@@ -48,11 +49,11 @@ public class AMUMTimerStock {
 
 		private void execute()throws Exception {
 			
-			double startRange = 50.0;
-			double endRange = 150.0;
+			double startRange = 100.0;
+			double endRange = 250.0;
 			
 			long startTime= System.currentTimeMillis();
-			String fileName = "./config/amumMoney.csv";
+			String fileName = "./config/amumMoney_"+AMUMStockConstant.timerDateFormat.format(AMUMStockConstant.cal.getTime())+".csv";;
 			File newFile = null;
 			BufferedWriter writer = null;
 			
