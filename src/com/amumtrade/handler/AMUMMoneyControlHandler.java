@@ -11,8 +11,11 @@ import com.amumtrade.helper.AMUMMoneyControlHelper;
 public class AMUMMoneyControlHandler {
 
 	public void execute() throws Exception{
-		double startRange = 100.0;
-		double endRange = 250.0;
+		double startRange = 1000.0;
+		double endRange = 1500.0;
+
+		double startFiveTwoLowRange = 50.0;
+		double endFiveTwoLowRange = 500.0;
 		
 		long startTime= System.currentTimeMillis();
 		String fileName = "./config/amumMoneyControl_"+AMUMStockConstant.timerDateFormat.format(AMUMStockConstant.cal.getTime())+".csv";;
@@ -21,21 +24,53 @@ public class AMUMMoneyControlHandler {
 		
 		 try {
 			 AMUMMoneyControlHelper helper = new AMUMMoneyControlHelper();
-			 Map<String, String> resMap  = helper.digest();
-			 
+			 Map<String, String> netProfitMap  = helper.digestNetProfit();
+			 Map<String, String> fiftyTwoWeekAHighMap  = helper.digestFiftyTwoWeekHigh();
+			 Map<String, String> fiftyTwoWeekALowMap  = helper.digestFiftyTwoWeekLow();
 			 newFile = new File(fileName);
 			 writer = new BufferedWriter(new FileWriter(newFile));
+			 writer.write("Top 100 Companies Net Profit...");
+			 writer.write("\n");
 			 writer.write("Company, Last Price, Change (Rs)");
 			 writer.write("\n");
-			 for (Map.Entry<String, String> entry : resMap.entrySet()) {
+			 for (Map.Entry<String, String> entry : netProfitMap.entrySet()) {
 				 double currPrice = Double.valueOf(entry.getKey());
 				 if(currPrice >= startRange && currPrice <=endRange){
 					 writer.write(entry.getValue());
 					 writer.write("\n");
 				 }
 			 }
+			 writer.write("\n");
+			 writer.write("\n");
+			 writer.write("\n");
 
+			 writer.write("52 Week High...");
+			 writer.write("\n");
+			 writer.write("Company, Group, 52 Wk High, Intra High, Last Close, Price Up");
+			 writer.write("\n");
+			 for (Map.Entry<String, String> entry : fiftyTwoWeekAHighMap.entrySet()) {
+				 double currPrice = Double.valueOf(entry.getKey());
+				 if(currPrice >= startRange && currPrice <=endRange){
+					 writer.write(entry.getValue());
+					 writer.write("\n");
+				 }
+			 }
+			 
+			 writer.write("\n");
+			 writer.write("\n");
+			 writer.write("\n");
 
+			 writer.write("52 Week Low...");
+			 writer.write("\n");
+			 writer.write("Company, Group, 52 Wk Low, Intra High, Last Close, Price Up");
+			 writer.write("\n");
+			 for (Map.Entry<String, String> entry : fiftyTwoWeekALowMap.entrySet()) {
+				 double currPrice = Double.valueOf(entry.getKey());
+				 if(currPrice >= startFiveTwoLowRange && currPrice <=endFiveTwoLowRange){
+					 writer.write(entry.getValue());
+					 writer.write("\n");
+				 }
+			 }
 		} catch (Exception e) {
 			e.getLocalizedMessage();
 		}finally{
