@@ -2,11 +2,11 @@ package com.amumtrade.handler;
 
 import org.junit.Test;
 
-public class OnlyBuyersHandlerTest {
+public class TopGainersHandlerTest {
 
 	@Test
 	public void fetchBuyersStock() throws Exception{
- OnlyBuyerHandler handler = new OnlyBuyerHandler();
+ TopGainersHandler handler = new TopGainersHandler();
 		handler.execute();
 		}
 }
