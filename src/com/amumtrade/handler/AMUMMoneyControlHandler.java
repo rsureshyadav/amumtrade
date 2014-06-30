@@ -11,11 +11,11 @@ import com.amumtrade.helper.AMUMMoneyControlHelper;
 public class AMUMMoneyControlHandler {
 
 	public void execute() throws Exception{
-		double startRange = 1000.0;
-		double endRange = 1500.0;
+		double startRange = 5.0;
+		double endRange = 50.0;
 
-		double startFiveTwoLowRange = 50.0;
-		double endFiveTwoLowRange = 500.0;
+		double startFiveTwoLowRange = 5.0;
+		double endFiveTwoLowRange = 150.0;
 		
 		long startTime= System.currentTimeMillis();
 		String fileName = "./config/amumMoneyControl_"+AMUMStockConstant.timerDateFormat.format(AMUMStockConstant.cal.getTime())+".csv";;
@@ -40,6 +40,27 @@ public class AMUMMoneyControlHandler {
 					 writer.write("\n");
 				 }
 			 }
+			 writer.write("\n");
+			 writer.write("\n");
+			 writer.write("\n");
+
+			 writer.write("Top Gainers");
+			 writer.write("\n");
+			 writer.write("Company Name,High,Low,Last Price,Prv Close,Change,% Gain");
+			 writer.write("\n");
+			 Map<String, String> topGainerList= TopGainersHandler.getTopGainerList();
+		/*	 for(String lastPrice : topGainerList.keySet()){
+				 System.out.println(">>>>>>>>>>>>>>>>"+lastPrice);
+			 }*/
+			 
+			 for (Map.Entry<String, String> lastPriceEntry : topGainerList.entrySet()) {
+				 double price = Double.valueOf(lastPriceEntry.getKey());
+				 if(price >= startRange && price <=endRange){
+					 writer.write(lastPriceEntry.getValue());
+					 writer.write("\n");
+				 }
+			 }
+			 
 			 writer.write("\n");
 			 writer.write("\n");
 			 writer.write("\n");
