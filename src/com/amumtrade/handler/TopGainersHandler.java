@@ -11,6 +11,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import com.amumtrade.bean.TopGainerBean;
+
 import sun.reflect.generics.tree.ReturnType;
 
 public class TopGainersHandler {
@@ -50,6 +52,7 @@ public class TopGainersHandler {
 
 	public static void getTopGainer(String stockURL) throws IOException {
 		String companyName=null;
+		String api=null;
 		String high=null;
 		String low=null;
 		String lastPrice=null;
@@ -62,7 +65,7 @@ public class TopGainersHandler {
 		try {
 			 URL website = new URL(stockURL);
 			 bwObj = new BufferedWriter( fwo );  
-			 bwObj.write("Company Name,High,Low,Last Price,Prv Close,Change,% Gain"+"\n");
+			 bwObj.write("Company Name,High,Low,Last Price,Prv Close,Change,% Gain,API"+"\n");
 			 in= new BufferedReader(new InputStreamReader(website.openStream()));
 				        String inputLine;
 				        //boolean isRun = false;
@@ -70,12 +73,18 @@ public class TopGainersHandler {
 		        		boolean changePercentGain=false;
 				        while ((inputLine = in.readLine()) != null)
 				        {
+				        	//<td align="left" class="brdrgtgry"><a href='/india/stockpricequote/finance-general/microsecfinancialservices/MFS' class='bl_12'><b>Microsec Fin</b></a></td>
 				        	if(inputLine.contains("<td align=\"left\" class=\"brdrgtgry\">")){
 				        		companyName = inputLine.trim();
 				        		companyName=companyName.substring(companyName.indexOf("<b>"));
 				        		companyName=companyName.replace("<b>", "");
 				        		companyName=companyName.replace("</b></a></td>", "");
-
+				        		
+				        		api = inputLine.trim();
+				        		api = api.substring(api.indexOf("<a href="), api.lastIndexOf("class='bl_12'"));
+				        		api = api.replace("<a href=", "");
+				        		api = api.replace("'", "");
+					        		
 				        		//isRun = true;
 				        		//if(companyName.equalsIgnoreCase("Radha Madhav")){
 				        			
@@ -146,7 +155,9 @@ public class TopGainersHandler {
 				        			changePercentGain=false;
 				        		}
 				        		//System.out.println(inputLine.trim());
-				        		String finalTopGainer= companyName+","+high+","+ low+","+ lastPrice+","+ prvClose+","+ change+","+percentGain;
+				        		String finalTopGainer= companyName+","+high+","+ low+","+ lastPrice+","+ prvClose+","+ change+","+percentGain+","+api;
+				        		
+				        		
 				        		if(nameSet.add(companyName)){
 				        			bwObj.write(finalTopGainer+"\n");
 				        			topGainerList.put(lastPrice, finalTopGainer);
