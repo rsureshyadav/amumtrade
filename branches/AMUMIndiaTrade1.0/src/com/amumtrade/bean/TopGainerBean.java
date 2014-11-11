@@ -9,6 +9,10 @@ public class TopGainerBean {
 	private String change ;
 	private String percentGain ;
 	private String api;
+	String currentDayVolume;
+	String fiveDayAvgVolume;
+	String tenDayAvgVolume;
+	String thirtyDayAvgVolume;
 	
 	public String getCompanyName() {
 		return companyName;
@@ -57,6 +61,30 @@ public class TopGainerBean {
 	}
 	public void setApi(String api) {
 		this.api = api;
+	}
+	public String getFiveDayAvgVolume() {
+		return fiveDayAvgVolume;
+	}
+	public void setFiveDayAvgVolume(String fiveDayAvgVolume) {
+		this.fiveDayAvgVolume = fiveDayAvgVolume;
+	}
+	public String getTenDayAvgVolume() {
+		return tenDayAvgVolume;
+	}
+	public void setTenDayAvgVolume(String tenDayAvgVolume) {
+		this.tenDayAvgVolume = tenDayAvgVolume;
+	}
+	public String getThirtyDayAvgVolume() {
+		return thirtyDayAvgVolume;
+	}
+	public void setThirtyDayAvgVolume(String thirtyDayAvgVolume) {
+		this.thirtyDayAvgVolume = thirtyDayAvgVolume;
+	}
+	public String getCurrentDayVolume() {
+		return currentDayVolume;
+	}
+	public void setCurrentDayVolume(String currentDayVolume) {
+		this.currentDayVolume = currentDayVolume;
 	}
 	
 	
