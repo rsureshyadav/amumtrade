@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,27 +14,133 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 import com.amumtrade.bean.TopGainerBean;
+import com.amumtrade.factory.VolumeSplitRunner;
 
 public class StockVolumeAnaylzer {
 	public  String stockURL = "http://www.moneycontrol.com";
 
 	private BufferedReader br;
 	private BufferedReader in;
-
+	private List<TopGainerBean> csvFileList  = new ArrayList<TopGainerBean>();
+	List<TopGainerBean> topGainerWithVolume ;
 	public void execute() throws IOException{
 		List<TopGainerBean> gainersBeanList = getTopGainersCsvToBean();
-		List<TopGainerBean> topGainerWithVolume = getStockVolume(gainersBeanList);
-		writeToCSVFile(topGainerWithVolume);
+		csvFileList.add(runVolumeSplitter(gainersBeanList));
+		//List<TopGainerBean> topGainerWithVolume = getStockVolume(gainersBeanList);
+	//	writeToCSVFile(topGainerWithVolume);
 	}
+	
+	private TopGainerBean runVolumeSplitter(List<TopGainerBean> gainersBeanList) throws IOException{
+		int splitSize = 10;
+		int totalListSize= gainersBeanList.size();
+		int indivdualSplitSize;
+		int reminingSplitSize;
+		int execStartCount;
+		int execEndCount = 0;
+		int beanStartCount=1;
+		int gainerBeanStartCount=1;
+		TopGainerBean  bean = null;
+		List<TopGainerBean> execBeanList = null;
+		List<String> urlList = null;
+		Map<String,TopGainerBean> topGainerMap = new HashMap<String,TopGainerBean>();
+		FileWriter fwo = new FileWriter( "config/amumTopGainerVolumeBasedList.csv", false );
+		BufferedWriter bwObj = null;
+		
+		try {
+			bean = new TopGainerBean();
+			execBeanList = new ArrayList<TopGainerBean>();
+			System.out.println(">>"+gainersBeanList.size());
+			//indivdualSplitSize = totalListSize/splitSize + 1;
+			//reminingSplitSize =  totalListSize - indivdualSplitSize * splitSize;
+			//System.out.println("indivdualSplitSize>>"+indivdualSplitSize);
+			//System.out.println("reminingSplitSize>>"+reminingSplitSize);
+			//List<TopGainerBean> gainerBeanList = new ArrayList<TopGainerBean>();
+			/*for(int i=1; i<=indivdualSplitSize ; i++){ // Master Split List
+				int beanStartCount=0;
+				execStartCount = i*splitSize;//25//50
+				for(TopGainerBean gainerBean : gainersBeanList){
+					beanStartCount++;//1
+					if(execEndCount>beanStartCount){
+					//	if(execStartCount <= beanStartCount){
+							System.out.println(gainerBean.getCompanyName());
+						//}
+					}
+				}
+				execEndCount = execStartCount;
+				System.out.println("**************************");
+			}*/
+			
+			/*for(TopGainerBean gainerBean : gainersBeanList){
+				//System.out.println(gainerBean.getCompanyName());
+				execBeanList.add(gainerBean);
+				if(beanStartCount == splitSize){
+				//	System.out.println("Thread ["+(gainerBeanStartCount - beanStartCount)+"-"+(gainerBeanStartCount)+"]");
+					VolumeSplitRunner volumeRunner = new VolumeSplitRunner("Thread ["+(gainerBeanStartCount - beanStartCount)+"-"+(gainerBeanStartCount)+"]",execBeanList);
+					volumeRunner.start();
+					topGainerWithVolume = volumeRunner.getTopGainerWithVolume();
+					execBeanList = new ArrayList<TopGainerBean>();
+					beanStartCount=0;
+				}
+				beanStartCount++;
+				gainerBeanStartCount++;
+			}*/
+			/*	VolumeSplitRunner volumeRunner = new VolumeSplitRunner("Thread ["+beanStartCount+"]",urlList);
+				volumeRunner.start();
+				beanStartCount++;*/
+
+			urlList = new ArrayList<String>();
+			for(TopGainerBean gainerBean : gainersBeanList){
+				String httpURL = stockURL+gainerBean.getApi().trim();
+				urlList.add(httpURL);
+				topGainerMap.put(httpURL, gainerBean);
+			}
+			
+		/*	BlockingQueue<Runnable> runnables = new ArrayBlockingQueue<Runnable>(1024);
+			ThreadPoolExecutor executor = new ThreadPoolExecutor(8, 16, 60, TimeUnit.SECONDS, runnables);
+			for(String httpUrl : urlList){
+				System.out.println(httpUrl);
+				executor.submit(new VolumeSplitRunner(new URL(httpUrl)));
+			}
+			executor.shutdown();*/
+			bwObj = new BufferedWriter( fwo );  
+			bwObj.write("Company Name,High,Low,Last Price,Prv Close,Change,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating"+"\n");
+			
+			
+			int i=0;
+			 ExecutorService executor = Executors.newFixedThreadPool(5);
+			 for(String httpUrl : urlList){//for (int i = 0; i < 10; i++) {
+				// System.out.println(i);
+		            Runnable worker = new VolumeSplitRunner(new URL(httpUrl),topGainerMap,bwObj,"" + i);
+		            executor.execute(worker);
+		            i++;
+		          }
+		        executor.shutdown();
+		        while (!executor.isTerminated()) {
+		        }
+		        System.out.println("Finished all threads");
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally{
+			if(bwObj != null){
+				bwObj.close();
+			}
+		}
+		return bean;
+	}
+	
+	
 	private void writeToCSVFile(List<TopGainerBean> topGainerWithVolume) throws IOException {
 		Set<String> urlSet = new HashSet<String>();
 		FileWriter fwo = new FileWriter( "config/amumTopGainerVolumeBasedList.csv", false );
 		BufferedWriter bwObj = null;
 		try {
 			bwObj = new BufferedWriter( fwo );  
-			bwObj.write("Company Name,High,Low,Last Price,Prv Close,Change,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating"+"\n");
+			bwObj.write("Company Name,High,Low,Last Price,Prv Close,Change,Day Volume,Five Day Avg Volume,Ten Day Avg Volume,Thirty Day Avg Volume,Rating"+"\n");
 			for(TopGainerBean bean : topGainerWithVolume){
 				if(!urlSet.contains(bean.getApi())){
 					int dayVolume = Integer.parseInt(bean.getCurrentDayVolume());
@@ -123,7 +230,7 @@ public class StockVolumeAnaylzer {
 		String fiveDayAvgVolume = null;
 		String tenDayAvgVolume = null;
 		String thirtyDayAvgVolume = null;
-		
+		URL website = null;
 		 String inputLine = null;
 		 List<String> stockURLList = null; 
 		 boolean toolTip3 = false;
@@ -142,7 +249,7 @@ public class StockVolumeAnaylzer {
 			for(String url : stockURLList){
 				 gainerBean = new TopGainerBean();
 
-				URL website  = new URL(url);
+				website  = new URL(url);
 				in= new BufferedReader(new InputStreamReader(website.openStream()));
 				 while ((inputLine = in.readLine()) != null)
 			        {
