@@ -33,7 +33,6 @@ public class VolumeSplitRunner implements Runnable {
 	        try {
 				processCommand();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 	        System.out.println(Thread.currentThread().getName()+" End.");
@@ -41,7 +40,7 @@ public class VolumeSplitRunner implements Runnable {
 	}
 	private void processCommand() throws IOException {
         try {
-            Thread.sleep(500);
+            Thread.sleep(5000);
             Reader reader = null;
             BufferedReader bufferReader = null;
             try {
@@ -158,7 +157,6 @@ private void writeVolumeToCSVFile(TopGainerBean bean) {
 						+ bean.getLastPrice()+","+ bean.getPrvClose()+","+ bean.getChange()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","+bean.getTenDayAvgVolume()+","
 						+bean.getThirtyDayAvgVolume()+","+"5 Star"+"\n");
-				
 				System.out.println(bean.getCompanyName()+","+"^"+bean.getChange()+","+bean.getCurrentDayVolume()+"5 Star");
 			}else if(dayVolume >= fiveDayAvgVolume && dayVolume >= tenDayAvgVolume && dayVolume >= thirtyDayAvgVolume){
 				bwObj.write(bean.getCompanyName()+","+bean.getHigh()+","+ bean.getLow()+","

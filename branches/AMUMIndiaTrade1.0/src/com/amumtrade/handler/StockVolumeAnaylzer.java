@@ -18,8 +18,8 @@ import com.amumtrade.factory.VolumeSplitRunner;
 
 public class StockVolumeAnaylzer {
 	public  String stockURL = "http://www.moneycontrol.com";
-
 	private BufferedReader br;
+	private int THREAD_COUNT = 5;
 	List<TopGainerBean> topGainerWithVolume ;
 	
 	public void execute() throws IOException{
@@ -41,13 +41,12 @@ public class StockVolumeAnaylzer {
 				urlList.add(httpURL);
 				topGainerMap.put(httpURL, gainerBean);
 			}
-			
 			bwObj = new BufferedWriter( fwo );  
-			bwObj.write("Company Name,High,Low,Last Price,Prv Close,Change,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating"+"\n");
+			bwObj.write("Company Name,High,Low,Last Price,Prv Close,Change,Day Volume,FiveDay AvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating"+"\n");
 			
 			
 			int i=0;
-			 ExecutorService executor = Executors.newFixedThreadPool(5);
+			 ExecutorService executor = Executors.newFixedThreadPool(THREAD_COUNT);
 			 for(String httpUrl : urlList){//for (int i = 0; i < 10; i++) {
 				// System.out.println(i);
 		            Runnable worker = new VolumeSplitRunner(new URL(httpUrl),topGainerMap,bwObj,"" + i);
@@ -57,7 +56,7 @@ public class StockVolumeAnaylzer {
 		        executor.shutdown();
 		        while (!executor.isTerminated()) {
 		        }
-		        System.out.println("Finished all threads");
+		        System.out.println("Finished all threads Execution");
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -81,7 +80,7 @@ public class StockVolumeAnaylzer {
 			br = new BufferedReader(new FileReader(csvFile));
 			while ((line = br.readLine()) != null) {
 				if(skipFirstLineHeader!=0){ 
-					//	if (skipFirstLineHeader==3){ //For Testing with single entry 
+					//if (skipFirstLineHeader==3){ //For Testing with single entry 
 					//if (skipFirstLineHeader!=0 && skipFirstLineHeader<=2){ //For Testing with first 10 entrys 
 					gainerBean = new TopGainerBean();
 					String[] topGainers = line.split(cvsSplitBy);
