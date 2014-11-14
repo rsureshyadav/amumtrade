@@ -1,7 +1,5 @@
 package com.amumtrade.handler;
 
-import java.io.IOException;
-
 import org.junit.Test;
 
 public class StockVolumeAnaylzerTest {
