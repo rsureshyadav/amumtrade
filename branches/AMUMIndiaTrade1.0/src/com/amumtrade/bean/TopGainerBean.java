@@ -9,10 +9,10 @@ public class TopGainerBean {
 	private String change ;
 	private String percentGain ;
 	private String api;
-	String currentDayVolume;
-	String fiveDayAvgVolume;
-	String tenDayAvgVolume;
-	String thirtyDayAvgVolume;
+	private String currentDayVolume;
+	private String fiveDayAvgVolume;
+	private String tenDayAvgVolume;
+	private String thirtyDayAvgVolume;
 	
 	public String getCompanyName() {
 		return companyName;

@@ -13,6 +13,11 @@ public class ConcurrentGainersBean {
 	private String fiveDayAgoPercentChange  ;
 	private String eigthDayAgoPrice ;
 	private String eigthDayAgoPercentChange  ;
+	
+	private String currentDayVolume;
+	private String fiveDayAvgVolume;
+	private String tenDayAvgVolume;
+	private String thirtyDayAvgVolume;
 	public String getName() {
 		return name;
 	}
@@ -78,6 +83,30 @@ public class ConcurrentGainersBean {
 	}
 	public void setEigthDayAgoPercentChange(String eigthDayAgoPercentChange) {
 		this.eigthDayAgoPercentChange = eigthDayAgoPercentChange;
+	}
+	public String getCurrentDayVolume() {
+		return currentDayVolume;
+	}
+	public void setCurrentDayVolume(String currentDayVolume) {
+		this.currentDayVolume = currentDayVolume;
+	}
+	public String getFiveDayAvgVolume() {
+		return fiveDayAvgVolume;
+	}
+	public void setFiveDayAvgVolume(String fiveDayAvgVolume) {
+		this.fiveDayAvgVolume = fiveDayAvgVolume;
+	}
+	public String getTenDayAvgVolume() {
+		return tenDayAvgVolume;
+	}
+	public void setTenDayAvgVolume(String tenDayAvgVolume) {
+		this.tenDayAvgVolume = tenDayAvgVolume;
+	}
+	public String getThirtyDayAvgVolume() {
+		return thirtyDayAvgVolume;
+	}
+	public void setThirtyDayAvgVolume(String thirtyDayAvgVolume) {
+		this.thirtyDayAvgVolume = thirtyDayAvgVolume;
 	}
 	
 	

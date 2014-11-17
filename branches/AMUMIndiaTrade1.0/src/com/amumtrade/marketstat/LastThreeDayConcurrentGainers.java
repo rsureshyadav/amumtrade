@@ -64,6 +64,8 @@ public class LastThreeDayConcurrentGainers {
 			    			 companyName = companyName.substring(companyName.indexOf("<a href='"),companyName.lastIndexOf("</a>"));
 			    			 companyName = companyName.substring(companyName.indexOf("'>"));
 			    			 companyName = companyName.replace("'>", "");
+			    			 companyName = companyName.replace(",", "");
+
 			    			// System.out.println(companyName);
 			    		 }
 			    	 }
@@ -89,6 +91,7 @@ public class LastThreeDayConcurrentGainers {
 			    				 currentPrice = inputLine.trim();
 			    				 currentPrice = currentPrice.substring(currentPrice.indexOf("'>"),currentPrice.lastIndexOf("</td>"));
 			    				 currentPrice = currentPrice.replace("'>", "");
+			    				 currentPrice = currentPrice.replace(",", "");
 				    			 //System.out.println(">>"+currentPrice);
 			    			 }else if(count ==2){
 			    				 currentPercentChange = inputLine.trim();
