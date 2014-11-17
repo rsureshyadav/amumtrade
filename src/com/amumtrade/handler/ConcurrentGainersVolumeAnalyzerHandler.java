@@ -12,11 +12,12 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import com.amumtrade.bean.ConcurrentGainersBean;
+import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.factory.ConcurrentGainersVolumeSplitRunner;
 import com.amumtrade.marketstat.LastThreeDayConcurrentGainers;
 
-public class ConcurrentGainersVolumeAnalyzer {
-	private int THREAD_COUNT = 5;
+public class ConcurrentGainersVolumeAnalyzerHandler {
+	
 
 	public void execute() throws IOException{
 		LastThreeDayConcurrentGainers cg = new LastThreeDayConcurrentGainers();
@@ -38,10 +39,10 @@ public class ConcurrentGainersVolumeAnalyzer {
 				concurrentGainerMap.put(gainerBean.getApi(), gainerBean);
 			}
 			bwObj = new BufferedWriter( fwo );  
-			bwObj.write("Company Name,Current Price,Day Volume,FiveDay AvgVolume,TenDay AvgVolume,ThirtyDay AvgVolume,Rating"+"\n");
+			bwObj.write("Company Name,Current Price,Day Volume,FiveDay AvgVolume,TenDay AvgVolume,ThirtyDay AvgVolume,Rating,Api"+"\n");
 		
 			int i=0;
-			 ExecutorService executor = Executors.newFixedThreadPool(THREAD_COUNT);
+			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
 			 for(String httpUrl : urlList){//for (int i = 0; i < 10; i++) {
 				// System.out.println(i);
 		            Runnable worker = new ConcurrentGainersVolumeSplitRunner(new URL(httpUrl),concurrentGainerMap,bwObj,"" + i);

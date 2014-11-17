@@ -14,12 +14,12 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import com.amumtrade.bean.TopGainerBean;
+import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.factory.VolumeSplitRunner;
 
 public class StockVolumeAnaylzer {
 	public  String stockURL = "http://www.moneycontrol.com";
 	private BufferedReader br;
-	private int THREAD_COUNT = 5;
 	List<TopGainerBean> topGainerWithVolume ;
 	
 	public void execute() throws IOException{
@@ -42,11 +42,11 @@ public class StockVolumeAnaylzer {
 				topGainerMap.put(httpURL, gainerBean);
 			}
 			bwObj = new BufferedWriter( fwo );  
-			bwObj.write("Company Name,High,Low,Last Price,Prv Close,Change,Day Volume,FiveDay AvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating"+"\n");
+			bwObj.write("Company Name,High,Low,Last Price,Prv Close,Change,Day Volume,FiveDay AvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating,Api"+"\n");
 			
 			
 			int i=0;
-			 ExecutorService executor = Executors.newFixedThreadPool(THREAD_COUNT);
+			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
 			 for(String httpUrl : urlList){//for (int i = 0; i < 10; i++) {
 				// System.out.println(i);
 		            Runnable worker = new VolumeSplitRunner(new URL(httpUrl),topGainerMap,bwObj,"" + i);

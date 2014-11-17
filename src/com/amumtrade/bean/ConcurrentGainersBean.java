@@ -18,6 +18,7 @@ public class ConcurrentGainersBean {
 	private String fiveDayAvgVolume;
 	private String tenDayAvgVolume;
 	private String thirtyDayAvgVolume;
+	private String rating;
 	public String getName() {
 		return name;
 	}
@@ -107,6 +108,12 @@ public class ConcurrentGainersBean {
 	}
 	public void setThirtyDayAvgVolume(String thirtyDayAvgVolume) {
 		this.thirtyDayAvgVolume = thirtyDayAvgVolume;
+	}
+	public String getRating() {
+		return rating;
+	}
+	public void setRating(String rating) {
+		this.rating = rating;
 	}
 	
 	
