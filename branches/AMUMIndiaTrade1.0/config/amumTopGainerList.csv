@@ -1,0 +1,609 @@
+Company Name,High,Low,Last Price,Prv Close,Change,% Gain,API
+Sical Logistics,168.10,155,168.10,160.10,8,null,/india/stockpricequote/trading/sicallogistics/SL15 
+Minda Corp,656.35,656.35,656.35,625.10,31.25,5,/india/stockpricequote/autoancillaries/mindacorporation/MC23 
+Asian Granito,163.85,160.25,163.85,156.05,7.80,5,/india/stockpricequote/ceramicsgranite/asiangranitoindia/AGI04 
+KSE,461.80,461.80,461.80,439.85,21.95,5,/india/stockpricequote/edibleoilssolventextraction/kse/KSE 
+Kalyani Forge,248.05,236.55,248.05,236.25,11.80,4.99,/india/stockpricequote/castingsforgings/kalyaniforge/KF02 
+Welspun Ent,335.45,335.45,335.45,319.50,15.95,4.99,/india/stockpricequote/miscellaneous/welspunenterprises/WE01 
+Maithan Alloys,219.70,214.10,219.70,209.25,10.45,4.99,/india/stockpricequote/miningminerals/maithanalloys/MA04 
+RamkrishnaForge,311.70,300,311.70,296.90,14.80,4.99,/india/stockpricequote/castingsforgings/ramkrishnaforgings/RF17 
+Accel Frontline,92.80,87,92.80,88.40,4.40,4.98,/india/stockpricequote/computers-softwaremediumsmall/accelfrontline/AF29 
+SHARIA BEES,194.95,190,194.95,185.70,9.25,4.98,/india/stockpricequote/finance-investments/goldmansachsspcnxniftyshariahindexexchange/SBE02 
+SKM Egg Product,125.65,125.65,125.65,119.70,5.95,4.98,/india/stockpricequote/foodprocessing/skmeggproductsexport(india)/SKM 
+Shreyas Shippin,116.10,116.10,116.10,110.60,5.50,4.97,/india/stockpricequote/shipping/shreyasshipping/SS12 
+Delta Magnets,35.95,35.95,35.95,34.25,1.70,4.97,/india/stockpricequote/electricals/deltamagnets/DM04 
+Vinyl Chemicals,65.60,61.50,65.60,62.50,3.10,4.96,/india/stockpricequote/chemicals/vinylchemicals(india)/VCI02 
+Welspun Project,37.20,37.15,37.20,35.45,1.75,4.96,/india/stockpricequote/constructioncontracting-civil/welspunprojects/MSK 
+V2 Retail,43.90,43.90,43.90,41.85,2.05,4.94,/india/stockpricequote/trading/v2retail/VR02 
+Neo Corp,34.35,33,34.35,32.75,1.60,4.90,/india/stockpricequote/packaging/neocorpinternational/NS02 
+Mcnally Bh Engg,88.45,81.25,87.60,83.55,4.05,4.89,/india/stockpricequote/engineering/mcnallybharatengineering/MBE 
+Lyka Labs,25.95,23.60,25.95,24.75,1.20,4.85,/india/stockpricequote/pharmaceuticals/lykalabs/LL02 
+Solar Ind,2678.10,2461.05,2649.80,2527.50,122.30,4.85,/india/stockpricequote/chemicals/solarindustriesindia/SII04 
+Nitco,30.35,28.10,30.35,28.95,1.40,4.84,/india/stockpricequote/ceramicsgranite/nitco/N52 
+STEL Holdings,30.65,28,30.60,29.20,1.40,4.84,/india/stockpricequote/finance-investments/stelholdings/STE01 
+Bombay Burmah,319.90,306.20,315.65,301.25,14.40,4.79,/india/stockpricequote/plantations-teacoffee/bombayburmahtradingcorporation/BBT 
+Dalmia Bharat,487,459,480.35,458.60,21.75,4.78,/india/stockpricequote/cement-major/dalmiabharat/DBE 
+Tata Coffee,984,923,969.75,926.15,43.60,4.74,/india/stockpricequote/plantations-teacoffee/tatacoffee/TC14 
+Ansal Housing,32.80,31.50,32.25,30.80,1.45,4.71,/india/stockpricequote/constructioncontracting-housing/ansalhousingconstruction/AHC 
+WABCO India,4399,4130,4291.90,4099.85,192.05,4.71,/india/stockpricequote/autoancillaries/wabcoindia/WAB 
+Emkay Global,54.95,50.55,54.90,52.45,2.45,4.68,/india/stockpricequote/finance-general/emkayglobalfinancialservices/EGF 
+Rashtriya Chem,72.45,69.05,71.80,68.60,3.20,4.67,/india/stockpricequote/fertilisers/rashtriyachemicalsfertilisers/RCF01 
+Shemaroo Ent,174.50,164,172.75,165.10,7.65,4.66,/india/stockpricequote/mediaentertainment/shemarooentertainment/SE03 
+Simplex Infra,314.80,304.80,310.45,296.80,13.65,4.63,/india/stockpricequote/constructioncontracting-civil/simplexinfrastructures/SI82 
+Rel Capital,504,481.60,502.05,480.05,22,4.60,/india/stockpricequote/finance-investments/reliancecapital/RC 
+Indiabulls Real,84.95,79.20,84.40,80.70,3.70,4.58,/india/stockpricequote/constructioncontracting-realestate/indiabullsrealestate/IRE01 
+Williamson Mago,62.50,58.20,62.30,59.60,2.70,4.58,/india/stockpricequote/finance-investments/williamsonmagorcompany/WMC 
+Kalindee Rail,116.25,108.10,112.95,108.10,4.85,4.53,/india/stockpricequote/engineering/kalindeerailnirman(engineers)/KRN 
+Marico Kaya Ent,810,755,770.25,737.20,33.05,4.49,/india/stockpricequote/miscellaneous/maricokayaenterprises/MKE01 
+HSIL,403.45,374.80,392,375.35,16.65,4.48,/india/stockpricequote/ceramicsgranite/hsil/HSI02 
+Guj Ind Power,90.60,85.05,89.30,85.50,3.80,4.44,/india/stockpricequote/power-generationdistribution/gujaratindustriespowerco/GIP 
+Pidilite Ind,434,416.10,432.85,414.55,18.30,4.44,/india/stockpricequote/chemicals/pidiliteindustries/PI11 
+Repco Home,583.30,547,572.25,548.30,23.95,4.41,/india/stockpricequote/finance-housing/repcohomefinance/RHF 
+Alpine Hsg,24,24,24,23,1,4.37,/india/stockpricequote/constructioncontracting-housing/alpinehousingdevcorp/AHD 
+Aegis Logistics,401.90,384,395.75,379.35,16.40,4.35,/india/stockpricequote/transportlogistics/aegislogistics/AL9 
+Central Bank,77.85,73.25,77.50,74.30,3.20,4.32,/india/stockpricequote/banks-publicsector/centralbankindia/CBO01 
+Sterling Tools,368.90,339.35,365.20,350.15,15.05,4.31,/india/stockpricequote/fasteners/sterlingtools/ST 
+ICRA,2749.40,2550.05,2712.60,2600.90,111.70,4.30,/india/stockpricequote/miscellaneous/icra/ICR 
+NFL,40.40,37.30,39.25,37.65,1.60,4.29,/india/stockpricequote/fertilisers/nationalfertilizers/NF06 
+Tata Motors (D),337.80,319.55,336.80,323.15,13.65,4.25,/india/stockpricequote/auto-lcvshcvs/tatamotors(dvr)/TMD 
+Bank of Baroda,1060,1003.55,1057.50,1014.80,42.70,4.22,/india/stockpricequote/banks-publicsector/bankofbaroda/BOB 
+MCX India,879.70,837.30,870.95,835.95,35,4.21,/india/stockpricequote/miscellaneous/multicommodityexchangeindia/MCE 
+Finolex Ind,299,285.30,297.10,285.30,11.80,4.19,/india/stockpricequote/petrochemicals/finolexindustries/FI 
+Bayer CropScien,2895,2703.10,2822.40,2711.25,111.15,4.14,/india/stockpricequote/pesticidesagrochemicals/bayercropscience/BC12 
+Tata Motors,547.55,520,545.25,523.90,21.35,4.10,/india/stockpricequote/auto-lcvshcvs/tatamotors/TM03 
+Network 18,57.40,54.60,56.80,54.60,2.20,4.08,/india/stockpricequote/finance-general/network18mediainvestments/NMI 
+Indoco Remedies,315,293,308.15,296.25,11.90,4.03,/india/stockpricequote/pharmaceuticals/indocoremedies/IR05 
+Hi-Tech Gears,230,216.70,228.40,219.60,8.80,4.02,/india/stockpricequote/autoancillaries/hi-techgears/HTG 
+Shriram EPC,39.75,37.65,39.15,37.65,1.50,4.01,/india/stockpricequote/engineering-heavy/shriramepc/SE03 
+FAG Bearings,3110,2980.05,3095.85,2977.75,118.10,3.98,/india/stockpricequote/bearings/fagbearingsindia/FAG 
+Zodiac JRD-MKJ,35.50,33.55,35.50,34.15,1.35,3.97,/india/stockpricequote/diamondcuttingpreciousmetalsjewellery/zodiac-jrd-mkj/ZJR 
+Automotive Axle,782.65,746.15,771.90,742.75,29.15,3.95,/india/stockpricequote/autoancillaries/automotiveaxles/AA06 
+Precision Wires,135,125.20,131.70,126.75,4.95,3.92,/india/stockpricequote/metals-nonferrous/precisionwiresindia/PWI 
+Vascon Engineer,28.50,26.65,28.05,27,1.05,3.91,/india/stockpricequote/constructioncontracting-realestate/vasconengineers/VE07 
+Future Ret (D),55.80,51.70,55.05,53,2.05,3.89,/india/stockpricequote/retail/futureretail(india)-b-dvr/PRI 
+CARE,1380,1330,1361,1310.70,50.30,3.87,/india/stockpricequote/miscellaneous/creditanalysisresearch/CAR 
+Hanung Toys,21.85,19.85,21.65,20.85,0.80,3.84,/india/stockpricequote/miscellaneous/hanungtoystextiles/HTT 
+Bharat Rasayan,942,899.90,924.30,890.20,34.10,3.84,/india/stockpricequote/pesticidesagrochemicals/bharatrasayan/BR01 
+Jeypore Sugar,84,84,84,80.95,3.05,3.83,/india/stockpricequote/sugar/jeyporesugarcompany/JSC 
+8K Miles Soft,645.65,590,624.65,602.45,22.20,3.77,/india/stockpricequote/finance-investments/8kmilessoftwareservices/PMS01 
+Surana Ventures,100,85.10,98.95,95.45,3.50,3.68,/india/stockpricequote/miscellaneous/suranaventures/SV05 
+Wonderla,309.30,292.50,307,296.15,10.85,3.67,/india/stockpricequote/miscellaneous/wonderlaholidays/WH01 
+Deccan Cements,430,407,410.05,395.80,14.25,3.66,/india/stockpricequote/cement-mini/deccancements/DC 
+ANG Industries,29.50,26.25,29,28,1,3.60,/india/stockpricequote/autoancillaries/angindustries/ANG 
+Times Guaranty,29,26.25,29,28,1,3.57,/india/stockpricequote/finance-leasinghirepurchase/timesguaranty/TG 
+Kirloskar Oil,270,258.40,267.70,258.50,9.20,3.57,/india/stockpricequote/engines/kirloskaroilengines/KOE03 
+Lloyd Electric,145.45,138.55,144.50,139.55,4.95,3.56,/india/stockpricequote/consumergoods-whitegoods/lloydelectricengineering/LEE 
+Alstom T&D,417.50,390.05,415.25,401.10,14.15,3.55,/india/stockpricequote/power-transmissionequipment/alstomtdindia/ATD 
+Finolex Cables,258,241,256.65,247.90,8.75,3.53,/india/stockpricequote/cables-telephone/finolexcables/FC01 
+Motor and Gen F,38.40,37.50,38.40,37.10,1.30,3.53,/india/stockpricequote/finance-leasinghirepurchase/motorgeneralfinance/MGF 
+Blue Star,378.90,352.10,366.70,354.35,12.35,3.50,/india/stockpricequote/consumergoods-whitegoods/bluestar/BS 
+Techno Electric,338,318,324.85,313.95,10.90,3.49,/india/stockpricequote/electricequipment/technoelectricengineeringcompany/TEE 
+India Cements,113.80,106.10,112.65,108.90,3.75,3.47,/india/stockpricequote/cement-major/indiacements/IC 
+ESS DEE,394,370.15,383.35,370.70,12.65,3.44,/india/stockpricequote/packaging/essdeealuminium/ESS02 
+Genus Power,27.65,25.10,27.35,26.45,0.90,3.41,/india/stockpricequote/electricals/genuspowerinfrastructures/GPI08 
+Siti Cable,28,26.70,27.75,26.85,0.90,3.40,/india/stockpricequote/mediaentertainment/siticablenetwork/WWI 
+Petron Engg,152.65,143.50,151.10,146.20,4.90,3.35,/india/stockpricequote/engineering/petronengineeringconstruction/PEC01 
+Elecon Eng,53,50.55,52.55,50.85,1.70,3.35,/india/stockpricequote/engineering-heavy/eleconengineeringcompany/EEC 
+KSK Energy Vent,77,73.70,75.95,73.50,2.45,3.34,/india/stockpricequote/power-generationdistribution/kskenergyventures/KEV 
+Pratibha Ind,58.95,56.70,57.50,55.65,1.85,3.33,/india/stockpricequote/constructioncontracting-civil/pratibhaindustries/PI33 
+Sundaram-Clayto,1630,1550,1627.30,1575.10,52.20,3.32,/india/stockpricequote/autoancillaries/sundaram-clayton/SC 
+JM Financial,47.35,45,46.85,45.35,1.50,3.31,/india/stockpricequote/finance-investments/jmfinancial/JMF 
+Sanghvi Movers,174.95,160.60,171.70,166.20,5.50,3.31,/india/stockpricequote/engineering-heavy/sanghvimovers/SM10 
+ALSTOM India,604,555.65,594.65,575.65,19,3.31,/india/stockpricequote/power-transmissionequipment/alstomindia/AP29 
+ADF Foods,63.40,57.05,61.30,59.35,1.95,3.30,/india/stockpricequote/foodprocessing/adffoodsindustries/AF30 
+Torrent Pharma,969.75,944,967.25,936.50,30.75,3.29,/india/stockpricequote/pharmaceuticals/torrentpharmaceuticals/TP06 
+HT Media,113.80,107.50,109.40,105.95,3.45,3.28,/india/stockpricequote/mediaentertainment/htmedia/HT 
+Gulf Oil Lubri,396.65,372.25,383.55,371.50,12.05,3.26,/india/stockpricequote/lubricants/gulfoillubricants/GOL01 
+Religare Enterp,342,316.10,332.05,321.70,10.35,3.24,/india/stockpricequote/finance-investments/religareenterprises/RE09 
+Surana Telecom,49.25,40,44.85,43.45,1.40,3.22,/india/stockpricequote/cables-telephone/suranatelecompower/ST12 
+Onward Tech,59.65,56.25,57.90,56.10,1.80,3.22,/india/stockpricequote/computers-softwaremediumsmall/onwardtechnologies/OT 
+DCB Bank,105,100.10,104.85,101.60,3.25,3.21,/india/stockpricequote/banks-privatesector/dcbbank/DCB01 
+Gammon India,34.80,33,34.15,33.10,1.05,3.20,/india/stockpricequote/constructioncontracting-civil/gammonindia/GI03 
+Federal Bank,144.50,140.45,144,139.60,4.40,3.17,/india/stockpricequote/banks-privatesector/federalbank/FB 
+PSU BANK BEES,439,421,434.27,421.24,13.03,3.15,/india/stockpricequote/finance-investments/goldmansachspsubankexchangetradedscheme/BMF 
+Vardhman Acryli,23.75,22.75,23.50,22.80,0.70,3.09,/india/stockpricequote/textiles-manmade/vardhmanacrylics/VA08 
+Thomas Cook,186.10,178,184.35,178.90,5.45,3.07,/india/stockpricequote/miscellaneous/thomascook(india)/TCI 
+Adani Power,47.50,45.30,47.25,45.85,1.40,3.05,/india/stockpricequote/power-generationdistribution/adanipower/AP11 
+OnMobile Global,53.40,50.15,52.80,51.25,1.55,3.05,/india/stockpricequote/computers-softwaremediumsmall/onmobileglobal/OG01 
+Suprajit Eng,126.80,120.15,124.80,121.15,3.65,3.02,/india/stockpricequote/autoancillaries/suprajitengineering/SE15 
+MMTC Ltd,68.30,64.60,66.95,65,1.95,3.01,/india/stockpricequote/trading/mmtc/MMT 
+Tata Global Bev,161.90,154.35,159.90,155.25,4.65,3,/india/stockpricequote/plantations-teacoffee/tataglobalbeverage/TT 
+Mahindra Ugine,574.50,530.60,565.15,548.75,16.40,3,/india/stockpricequote/steel-mediumsmall/mahindrauginesteelcompany/MUS 
+Usher Agro,61.80,59,60.50,58.75,1.75,2.99,/india/stockpricequote/foodprocessing/usheragro/UA01 
+Igarashi Motors,314.15,296.05,307.20,298.30,8.90,2.98,/india/stockpricequote/electricequipment/igarashimotors/IM01 
+Kotak PSU Bank,418.95,404.50,416.57,404.54,12.03,2.98,/india/stockpricequote/finance-investments/kotakmahindramf-kotakpsubanketf/KMM 
+MOSt M50 ETF,82.80,79.20,81.91,79.55,2.36,2.97,/india/stockpricequote/finance-investments/motilaloswalmostsharesm50etf/MOM 
+Super Sales,319,295,314,304.95,9.05,2.97,/india/stockpricequote/textiles-spinning-cottonblended/supersalesindia/SSI13 
+Century Enka,163.25,156,162.10,157.45,4.65,2.97,/india/stockpricequote/textiles-manmade/centuryenka/CE 
+Asian Paints,694.95,675,691.95,672.20,19.75,2.95,/india/stockpricequote/paintsvarnishes/asianpaints/AP31 
+Trent,1532.95,1449,1517.35,1474.15,43.20,2.94,/india/stockpricequote/retail/trent/T04 
+AIA Engineering,1115,1075,1108,1076.60,31.40,2.93,/india/stockpricequote/engineering-heavy/aiaengineering/AIE01 
+Radico Khaitan,84.50,81.55,83.75,81.40,2.35,2.92,/india/stockpricequote/breweriesdistilleries/radicokhaitan/RK01 
+JK Tyre & Ind,545,522,532.10,517.15,14.95,2.89,/india/stockpricequote/tyres/jktyreindustries/JKT01 
+Tree House,459.80,429.80,444.70,432.35,12.35,2.89,/india/stockpricequote/computers-software-training/treehouseeducationaccessories/THE01 
+Bosch,17176,16628.40,17033.25,16563.10,470.15,2.86,/india/stockpricequote/autoancillaries/bosch/B05 
+UCAL Fuel,133.20,125.50,130.15,126.55,3.60,2.84,/india/stockpricequote/autoancillaries/ucalfuelsystems/UFS 
+Upper Ganges,42.75,40.05,41.80,40.65,1.15,2.84,/india/stockpricequote/sugar/uppergangessugar/UGS 
+Mayur Uniquoter,438,422,434.65,422.70,11.95,2.83,/india/stockpricequote/plastics/mayuruniquoters/MU 
+Agro Tech Foods,629.90,602.50,625.80,608.60,17.20,2.83,/india/stockpricequote/edibleoilssolventextraction/agrotechfoods/ATF 
+Akzo Nobel,1291.85,1227.65,1288.45,1253.10,35.35,2.83,/india/stockpricequote/paintsvarnishes/akzonobelindia/ICI 
+ICICI Gold ETF,2526,2456,2500.40,2432,68.40,2.82,/india/stockpricequote/finance-investments/iciciprudentialgoldexchangetradedfund/ICI10 
+Manappuram Fin,35.40,33.90,34.75,33.80,0.95,2.81,/india/stockpricequote/finance-leasinghirepurchase/manappuramfinance/MGF01 
+IDBI Gold ETF,2549.95,2487,2543,2473.80,69.20,2.81,/india/stockpricequote/finance-investments/idbigoldexchangetradedfund/IDB06 
+Voltas,279.95,269.25,279.15,271.55,7.60,2.80,/india/stockpricequote/diversified/voltas/V 
+Reliance Infra,641.75,615.20,638.45,621.10,17.35,2.80,/india/stockpricequote/power-generationdistribution/relianceinfrastructure/RI38 
+SBI Gold ETF,2485,2436,2482.55,2415.50,67.05,2.79,/india/stockpricequote/finance-investments/sbimutualfund-goldexchangetradedscheme/SBI16 
+Chambal Fert,71.10,68.25,70.60,68.70,1.90,2.78,/india/stockpricequote/fertilisers/chambalfertiliserschemicals/CFC 
+PNB,967.35,933,964.35,938.60,25.75,2.77,/india/stockpricequote/banks-publicsector/punjabnationalbank/PNB05 
+R Shares Gold,2374,2322,2370.60,2307.60,63,2.74,/india/stockpricequote/finance-investments/r*sharesgoldetf/RMF 
+Global Offshore,535,507,523.35,509.45,13.90,2.73,/india/stockpricequote/shipping/globaloffshoreservices/GOS 
+IRB Infra,279,262.40,275.15,267.85,7.30,2.73,/india/stockpricequote/infrastructure-general/irbinfrastructuredevelopers/IID01 
+Rain Industries,51.85,49.10,50.95,49.60,1.35,2.73,/india/stockpricequote/cement-major/rainindustries/RC12 
+Asian Hotel (W),115.90,109,115.85,112.80,3.05,2.72,/india/stockpricequote/hotels/asianhotels(west)/AHW 
+Huhtamaki PPL,187,177.05,184.45,179.60,4.85,2.70,/india/stockpricequote/packaging/huhtamakippl/PP 
+Balmer Lawrie,587,562.10,580.80,565.55,15.25,2.70,/india/stockpricequote/packaging/balmerlawriecompany/BLC 
+GNFC,92.30,89.20,91.65,89.25,2.40,2.70,/india/stockpricequote/fertilisers/gujaratnarmadavalleyfertilizerschemicals/GNV 
+Jindal Saw,103.60,97.15,101.45,98.80,2.65,2.69,/india/stockpricequote/steel-tubespipes/jindalsaw/JS08 
+MOSt Gold ETF,2559.30,2461.05,2505.15,2440,65.15,2.68,/india/stockpricequote/finance-investments/motilaloswalmostsharesgoldetf/MOM03 
+Religare Gold,2519.95,2472.75,2500,2435.25,64.75,2.67,/india/stockpricequote/finance-investments/religaregoldexchangetradedfund/RGE 
+Andhra Bank,89.35,86.15,89.05,86.75,2.30,2.66,/india/stockpricequote/banks-publicsector/andhrabank/AB14 
+Welspun Invest,36,32.30,35,34.10,0.90,2.65,/india/stockpricequote/finance-investments/welspuninvestmentscommercials/WIC01 
+Oil Country,41.80,39.65,41.05,40,1.05,2.64,/india/stockpricequote/steel-tubespipes/oilcountrytubular/OCT 
+Texmaco Rail,115.60,108.50,112.75,109.90,2.85,2.63,/india/stockpricequote/infrastructure-general/texmacorailengineering/TRE 
+Corporation Bk,331.75,320,330.25,321.90,8.35,2.59,/india/stockpricequote/banks-publicsector/corporationbank/CB 
+Torrent Power,157.50,151.20,156.20,152.30,3.90,2.59,/india/stockpricequote/power-generationdistribution/torrentpower/TP14 
+TD Power System,457,428,450.70,439.50,11.20,2.56,/india/stockpricequote/engineering-heavy/tdpowersystems/TPS01 
+PPAP Automotive,125.15,117,125,121.90,3.10,2.55,/india/stockpricequote/autoancillaries/ppapautomotive/PPP03 
+Axis Gold ETF,2486,2448.25,2474.70,2413.35,61.35,2.54,/india/stockpricequote/finance-investments/axismutualfund-goldetf/AMF02 
+Kotak MF-GETF,2464.50,2401,2424.05,2364.20,59.85,2.54,/india/stockpricequote/finance-investments/kotakmutualfund-goldexchangetradedfund/KMF03 
+Thangamayil,191.05,182.10,189.75,185.10,4.65,2.53,/india/stockpricequote/diamondcuttingpreciousmetalsjewellery/thangamayiljewellery/TJ 
+Birla Ericsson,68.20,62.75,67.35,65.70,1.65,2.51,/india/stockpricequote/cables-telephone/birlaericssonopticals/BEO 
+Birla Corp,504.20,476,492.60,480.55,12.05,2.51,/india/stockpricequote/cement-major/birlacorporation/BC07 
+Vipul,41.50,39.50,41.30,40.30,1,2.51,/india/stockpricequote/constructioncontracting-realestate/vipul/V04 
+DQ Entertain,28.35,25.80,26.95,26.30,0.65,2.48,/india/stockpricequote/mediaentertainment/dqentertainmentinternational/DEI01 
+Gallantt Ispat,395.70,393,395.45,385.95,9.50,2.47,/india/stockpricequote/steel-spongeiron/gallanttispat/GI 
+Prakash Steelag,165,151.10,153.90,150.20,3.70,2.46,/india/stockpricequote/steel-tubespipes/prakashsteelage/PS16 
+Quantum Gold,1241,1211,1231.80,1202.20,29.60,2.46,/india/stockpricequote/finance-investments/quantumgoldfund-exchangetradedfund(etf)/QGF 
+Reliance Comm,106,101.45,105.30,102.80,2.50,2.46,/india/stockpricequote/telecommunications-service/reliancecommunications/RC13 
+Balaji Telefilm,79,75,78.20,76.35,1.85,2.43,/india/stockpricequote/mediaentertainment/balajitelefilms/BT06 
+HOEC,51.95,48.80,50.95,49.75,1.20,2.42,/india/stockpricequote/oildrillingandexploration/hindustanoilexplorationcompany/HOE01 
+Munjal Auto Ind,118.20,112,116.90,114.15,2.75,2.41,/india/stockpricequote/autoancillaries/munjalautoindustries/MAI04 
+Ganesh Housing,140.05,135,138.10,134.85,3.25,2.41,/india/stockpricequote/constructioncontracting-housing/ganeshhousingcorporation/GHC02 
+Astral Poly Tec,403.30,380,398.50,389.15,9.35,2.41,/india/stockpricequote/plastics/astralpolytechnik/APT02 
+Coromandel Int,323.80,312.20,321.85,314.30,7.55,2.40,/india/stockpricequote/fertilisers/coromandelinternational/CI45 
+TIL,416.95,402,412.80,403.20,9.60,2.40,/india/stockpricequote/engineering-heavy/til/TIL 
+Technocraft Ind,195.45,185.20,189.25,184.85,4.40,2.38,/india/stockpricequote/steel-mediumsmall/technocraftindustries(india)/TII01 
+Zodiac Clothing,389.75,371.15,381.90,373.10,8.80,2.38,/india/stockpricequote/textiles-readymadeapparels/zodiacclothingcompany/ZCC 
+Kirloskar Invt,3825,3620,3801.50,3713.85,87.65,2.36,/india/stockpricequote/finance-general/kirloskarbrothersinvestments/KBI01 
+Indraprastha,52.45,51,52.10,50.90,1.20,2.36,/india/stockpricequote/hospitalsmedicalservices/indraprasthamedicalcorporation/IMC03 
+Summit Sec,297.20,281.05,291.70,285,6.70,2.36,/india/stockpricequote/finance-investments/summitsecurities/SS56 
+Tamil Newsprint,142,138,141.50,138.25,3.25,2.35,/india/stockpricequote/paper/tamilnadunewsprintpapers/TNN 
+CenturyPlyboard,141.90,135.50,140.20,137,3.20,2.35,/india/stockpricequote/miscellaneous/centuryplyboards/CP9 
+Peacock Ind,22,21.50,22,21.50,0.50,2.34,/india/stockpricequote/plastics/peacockindustries/PI08 
+Shalimar Paints,160,152.75,158.60,155,3.60,2.33,/india/stockpricequote/paintsvarnishes/shalimarpaints/SP13 
+MPS,738.80,705,722.35,705.95,16.40,2.32,/india/stockpricequote/printingstationery/mps/MI31 
+Orient Cement,148.65,137,143.35,140.10,3.25,2.32,/india/stockpricequote/cement-major/orientcement/OC10 
+Gillanders Arbu,75,71.25,73.70,72.05,1.65,2.32,/india/stockpricequote/plantations-teacoffee/gillandersarbuthnotco/GAC03 
+Kakatiya Cement,110,105.90,109.85,107.40,2.45,2.29,/india/stockpricequote/cement-mini/kakatiyacements/KC01 
+Jamna Auto,154,146.60,153.15,149.75,3.40,2.28,/india/stockpricequote/autoancillaries/jamnaautoindustries/JAI 
+Oudh Sugar Mill,23.30,21.20,22.70,22.20,0.50,2.27,/india/stockpricequote/sugar/oudhsugarmills/OSM 
+BF Investment,119,114,117.05,114.50,2.55,2.25,/india/stockpricequote/finance-investments/bfinvestment/BFI 
+Can Fin Homes,510,502,504.25,493.25,11,2.23,/india/stockpricequote/finance-housing/canfinhomes/CFH 
+Capri Global,217,205.05,215.10,210.45,4.65,2.23,/india/stockpricequote/finance-general/capriglobalcapital/MMF05 
+Triveni Engg,28.65,27,27.80,27.20,0.60,2.21,/india/stockpricequote/sugar/triveniengineeringindustries/TE10 
+Timken,455.60,441.50,451.35,441.65,9.70,2.21,/india/stockpricequote/bearings/timkenindia/TI23 
+GIC Housing Fin,192.05,187.25,190.85,186.75,4.10,2.20,/india/stockpricequote/finance-housing/gichousingfinance/GIC 
+NHPC,21.05,20.30,20.95,20.50,0.45,2.20,/india/stockpricequote/power-generationdistribution/nhpc/N07 
+Hero Motocorp,3040.85,2950.05,3028.90,2964.40,64.50,2.20,/india/stockpricequote/auto-23wheelers/heromotocorp/HHM 
+Mahindra Life,531.90,509.20,528.10,516.85,11.25,2.18,/india/stockpricequote/constructioncontracting-civil/mahindralifespacedevelopers/MLD 
+Jindal Poly Inv,130.40,121.30,126.90,124.20,2.70,2.18,/india/stockpricequote/finance-general/jindalpolyinvestmentfinancecompany/JPI02 
+HDFC Gold ETF,2544.90,2510,2529.20,2475.65,53.55,2.17,/india/stockpricequote/finance-investments/hdfcmutualfund-goldexchangetradedfund/HDF02 
+Crompton Greave,194.70,188.35,194.10,190,4.10,2.16,/india/stockpricequote/electricequipment/cromptongreaves/CG 
+Aarti Ind,301,291,298.05,291.80,6.25,2.16,/india/stockpricequote/chemicals/aartiindustries/AI45 
+Jayant Agro-Org,135.85,125.15,132.10,129.35,2.75,2.14,/india/stockpricequote/chemicals/jayantagro-organics/JAO 
+TVS Srichakra,1740,1678,1714.45,1678.80,35.65,2.13,/india/stockpricequote/tyres/tvssrichakra/TVS03 
+Kirloskar Ind,615,605.70,614.60,601.85,12.75,2.12,/india/stockpricequote/engines/kirloskarindustries/KOE 
+Fedders Lloyd,81.75,77.10,79.70,78.05,1.65,2.12,/india/stockpricequote/consumergoods-whitegoods/fedderslloyd/FL 
+Munjal Showa,236.45,220.65,234.70,229.85,4.85,2.11,/india/stockpricequote/autoancillaries/munjalshowa/MS 
+Granules India,818.90,773.10,799.90,783.45,16.45,2.11,/india/stockpricequote/pharmaceuticals/granulesindia/GI25 
+GSFC,119.90,113.10,118.90,116.45,2.45,2.10,/india/stockpricequote/fertilisers/gujaratstatefertilizerschemicals/GSF 
+Pioneer Distill,39.25,36.40,39.10,38.30,0.80,2.10,/india/stockpricequote/breweriesdistilleries/pioneerdistilleries/PDL 
+Berger Paints,367.50,355.25,366.10,358.65,7.45,2.09,/india/stockpricequote/paintsvarnishes/bergerpaintsindia/BPI02 
+PNB Gilts,27.40,26.50,27.05,26.50,0.55,2.08,/india/stockpricequote/finance-investments/pnbgilts/PNB04 
+Gillette India,3514.95,3351.60,3477.95,3407.45,70.50,2.08,/india/stockpricequote/personalcare/gilletteindia/GI22 
+Canara Bank,413.90,398,411.05,402.75,8.30,2.07,/india/stockpricequote/banks-publicsector/canarabank/CB06 
+Orient Paper,30.10,28.25,29.80,29.20,0.60,2.06,/india/stockpricequote/diversified/orientpaperindustries/OPI 
+Strides Arcolab,718.85,696.10,714,699.70,14.30,2.05,/india/stockpricequote/pharmaceuticals/stridesarcolab/SA10 
+Venkys,467.95,456.30,463.45,454.20,9.25,2.04,/india/stockpricequote/miscellaneous/venkys/V03 
+Guj Flourochem,773.75,740.15,768.65,753.50,15.15,2.04,/india/stockpricequote/chemicals/gujaratfluorochemicals/GF07 
+EIH Assoc Hotel,195.95,192,195.90,192.05,3.85,2.01,/india/stockpricequote/hotels/eihassociatedhotels/EIH01 
+Kaveri Seed,931,903.95,926.50,908.30,18.20,2,/india/stockpricequote/miscellaneous/kaveriseedcompany/KSC01 
+Styrolution ABS,652,629.95,642.65,630.10,12.55,2,/india/stockpricequote/petrochemicals/styrolutionabs(india)/INE01 
+Alembic,49.95,47.95,48.95,48,0.95,1.99,/india/stockpricequote/pharmaceuticals/alembic/A08 
+Oriental Hotels,23.30,22.75,23.20,22.75,0.45,1.98,/india/stockpricequote/hotels/orientalhotels/OH 
+Oriental Bank,297.50,286.45,295.40,289.70,5.70,1.98,/india/stockpricequote/banks-publicsector/orientalbankcommerce/OBC 
+Butterfly,290,260.30,272.50,267.25,5.25,1.97,/india/stockpricequote/domesticappliances/butterflygandhimathiappliances/GA 
+NTPC,146.30,142.50,145.90,143.10,2.80,1.96,/india/stockpricequote/power-generationdistribution/ntpc/NTP 
+Nectar Life,39.70,37.50,39,38.25,0.75,1.96,/india/stockpricequote/pharmaceuticals/nectarlifesciences/NL01 
+Sundram,198.50,190.45,194.65,190.95,3.70,1.96,/india/stockpricequote/fasteners/sundramfasteners/SF23 
+Tara Jewels,95.45,91.60,94.65,92.85,1.80,1.94,/india/stockpricequote/diamondcuttingpreciousmetalsjewellery/tarajewels/TJ01 
+SREI Infra,44.90,43.30,44.60,43.75,0.85,1.94,/india/stockpricequote/finance-leasinghirepurchase/sreiinfrastructurefinance/SRE02 
+Everonn Edu,43.75,41.15,42.05,41.25,0.80,1.94,/india/stockpricequote/computers-software-training/everonneducation/EE05 
+Pennar Inds,62.60,59.40,60.65,59.50,1.15,1.94,/india/stockpricequote/steel-crhrstrips/pennarindustries/PI28 
+Panasonic App,264,256,263.10,258.15,4.95,1.93,/india/stockpricequote/domesticappliances/panasonicappliancesindiacompany/PHA01 
+Gabriel India,96.75,92.05,95.65,93.85,1.80,1.92,/india/stockpricequote/autoancillaries/gabrielindia/GI02 
+JagranPrakashan,138.80,134,136.70,134.15,2.55,1.92,/india/stockpricequote/mediaentertainment/jagranprakashan/JP12 
+Dabur India,236,226.75,235.75,231.35,4.40,1.90,/india/stockpricequote/personalcare/daburindia/DI 
+Abbott India,3331.35,3199.65,3295.70,3234.35,61.35,1.90,/india/stockpricequote/pharmaceuticals/abbottindia/AI51 
+Birla Gold ETF,2535,2502,2529.95,2482.70,47.25,1.90,/india/stockpricequote/finance-investments/birlasunlifegoldetf/BSL02 
+Ahmednagar Forg,461.25,440.20,458.55,450,8.55,1.90,/india/stockpricequote/castingsforgings/ahmednagarforgings/AF01 
+Savita Oil Tech,709.90,675,694.75,681.85,12.90,1.90,/india/stockpricequote/petrochemicals/savitaoiltechnologies/SOT01 
+Mangalam Cement,320,309.05,315.65,309.80,5.85,1.89,/india/stockpricequote/cement-major/mangalamcement/MC03 
+Union Bank,222.50,214.20,220.95,216.90,4.05,1.89,/india/stockpricequote/banks-publicsector/unionbankindia/UBI01 
+Lakshmi Mills,2131,2076,2131,2092,39,1.87,/india/stockpricequote/textiles-compositemills/lakshmimillscompany/LMC 
+Salora Inter,43.85,42,43.70,42.90,0.80,1.86,/india/stockpricequote/consumergoods-electronic/salorainternational/SI24 
+Ambika Cotton,489,468.40,483.75,474.95,8.80,1.86,/india/stockpricequote/textiles-spinning-cottonblended/ambikacottonmills/ACM04 
+Power Grid Corp,147.05,143.70,146.75,144.10,2.65,1.85,/india/stockpricequote/power-generationdistribution/powergridcorporationindia/PGC 
+Hind Copper,82.20,78.95,80.55,79.10,1.45,1.84,/india/stockpricequote/metals-nonferrous/hindustancopper/HC07 
+Trigyn Tech,49.40,46,47.25,46.40,0.85,1.83,/india/stockpricequote/computers-softwaremediumsmall/trigyntechnologies/TT08 
+Alembic Pharma,461.90,448.95,455.50,447.35,8.15,1.83,/india/stockpricequote/pharmaceuticals/alembicpharmaceuticals/AP35 
+Jyoti Structure,43.30,41,42.30,41.55,0.75,1.82,/india/stockpricequote/power-transmissionequipment/jyotistructures/JS03 
+Bajaj Hind,22.70,21.80,22.50,22.10,0.40,1.81,/india/stockpricequote/sugar/bajajhindusthan/BH06 
+Astra Microwave,122.70,117,120.80,118.65,2.15,1.81,/india/stockpricequote/telecommunications-equipment/astramicrowaveproducts/AMP01 
+Kalyani Steels,169.60,165.05,168.20,165.25,2.95,1.81,/india/stockpricequote/steel-rolling/kalyanisteels/KS01 
+Arvind,289,279.30,287.10,282.05,5.05,1.79,/india/stockpricequote/textiles-denim/arvind/A18 
+IDFC,158.80,153.90,157.40,154.65,2.75,1.79,/india/stockpricequote/finance-termlendinginstitutions/idfc/IDF 
+Kesar Terminals,410,390.05,399.50,392.50,7,1.78,/india/stockpricequote/miscellaneous/kesarterminalsinfrastructure/KTI04 
+Hercules Hoists,193,186.60,191.10,187.80,3.30,1.78,/india/stockpricequote/engineering/herculeshoists/HH01 
+Ajanta Pharma,2175,2100.05,2154.30,2117.10,37.20,1.76,/india/stockpricequote/pharmaceuticals/ajantapharma/AP22 
+Eimco Elecon,357.95,339.90,350,344,6,1.76,/india/stockpricequote/engineering-heavy/eimcoelecon(india)/EEI 
+FDC,157.90,151.10,154.90,152.25,2.65,1.74,/india/stockpricequote/pharmaceuticals/fdc/FDC 
+Jocil,131.10,126,128.40,126.20,2.20,1.74,/india/stockpricequote/miscellaneous/jocil/J01 
+Bajaj Corp,295,282,289.50,284.65,4.85,1.74,/india/stockpricequote/personalcare/bajajcorp/BC02 
+Godfrey Phillip,3064.95,2992,3033.40,2982.60,50.80,1.70,/india/stockpricequote/cigarettes/godfreyphillipsindia/GPI 
+CPSE ETF,25.95,25.25,25.86,25.43,0.43,1.70,/india/stockpricequote/finance-investments/goldmansachsmutualfund-cpseetf/CPS01 
+Escorts,150.50,145.90,148.80,146.35,2.45,1.69,/india/stockpricequote/auto-tractors/escorts/E 
+Goldman BEES,2439,2416.05,2430.40,2390.45,39.95,1.67,/india/stockpricequote/banks-privatesector/goldmansachsgoldexchangetradedscheme/GBE 
+Reliance Power,73.40,71.50,73.10,71.90,1.20,1.67,/india/stockpricequote/power-generationdistribution/reliancepower/RP 
+Gyscoal Alloys,40.80,37.10,39.80,39.15,0.65,1.67,/india/stockpricequote/steel-spongeiron/gyscoalalloys/GA01 
+Reliance,987.55,966,985.20,969.15,16.05,1.66,/india/stockpricequote/refineries/relianceindustries/RI 
+Indian Bank,186,179.30,184.25,181.25,3,1.66,/india/stockpricequote/banks-publicsector/indianbank/IB04 
+Ashok Leyland,55.60,54,55.30,54.40,0.90,1.66,/india/stockpricequote/auto-lcvshcvs/ashokleyland/AL 
+Fert and Chem,34.50,33.30,33.80,33.25,0.55,1.65,/india/stockpricequote/fertilisers/fertiliserschemicalstravancore/FCT 
+Electrosteel,21.75,20.90,21.50,21.15,0.35,1.65,/india/stockpricequote/castingsforgings/electrosteelcastings/EC02 
+Ind Motor Parts,759,719,751.85,739.80,12.05,1.65,/india/stockpricequote/trading/indiamotorpartsaccessories/IMP03 
+Sunil HitechEng,193.35,181.45,184,181.05,2.95,1.63,/india/stockpricequote/power-transmissionequipment/sunilhitechengineers/SHE 
+TTK Prestige,3920,3712.20,3808.10,3747.40,60.70,1.63,/india/stockpricequote/domesticappliances/ttkprestige/TTK02 
+Tribhovandas,163.80,156.70,161.25,158.70,2.55,1.62,/india/stockpricequote/diamondcuttingpreciousmetalsjewellery/tribhovandasbhimjizaveri/TBZ 
+Alkali Metals,23,21,22.25,21.90,0.35,1.61,/india/stockpricequote/chemicals/alkalimetals/AM11 
+Rel Ind Infra,534,519.50,529.25,520.90,8.35,1.60,/india/stockpricequote/infrastructure-general/relianceindustrialinfrastructure/RII 
+Himadri Chem,28.95,28,28.55,28.10,0.45,1.60,/india/stockpricequote/chemicals/himadrichemicalsindustries/HCI01 
+Tourism Finance,48.95,45.60,47.50,46.75,0.75,1.60,/india/stockpricequote/finance-termlendinginstitutions/tourismfinancecorpindia/TFC 
+KEC Intl,99.30,94.70,98.50,96.95,1.55,1.60,/india/stockpricequote/power-transmissionequipment/kecinternational/KEC04 
+UTI - Gold,2499,2411.10,2419.60,2381.85,37.75,1.60,/india/stockpricequote/banks-publicsector/utigoldexchangetradedfund/UTI18 
+Bank of Mah,45.50,44.15,45.20,44.50,0.70,1.58,/india/stockpricequote/banks-publicsector/bankmaharashtra/BM05 
+Morarjee Text,50.50,46.55,48.90,48.15,0.75,1.57,/india/stockpricequote/textiles-spinning-cottonblended/morarjeetextiles/MT12 
+Bharat Elec,2299.70,2245.45,2280.45,2245.40,35.05,1.56,/india/stockpricequote/electricals/bharatelectronics/BE03 
+Century,593.90,574.45,584.25,575.25,9,1.56,/india/stockpricequote/diversified/centurytextilesindustries/CTI 
+Dishman Pharma,144.45,140,141.15,139,2.15,1.56,/india/stockpricequote/pharmaceuticals/dishmanpharmaceuticalschemicals/DPC02 
+PanasonicCarbon,269.80,257.60,263.65,259.65,4,1.55,/india/stockpricequote/electrodesgraphite/panasoniccarbonindia/PCI04 
+SRF,859.85,826,850.55,837.65,12.90,1.54,/india/stockpricequote/textiles-manmade/srf/SRF 
+Bajaj Finserv,1070,1025,1049.25,1033.55,15.70,1.54,/india/stockpricequote/finance-investments/bajajfinserv/BF04 
+Mindtree,1149,1111.55,1142.35,1125.35,17,1.52,/india/stockpricequote/computers-software/mindtree/MT13 
+BSL,36.50,33,33.90,33.40,0.50,1.51,/india/stockpricequote/textiles-weaving/bsl/BSL 
+Talbros Auto,109.80,104,108.15,106.55,1.60,1.50,/india/stockpricequote/autoancillaries/talbrosautomotivecomponents/TAC 
+Educomp Sol,32.70,29.15,30.65,30.20,0.45,1.50,/india/stockpricequote/computers-software-training/educompsolutions/ES8 
+Kirl Electric,31,28.90,30.65,30.20,0.45,1.49,/india/stockpricequote/electricequipment/kirloskarelectricco/KEC02 
+Sangam India,84.40,81,82.55,81.35,1.20,1.49,/india/stockpricequote/textiles-spinning-syntheticblended/sangam(india)/SI03 
+Thirumalai Chem,108.30,104.50,106.35,104.80,1.55,1.48,/india/stockpricequote/chemicals/thirumalaichemicals/TC07 
+IG Petro,65,55,61.85,60.95,0.90,1.48,/india/stockpricequote/chemicals/igpetrochemicals/IGP 
+Supreme Ind,596.90,579.70,591.50,582.95,8.55,1.48,/india/stockpricequote/plastics/supremeindustries/SI48 
+SJVN,24.35,23.85,24.15,23.80,0.35,1.47,/india/stockpricequote/power-generationdistribution/sjvn/S11 
+Ramco Cements,355,346,353.95,348.90,5.05,1.47,/india/stockpricequote/cement-major/theramcocements/MC 
+Orient Press,105.70,99.05,105.50,104,1.50,1.45,/india/stockpricequote/printingstationery/orientpress/OP02 
+JSW Holdings,963,927,952.75,939.35,13.40,1.44,/india/stockpricequote/finance-investments/jswholdings/JSW 
+IFCI,39.35,37.95,39.15,38.60,0.55,1.43,/india/stockpricequote/finance-termlendinginstitutions/ifci/IFC02 
+Hinduja Found,50,50,50,49.30,0.70,1.42,/india/stockpricequote/castingsforgings/hindujafoundries/HF10 
+Tata Comm,446.50,434.55,442.15,436,6.15,1.42,/india/stockpricequote/telecommunications-service/tatacommunications/TC17 
+Microsec Fin,83.50,77.15,80.35,79.25,1.10,1.41,/india/stockpricequote/finance-general/microsecfinancialservices/MFS 
+Hatsun Agro,316.80,285,313.05,308.75,4.30,1.39,/india/stockpricequote/foodprocessing/hatsunagroproducts/HAP 
+J. K. Cement,679.80,662.70,668.70,659.55,9.15,1.39,/india/stockpricequote/cement-major/jkcement/JKC03 
+STC India,206.45,199,202.50,199.75,2.75,1.39,/india/stockpricequote/trading/statetradingcorporationindia/STC 
+Birla Nifty ETF,83.99,82.15,83.34,82.21,1.13,1.38,/india/stockpricequote/finance-investments/birlasunlifeniftyetf/BSL03 
+Alphageo,522,491.15,507.70,500.85,6.85,1.37,/india/stockpricequote/oildrillingandexploration/alphageo(india)/AI10 
+HFCL,22.95,21.65,22.40,22.10,0.30,1.37,/india/stockpricequote/telecommunications-equipment/himachalfuturisticcommunication/HFC 
+Kanoria Chem,41.30,39.90,40.90,40.35,0.55,1.36,/india/stockpricequote/chemicals/kanoriachemicalsindustries/KCI01 
+Sasken Comm,257.90,248.90,252,248.65,3.35,1.36,/india/stockpricequote/computers-software/saskencommunicationtechnologies/SCT01 
+Kotak Mahindra,1115.70,1040.50,1108.10,1093.50,14.60,1.35,/india/stockpricequote/banks-privatesector/kotakmahindrabank/KMB 
+BHEL,250.75,240.70,249.15,245.85,3.30,1.34,/india/stockpricequote/infrastructure-general/bharatheavyelectricals/BHE 
+Rallis India,226.75,220.50,225.20,222.25,2.95,1.34,/india/stockpricequote/pesticidesagrochemicals/rallisindia/RI03 
+Marksans Pharma,62.70,58.50,60.90,60.10,0.80,1.33,/india/stockpricequote/pharmaceuticals/marksanspharma/MP21 
+DB Corp,361.40,350.35,360.05,355.35,4.70,1.33,/india/stockpricequote/mediaentertainment/dbcorp/C13 
+Hitech Plast,120.65,114.60,118.85,117.30,1.55,1.32,/india/stockpricequote/plastics/hitechplast/HP08 
+Opto Circuits,23.70,22.70,23.10,22.80,0.30,1.32,/india/stockpricequote/hospitalsmedicalservices/optocircuitsindia/OCI01 
+Balrampur Chini,67,63.25,65.15,64.30,0.85,1.32,/india/stockpricequote/sugar/balrampurchinimills/BCM 
+Just Dial,1525,1490,1509.75,1490.10,19.65,1.32,/india/stockpricequote/miscellaneous/justdial/JD 
+Zee Media,23.80,22.75,23.05,22.75,0.30,1.32,/india/stockpricequote/mediaentertainment/zeemediacorporation/ZN 
+Amarjothi Spin,76.50,74.05,76.50,75.50,1,1.32,/india/stockpricequote/textiles-spinning-cottonblended/amarjothispinningmills/ASM01 
+Indian Hotels,109.55,105.85,108.25,106.85,1.40,1.32,/india/stockpricequote/hotels/indianhotelscompany/IHC 
+Bajaj Holdings,1439.70,1398.05,1422.85,1404.45,18.40,1.31,/india/stockpricequote/finance-investments/bajajholdingsinvestment/BHI 
+Rane Brake,296,280,295.15,291.35,3.80,1.31,/india/stockpricequote/autoancillaries/ranebrakelinings/RBL01 
+Vardhman Text,422.40,412.25,421.40,416,5.40,1.30,/india/stockpricequote/textiles-spinning-cottonblended/vardhmantextiles/VT10 
+Bank of India,289.95,283,288.65,285,3.65,1.30,/india/stockpricequote/banks-publicsector/bankofindia/BOI 
+JK Paper,31.85,31.05,31.80,31.40,0.40,1.28,/india/stockpricequote/paper/jkpaper/JKP01 
+Allahabad Bank,121.80,118.20,120.95,119.45,1.50,1.27,/india/stockpricequote/banks-publicsector/allahabadbank/AB15 
+Sintex Ind,96.50,93,96.15,94.95,1.20,1.26,/india/stockpricequote/diversified/sintexindustries/SI27 
+Bharti Airtel,395,385.20,393.20,388.35,4.85,1.26,/india/stockpricequote/telecommunications-service/bhartiairtel/BA08 
+Dolphin Offshor,193.70,186.70,190.30,187.95,2.35,1.25,/india/stockpricequote/oildrillingandexploration/dolphinoffshoreenterprises(i)/DOE 
+Karnataka Bank,140.90,136.05,138.90,137.20,1.70,1.25,/india/stockpricequote/banks-privatesector/karnatakabank/KB04 
+HEG,281.20,269.95,277.30,273.90,3.40,1.24,/india/stockpricequote/electrodesgraphite/heg/HEG 
+Capital First,365.50,356.15,361.90,357.45,4.45,1.24,/india/stockpricequote/finance-general/capitalfirst/FCH 
+Thermax,1093.70,1043,1062.10,1049.15,12.95,1.24,/india/stockpricequote/infrastructure-general/thermax/T 
+Dredging Corp,436.25,417.95,428.35,423.15,5.20,1.23,/india/stockpricequote/miscellaneous/dredgingcorporationindia/DCI 
+Zensar Tech,619,595.60,615.55,608.10,7.45,1.23,/india/stockpricequote/computers-software/zensartechnologies/ZT02 
+Idea Cellular,165,161.40,164.40,162.40,2,1.23,/india/stockpricequote/telecommunications-service/ideacellular/IC8 
+Excel Infoways,25,24.50,24.95,24.65,0.30,1.23,/india/stockpricequote/computers-softwaremediumsmall/excelinfoways/EI07 
+Shoppers Stop,519.45,495.05,508,501.90,6.10,1.22,/india/stockpricequote/retail/shoppersstop/SS51 
+Britannia,1703.90,1640,1644,1624.30,19.70,1.22,/india/stockpricequote/foodprocessing/britanniaindustries/BI 
+Man Infra,25.90,24.85,25.15,24.85,0.30,1.21,/india/stockpricequote/constructioncontracting-civil/maninfraconstruction/MI37 
+Punjab & Sind,63.55,61.55,62.95,62.20,0.75,1.21,/india/stockpricequote/banks-publicsector/punjabsindbank/PSB 
+Mcleod,246,238.20,245.20,242.30,2.90,1.21,/india/stockpricequote/plantations-teacoffee/mcleodrussel(india)/MRI02 
+Bata India,1340.55,1301.40,1329.45,1313.65,15.80,1.20,/india/stockpricequote/leatherproducts/bataindia/BI01 
+Castrol,454.60,438.40,447.30,442.05,5.25,1.20,/india/stockpricequote/lubricants/castrolindia/CI01 
+Atul Auto,393.90,375,387.20,382.70,4.50,1.19,/india/stockpricequote/auto-23wheelers/atulauto/AA08 
+Redington,104.25,101.20,103.90,102.70,1.20,1.18,/india/stockpricequote/computers-hardware/redington(india)/RI37 
+P and G,5790,5680.15,5758.20,5691.60,66.60,1.17,/india/stockpricequote/personalcare/proctergamblehygienehealthcare/PGH 
+Suryalakshmi Co,115.50,111,113.60,112.30,1.30,1.17,/india/stockpricequote/textiles-spinning-cottonblended/suryalakshmicottonmills/SCM02 
+Goldiam Inter,32,28.50,30.90,30.55,0.35,1.16,/india/stockpricequote/diamondcuttingpreciousmetalsjewellery/goldiaminternational/GI10 
+BharatiShipyard,35.70,34.10,35.10,34.70,0.40,1.15,/india/stockpricequote/shipping/bharatishipyard/BS13 
+Asahi India,130,126.90,128.35,126.90,1.45,1.15,/india/stockpricequote/glassglassproducts/asahiindiaglass/AIG01 
+GRUH Finance,236.90,232,235.40,232.75,2.65,1.14,/india/stockpricequote/finance-housing/gruhfinance/GRU 
+Dhanlaxmi Bank,45,44,44.60,44.10,0.50,1.14,/india/stockpricequote/banks-privatesector/dhanlaxmibank/DB01 
+State Bk Travan,475.30,445.60,470.10,464.85,5.25,1.13,/india/stockpricequote/banks-publicsector/statebanktravancore/SBT 
+Eros Intl,328.80,312.60,324.60,321,3.60,1.13,/india/stockpricequote/mediaentertainment/erosinternationalmedia/EIM 
+Syndicate Bank,129,125.55,127.90,126.50,1.40,1.12,/india/stockpricequote/banks-publicsector/syndicatebank/SB9 
+Orient Abrasive,23,22.10,22.80,22.55,0.25,1.11,/india/stockpricequote/abrasives/orientabrasives/OA01 
+Tantia Const,23.70,21.90,23.15,22.90,0.25,1.11,/india/stockpricequote/constructioncontracting-civil/tantiaconstructions/TC15 
+SML Isuzu,975,938,946.85,936.60,10.25,1.09,/india/stockpricequote/auto-lcvshcvs/smlisuzu/SM 
+Oberoi Realty,260,248.25,257.70,254.95,2.75,1.09,/india/stockpricequote/constructioncontracting-realestate/oberoirealty/OR 
+Adani Enterpris,500.90,490.75,495.30,490,5.30,1.08,/india/stockpricequote/trading/adanienterprises/AE13 
+EID Parry,244.80,234.10,238.10,235.60,2.50,1.08,/india/stockpricequote/sugar/eidparry(india)/EID 
+SKF India,1385,1347,1370.95,1356.75,14.20,1.06,/india/stockpricequote/bearings/skfindia/SKF01 
+Cords Cable Ind,29.55,27,28.85,28.55,0.30,1.05,/india/stockpricequote/cables-powerothers/cordscableindustries/CCI07 
+Dalmia Sugar,24.90,23,24.05,23.80,0.25,1.05,/india/stockpricequote/sugar/dalmiabharatsugarindustries/DCB 
+Zee Entertain,382.45,372,380.10,376.15,3.95,1.05,/india/stockpricequote/mediaentertainment/zeeentertainmententerprises/ZEE 
+Autoline Ind,92.90,88.55,91.10,90.15,0.95,1.05,/india/stockpricequote/autoancillaries/autolineindustries/AI59 
+SKS Microfin,367.70,356.50,363.60,359.85,3.75,1.05,/india/stockpricequote/finance-general/sksmicrofinance/SM11 
+IOB,58.90,57.30,58.55,57.95,0.60,1.04,/india/stockpricequote/banks-publicsector/indianoverseasbank/IOB 
+Eveready Ind,164.85,155.60,161.50,159.85,1.65,1.04,/india/stockpricequote/drycells/evereadyindustriesindia/EII02 
+Jain Irrigation,83.90,81.35,83.10,82.25,0.85,1.03,/india/stockpricequote/plastics/jainirrigationsystems/JIS02 
+Cigniti Tech,485,470,482.35,477.45,4.90,1.03,/india/stockpricequote/computers-softwaremediumsmall/cignititechnologies/CI42 
+Vinati Organics,429.75,418.10,426.95,422.60,4.35,1.03,/india/stockpricequote/chemicals/vinatiorganics/VO01 
+Puravankara,101.40,98,98.45,97.45,1,1.03,/india/stockpricequote/constructioncontracting-realestate/puravankaraprojects/PP01 
+Jain Irrig (D),55,53.10,54.30,53.75,0.55,1.03,/india/stockpricequote/plastics/jainirrigationsystems(dvr)/JIS03 
+India Glycols,121.60,118.05,120.10,118.90,1.20,1.02,/india/stockpricequote/chemicals/indiaglycols/IG 
+GMR Infra,20.45,19.35,20.30,20.10,0.20,1.01,/india/stockpricequote/infrastructure-general/gmrinfrastructure/GI27 
+IFGL Refractory,171,166.35,168.80,167.15,1.65,1,/india/stockpricequote/cement-productsbuildingmaterials/ifglrefractories/IFG 
+Honda Siel,905.90,872,901.15,892.35,8.80,0.99,/india/stockpricequote/electricequipment/hondasielpowerproducts/HSP02 
+Ahluwalia,159.90,150.15,154.65,153.15,1.50,0.99,/india/stockpricequote/constructioncontracting-civil/ahluwaliacontractsindia/ACI12 
+Garware Wall,184,178,181.15,179.40,1.75,0.98,/india/stockpricequote/textiles-general/garwarewallropes/GWR 
+Tata Sponge,707,681,693.05,686.30,6.75,0.98,/india/stockpricequote/steel-spongeiron/tataspongeiron/TSI 
+Lovable Lingeri,424.90,409.95,413,409,4,0.98,/india/stockpricequote/textiles-readymadeapparels/lovablelingerie/LL04 
+Shree Ganesh,26.75,25.50,26.20,25.95,0.25,0.98,/india/stockpricequote/diamondcuttingpreciousmetalsjewellery/shreeganeshjewelleryhouse(i)/SGJ 
+Dish TV,64.45,61.60,63.70,63.10,0.60,0.96,/india/stockpricequote/mediaentertainment/dishtvindia/DTV 
+Kwality,48.25,46.15,47.75,47.30,0.45,0.95,/india/stockpricequote/foodprocessing/kwality/KDI01 
+Visagar Polytex,682,665,670.70,664.45,6.25,0.95,/india/stockpricequote/finance-investments/visagarpolytex/VP10 
+Vadilal Ind,226.40,211.10,225.70,223.60,2.10,0.94,/india/stockpricequote/foodprocessing/vadilalindustries/VI01 
+Swelect Energy,429.05,413.05,419.50,415.65,3.85,0.94,/india/stockpricequote/electricequipment/swelectenergysystems/NPS 
+Pfizer,1670,1646,1660.05,1644.90,15.15,0.93,/india/stockpricequote/pharmaceuticals/pfizer/P 
+Container Corp,1363.80,1331.85,1355.20,1343,12.20,0.92,/india/stockpricequote/transportlogistics/containercorporationindia/CCI 
+RPP Infra Proj,155,139.50,140.75,139.50,1.25,0.91,/india/stockpricequote/constructioncontracting-civil/rppinfraprojects/RIP01 
+Hikal,712.95,694.95,706.10,699.85,6.25,0.90,/india/stockpricequote/pharmaceuticals/hikal/H05 
+Tide Water Oil,16275,15338.70,16011.45,15869.45,142,0.89,/india/stockpricequote/lubricants/tidewateroil/TWO 
+Pearl Global In,227,221.20,224.20,222.25,1.95,0.89,/india/stockpricequote/textiles-readymadeapparels/pearlglobalindustries/HPF01 
+National Steel,23.40,21.70,22.90,22.70,0.20,0.88,/india/stockpricequote/steel-gpgcsheets/nationalsteelagroindustries/NSA02 
+Vaibhav Global,750,736,742.10,735.65,6.45,0.88,/india/stockpricequote/miscellaneous/vaibhavglobal/VG02 
+Foseco India,1083,992.05,1030.10,1021.15,8.95,0.88,/india/stockpricequote/chemicals/fosecoindia/FI12 
+JUNIOR BEES,186.90,182.65,186.01,184.40,1.61,0.88,/india/stockpricequote/finance-investments/goldmansachsniftyjuniorexchangetradedscheme/BMF04 
+Motherson Sumi,432.15,420.25,428.30,424.65,3.65,0.87,/india/stockpricequote/autoancillaries/mothersonsumisystems/MSS01 
+Delta Corp,101.30,97.10,100,99.15,0.85,0.86,/india/stockpricequote/finance-general/deltacorp/DC11 
+Monsanto India,2960.30,2865,2899.45,2875.05,24.40,0.86,/india/stockpricequote/pesticidesagrochemicals/monsantoindia/MI39 
+JB Chemicals,221,215.65,219.90,218.05,1.85,0.85,/india/stockpricequote/pharmaceuticals/jbchemicalspharmaceuticals/JBC01 
+NBCC,795,766,781.15,774.55,6.60,0.85,/india/stockpricequote/infrastructure-general/nationalbuildingsconstructioncorporation/NBC01 
+Shriram Trans,1069.90,1038.35,1051.90,1043.10,8.80,0.85,/india/stockpricequote/finance-leasinghirepurchase/shriramtransportfinancecorporation/STF 
+RS Software,629.90,605.95,617.10,611.95,5.15,0.84,/india/stockpricequote/computers-softwaremediumsmall/rssoftware(india)/RSS 
+Binani Ind,115.90,112.05,113.65,112.70,0.95,0.84,/india/stockpricequote/glassglassproducts/binaniindustries/BI10 
+Atlas Cycles,272.50,262.10,269.05,266.80,2.25,0.84,/india/stockpricequote/miscellaneous/atlascycleindustries/ACI08 
+Supreme Tex,24.85,22.55,23.90,23.70,0.20,0.84,/india/stockpricequote/textiles-spinning-cottonblended/supremetexmart/STM03 
+JMC Projects,160.85,153.05,158.25,156.95,1.30,0.84,/india/stockpricequote/constructioncontracting-civil/jmcprojects(india)/JMC 
+Rolta,116.60,110,114.75,113.80,0.95,0.83,/india/stockpricequote/computers-software/roltaindia/RI15 
+Aro Granite,87.35,84.65,85.10,84.40,0.70,0.83,/india/stockpricequote/ceramicsgranite/arograniteindustries/AGI01 
+MRF,32770,32210,32621.20,32355.25,265.95,0.83,/india/stockpricequote/tyres/mrf/MRF 
+ONGC,399.10,391.55,396.45,393.25,3.20,0.82,/india/stockpricequote/oildrillingandexploration/oilnaturalgascorporation/ONG 
+INFRA BEES,336.28,327,331.99,329.31,2.68,0.81,/india/stockpricequote/finance-investments/goldmansachsinfrastructureets/IBE 
+Exide Ind,163,160.55,162.30,161,1.30,0.81,/india/stockpricequote/autoancillaries/exideindustries/EI 
+Gujarat Apollo,120.25,117.05,119.85,118.90,0.95,0.81,/india/stockpricequote/engineering-heavy/gujaratapolloindustries/GAI03 
+Hydro SandS Ind,255,240,249.25,247.30,1.95,0.80,/india/stockpricequote/plastics/hydrossindustries/HSS 
+Titan Company,379.85,371.15,377.60,374.65,2.95,0.79,/india/stockpricequote/miscellaneous/titancompany/TI01 
+Kernex Micro,65,62.20,64.30,63.80,0.50,0.79,/india/stockpricequote/computers-softwaremediumsmall/kernexmicrosystems(india)/KMI 
+Mahindra CIE,232.40,222.05,227.35,225.60,1.75,0.78,/india/stockpricequote/castingsforgings/mahindracieautomotive/MF19 
+Edelweiss,59.45,57.70,58.60,58.15,0.45,0.78,/india/stockpricequote/finance-general/edelweissfinancialservices/EC01 
+EngineersInd,229.85,223.05,227.65,225.90,1.75,0.77,/india/stockpricequote/infrastructure-general/engineersindia/EI14 
+Onelife Capital,183,171,171.85,170.55,1.30,0.77,/india/stockpricequote/finance-investments/onelifecapitaladvisors/OCA 
+Hinduja Venture,332.65,325.40,330.85,328.35,2.50,0.76,/india/stockpricequote/computers-software/hindujaventures/HV 
+DB Realty,75.90,71.20,74.20,73.65,0.55,0.76,/india/stockpricequote/constructioncontracting-realestate/dbrealty/DR 
+Kansai Nerolac,1928.50,1905.20,1914.95,1900.70,14.25,0.75,/india/stockpricequote/paintsvarnishes/kansainerolacpaints/KNP 
+IIFL NIFTY ETF,880,851.10,861.41,855,6.41,0.75,/india/stockpricequote/finance-investments/iiflmutualfund-iiflniftyetf/IIF 
+Swaraj Engines,966.95,940,955.70,948.60,7.10,0.75,/india/stockpricequote/engines/swarajengines/SE 
+Shree Cements,9221.90,9100,9162.70,9094.15,68.55,0.75,/india/stockpricequote/cement-major/shreecements/SC12 
+Atul,1372.45,1330,1354.85,1344.90,9.95,0.75,/india/stockpricequote/dyespigments/atul/A06 
+Texmaco Infra,49.40,47.30,47.80,47.45,0.35,0.74,/india/stockpricequote/infrastructure-general/texmacoinfrastructureholdings/T02 
+Petronet LNG,199.70,196.25,198.60,197.15,1.45,0.74,/india/stockpricequote/oildrillingandexploration/petronetlng/PLN 
+INOX Leisure,191,185,188.45,187.10,1.35,0.74,/india/stockpricequote/mediaentertainment/inoxleisure/INO01 
+Ingersoll Rand,924,900.55,914.35,907.85,6.50,0.72,/india/stockpricequote/compressors/ingersollrand(india)/IRI01 
+Khaitan Elec,64.90,58,64.45,64,0.45,0.72,/india/stockpricequote/domesticappliances/khaitanelectricals/KE02 
+Logix Micro,22,20.65,21.85,21.70,0.15,0.70,/india/stockpricequote/computers-softwaremediumsmall/logixmicrosystems/LM02 
+OCL India,308.05,299,304.55,302.45,2.10,0.69,/india/stockpricequote/cement-major/oclindia/OCL 
+3M India,6740,6599.95,6648.65,6603,45.65,0.69,/india/stockpricequote/diversified/3mindia/MI42 
+TTK Healthcare,847,806,829.65,824,5.65,0.69,/india/stockpricequote/pharmaceuticals/ttkhealthcare/TTK 
+Speciality Rest,202,182.75,189.65,188.35,1.30,0.69,/india/stockpricequote/hotels/specialityrestaurants/SR06 
+Cummins,855,843.35,854.65,849,5.65,0.69,/india/stockpricequote/engines/cumminsindia/CI02 
+Cipla,618,606.05,613.30,609.20,4.10,0.67,/india/stockpricequote/pharmaceuticals/cipla/C 
+Atlanta,68.65,66.35,67.35,66.90,0.45,0.67,/india/stockpricequote/constructioncontracting-civil/atlanta/A9 
+Vivimed Labs,381.85,363,371.25,368.85,2.40,0.67,/india/stockpricequote/pharmaceuticals/vivimedlabs/VL07 
+State Bk Mysore,560,540.40,553.40,549.85,3.55,0.65,/india/stockpricequote/banks-publicsector/statebankmysore/SBM 
+Infosys,4227.90,4148.10,4218.45,4191.65,26.80,0.65,/india/stockpricequote/computers-software/infosys/IT 
+ILandFS Trans,190.40,185,188.10,186.90,1.20,0.64,/india/stockpricequote/infrastructure-general/ilandfstransportationnetworks/ITN 
+Symphony,2059.95,2000,2048.85,2035.90,12.95,0.64,/india/stockpricequote/consumergoods-whitegoods/symphony/SCS04 
+Ind-Swift Labs,32.10,31.25,31.50,31.30,0.20,0.64,/india/stockpricequote/pharmaceuticals/ind-swiftlaboratories/ISL 
+Vardhman Steels,32.45,31,32.20,32,0.20,0.64,/india/stockpricequote/steel-mediumsmall/vardhmanspecialsteels/VSS01 
+Somany Ceramics,323,313.20,321.45,319.45,2,0.63,/india/stockpricequote/ceramicsgranite/somanyceramics/SC49 
+EIH,104.75,102.50,104.25,103.60,0.65,0.63,/india/stockpricequote/hotels/eih/EIH 
+HDIL,90.25,87.55,88.70,88.15,0.55,0.63,/india/stockpricequote/constructioncontracting-realestate/housingdevelopmentinfrastructure/HDI 
+Kovai Medical,499.90,485,490,487,3,0.62,/india/stockpricequote/hospitalsmedicalservices/kovaimedicalcenterhospital/KMC02 
+Navin Fluorine,597,568,587.10,583.55,3.55,0.62,/india/stockpricequote/chemicals/navinfluorineinternational/NFI 
+L&T Finance,74.75,73.55,74.35,73.90,0.45,0.61,/india/stockpricequote/finance-investments/ltfinanceholdings/LFH 
+Federal-Mogul,364,343,350.45,348.35,2.10,0.61,/india/stockpricequote/autoancillaries/federal-mogulgoetze/FMG 
+SPIC,26.10,25.05,25.30,25.15,0.15,0.60,/india/stockpricequote/fertilisers/southernpetrochemicalindustriescorporation/SPI01 
+Jayshree Tea,94.70,91.75,93.55,93,0.55,0.60,/india/stockpricequote/plantations-teacoffee/jayshreeteaindustries/JTI 
+Oracle Fin Serv,3345.25,3275,3319.60,3300.90,18.70,0.59,/india/stockpricequote/computers-software/oraclefinancialservicessoftware/OFS01 
+Amrutanjan Heal,293.70,287,290.85,289.20,1.65,0.57,/india/stockpricequote/pharmaceuticals/amrutanjanhealthcare/AHC01 
+Jai Corp,90.50,88.20,89.60,89.10,0.50,0.57,/india/stockpricequote/steel-gpgcsheets/jaicorp/JC08 
+Godrej Prop,254.35,248.70,250.80,249.40,1.40,0.56,/india/stockpricequote/constructioncontracting-realestate/godrejproperties/GP11 
+HCL Tech,1623.90,1598.35,1619.65,1610.70,8.95,0.56,/india/stockpricequote/computers-software/hcltechnologies/HCL02 
+Sharda Crop,301.70,291.10,295.60,293.95,1.65,0.56,/india/stockpricequote/pesticidesagrochemicals/shardacropchem/SC04 
+Rane Madras,476.95,465,469.70,467.10,2.60,0.56,/india/stockpricequote/autoancillaries/ranemadras/RM08 
+KPIT Tech,164.90,160.50,163.60,162.70,0.90,0.56,/india/stockpricequote/computers-softwaremediumsmall/kpittechnologies/KPI02 
+PG Electroplast,96.25,90,94,93.50,0.50,0.55,/india/stockpricequote/consumergoods-electronic/pgelectroplast/PE06 
+Precot Meridian,68.80,66.20,66.85,66.50,0.35,0.53,/india/stockpricequote/textiles-spinning-cottonblended/precotmeridian/PM 
+Religare Nifty,800.05,800.05,800.05,796,4.05,0.53,/india/stockpricequote/finance-investments/religareniftyexchangetradedfund/RNE 
+Merck,808.50,793,800.30,796.20,4.10,0.51,/india/stockpricequote/pharmaceuticals/merck/M12 
+Kotak Nifty ETF,862.75,845.55,853.07,848.75,4.32,0.51,/india/stockpricequote/finance-investments/kotakmahindramutualfund-niftyetf/KMM01 
+Ramco System,430,422,423.60,421.50,2.10,0.51,/india/stockpricequote/computers-software/ramcosystem/RS17 
+Shasun Pharma,214.95,209.40,212.10,211.05,1.05,0.50,/india/stockpricequote/pharmaceuticals/shasunpharmaceuticals/SCD 
+VST,1845,1822.10,1839.45,1830.30,9.15,0.50,/india/stockpricequote/cigarettes/vstindustries/VST 
+Excel,395.50,381.10,385.20,383.30,1.90,0.50,/india/stockpricequote/pesticidesagrochemicals/excelindustries/EI10 
+CCL Products,137,131.20,134.50,133.85,0.65,0.50,/india/stockpricequote/plantations-teacoffee/cclproductsindia/CC10 
+index,8438.10,8349.10,8430.75,8389.90,40.85,0.49,/india/stockpricequote/// 
+Datamatics Glob,85,82.25,82.90,82.50,0.40,0.49,/india/stockpricequote/computers-softwaremediumsmall/datamaticsglobalservices/DGS01 
+Hindalco,159.05,155.50,158.05,157.30,0.75,0.48,/india/stockpricequote/aluminium/hindalcoindustries/HI 
+Alkyl Amines,355.05,344,351,349.35,1.65,0.48,/india/stockpricequote/chemicals/alkylamineschemicals/AAC 
+Apcotex Ind,434.50,420,424.60,422.60,2,0.47,/india/stockpricequote/rubber/apcotexindustries/AI58 
+R Shares CNX,90,86,86.05,85.65,0.40,0.47,/india/stockpricequote/finance-investments/r*sharescnx100fund/RSC03 
+Rico Auto,44.90,43.05,44,43.80,0.20,0.47,/india/stockpricequote/autoancillaries/ricoauto/RA04 
+Heidelberg Cem,87.25,85.55,87.10,86.70,0.40,0.46,/india/stockpricequote/cement-major/heidelbergcementindia/HCI02 
+United Bank,43.70,42.75,43.35,43.15,0.20,0.46,/india/stockpricequote/banks-publicsector/unitedbankindia/UBO 
+Shipping Corp,67.25,64.40,65.85,65.55,0.30,0.46,/india/stockpricequote/shipping/shippingcorporationindia/SCI 
+TCS,2625,2592.25,2618.30,2606.45,11.85,0.46,/india/stockpricequote/computers-software/tataconsultancyservices/TCS 
+Vindhya Telelin,503,490.05,492.85,490.75,2.10,0.45,/india/stockpricequote/cables-telephone/vindhyatelelink/VT03 
+Empee Distiller,36.60,35.60,36,35.85,0.15,0.43,/india/stockpricequote/breweriesdistilleries/empeedistilleries/ED 
+Nandan Denim,50,46.50,47.45,47.25,0.20,0.42,/india/stockpricequote/textiles-denim/nandandenim/NE06 
+Kajaria Ceramic,604,594.90,598.95,596.45,2.50,0.42,/india/stockpricequote/ceramicsgranite/kajariaceramics/KC06 
+NIFTYBEES,853.50,845.21,852.65,849.10,3.55,0.42,/india/stockpricequote/finance-investments/goldmansachsniftyexchangetradedscheme/NBE01 
+Nava Bharat Ven,215.90,206.60,212.95,212.05,0.90,0.42,/india/stockpricequote/diversified/navabharatventures/NBV 
+Karur Vysya,539.40,530.20,533.05,530.85,2.20,0.42,/india/stockpricequote/banks-privatesector/karurvysyabank/KVB 
+Tata Steel,482.95,475.10,480.10,478.15,1.95,0.41,/india/stockpricequote/steel-large/tatasteel/TIS 
+Navneet,99,96.65,98.50,98.10,0.40,0.41,/india/stockpricequote/printingstationery/navneeteducation/NP01 
+Geojit BNP,38.65,37.05,37.70,37.55,0.15,0.41,/india/stockpricequote/finance-general/geojitbnpparibasfinancialservices/GBN01 
+Ruchira Papers,25.95,24.60,24.85,24.75,0.10,0.40,/india/stockpricequote/paper/ruchirapapers/RP25 
+Godrej Consumer,990,973.95,982.60,978.70,3.90,0.40,/india/stockpricequote/personalcare/godrejconsumerproducts/GCP 
+Zuari Agro Chem,293.95,285.10,290.60,289.50,1.10,0.40,/india/stockpricequote/fertilisers/zuariagrochemicals/ZAC 
+Bharti Infratel,303,295,300.10,298.95,1.15,0.38,/india/stockpricequote/telecommunications-equipment/bhartiinfratel/BI14 
+Pilani Invest,1465,1461,1465,1459.50,5.50,0.38,/india/stockpricequote/finance-general/pilaniinvestmentindustriescorporation/PII03 
+Intrasoft Tech,54.45,52.05,53,52.80,0.20,0.38,/india/stockpricequote/miscellaneous/intrasofttechnologies/IT04 
+Intl Paper APPM,305,294.45,297.25,296.15,1.10,0.38,/india/stockpricequote/paper/internationalpaperappm/APP 
+Wyeth,1120,1107.90,1116.25,1112.30,3.95,0.37,/india/stockpricequote/pharmaceuticals/wyeth/W11 
+Amtek Auto,214.80,205.15,208.05,207.30,0.75,0.36,/india/stockpricequote/autoancillaries/amtekauto/AA01 
+Zydus Wellness,652,635,648.60,646.25,2.35,0.36,/india/stockpricequote/vanaspatioils/zyduswellness/ZW01 
+Maruti Suzuki,3370,3313.10,3341.20,3329.55,11.65,0.36,/india/stockpricequote/auto-carsjeeps/marutisuzukiindia/MS24 
+Harita Seating,175,169,171.95,171.35,0.60,0.35,/india/stockpricequote/autoancillaries/haritaseatingsystems/HSS02 
+Triveni Turbine,116,107.30,113.30,112.90,0.40,0.35,/india/stockpricequote/engineering-heavy/triveniturbine/TT14 
+Meghmani Organi,30.45,29.25,29.95,29.85,0.10,0.35,/india/stockpricequote/pesticidesagrochemicals/meghmaniorganics/MO04 
+Tinplate,73.50,72.10,72.85,72.60,0.25,0.34,/india/stockpricequote/metals-nonferrous/tinplatecompanyindia/TCI02 
+Emami,811,790.25,800.70,797.95,2.75,0.34,/india/stockpricequote/personalcare/emami/E06 
+HIL,710,695,698.40,696.05,2.35,0.34,/india/stockpricequote/cement-productsbuildingmaterials/hil/HI09 
+KCP,62.85,60.10,60.30,60.10,0.20,0.34,/india/stockpricequote/cement-major/kcp/KCP 
+Shilpa,579.40,525.15,555.20,553.45,1.75,0.33,/india/stockpricequote/pharmaceuticals/shilpamedicare/SM19 
+Guj Alkali,195.60,192.40,193.35,192.75,0.60,0.32,/india/stockpricequote/chemicals/gujaratalkalieschemicals/GAC01 
+Ansal Propertie,32.45,31.60,32.10,32,0.10,0.31,/india/stockpricequote/constructioncontracting-housing/ansalpropertiesinfrastructure/API07 
+Raymond,464,458,462.75,461.30,1.45,0.31,/india/stockpricequote/textiles-woollenworsted/raymond/R 
+Hang Seng BEES,2133,2061,2096.50,2090,6.50,0.31,/india/stockpricequote/finance-investments/goldmansachshangsengexchangetradedscheme/BMF01 
+PI Industries,436.80,415.65,432.90,431.60,1.30,0.31,/india/stockpricequote/pesticidesagrochemicals/piindustries/PII 
+PC Jeweller,256.50,247.30,252.10,251.35,0.75,0.30,/india/stockpricequote/diamondcuttingpreciousmetalsjewellery/pcjeweller/PJ 
+Indian Metals,234,223.50,226.35,225.70,0.65,0.30,/india/stockpricequote/miningminerals/indianmetalsferroalloys/IMF01 
+Grindwell Norto,519.95,508.10,516.75,515.25,1.50,0.29,/india/stockpricequote/abrasives/grindwellnorton/GN 
+Shrenuj and Co,55,53.60,54.65,54.50,0.15,0.29,/india/stockpricequote/diamondcuttingpreciousmetalsjewellery/shrenujcompany/SC13 
+HDFC,1138.20,1100.10,1129.90,1126.85,3.05,0.28,/india/stockpricequote/finance-housing/housingdevelopmentfinancecorporation/HDF 
+SQS India BFSI,610,595.10,601.20,599.60,1.60,0.27,/india/stockpricequote/computers-software/sqsindiabfsi/TGS01 
+ITC,371.45,364.60,370.20,369.20,1,0.27,/india/stockpricequote/cigarettes/itc/ITC 
+Wheels,1008,980,989.45,986.85,2.60,0.27,/india/stockpricequote/autoancillaries/wheelsindia/WI11 
+Liberty Shoes,276.80,271.20,274.60,273.90,0.70,0.26,/india/stockpricequote/leatherproducts/libertyshoes/LS02 
+Helios and Mat,103.85,101,101.65,101.40,0.25,0.26,/india/stockpricequote/computers-softwaremediumsmall/heliosmathesoninformationtechnology/HMI 
+MOSt NASDAQ 100,261.99,254.51,258.50,257.86,0.64,0.25,/india/stockpricequote/finance-investments/motilaloswalmostsharesnasdaq100etf/MOM02 
+Guj State Petro,104.40,100.60,104.05,103.80,0.25,0.25,/india/stockpricequote/oildrillingandexploration/gujaratstatepetronet/GSP02 
+De Nora India,152,148.30,150,149.65,0.35,0.24,/india/stockpricequote/electricequipment/denoraindia/DNI 
+DCW,22.30,21.60,21.85,21.80,0.05,0.23,/india/stockpricequote/petrochemicals/dcw/DCW 
+Neyveli Lignite,88.85,86,87.80,87.60,0.20,0.23,/india/stockpricequote/power-generationdistribution/neyvelilignitecorporation/NLC 
+Store One,44.80,42.55,43.10,43,0.10,0.23,/india/stockpricequote/textiles-readymadeapparels/storeoneretailindia/IRS01 
+Cairn India,268.70,265.30,268.30,267.70,0.60,0.23,/india/stockpricequote/oildrillingandexploration/cairnindia/CI37 
+VTM,24.90,22.05,22.70,22.65,0.05,0.22,/india/stockpricequote/textiles-hosieryknitwear/vtm/VTM 
+Brigade Ent,144.95,140.55,142.50,142.20,0.30,0.22,/india/stockpricequote/constructioncontracting-realestate/brigadeenterprises/BE08 
+Pricol,48.30,46.15,47.20,47.10,0.10,0.21,/india/stockpricequote/autoancillaries/pricol/P9 
+Chennai Petro,96.40,93.40,94.55,94.35,0.20,0.21,/india/stockpricequote/refineries/chennaipetroleumcorporation/CPC02 
+Cox & Kings,311.95,282,309.20,308.55,0.65,0.21,/india/stockpricequote/miscellaneous/coxkings/CK 
+Deepak Fert,143.80,140.75,141.65,141.35,0.30,0.21,/india/stockpricequote/fertilisers/deepakfertilizerspetrochemicalscoprn/DFP 
+Orient Refract,102,96.20,97.30,97.10,0.20,0.21,/india/stockpricequote/cement-productsbuildingmaterials/orientrefractories/OR01 
+Jindal Drilling,214,196.95,210.50,210.05,0.45,0.21,/india/stockpricequote/oildrillingandexploration/jindaldrillingindustries/JDI 
+Hexa Tradex,24.95,22.50,24.45,24.40,0.05,0.21,/india/stockpricequote/finance-investments/hexatradex/HT03 
+Indiabulls Sec,25.10,24.80,24.90,24.85,0.05,0.20,/india/stockpricequote/finance-investments/indiabullssecurities/IS13 
+Centum Electron,578,561.40,568.25,567.10,1.15,0.20,/india/stockpricequote/electricals/centumelectronics/CE10 
+Amara Raja Batt,710,691.40,699.95,698.55,1.40,0.20,/india/stockpricequote/autoancillaries/amararajabatteries/ARB 
+KRBL,100.75,98.35,99.80,99.60,0.20,0.20,/india/stockpricequote/foodprocessing/krbl/KRB01 
+Time Techno,49.50,47.65,48.90,48.80,0.10,0.20,/india/stockpricequote/packaging/timetechnoplast/TT03 
+MOIL,314.50,305,310.65,310.05,0.60,0.20,/india/stockpricequote/miningminerals/moil/M18 
+Ent Network Ind,527.90,516,518.15,517.15,1,0.19,/india/stockpricequote/mediaentertainment/entertainmentnetworkindia/ENI 
+Persistent,1313,1286,1292.20,1289.70,2.50,0.19,/india/stockpricequote/computers-software/persistentsystems/PS15 
+KLRF,26.50,26.30,26.35,26.30,0.05,0.19,/india/stockpricequote/foodprocessing/klrf/KLR 
+Bajaj Auto,2678.20,2642.85,2657.65,2652.85,4.80,0.19,/india/stockpricequote/auto-23wheelers/bajajauto/BA10 
+Jubilant Life,140.50,135,137.55,137.30,0.25,0.18,/india/stockpricequote/pharmaceuticals/jubilantlifesciences/JO03 
+Vakrangee,137.80,134.65,135.55,135.30,0.25,0.18,/india/stockpricequote/computers-softwaremediumsmall/vakrangee/VS 
+Lupin,1456,1429,1446.45,1443.95,2.50,0.18,/india/stockpricequote/pharmaceuticals/lupin/L 
+NALCO,60.85,59.50,59.90,59.80,0.10,0.17,/india/stockpricequote/aluminium/nationalaluminiumcompany/NAC 
+LIC Housing Fin,426.90,416.50,421.35,420.65,0.70,0.17,/india/stockpricequote/finance-housing/lichousingfinance/LIC 
+MRPL,58.35,57.20,57.35,57.25,0.10,0.17,/india/stockpricequote/refineries/mangalorerefinerypetrochemicals/MRP 
+AXISCADES Engg,164,146.50,154.05,153.80,0.25,0.17,/india/stockpricequote/computers-softwaremediumsmall/axiscadesengineeringtechnologies/AXI 
+Accelya Kale,874.95,840,858.05,856.65,1.40,0.16,/india/stockpricequote/computers-softwaremediumsmall/accelyakalesolutions/KAL 
+Mandhana Ind,320,292,306.20,305.70,0.50,0.16,/india/stockpricequote/textiles-general/mandhanaindustries/MI24 
+Hind Nat Glass,128,118,127.15,126.95,0.20,0.16,/india/stockpricequote/glassglassproducts/hindusthannationalglassindustries/HNG01 
+Mukta Arts,31.70,30.60,30.95,30.90,0.05,0.16,/india/stockpricequote/mediaentertainment/muktaarts/MA02 
+BANK BEES,1787,1758,1782.77,1779.96,2.81,0.16,/india/stockpricequote/finance-investments/goldmansachsbankingindexexchangetradedscheme/BAM02 
+Hind Zinc,163.70,160.90,162.30,162.05,0.25,0.16,/india/stockpricequote/metals-nonferrous/hindustanzinc/HZ 
+IOC,358.70,349.40,357.35,356.80,0.55,0.15,/india/stockpricequote/refineries/indianoilcorporation/IOC 
+GE Shipping,406.05,396.50,399.20,398.60,0.60,0.15,/india/stockpricequote/shipping/greateasternshippingcompany/GES 
+Marico,337.30,329.10,330.40,329.90,0.50,0.15,/india/stockpricequote/personalcare/marico/M13 
+HUL,765.30,750,757.20,756.15,1.05,0.15,/india/stockpricequote/personalcare/hindustanunilever/HU 
+GlaxoSmithKline,2860,2834.90,2853.10,2849.25,3.85,0.14,/india/stockpricequote/pharmaceuticals/glaxosmithklinepharmaceuticals/GSK 
+Hind Constr,35.70,33.80,34.80,34.75,0.05,0.14,/india/stockpricequote/constructioncontracting-civil/hindustanconstructioncompany/HCC 
+Quantum Index,877,875.75,877,875.80,1.20,0.14,/india/stockpricequote/finance-investments/quantumindexfund-exchangetradedfund/QIF 
+Dr Reddys Labs,3459.80,3424.95,3439.75,3435.05,4.70,0.14,/india/stockpricequote/pharmaceuticals/drreddyslaboratories/DRL 
+NIIT,51.75,50.10,51,50.95,0.05,0.14,/india/stockpricequote/computers-software-training/niit/NII 
+Lumax Auto Tech,273.50,261,266.35,266.15,0.20,0.10,/india/stockpricequote/autoancillaries/lumaxautotechnologies/LAT01 
+Oil India,596,585,593.05,592.60,0.45,0.08,/india/stockpricequote/oildrillingandexploration/oilindia/OI13 
+Shanthi Gears,124.80,122,124.50,124.40,0.10,0.08,/india/stockpricequote/engineering/shanthigears/SG04 
+Selan Explore,444.75,428,434.20,433.85,0.35,0.08,/india/stockpricequote/oildrillingandexploration/selanexplorationtechnology/SET 
+BF Utilities,642,621,629.20,628.75,0.45,0.08,/india/stockpricequote/power-generationdistribution/bfutilities/BFU 
+Piramal Enter,830.35,804.50,813.75,813.15,0.60,0.07,/india/stockpricequote/pharmaceuticals/piramalenterprises/PH05 
+Cadila Health,1559.95,1536.20,1548.80,1547.70,1.10,0.07,/india/stockpricequote/pharmaceuticals/cadilahealthcare/CHC 
+Esab India,634.20,619,624.10,623.75,0.35,0.07,/india/stockpricequote/electrodesgraphite/esabindia/EI06 
+VST Tillers,1460,1436.60,1453.90,1453.20,0.70,0.06,/india/stockpricequote/auto-tractors/vsttillerstractors/VST01 
+Shriram City,1769.90,1575.05,1714.85,1714.05,0.80,0.05,/india/stockpricequote/finance-leasinghirepurchase/shriramcityunionfinance/SCU 
+CMC,1958,1929,1943.60,1942.80,0.80,0.05,/india/stockpricequote/computers-hardware/cmc/CMC 
+Wipro,566,559,564.15,563.90,0.25,0.04,/india/stockpricequote/computers-software/wipro/W 
+Tata Inv Corp,569.70,560.05,568.55,568.30,0.25,0.04,/india/stockpricequote/finance-investments/tatainvestmentcorporation/TIC 
+SMS Pharma,468.80,447,455,454.85,0.15,0.04,/india/stockpricequote/pharmaceuticals/smspharmaceuticals/SP38 
+IGL,442.30,432.35,434.95,434.80,0.15,0.03,/india/stockpricequote/oildrillingandexploration/indraprasthagas/IG04 
+Banco Products,166.05,161.45,164,163.95,0.05,0.03,/india/stockpricequote/autoancillaries/bancoproducts(india)/BPI 
+Sun Pharma Adv,193.50,188.30,191,190.95,0.05,0.03,/india/stockpricequote/pharmaceuticals/sunpharmaadvancedresearchcompany/SPA 
+United Spirits,2765,2688.05,2723.80,2723.05,0.75,0.03,/india/stockpricequote/breweriesdistilleries/unitedspirits/US 
+JSW Steel,1243.15,1214.10,1237.70,1237.35,0.35,0.03,/india/stockpricequote/steel-large/jswsteel/JSW01 
+Yes Bank,697,685.50,689.55,689.45,0.10,0.03,/india/stockpricequote/banks-privatesector/yesbank/YB 

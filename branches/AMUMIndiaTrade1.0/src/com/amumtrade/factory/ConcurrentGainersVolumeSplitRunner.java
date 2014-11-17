@@ -11,6 +11,7 @@ import java.util.Map;
 import java.util.Set;
 
 import com.amumtrade.bean.ConcurrentGainersBean;
+import com.amumtrade.constant.AMUMStockConstant;
 
 public class ConcurrentGainersVolumeSplitRunner implements Runnable {
 	private String command;
@@ -151,23 +152,23 @@ public class ConcurrentGainersVolumeSplitRunner implements Runnable {
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+"5 Star"+"\n");
-				System.out.println(bean.getName()+","+"^"+bean.getCurrentPrice()+","+bean.getCurrentDayVolume()+"5 Star");
+						+AMUMStockConstant.FIVE_STAR+","+bean.getApi()+"\n");
+				System.out.println(bean.getName()+","+"^"+bean.getCurrentPrice()+","+bean.getCurrentDayVolume()+","+AMUMStockConstant.FIVE_STAR);
 			}else if(dayVolume >= fiveDayAvgVolume && dayVolume >= tenDayAvgVolume && dayVolume >= thirtyDayAvgVolume){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+"4 Star"+"\n");
+						+AMUMStockConstant.FOUR_STAR+","+bean.getApi()+"\n");
 			}else if(fiveDayAvgVolume > tenDayAvgVolume && fiveDayAvgVolume >thirtyDayAvgVolume){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+"3 Star"+"\n");
+						+AMUMStockConstant.THREE_STAR+","+bean.getApi()+"\n");
 			}else if(fiveDayAvgVolume <= tenDayAvgVolume && tenDayAvgVolume>=thirtyDayAvgVolume){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+"2 Star"+"\n");
+						+AMUMStockConstant.TWO_STAR+","+bean.getApi()+"\n");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
