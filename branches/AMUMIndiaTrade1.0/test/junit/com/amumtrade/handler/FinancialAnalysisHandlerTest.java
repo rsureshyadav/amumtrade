@@ -2,13 +2,16 @@ package com.amumtrade.handler;
 
 import org.junit.Test;
 
+import com.amumtrade.constant.AMUMStockConstant;
+
 public class FinancialAnalysisHandlerTest {
 
 	@Test
 	public void executeStockMarketStat() throws Exception{
 		long startTime= System.currentTimeMillis();
 		FinancialAnalysisHandler fah = new FinancialAnalysisHandler();
-		fah.execute();long endTime= System.currentTimeMillis();
+		fah.execute(AMUMStockConstant.FIVE_STAR);
+		long endTime= System.currentTimeMillis();
 		long elapsedTime = endTime - startTime;
 		
 		int s = (int) ((elapsedTime / 1000) % 60);
