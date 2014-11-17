@@ -4,6 +4,7 @@ public class ConcurrentGainersBean {
 
 	private String name;
 	private String api;
+	private String financeApi;
 	private String currentPrice ;
 	private String currentPercentChange ;
 	private String currentVolume ;
@@ -19,6 +20,7 @@ public class ConcurrentGainersBean {
 	private String tenDayAvgVolume;
 	private String thirtyDayAvgVolume;
 	private String rating;
+	private String eps;
 	public String getName() {
 		return name;
 	}
@@ -114,6 +116,18 @@ public class ConcurrentGainersBean {
 	}
 	public void setRating(String rating) {
 		this.rating = rating;
+	}
+	public String getFinanceApi() {
+		return financeApi;
+	}
+	public void setFinanceApi(String financeApi) {
+		this.financeApi = financeApi;
+	}
+	public String getEps() {
+		return eps;
+	}
+	public void setEps(String eps) {
+		this.eps = eps;
 	}
 	
 	

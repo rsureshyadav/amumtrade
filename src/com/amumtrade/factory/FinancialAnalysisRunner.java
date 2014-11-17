@@ -1,5 +1,114 @@
 package com.amumtrade.factory;
 
-public class FinancialAnalysisRunner {
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.URL;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
+import com.amumtrade.bean.ConcurrentGainersBean;
+import com.amumtrade.constant.AMUMStockConstant;
+
+public class FinancialAnalysisRunner implements Runnable{
+
+	private String command;
+	private URL urlConn;
+	private Map<String,ConcurrentGainersBean> financialAnalysisMap;
+	private BufferedWriter bwObj;
+	
+	public FinancialAnalysisRunner(URL httpUrl,Map<String,ConcurrentGainersBean> financialAnalysis,BufferedWriter bufferWriter,String s){
+		this.urlConn=httpUrl;
+		this.financialAnalysisMap = financialAnalysis;
+		this.bwObj = bufferWriter;
+		this.command=s;
+	}
+	@Override
+	public void run() {
+		try {
+			processCommand();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	private void processCommand() throws IOException{
+        try {
+            Thread.sleep(5000);
+            Reader reader = null;
+            BufferedReader bufferReader = null;
+            try {
+		
+		          bufferReader = new BufferedReader(new InputStreamReader(urlConn.openStream()));
+		          findFinancialInfoReader(bufferReader,urlConn.toString());
+		          
+		        }
+		        finally {
+		          if (reader != null) 
+		              reader.close();
+		        }   
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+	private void findFinancialInfoReader(BufferedReader bufferReader,String url) throws IOException{
+		String inputLine = null;
+		String eps = null;
+		boolean isEPS = false;
+		int epsCount = 0;
+		Set<String> urlSet = null;
+		ConcurrentGainersBean financialInfoBean;
+		try {
+			urlSet = new HashSet<String>();
+			 while ((inputLine = bufferReader.readLine()) != null)
+		        {
+				 if(inputLine.contains("Earnings Per Share")){
+					 isEPS = true;
+				 }else if(isEPS && inputLine.contains("<td align=\"right\" class=\"det\">") && !urlSet.contains(url)){
+					 financialInfoBean = new ConcurrentGainersBean();
+					 eps = inputLine.trim();
+					 eps = eps.replace("<td align=\"right\" class=\"det\">", "");
+					 eps = eps.replace("</td>", "");
+					 financialInfoBean.setEps(eps);
+					 ConcurrentGainersBean bean = financialAnalysisMap.get(url);
+					 financialInfoBean.setName(bean.getName());
+					 financialInfoBean.setCurrentPrice(bean.getCurrentPrice());
+					 financialInfoBean.setFinanceApi(url);
+					 financialInfoBean.setApi(bean.getApi());
+					 financialInfoBean.setCurrentDayVolume(bean.getCurrentDayVolume());
+					 financialInfoBean.setFiveDayAvgVolume(bean.getFiveDayAvgVolume());
+					 financialInfoBean.setTenDayAvgVolume(bean.getTenDayAvgVolume());
+					 financialInfoBean.setThirtyDayAvgVolume(bean.getThirtyDayAvgVolume());
+					 financialInfoBean.setRating(bean.getRating());
+					System.out.println(eps);
+					 isEPS = false;
+					 urlSet.add(url);
+					 writeVolumeToCSVFile(financialInfoBean);
+				 }
+		        }
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	private void writeVolumeToCSVFile(ConcurrentGainersBean bean) {
+		try {
+			bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
+					+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
+					+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
+					+bean.getRating()+","+bean.getEps()+"\n");
+			System.out.println(bean.getName()+","+"^"+bean.getCurrentPrice()+","+bean.getCurrentDayVolume()+","+bean.getRating()+","+bean.getEps());
+	
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	@Override
+    public String toString(){
+        return this.command;
+    }	
 }
