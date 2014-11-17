@@ -139,5 +139,6 @@ public class AMUMStockConstant {
 	public static final String FOUR_STAR = "4 star";
 	public static final String THREE_STAR = "3 star";
 	public static final String TWO_STAR = "2 star";
-	
+	public static final String ONE_STAR = "1 star";
+
 }

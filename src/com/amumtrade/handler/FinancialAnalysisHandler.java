@@ -21,9 +21,10 @@ public class FinancialAnalysisHandler {
 	List<ConcurrentGainersBean> concurrentGainersWithRatingList ;
 	BufferedReader br;
 
-	public void execute(String rating) throws IOException{
+	public void execute() throws IOException{
+		concurrentGainersWithRatingList = new ArrayList<ConcurrentGainersBean>();
 		concurrentGainersWithRatingList = convertConGainersCsvToBean();
-		List<ConcurrentGainersBean> financeRatingList  = convertUrlToFinancialUrl(concurrentGainersWithRatingList,rating);
+		List<ConcurrentGainersBean> financeRatingList  = convertUrlToFinancialUrl(concurrentGainersWithRatingList);
 		runFinanceRatingUrl(financeRatingList);
 	}
 	private void runFinanceRatingUrl(List<ConcurrentGainersBean> financeUrlList) throws IOException {
@@ -36,10 +37,10 @@ public class FinancialAnalysisHandler {
 			urlList = new ArrayList<String>();
 			for(ConcurrentGainersBean financeAnalyzerBean : financeUrlList){
 				urlList.add(financeAnalyzerBean.getFinanceApi());
-				financialAnalyzerMap.put(financeAnalyzerBean.getApi(), financeAnalyzerBean);
+				financialAnalyzerMap.put(financeAnalyzerBean.getFinanceApi(), financeAnalyzerBean);
 			}
 			bwObj = new BufferedWriter( fwo );  
-			bwObj.write("CompanyName,CurrentPrice,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating,EPS"+"\n");
+			bwObj.write("CompanyName,CurrentPrice,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,VolumeRating,EPS,EPSRating"+"\n");
 			int i=0;
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
 			 for(String httpUrl : urlList){//for (int i = 0; i < 10; i++) {
@@ -61,7 +62,7 @@ public class FinancialAnalysisHandler {
 		}
 		
 	}
-	private List<ConcurrentGainersBean> convertUrlToFinancialUrl(List<ConcurrentGainersBean> concurrentList,String rating) {
+	private List<ConcurrentGainersBean> convertUrlToFinancialUrl(List<ConcurrentGainersBean> concurrentList) {
 		String apiUrl = null;
 		String urlSplitBy = "/";
 		ConcurrentGainersBean bean = null; 
@@ -69,7 +70,6 @@ public class FinancialAnalysisHandler {
 
 		try {
 			for(ConcurrentGainersBean record: concurrentList){
-				if(rating.equalsIgnoreCase(record.getRating())){
 					bean = new ConcurrentGainersBean();
 					apiUrl = record.getApi();
 					apiUrl = apiUrl.replace("http://", "");
@@ -79,8 +79,14 @@ public class FinancialAnalysisHandler {
 					bean.setName(record.getName());
 					bean.setApi(record.getApi());
 					bean.setFinanceApi(apiUrl);
+					bean.setCurrentPrice(record.getCurrentPrice());
+					bean.setCurrentDayVolume(record.getCurrentDayVolume());
+					bean.setFiveDayAvgVolume(record.getFiveDayAvgVolume());
+					bean.setTenDayAvgVolume(record.getTenDayAvgVolume());
+					bean.setThirtyDayAvgVolume(record.getThirtyDayAvgVolume());
+					bean.setRating(record.getRating());
+					
 					financeUrlList.add(bean);
-				}
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -122,12 +128,6 @@ public class FinancialAnalysisHandler {
 		}
 		return gainerBeanList;
 	}
-	public List<ConcurrentGainersBean> getConcurrentGainersWithRatingList() {
-		return concurrentGainersWithRatingList;
-	}
-	public void setConcurrentGainersWithRatingList(
-			List<ConcurrentGainersBean> concurrentGainersWithRatingList) {
-		this.concurrentGainersWithRatingList = concurrentGainersWithRatingList;
-	}
+
 	
 }

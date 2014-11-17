@@ -33,7 +33,8 @@ public class FinancialAnalysisRunner implements Runnable{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+        System.out.println(Thread.currentThread().getName()+" End.");
+
 	}
 	private void processCommand() throws IOException{
         try {
@@ -58,7 +59,6 @@ public class FinancialAnalysisRunner implements Runnable{
 		String inputLine = null;
 		String eps = null;
 		boolean isEPS = false;
-		int epsCount = 0;
 		Set<String> urlSet = null;
 		ConcurrentGainersBean financialInfoBean;
 		try {
@@ -83,10 +83,12 @@ public class FinancialAnalysisRunner implements Runnable{
 					 financialInfoBean.setTenDayAvgVolume(bean.getTenDayAvgVolume());
 					 financialInfoBean.setThirtyDayAvgVolume(bean.getThirtyDayAvgVolume());
 					 financialInfoBean.setRating(bean.getRating());
-					System.out.println(eps);
+					//System.out.println(eps);
 					 isEPS = false;
 					 urlSet.add(url);
-					 writeVolumeToCSVFile(financialInfoBean);
+					 if(!eps.contains("-")){
+						 writeVolumeToCSVFile(financialInfoBean);
+					 }
 				 }
 		        }
 		} catch (Exception e) {
@@ -95,13 +97,37 @@ public class FinancialAnalysisRunner implements Runnable{
 		
 	}
 	private void writeVolumeToCSVFile(ConcurrentGainersBean bean) {
+		double epsValue ;
 		try {
-			bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
-					+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
-					+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-					+bean.getRating()+","+bean.getEps()+"\n");
-			System.out.println(bean.getName()+","+"^"+bean.getCurrentPrice()+","+bean.getCurrentDayVolume()+","+bean.getRating()+","+bean.getEps());
-	
+			epsValue = Double.valueOf(bean.getEps());
+			if(epsValue > 100){
+				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
+						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
+						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
+						+bean.getRating()+","+bean.getEps()+","+AMUMStockConstant.FIVE_STAR+"\n");
+				System.out.println(bean.getName()+","+"^"+bean.getCurrentPrice()+","+bean.getCurrentDayVolume()+","+bean.getRating()+","+bean.getEps()+","+AMUMStockConstant.FIVE_STAR);
+				
+			}else if(epsValue > 75 && epsValue < 100){
+				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
+						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
+						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
+						+bean.getRating()+","+bean.getEps()+","+AMUMStockConstant.FOUR_STAR+"\n");
+			}else if(epsValue > 50 && epsValue < 75){
+				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
+						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
+						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
+						+bean.getRating()+","+bean.getEps()+","+AMUMStockConstant.THREE_STAR+"\n");
+			}else if(epsValue > 25 && epsValue < 50){
+				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
+						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
+						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
+						+bean.getRating()+","+bean.getEps()+","+AMUMStockConstant.TWO_STAR+"\n");
+			}else if(epsValue > 0 && epsValue < 25){
+				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
+						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
+						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
+						+bean.getRating()+","+bean.getEps()+","+AMUMStockConstant.ONE_STAR+"\n");
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
