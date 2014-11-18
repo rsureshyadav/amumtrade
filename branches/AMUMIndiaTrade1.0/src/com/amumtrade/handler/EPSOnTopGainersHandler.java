@@ -17,27 +17,27 @@ import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.factory.FinancialEPSAnalysisRunner;
 
-public class EPSOnConGainersHandler {
-	List<ConcurrentGainersBean> concurrentGainersWithRatingList ;
+public class EPSOnTopGainersHandler {
+	List<ConcurrentGainersBean> topGainersWithRatingList ;
 	BufferedReader br;
 
 	public void execute() throws IOException{
-		concurrentGainersWithRatingList = new ArrayList<ConcurrentGainersBean>();
-		concurrentGainersWithRatingList = convertConGainersCsvToBean();
-		List<ConcurrentGainersBean> financeRatingList  = convertUrlToFinancialUrl(concurrentGainersWithRatingList);
-		runFinanceRatingUrl(financeRatingList);
+		topGainersWithRatingList = new ArrayList<ConcurrentGainersBean>();
+		topGainersWithRatingList = convertTopGainersVolumeCsvToBean();
+		List<ConcurrentGainersBean> gainerRatingList  = convertUrlToFinancialUrl(topGainersWithRatingList);
+		runFinanceRatingUrl(gainerRatingList);
 	}
-	private void runFinanceRatingUrl(List<ConcurrentGainersBean> financeUrlList) throws IOException {
+	private void runFinanceRatingUrl(List<ConcurrentGainersBean> gainerUrlList) throws IOException {
 		List<String> urlList = null;
 		Map<String,ConcurrentGainersBean> financialAnalyzerMap = new HashMap<String,ConcurrentGainersBean>();
-		FileWriter fwo = new FileWriter( "config/amumEPSOnConcurrentGainer.csv", false );
+		FileWriter fwo = new FileWriter( "config/amumEPSOnTopGainers.csv", false );
 		BufferedWriter bwObj = null;
 		try {
-			System.out.println(">>"+financeUrlList.size());
+			System.out.println(">>"+gainerUrlList.size());
 			urlList = new ArrayList<String>();
-			for(ConcurrentGainersBean financeAnalyzerBean : financeUrlList){
-				urlList.add(financeAnalyzerBean.getFinanceApi());
-				financialAnalyzerMap.put(financeAnalyzerBean.getFinanceApi(), financeAnalyzerBean);
+			for(ConcurrentGainersBean topGainerBean : gainerUrlList){
+				urlList.add(topGainerBean.getFinanceApi());
+				financialAnalyzerMap.put(topGainerBean.getFinanceApi(), topGainerBean);
 			}
 			bwObj = new BufferedWriter( fwo );  
 			bwObj.write("CompanyName,CurrentPrice,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,VolumeRating,EPS,EPSRating"+"\n");
@@ -93,10 +93,10 @@ public class EPSOnConGainersHandler {
 		}
 		return financeUrlList;
 	}
-	private List<ConcurrentGainersBean> convertConGainersCsvToBean() throws IOException {
+	private List<ConcurrentGainersBean> convertTopGainersVolumeCsvToBean() throws IOException {
 		List<ConcurrentGainersBean>  gainerBeanList= new ArrayList<ConcurrentGainersBean>();
 		ConcurrentGainersBean gainerBean = null;
-		String csvFile = "config/amumConcurrentGainersVolumeBasedList.csv";
+		String csvFile = "config/amumTopGainerVolumeBasedList.csv";
 		String line = "";
 		String cvsSplitBy = ",";
 		int skipFirstLineHeader=0;
@@ -105,19 +105,18 @@ public class EPSOnConGainersHandler {
 			while ((line = br.readLine()) != null) {
 				if(skipFirstLineHeader!=0){ 
 					gainerBean = new ConcurrentGainersBean();
-					String[] conGainers = line.split(cvsSplitBy);
-					gainerBean.setName(conGainers[0]);
-					gainerBean.setCurrentPrice(conGainers[1]);
-					gainerBean.setCurrentDayVolume(conGainers[2]);
-					gainerBean.setFiveDayAvgVolume(conGainers[3]);
-					gainerBean.setTenDayAvgVolume(conGainers[4]);
-					gainerBean.setThirtyDayAvgVolume(conGainers[5]);
-					gainerBean.setRating(conGainers[6]);
-					gainerBean.setApi(conGainers[7]);
+					String[] topGainers = line.split(cvsSplitBy);
+					gainerBean.setName(topGainers[0]);
+					gainerBean.setCurrentPrice(topGainers[3]);
+					gainerBean.setCurrentDayVolume(topGainers[6]);
+					gainerBean.setFiveDayAvgVolume(topGainers[7]);
+					gainerBean.setTenDayAvgVolume(topGainers[8]);
+					gainerBean.setThirtyDayAvgVolume(topGainers[9]);
+					gainerBean.setRating(topGainers[10]);
+					gainerBean.setApi(topGainers[11]);
 					gainerBeanList.add(gainerBean);
 				}
 				skipFirstLineHeader++;
-
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
