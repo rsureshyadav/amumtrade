@@ -2,7 +2,7 @@ package com.amumtrade.handler;
 
 import org.junit.Test;
 
-public class StockVolumeAnaylzerTest {
+public class TopGainersVolumeAnaylzerTest {
 	@Test
 	public void executeStockVolumeAnaylzer() throws Exception{
 		long startTime= System.currentTimeMillis();
@@ -10,7 +10,7 @@ public class StockVolumeAnaylzerTest {
 		TopGainersHandler topGainersHandler = new TopGainersHandler();
 		topGainersHandler.execute();
 		//This will add the volume for the Top Gainers
-		StockVolumeAnaylzer volumeAnaylzer = new StockVolumeAnaylzer();
+		TopGainerVolumeAnaylzerHandler volumeAnaylzer = new TopGainerVolumeAnaylzerHandler();
 		volumeAnaylzer.execute();
 		
 		long endTime= System.currentTimeMillis();
