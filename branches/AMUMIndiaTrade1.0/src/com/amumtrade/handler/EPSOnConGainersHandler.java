@@ -15,9 +15,9 @@ import java.util.concurrent.Executors;
 
 import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
-import com.amumtrade.factory.FinancialAnalysisRunner;
+import com.amumtrade.factory.FinancialEPSAnalysisRunner;
 
-public class FinancialAnalysisHandler {
+public class EPSOnConGainersHandler {
 	List<ConcurrentGainersBean> concurrentGainersWithRatingList ;
 	BufferedReader br;
 
@@ -30,7 +30,7 @@ public class FinancialAnalysisHandler {
 	private void runFinanceRatingUrl(List<ConcurrentGainersBean> financeUrlList) throws IOException {
 		List<String> urlList = null;
 		Map<String,ConcurrentGainersBean> financialAnalyzerMap = new HashMap<String,ConcurrentGainersBean>();
-		FileWriter fwo = new FileWriter( "config/amumFinancialAnalyzerList.csv", false );
+		FileWriter fwo = new FileWriter( "config/amumEPSOnConcurrentGainersVolumeBased.csv", false );
 		BufferedWriter bwObj = null;
 		try {
 			System.out.println(">>"+financeUrlList.size());
@@ -45,7 +45,7 @@ public class FinancialAnalysisHandler {
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
 			 for(String httpUrl : urlList){//for (int i = 0; i < 10; i++) {
 				// System.out.println(i);
-		            Runnable worker = new FinancialAnalysisRunner(new URL(httpUrl),financialAnalyzerMap,bwObj,"" + i);
+		            Runnable worker = new FinancialEPSAnalysisRunner(new URL(httpUrl),financialAnalyzerMap,bwObj,"" + i);
 		            executor.execute(worker);
 		            i++;
 		          }

@@ -12,14 +12,14 @@ import java.util.Set;
 import com.amumtrade.bean.ConcurrentGainersBean;
 
 public class LastThreeDayConcurrentGainers {
-//http://www.moneycontrol.com/india/stockmarket/concurrent-gainers/marketstatistics/bse/3days.html
 	
 	private String moneyControlApiUrl =  "http://www.moneycontrol.com";
 	private String concurrentGainersUrl =  "http://www.moneycontrol.com/india/stockmarket/concurrent-gainers/marketstatistics/nse/3days.html";
 	private List<ConcurrentGainersBean> concurrentGainersList;
-	public void execute() throws IOException{
+	public List<ConcurrentGainersBean>  execute() throws IOException{
 		concurrentGainersList = new ArrayList<ConcurrentGainersBean>();
 		concurrentGainersList = readFromMoneyControl(concurrentGainersUrl);
+		return concurrentGainersList;
 	}
 	private List<ConcurrentGainersBean> readFromMoneyControl(String url) throws IOException{
 		List<ConcurrentGainersBean> recordList = null;
@@ -72,17 +72,6 @@ public class LastThreeDayConcurrentGainers {
 			    	 if(inputLine.contains("</div></td>")){
 			    		 isCount = true;
 			    	 }
-			    	/*	 </div></td>
-			  			<td class='brdla tar'>223.60</td>
-			  			<td class='brdla tar gainer'>0.40</td>
-			  			<td class='brdla tar'>7,003</td>
-			  			<td class='brdld tar' bgcolor='#fdffdc'>222.05</td>
-			  			<td class='brdla tar gainer' bgcolor='#fdffdc'>0.70</td>
-			  			<td class='brdld tar' >222.75</td>
-			  			<td class='brdla tar gainer' >0.38</td>
-			  			<td class='brdld tar' >217.80</td>
-			  			<td class='brdla tar gainer' >2.66</td>*/
-		    			 
 		    		 
 			    	 if(isCount){
 			    		 if(count <=9){
@@ -92,7 +81,7 @@ public class LastThreeDayConcurrentGainers {
 			    				 currentPrice = currentPrice.substring(currentPrice.indexOf("'>"),currentPrice.lastIndexOf("</td>"));
 			    				 currentPrice = currentPrice.replace("'>", "");
 			    				 currentPrice = currentPrice.replace(",", "");
-				    			 //System.out.println(">>"+currentPrice);
+				    			// System.out.println(">>"+currentPrice);
 			    			 }else if(count ==2){
 			    				 currentPercentChange = inputLine.trim();
 			    				 currentPercentChange = currentPercentChange.substring(currentPercentChange.indexOf("'>"),currentPercentChange.lastIndexOf("</td>"));
@@ -143,8 +132,11 @@ public class LastThreeDayConcurrentGainers {
 			    			 isCount = false;
 			    		 }
 			    	 }
-		    		 if(urlAPI != null && companyName != null && !urlAPI.contains("///")&& !recordSet.contains(urlAPI)
-		    				 && currentPrice != null
+		    		 if(urlAPI != null 
+		    			&& companyName != null 
+		    			&& !urlAPI.contains("///")
+		    			&& !recordSet.contains(urlAPI)
+		    			&& currentPrice != null
 		    			&& currentPercentChange != null
 		    			&& currentVolume != null
 		    			&& threeDayAgoPrice != null
@@ -155,9 +147,7 @@ public class LastThreeDayConcurrentGainers {
 		    			&& eigthDayAgoPercentChange  != null ){
 		    			 bean.setApi(urlAPI);
 		    			 bean.setName(companyName);
-		    			 //System.out.println(companyName);
 		    			 bean.setCurrentPrice(currentPrice);
-		    			 //System.out.println(currentPrice);
 		    			 bean.setCurrentPercentChange(currentPercentChange);
 		    			 bean.setCurrentVolume(currentVolume);
 		    			 bean.setThreeDayAgoPrice(threeDayAgoPrice);
@@ -169,19 +159,15 @@ public class LastThreeDayConcurrentGainers {
 		    			 recordList.add(bean);
 		    			 recordSet.add(urlAPI);
 		    		 }
+					
+						 currentPrice = null;
+						 
 			     }
+	
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return recordList;
 	}
-	public List<ConcurrentGainersBean> getConcurrentGainersList() {
-		return concurrentGainersList;
-	}
-	public void setConcurrentGainersList(
-			List<ConcurrentGainersBean> concurrentGainersList) {
-		this.concurrentGainersList = concurrentGainersList;
-	}
-	
 	
 }

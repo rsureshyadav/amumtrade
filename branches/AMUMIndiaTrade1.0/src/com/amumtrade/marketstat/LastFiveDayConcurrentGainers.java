@@ -16,9 +16,10 @@ public class LastFiveDayConcurrentGainers {
 	private String moneyControlApiUrl =  "http://www.moneycontrol.com";
 	private String concurrentGainersUrl =  "http://www.moneycontrol.com/india/stockmarket/concurrent-gainers/marketstatistics/nse/5days.html";
 	private List<ConcurrentGainersBean> concurrentGainersList;
-	public void execute() throws IOException{
+	public List<ConcurrentGainersBean>  execute() throws IOException{
 		concurrentGainersList = new ArrayList<ConcurrentGainersBean>();
 		concurrentGainersList = readFromMoneyControl(concurrentGainersUrl);
+		return concurrentGainersList;
 	}
 	private List<ConcurrentGainersBean> readFromMoneyControl(String url) throws IOException{
 		List<ConcurrentGainersBean> recordList = null;
@@ -173,13 +174,7 @@ public class LastFiveDayConcurrentGainers {
 		}
 		return recordList;
 	}
-	public List<ConcurrentGainersBean> getConcurrentGainersList() {
-		return concurrentGainersList;
-	}
-	public void setConcurrentGainersList(
-			List<ConcurrentGainersBean> concurrentGainersList) {
-		this.concurrentGainersList = concurrentGainersList;
-	}
+
 	
 	
 }

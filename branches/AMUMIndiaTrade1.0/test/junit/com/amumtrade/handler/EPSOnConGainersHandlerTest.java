@@ -2,13 +2,13 @@ package com.amumtrade.handler;
 
 import org.junit.Test;
 
-public class FinancialAnalysisHandlerTest {
+public class EPSOnConGainersHandlerTest {
 
 	@Test
 	public void executeStockMarketStat() throws Exception{
 		long startTime= System.currentTimeMillis();
 		
-		FinancialAnalysisHandler fah = new FinancialAnalysisHandler();
+		EPSOnConGainersHandler fah = new EPSOnConGainersHandler();
 		fah.execute();
 		long endTime= System.currentTimeMillis();
 		long elapsedTime = endTime - startTime;

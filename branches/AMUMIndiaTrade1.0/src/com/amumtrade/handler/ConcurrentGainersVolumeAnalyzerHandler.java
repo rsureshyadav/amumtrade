@@ -21,8 +21,7 @@ public class ConcurrentGainersVolumeAnalyzerHandler {
 
 	public void execute() throws IOException{
 		LastThreeDayConcurrentGainers cg = new LastThreeDayConcurrentGainers();
-		cg.execute();
-		List<ConcurrentGainersBean> concurrentGainersList = cg.getConcurrentGainersList();
+		List<ConcurrentGainersBean> concurrentGainersList = cg.execute();
 		runVolumeSplitter(concurrentGainersList);
 	}
 
@@ -36,10 +35,11 @@ public class ConcurrentGainersVolumeAnalyzerHandler {
 			urlList = new ArrayList<String>();
 			for(ConcurrentGainersBean gainerBean : concurrentGainersList){
 				urlList.add(gainerBean.getApi());
+				//System.out.println(gainerBean.getName()+">>"+gainerBean.getCurrentPrice());
 				concurrentGainerMap.put(gainerBean.getApi(), gainerBean);
 			}
 			bwObj = new BufferedWriter( fwo );  
-			bwObj.write("Company Name,Current Price,Day Volume,FiveDay AvgVolume,TenDay AvgVolume,ThirtyDay AvgVolume,Rating,Api"+"\n");
+			bwObj.write("CompanyName,CurrentPrice,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating,Api"+"\n");
 		
 			int i=0;
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
