@@ -13,14 +13,14 @@ import java.util.Set;
 import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
 
-public class FinancialAnalysisRunner implements Runnable{
+public class FinancialEPSAnalysisRunner implements Runnable{
 
 	private String command;
 	private URL urlConn;
 	private Map<String,ConcurrentGainersBean> financialAnalysisMap;
 	private BufferedWriter bwObj;
 	
-	public FinancialAnalysisRunner(URL httpUrl,Map<String,ConcurrentGainersBean> financialAnalysis,BufferedWriter bufferWriter,String s){
+	public FinancialEPSAnalysisRunner(URL httpUrl,Map<String,ConcurrentGainersBean> financialAnalysis,BufferedWriter bufferWriter,String s){
 		this.urlConn=httpUrl;
 		this.financialAnalysisMap = financialAnalysis;
 		this.bwObj = bufferWriter;
@@ -72,6 +72,7 @@ public class FinancialAnalysisRunner implements Runnable{
 					 eps = inputLine.trim();
 					 eps = eps.replace("<td align=\"right\" class=\"det\">", "");
 					 eps = eps.replace("</td>", "");
+					 eps = eps.replace(",", "");
 					 financialInfoBean.setEps(eps);
 					 ConcurrentGainersBean bean = financialAnalysisMap.get(url);
 					 financialInfoBean.setName(bean.getName());

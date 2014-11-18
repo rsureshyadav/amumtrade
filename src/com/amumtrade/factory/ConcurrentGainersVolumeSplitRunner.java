@@ -116,11 +116,12 @@ public class ConcurrentGainersVolumeSplitRunner implements Runnable {
 						 concurrentBean.setTenDayAvgVolume(tenDayAvgVolume);
 						 concurrentBean.setThirtyDayAvgVolume(thirtyDayAvgVolume);
 						 ConcurrentGainersBean bean = concurrentGainerMap.get(url);
-						 
-						 concurrentBean.setName(bean.getName());
-						 concurrentBean.setCurrentPrice(bean.getCurrentPrice());
-						// concurrentBean.setCurrentPercentChange(bean.getCurrentPercentChange());
-						 concurrentBean.setApi(url);
+						// if(url.equalsIgnoreCase(bean.getApi())){
+							 concurrentBean.setName(bean.getName());
+							 concurrentBean.setCurrentPrice(bean.getCurrentPrice());
+							 concurrentBean.setApi(url);
+						//	 System.out.println(bean.getName()+">>"+bean.getCurrentPrice());
+					//	 }
 						 //System.out.println(">5Day>>"+gainerBean.getFiveDayAvgVolume()+">10Day>>"+gainerBean.getTenDayAvgVolume()+">30Day>>"+gainerBean.getThirtyDayAvgVolume());
 						 fiveDayAvgVolume = null;
 						 tenDayAvgVolume = null;
