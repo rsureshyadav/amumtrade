@@ -1,4 +1,4 @@
-package com.amumtrade.handler;
+package com.amumtrade.others;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -6,6 +6,7 @@ import java.io.FileWriter;
 import java.util.Map;
 
 import com.amumtrade.constant.AMUMStockConstant;
+import com.amumtrade.handler.TopGainersHandler;
 import com.amumtrade.helper.AMUMMoneyControlHelper;
 
 public class AMUMMoneyControlHandler {

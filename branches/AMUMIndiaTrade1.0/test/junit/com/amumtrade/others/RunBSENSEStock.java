@@ -2,8 +2,6 @@ package com.amumtrade.others;
 
 import org.junit.Test;
 
-import com.amumtrade.handler.BSENSEHandler;
-
 public class RunBSENSEStock {
 	
 	@Test
