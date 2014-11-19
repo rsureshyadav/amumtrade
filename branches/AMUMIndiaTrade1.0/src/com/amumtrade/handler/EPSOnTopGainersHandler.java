@@ -16,8 +16,10 @@ import java.util.concurrent.Executors;
 import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.factory.FinancialEPSAnalysisRunner;
+import com.amumtrade.util.StockUtil;
 
 public class EPSOnTopGainersHandler {
+	String csvFileName="config/amumEPSTopGainersAnalyzer.csv";
 	List<ConcurrentGainersBean> topGainersWithRatingList ;
 	BufferedReader br;
 
@@ -26,11 +28,12 @@ public class EPSOnTopGainersHandler {
 		topGainersWithRatingList = convertTopGainersVolumeCsvToBean();
 		List<ConcurrentGainersBean> gainerRatingList  = convertUrlToFinancialUrl(topGainersWithRatingList);
 		runFinanceRatingUrl(gainerRatingList);
+		StockUtil.initiateEmail(csvFileName);
 	}
 	private void runFinanceRatingUrl(List<ConcurrentGainersBean> gainerUrlList) throws IOException {
 		List<String> urlList = null;
 		Map<String,ConcurrentGainersBean> financialAnalyzerMap = new HashMap<String,ConcurrentGainersBean>();
-		FileWriter fwo = new FileWriter( "config/amumEPSOnTopGainers.csv", false );
+		FileWriter fwo = new FileWriter( csvFileName, false );
 		BufferedWriter bwObj = null;
 		try {
 			System.out.println(">>"+gainerUrlList.size());
