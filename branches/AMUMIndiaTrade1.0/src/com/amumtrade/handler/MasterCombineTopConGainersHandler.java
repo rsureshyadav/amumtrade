@@ -15,7 +15,7 @@ import java.util.Set;
 import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
 
-public class CombineTopConcurrentGainersHandler {
+public class MasterCombineTopConGainersHandler {
 	String conGainersCsvFileName = "config/amumEPSConcurrentGainersAnalyzer.csv";
 	String topGainersCsvFileName = "config/amumEPSTopGainersAnalyzer.csv";
 
