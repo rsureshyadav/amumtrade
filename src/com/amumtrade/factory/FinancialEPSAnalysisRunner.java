@@ -83,7 +83,7 @@ public class FinancialEPSAnalysisRunner implements Runnable{
 					 financialInfoBean.setFiveDayAvgVolume(bean.getFiveDayAvgVolume());
 					 financialInfoBean.setTenDayAvgVolume(bean.getTenDayAvgVolume());
 					 financialInfoBean.setThirtyDayAvgVolume(bean.getThirtyDayAvgVolume());
-					 financialInfoBean.setRating(bean.getRating());
+					 financialInfoBean.setVolumeRating(bean.getVolumeRating());
 					//System.out.println(eps);
 					 isEPS = false;
 					 urlSet.add(url);
@@ -105,29 +105,29 @@ public class FinancialEPSAnalysisRunner implements Runnable{
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+bean.getRating()+","+bean.getEps()+","+AMUMStockConstant.FIVE_STAR+"\n");
-				System.out.println(bean.getName()+","+"^"+bean.getCurrentPrice()+","+bean.getCurrentDayVolume()+","+bean.getRating()+","+bean.getEps()+","+AMUMStockConstant.FIVE_STAR);
+						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.FIVE_STAR+","+bean.getApi()+"\n");
+				System.out.println(bean.getName()+","+"^"+bean.getCurrentPrice()+","+bean.getCurrentDayVolume()+","+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.FIVE_STAR);
 				
 			}else if(epsValue > 75 && epsValue < 100){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+bean.getRating()+","+bean.getEps()+","+AMUMStockConstant.FOUR_STAR+"\n");
+						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.FOUR_STAR+","+bean.getApi()+"\n");
 			}else if(epsValue > 50 && epsValue < 75){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+bean.getRating()+","+bean.getEps()+","+AMUMStockConstant.THREE_STAR+"\n");
+						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.THREE_STAR+","+bean.getApi()+"\n");
 			}else if(epsValue > 25 && epsValue < 50){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+bean.getRating()+","+bean.getEps()+","+AMUMStockConstant.TWO_STAR+"\n");
+						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.TWO_STAR+","+bean.getApi()+"\n");
 			}else if(epsValue > 0 && epsValue < 25){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+bean.getRating()+","+bean.getEps()+","+AMUMStockConstant.ONE_STAR+"\n");
+						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.ONE_STAR+","+bean.getApi()+"\n");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -11,10 +11,6 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import com.amumtrade.bean.TopGainerBean;
-
-import sun.reflect.generics.tree.ReturnType;
-
 public class TopGainersHandler {
 	public static Set<String> nameSet = new HashSet<String>();
 	public static String stockURL = "http://www.moneycontrol.com/stocks/marketstats/gainerloser.php?optex=NSE&opttopic=topgainers&index=-2&more=true";

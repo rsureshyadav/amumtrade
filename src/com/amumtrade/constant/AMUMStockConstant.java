@@ -134,7 +134,7 @@ public class AMUMStockConstant {
 	public static final String MARKET_WATCH_SECOND_STRING="<td class=\"current\">";
 	public static final String MARKET_WATCH_THIRD_STRING="</td>";
 	
-	public static final int THREAD_COUNT = 5;
+	public static final int THREAD_COUNT = 10;
 	public static final String FIVE_STAR = "5 star";
 	public static final String FOUR_STAR = "4 star";
 	public static final String THREE_STAR = "3 star";

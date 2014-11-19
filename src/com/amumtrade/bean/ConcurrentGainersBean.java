@@ -19,8 +19,9 @@ public class ConcurrentGainersBean {
 	private String fiveDayAvgVolume;
 	private String tenDayAvgVolume;
 	private String thirtyDayAvgVolume;
-	private String rating;
+	private String volumeRating;
 	private String eps;
+	private String epsRating;
 	public String getName() {
 		return name;
 	}
@@ -111,11 +112,11 @@ public class ConcurrentGainersBean {
 	public void setThirtyDayAvgVolume(String thirtyDayAvgVolume) {
 		this.thirtyDayAvgVolume = thirtyDayAvgVolume;
 	}
-	public String getRating() {
-		return rating;
+	public String getVolumeRating() {
+		return volumeRating;
 	}
-	public void setRating(String rating) {
-		this.rating = rating;
+	public void setVolumeRating(String volumeRating) {
+		this.volumeRating = volumeRating;
 	}
 	public String getFinanceApi() {
 		return financeApi;
@@ -128,6 +129,12 @@ public class ConcurrentGainersBean {
 	}
 	public void setEps(String eps) {
 		this.eps = eps;
+	}
+	public String getEpsRating() {
+		return epsRating;
+	}
+	public void setEpsRating(String epsRating) {
+		this.epsRating = epsRating;
 	}
 	
 	

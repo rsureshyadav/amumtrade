@@ -43,7 +43,7 @@ public class EPSOnConGainersHandler {
 				financialAnalyzerMap.put(financeAnalyzerBean.getFinanceApi(), financeAnalyzerBean);
 			}
 			bwObj = new BufferedWriter( fwo );  
-			bwObj.write("CompanyName,CurrentPrice,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,VolumeRating,EPS,EPSRating"+"\n");
+			bwObj.write("CompanyName,CurrentPrice,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,VolumeRating,EPS,EPSRating,API"+"\n");
 			int i=0;
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
 			 for(String httpUrl : urlList){//for (int i = 0; i < 10; i++) {
@@ -87,7 +87,7 @@ public class EPSOnConGainersHandler {
 					bean.setFiveDayAvgVolume(record.getFiveDayAvgVolume());
 					bean.setTenDayAvgVolume(record.getTenDayAvgVolume());
 					bean.setThirtyDayAvgVolume(record.getThirtyDayAvgVolume());
-					bean.setRating(record.getRating());
+					bean.setVolumeRating(record.getVolumeRating());
 					
 					financeUrlList.add(bean);
 			}
@@ -115,7 +115,7 @@ public class EPSOnConGainersHandler {
 					gainerBean.setFiveDayAvgVolume(conGainers[3]);
 					gainerBean.setTenDayAvgVolume(conGainers[4]);
 					gainerBean.setThirtyDayAvgVolume(conGainers[5]);
-					gainerBean.setRating(conGainers[6]);
+					gainerBean.setVolumeRating(conGainers[6]);
 					gainerBean.setApi(conGainers[7]);
 					gainerBeanList.add(gainerBean);
 				}
