@@ -59,11 +59,11 @@ public class MasterCombineConGainersVolumeAnalyzerHandler {
 				}
 				for(ConcurrentGainersBean bean : fiveDayConGainersList){
 					fiveDayConGainersAPI.add(bean.getApi());
-					gainersBeanMap.put(bean.getApi(), bean);
+					//gainersBeanMap.put(bean.getApi(), bean);
 				}
 				for(ConcurrentGainersBean bean : eigthDayConGainersList){
 					eigthDayConGainersAPI.add(bean.getApi());
-					gainersBeanMap.put(bean.getApi(), bean);
+					//gainersBeanMap.put(bean.getApi(), bean);
 				}
 				threeDayConGainersAPI.retainAll(fiveDayConGainersAPI);
 				threeDayConGainersAPI.retainAll(eigthDayConGainersAPI);
