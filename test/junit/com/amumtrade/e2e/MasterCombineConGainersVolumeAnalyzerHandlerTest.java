@@ -2,7 +2,6 @@ package com.amumtrade.e2e;
 
 import org.junit.Test;
 
-import com.amumtrade.handler.EPSOnConGainersHandler;
 import com.amumtrade.handler.MasterCombineConGainersVolumeAnalyzerHandler;
 
 public class MasterCombineConGainersVolumeAnalyzerHandlerTest {
@@ -13,8 +12,6 @@ public class MasterCombineConGainersVolumeAnalyzerHandlerTest {
 		MasterCombineConGainersVolumeAnalyzerHandler mccvah = new MasterCombineConGainersVolumeAnalyzerHandler();
 		mccvah.execute();
 		
-		EPSOnConGainersHandler fah = new EPSOnConGainersHandler();
-		fah.execute();
 		
 		long endTime= System.currentTimeMillis();
 		long elapsedTime = endTime - startTime;

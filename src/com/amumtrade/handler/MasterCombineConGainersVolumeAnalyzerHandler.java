@@ -19,10 +19,11 @@ import com.amumtrade.factory.ConcurrentGainersVolumeSplitRunner;
 import com.amumtrade.marketstat.LastEigthDayConcurrentGainers;
 import com.amumtrade.marketstat.LastFiveDayConcurrentGainers;
 import com.amumtrade.marketstat.LastThreeDayConcurrentGainers;
+import com.amumtrade.util.StockUtil;
 
 public class MasterCombineConGainersVolumeAnalyzerHandler {
 	
-
+String csvFileName ="config/amumMasterConcurrentGainersList.csv";
 
 	public void execute() throws IOException{
 		LastThreeDayConcurrentGainers tcg = new LastThreeDayConcurrentGainers();
@@ -36,6 +37,7 @@ public class MasterCombineConGainersVolumeAnalyzerHandler {
 		
 		List<ConcurrentGainersBean> finalConGainersList = getCommonConcurrentGainers(threeDayConGainersList,fiveDayConGainersList,eigthDayConGainersList);
 		runVolumeSplitter(finalConGainersList);
+		StockUtil.initiateEmail(csvFileName);
 	}
 
 	private List<ConcurrentGainersBean> getCommonConcurrentGainers(
@@ -84,7 +86,7 @@ public class MasterCombineConGainersVolumeAnalyzerHandler {
 	private void runVolumeSplitter(List<ConcurrentGainersBean> concurrentGainersList)throws IOException {
 		List<String> urlList = null;
 		Map<String,ConcurrentGainersBean> concurrentGainerMap = new HashMap<String,ConcurrentGainersBean>();
-		FileWriter fwo = new FileWriter( "config/amumConcurrentGainersVolumeBasedList.csv", false );
+		FileWriter fwo = new FileWriter( csvFileName, false );
 		BufferedWriter bwObj = null;
 		try {
 			System.out.println(">>"+concurrentGainersList.size());
