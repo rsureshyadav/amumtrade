@@ -1,6 +1,8 @@
-package com.amumtrade.handler;
+package com.amumtrade.others;
 
 import org.junit.Test;
+
+import com.amumtrade.handler.AMUMMoneyControlHandler;
 
 public class AMUMMoneyControlHandlerTest {
 

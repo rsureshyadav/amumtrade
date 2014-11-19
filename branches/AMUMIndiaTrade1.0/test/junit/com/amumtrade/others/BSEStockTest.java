@@ -1,8 +1,9 @@
-package com.amumtrade.handler;
+package com.amumtrade.others;
 
 import org.junit.Test;
 
 import com.amumtrade.constant.AMUMStockConstant;
+import com.amumtrade.handler.AMUMBSEStockHandler;
 
 public class BSEStockTest {
 @Test
