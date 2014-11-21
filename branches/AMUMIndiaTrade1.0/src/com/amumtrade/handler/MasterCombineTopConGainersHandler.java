@@ -18,7 +18,7 @@ import com.amumtrade.util.StockUtil;
 public class MasterCombineTopConGainersHandler {
 	String conGainersCsvFileName = "config/amumEPSConcurrentGainersAnalyzer.csv";
 	String topGainersCsvFileName = "config/amumEPSTopGainersAnalyzer.csv";
-	String csvFileName = "config/amumCommonTopConcurrentGainersHandler.csv";
+	String csvFileName = "config/amumCombineTopAndConurrentGainersAnalyzer.csv";
 	List<ConcurrentGainersBean> concurrentGainersList ;
 	List<ConcurrentGainersBean> topGainersList ;
 	Set<String> concurrentGainersApiSet;
@@ -45,7 +45,7 @@ public class MasterCombineTopConGainersHandler {
 			if(topGainersApiSet != null && !topGainersApiSet.isEmpty()
 					&& concurrentGainersApiSet != null && !concurrentGainersApiSet.isEmpty()){
 				bwObj = new BufferedWriter( fwo );  
-				bwObj.write("CompanyName,CurrentPrice,DayVolume,FiveDayVolume,TenDayVolume,ThirtyDayVolume,VolumeRating,EPS,EPSRating,API"+"\n");
+				bwObj.write("CompanyName,CurrentPrice,DayVolume,FiveDayVolume,TenDayVolume,ThirtyDayVolume,VolumeRating,EPS,EPSRating,StanaloneProfit,Recommendation,News,API"+"\n");
 			
 				topGainersApiSet.retainAll(concurrentGainersApiSet);
 				for(String api : topGainersApiSet){
@@ -68,7 +68,7 @@ public class MasterCombineTopConGainersHandler {
 			bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 					+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 					+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-					+bean.getVolumeRating()+","+bean.getEps()+","+bean.getEpsRating()+","+bean.getApi()+"\n");
+					+bean.getVolumeRating()+","+bean.getEps()+","+bean.getEpsRating()+","+bean.getStandaloneProfit()+","+bean.getRecommendation()+","+bean.getNews()+","+bean.getApi()+"\n");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -117,7 +117,10 @@ public class MasterCombineTopConGainersHandler {
 					gainerBean.setVolumeRating(conGainers[6]);
 					gainerBean.setEps(conGainers[7]);
 					gainerBean.setEpsRating(conGainers[8]);
-					gainerBean.setApi(conGainers[9]);
+					gainerBean.setStandaloneProfit(conGainers[9]);
+					gainerBean.setRecommendation(conGainers[10]);
+					gainerBean.setNews(conGainers[11]);
+					gainerBean.setApi(conGainers[12]);
 					gainerBeanList.add(gainerBean);
 				}
 				skipFirstLineHeader++;

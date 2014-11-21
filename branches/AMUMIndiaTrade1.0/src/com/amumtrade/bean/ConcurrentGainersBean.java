@@ -22,6 +22,9 @@ public class ConcurrentGainersBean {
 	private String volumeRating;
 	private String eps;
 	private String epsRating;
+	private String standaloneProfit;
+	private String recommendation;
+	private String news;
 	public String getName() {
 		return name;
 	}
@@ -135,6 +138,24 @@ public class ConcurrentGainersBean {
 	}
 	public void setEpsRating(String epsRating) {
 		this.epsRating = epsRating;
+	}
+	public String getStandaloneProfit() {
+		return standaloneProfit;
+	}
+	public void setStandaloneProfit(String standaloneProfit) {
+		this.standaloneProfit = standaloneProfit;
+	}
+	public String getRecommendation() {
+		return recommendation;
+	}
+	public void setRecommendation(String recommendation) {
+		this.recommendation = recommendation;
+	}
+	public String getNews() {
+		return news;
+	}
+	public void setNews(String news) {
+		this.news = news;
 	}
 	
 	
