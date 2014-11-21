@@ -21,9 +21,8 @@ import com.amumtrade.marketstat.LastFiveDayConcurrentGainers;
 import com.amumtrade.marketstat.LastThreeDayConcurrentGainers;
 import com.amumtrade.util.StockUtil;
 
-public class MasterCombineConGainersVolumeAnalyzerHandler {
-	
-String csvFileName ="config/amumMasterConcurrentGainersList.csv";
+public class MasterAllConGainersVolumeAnalyzerHandler {
+String csvFileName ="config/output/AMUM_ALL_ConcurrentGainers_Analyzer.csv";
 
 	public void execute(long startTime) throws IOException{
 		LastThreeDayConcurrentGainers tcg = new LastThreeDayConcurrentGainers();

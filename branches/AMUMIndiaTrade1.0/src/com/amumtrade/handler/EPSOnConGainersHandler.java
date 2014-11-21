@@ -19,7 +19,8 @@ import com.amumtrade.factory.FinancialEPSAnalysisRunner;
 import com.amumtrade.util.StockUtil;
 
 public class EPSOnConGainersHandler {
-	String csvFileName = "config/amumEPSConcurrentGainersAnalyzer.csv";
+	//amumEPSConcurrentGainersAnalyzer
+	String csvFileName = "config/output/AMUM_ConcurrentGainers_Analyzer.csv";
 	List<ConcurrentGainersBean> concurrentGainersWithRatingList ;
 	BufferedReader br;
 

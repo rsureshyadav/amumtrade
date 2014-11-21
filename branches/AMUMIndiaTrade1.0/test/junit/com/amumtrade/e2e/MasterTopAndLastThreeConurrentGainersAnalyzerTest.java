@@ -2,19 +2,18 @@ package com.amumtrade.e2e;
 
 import org.junit.Test;
 
-import com.amumtrade.handler.ConcurrentGainersVolumeAnalyzerHandler;
-import com.amumtrade.handler.EPSOnConGainersHandler;
+import com.amumtrade.handler.MasterCombineTopConGainersHandler;
 
-public class MasterConcurrentGainersAnalyzerTest {
+public class MasterTopAndLastThreeConurrentGainersAnalyzerTest {
+
+	
+	
 	@Test
 	public void executeStockMarketStat() throws Exception{
 		long startTime= System.currentTimeMillis();
 		
-		ConcurrentGainersVolumeAnalyzerHandler cgva = new ConcurrentGainersVolumeAnalyzerHandler();
-		cgva.execute();
-		
-		EPSOnConGainersHandler fah = new EPSOnConGainersHandler();
-		fah.execute(startTime);
+		MasterCombineTopConGainersHandler ctcgh = new MasterCombineTopConGainersHandler();
+		ctcgh.execute(startTime);
 		
 		long endTime= System.currentTimeMillis();
 		long elapsedTime = endTime - startTime;
