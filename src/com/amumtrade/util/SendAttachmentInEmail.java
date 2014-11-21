@@ -19,14 +19,15 @@ import javax.mail.internet.MimeMultipart;
 
 public class SendAttachmentInEmail {
    public  void execute(String csvFilePath, String logMessage, String executionTime) {
+      String fileName = csvFilePath.substring(csvFilePath.indexOf("AMUM_"));
+      fileName = fileName.replace(".csv", "");
       // Recipient's email ID needs to be mentioned.
       String to = "rsureshyadav@gmail.com";
-
       // Sender's email ID needs to be mentioned
-      String from = "rsureshyadav@gmail.com";
+      String from = "amumreach@gmail.com";
 
-      final String username = "rsureshyadav";//change accordingly
-      final String password = "hclt1981!";//change accordingly
+      final String username = "amumreach";//change accordingly
+      final String password = "amumreach!";//change accordingly
 
       // Assuming you are sending email through imap.gmail.com
       String host = "imap.gmail.com";
@@ -57,7 +58,7 @@ public class SendAttachmentInEmail {
             InternetAddress.parse(to));
 
          // Set Subject: header field
-         message.setSubject("AMUMTrade "+logMessage+" Alert!!!!!");
+         message.setSubject(fileName + " Executed @ "+logMessage+" Alert!!!!!");
 
          // Create the message part
          BodyPart messageBodyPart = new MimeBodyPart();
