@@ -59,23 +59,18 @@ public class FinancialEPSAnalysisRunner implements Runnable{
 		String inputLine = null;
 		String eps = null;
 		String newsLine = null;
-		String news = null;
 		String standaloneProfit = null;
 		String recommendation = null;
 		boolean isEPS = false;
 		boolean isnewsLine = false;
 		Set<String> epsUrlSet = null;
-		Set<String> standaloneProfitUrlSet = null;
-		Set<String> recommendationSet = null;
-		Set<String> newsSet = null;
+
 
 
 		ConcurrentGainersBean financialInfoBean;
 		try {
 			epsUrlSet = new HashSet<String>();
-			standaloneProfitUrlSet = new HashSet<String>();
-			recommendationSet =new HashSet<String>();
-			newsSet = new HashSet<String>();
+
 			 while ((inputLine = bufferReader.readLine()) != null)
 		        {
 				 if(inputLine.contains("Earnings Per Share")){
@@ -101,7 +96,11 @@ public class FinancialEPSAnalysisRunner implements Runnable{
 						 if(newsLine.contains("crore")){
 							 standaloneProfit = "Yes";
 						 }else if(newsLine.contains("Buy") || newsLine.contains("buy")){
-							 recommendation = "BUY"; 
+							 if(newsLine.contains("Sudarshan Sukhani")){
+								 recommendation = "BUY*";  
+							 }else{
+								 recommendation = "BUY"; 
+							 }
 						 }else if(newsLine.contains("Hold")){
 							 recommendation = "HOLD"; 
 						 }else if(newsLine.contains("Sell")){
