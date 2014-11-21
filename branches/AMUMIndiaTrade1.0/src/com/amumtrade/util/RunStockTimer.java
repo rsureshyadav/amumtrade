@@ -1,24 +1,51 @@
 package com.amumtrade.util;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
 
-public class RunStockTimer {
+public class RunStockTimer extends TimerTask{
 
-	public static void main(String str[]){
-	
+
+	@Override
+	public void run() {
+		System.out.println("Start time:" + new Date());
+		doSomeWork();
+		System.out.println("End time:" + new Date());
+	}
+
+	// simulate a time consuming task
+	private void doSomeWork() {
 		try {
-			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy hh:mm");
-			Date before = sdf.parse("19/11/2014 07:00");
-			Date after = sdf.parse("19/11/2014 07:30");
-			Date toCheck = sdf.parse("19/11/2014 06:09");
-			//is toCheck between the two?
-			boolean isAvailable = (before.getTime() < toCheck.getTime()) && after.getTime() > toCheck.getTime();
-			if(isAvailable){
-				System.out.println("Hellow World!!!!");
-			}
-		} catch (Exception e) {
-		    e.printStackTrace();
+
+			Thread.sleep(10000);
+
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
 	}
+
+	public static void main(String args[]) {
+
+		TimerTask timerTask = new RunStockTimer();
+		// running timer task as daemon thread
+		long interval = 1000 * 60 * 120;//run for every two hours
+		Timer timer = new Timer(true);
+		timer.scheduleAtFixedRate(timerTask, interval, 10 * 1000);
+		System.out.println("TimerTask begins! :" + new Date());
+		// cancel after sometime
+		try {
+			Thread.sleep(20000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		timer.cancel();
+		System.out.println("TimerTask cancelled! :" + new Date());
+		try {
+			Thread.sleep(30000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
 }
