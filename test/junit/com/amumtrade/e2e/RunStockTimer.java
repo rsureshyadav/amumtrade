@@ -6,7 +6,7 @@ import java.util.TimerTask;
 
 public class RunStockTimer extends TimerTask{
 	public static void main(String[] args) {
-		long interval = 1000 * 60 * 1;//run for every three hours
+		long interval = 1000 * 60 * 180;//run for every three hours
 	      // creating timer task, timer
 	      TimerTask tasknew = new RunStockTimer();
 	      Timer timer = new Timer();
