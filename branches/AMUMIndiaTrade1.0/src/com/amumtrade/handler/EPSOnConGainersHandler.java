@@ -23,12 +23,12 @@ public class EPSOnConGainersHandler {
 	List<ConcurrentGainersBean> concurrentGainersWithRatingList ;
 	BufferedReader br;
 
-	public void execute() throws IOException{
+	public void execute(long startTime) throws IOException{
 		concurrentGainersWithRatingList = new ArrayList<ConcurrentGainersBean>();
 		concurrentGainersWithRatingList = convertConGainersCsvToBean();
 		List<ConcurrentGainersBean> financeRatingList  = convertUrlToFinancialUrl(concurrentGainersWithRatingList);
 		runFinanceRatingUrl(financeRatingList);
-		StockUtil.initiateEmail(csvFileName);
+		StockUtil.initiateEmail(csvFileName,startTime);
 	}
 	private void runFinanceRatingUrl(List<ConcurrentGainersBean> financeUrlList) throws IOException {
 		List<String> urlList = null;

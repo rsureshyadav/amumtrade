@@ -25,7 +25,7 @@ public class MasterCombineConGainersVolumeAnalyzerHandler {
 	
 String csvFileName ="config/amumMasterConcurrentGainersList.csv";
 
-	public void execute() throws IOException{
+	public void execute(long startTime) throws IOException{
 		LastThreeDayConcurrentGainers tcg = new LastThreeDayConcurrentGainers();
 		List<ConcurrentGainersBean> threeDayConGainersList = tcg.execute();
 		
@@ -37,7 +37,7 @@ String csvFileName ="config/amumMasterConcurrentGainersList.csv";
 		
 		List<ConcurrentGainersBean> finalConGainersList = getCommonConcurrentGainers(threeDayConGainersList,fiveDayConGainersList,eigthDayConGainersList);
 		runVolumeSplitter(finalConGainersList);
-		StockUtil.initiateEmail(csvFileName);
+		StockUtil.initiateEmail(csvFileName,startTime);
 	}
 
 	private List<ConcurrentGainersBean> getCommonConcurrentGainers(

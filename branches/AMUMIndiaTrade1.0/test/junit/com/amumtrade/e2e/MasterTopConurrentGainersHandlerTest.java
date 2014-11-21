@@ -13,7 +13,7 @@ public class MasterTopConurrentGainersHandlerTest {
 		long startTime= System.currentTimeMillis();
 		
 		MasterCombineTopConGainersHandler ctcgh = new MasterCombineTopConGainersHandler();
-		ctcgh.execute();
+		ctcgh.execute(startTime);
 		
 		long endTime= System.currentTimeMillis();
 		long elapsedTime = endTime - startTime;

@@ -13,18 +13,18 @@ import java.util.Map;
 import java.util.Set;
 
 import com.amumtrade.bean.ConcurrentGainersBean;
-import com.amumtrade.constant.AMUMStockConstant;
+import com.amumtrade.util.StockUtil;
 
 public class MasterCombineTopConGainersHandler {
 	String conGainersCsvFileName = "config/amumEPSConcurrentGainersAnalyzer.csv";
 	String topGainersCsvFileName = "config/amumEPSTopGainersAnalyzer.csv";
-
+	String csvFileName = "config/amumCommonTopConcurrentGainersHandler.csv";
 	List<ConcurrentGainersBean> concurrentGainersList ;
 	List<ConcurrentGainersBean> topGainersList ;
 	Set<String> concurrentGainersApiSet;
 	Set<String> topGainersApiSet;
 	Map<String,ConcurrentGainersBean> apiBeanMap;
-	public void execute() throws IOException{
+	public void execute(long startTime) throws IOException{
 		concurrentGainersList = new ArrayList<ConcurrentGainersBean>();
 		topGainersList = new ArrayList<ConcurrentGainersBean>();
 		concurrentGainersList = convertCsvToBean(concurrentGainersList,conGainersCsvFileName);
@@ -35,10 +35,11 @@ public class MasterCombineTopConGainersHandler {
 		topGainersApiSet = getTopGainersApiAPI();
 		concurrentGainersApiSet = getConcurrentGainersApi();
 		compareBothGainers();
+		StockUtil.initiateEmail(csvFileName,startTime);
 		
 	}
 	private void compareBothGainers() throws IOException {
-		FileWriter fwo = new FileWriter( "config/amumCommonTopConcurrentGainersHandler.csv", false );
+		FileWriter fwo = new FileWriter( csvFileName, false );
 		BufferedWriter bwObj = null;
 		try {
 			if(topGainersApiSet != null && !topGainersApiSet.isEmpty()

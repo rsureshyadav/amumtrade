@@ -9,7 +9,7 @@ public class EPSOnTopGainersHandlerTest {
 		long startTime= System.currentTimeMillis();
 		
 		EPSOnTopGainersHandler epsTopGainer = new EPSOnTopGainersHandler();
-		epsTopGainer.execute();
+		epsTopGainer.execute(startTime);
 		long endTime= System.currentTimeMillis();
 		long elapsedTime = endTime - startTime;
 		

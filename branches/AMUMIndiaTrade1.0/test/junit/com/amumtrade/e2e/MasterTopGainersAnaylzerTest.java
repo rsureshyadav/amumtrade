@@ -18,7 +18,7 @@ public class MasterTopGainersAnaylzerTest {
 		volumeAnaylzer.execute();
 		//This will compare with EPS
 		EPSOnTopGainersHandler epsTopGainer = new EPSOnTopGainersHandler();
-		epsTopGainer.execute();
+		epsTopGainer.execute(startTime);
 		long endTime= System.currentTimeMillis();
 		long elapsedTime = endTime - startTime;
 			
