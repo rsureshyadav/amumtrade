@@ -33,7 +33,7 @@ public class FinancialEPSAnalysisRunner implements Runnable{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-      //  System.out.println(Thread.currentThread().getName()+" End.");
+        System.out.println(Thread.currentThread().getName()+" End.");
 
 	}
 	private void processCommand() throws IOException{
@@ -59,6 +59,7 @@ public class FinancialEPSAnalysisRunner implements Runnable{
 		String inputLine = null;
 		String eps = null;
 		String newsLine = null;
+		String newsLineDate = null;
 		String standaloneProfit = null;
 		String recommendation = null;
 		boolean isEPS = false;
@@ -85,6 +86,13 @@ public class FinancialEPSAnalysisRunner implements Runnable{
 					 isnewsLine = true;
 				 }else if(isnewsLine){
 					 newsLine = inputLine.trim();
+					 if(newsLine != null && newsLine.contains("<a href")){
+						 newsLineDate = newsLine.substring(newsLine.indexOf("<a href"));
+						 newsLineDate = newsLine.replace(newsLineDate, "");
+						 newsLineDate = newsLineDate.substring(newsLineDate.indexOf("<span class=\"gray1_11\">"),newsLineDate.lastIndexOf("</span>"));
+						 newsLineDate = newsLineDate.replace("<span class=\"gray1_11\">", "");
+						 newsLineDate = newsLineDate.replace(",", "");
+					 }
 					 if(newsLine != null && newsLine.contains("<b>")){
 						 newsLine = newsLine.substring(newsLine.indexOf("<b>"));
 						 String temp = newsLine.substring(newsLine.indexOf("<div"));
@@ -92,7 +100,7 @@ public class FinancialEPSAnalysisRunner implements Runnable{
 						 newsLine = newsLine.replace("</b></a></div>", "");
 						 newsLine = newsLine.replace("<b>", "");
 						 newsLine =newsLine.replace(",", "");
-						 
+						 newsLine = newsLineDate+"@ "+newsLine;
 						 if(newsLine.contains("crore")){
 							 standaloneProfit = "Yes";
 						 }else if(newsLine.contains("Buy") || newsLine.contains("buy")){
