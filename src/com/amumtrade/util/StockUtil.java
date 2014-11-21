@@ -12,8 +12,8 @@ public class StockUtil {
 			DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 			Date date = new Date();
 			startDateTimeLog = dateFormat.format(date);
-			SendAttachmentInEmail email = new SendAttachmentInEmail();
-			email.execute(filePath, startDateTimeLog, getTotalExecutionTime(startTime));
+			/*SendAttachmentInEmail email = new SendAttachmentInEmail();
+			email.execute(filePath, startDateTimeLog, getTotalExecutionTime(startTime));*/
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

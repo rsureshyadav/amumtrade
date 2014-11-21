@@ -33,7 +33,7 @@ public class FinancialEPSAnalysisRunner implements Runnable{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-        System.out.println(Thread.currentThread().getName()+" End.");
+      //  System.out.println(Thread.currentThread().getName()+" End.");
 
 	}
 	private void processCommand() throws IOException{
@@ -58,40 +58,90 @@ public class FinancialEPSAnalysisRunner implements Runnable{
 	private void findFinancialInfoReader(BufferedReader bufferReader,String url) throws IOException{
 		String inputLine = null;
 		String eps = null;
+		String newsLine = null;
+		String news = null;
+		String standaloneProfit = null;
+		String recommendation = null;
 		boolean isEPS = false;
-		Set<String> urlSet = null;
+		boolean isnewsLine = false;
+		Set<String> epsUrlSet = null;
+		Set<String> standaloneProfitUrlSet = null;
+		Set<String> recommendationSet = null;
+		Set<String> newsSet = null;
+
+
 		ConcurrentGainersBean financialInfoBean;
 		try {
-			urlSet = new HashSet<String>();
+			epsUrlSet = new HashSet<String>();
+			standaloneProfitUrlSet = new HashSet<String>();
+			recommendationSet =new HashSet<String>();
+			newsSet = new HashSet<String>();
 			 while ((inputLine = bufferReader.readLine()) != null)
 		        {
 				 if(inputLine.contains("Earnings Per Share")){
 					 isEPS = true;
-				 }else if(isEPS && inputLine.contains("<td align=\"right\" class=\"det\">") && !urlSet.contains(url)){
-					 financialInfoBean = new ConcurrentGainersBean();
+				 }else if(isEPS && inputLine.contains("<td align=\"right\" class=\"det\">") ){
 					 eps = inputLine.trim();
 					 eps = eps.replace("<td align=\"right\" class=\"det\">", "");
 					 eps = eps.replace("</td>", "");
 					 eps = eps.replace(",", "");
-					 financialInfoBean.setEps(eps);
-					 ConcurrentGainersBean bean = financialAnalysisMap.get(url);
-					 financialInfoBean.setName(bean.getName());
-					 financialInfoBean.setCurrentPrice(bean.getCurrentPrice());
-					 financialInfoBean.setFinanceApi(url);
-					 financialInfoBean.setApi(bean.getApi());
-					 financialInfoBean.setCurrentDayVolume(bean.getCurrentDayVolume());
-					 financialInfoBean.setFiveDayAvgVolume(bean.getFiveDayAvgVolume());
-					 financialInfoBean.setTenDayAvgVolume(bean.getTenDayAvgVolume());
-					 financialInfoBean.setThirtyDayAvgVolume(bean.getThirtyDayAvgVolume());
-					 financialInfoBean.setVolumeRating(bean.getVolumeRating());
-					//System.out.println(eps);
 					 isEPS = false;
-					 urlSet.add(url);
-					 if(!eps.contains("-")){
-						 writeVolumeToCSVFile(financialInfoBean);
+				 }else if(inputLine.contains("<div class=\"eleboxBg1\" >")){
+					 isnewsLine = true;
+				 }else if(isnewsLine){
+					 newsLine = inputLine.trim();
+					 if(newsLine != null && newsLine.contains("<b>")){
+						 newsLine = newsLine.substring(newsLine.indexOf("<b>"));
+						 String temp = newsLine.substring(newsLine.indexOf("<div"));
+						 newsLine = newsLine.replace(temp, "");
+						 newsLine = newsLine.replace("</b></a></div>", "");
+						 newsLine = newsLine.replace("<b>", "");
+						 newsLine =newsLine.replace(",", "");
+						 
+						 if(newsLine.contains("crore")){
+							 standaloneProfit = "Yes";
+						 }else if(newsLine.contains("Buy") || newsLine.contains("buy")){
+							 recommendation = "BUY"; 
+						 }else if(newsLine.contains("Hold")){
+							 recommendation = "HOLD"; 
+						 }else if(newsLine.contains("Sell")){
+							 recommendation = "SELL"; 
+						 }
+					 }else{
+						 newsLine = "No news";
 					 }
+					 isnewsLine = false;
 				 }
-		        }
+			    }
+			 if(eps != null && !eps.contains("-") && !epsUrlSet.contains(url)){
+				 financialInfoBean = new ConcurrentGainersBean();
+				 financialInfoBean.setEps(eps);
+				 ConcurrentGainersBean bean = financialAnalysisMap.get(url);
+				 financialInfoBean.setName(bean.getName());
+				 financialInfoBean.setCurrentPrice(bean.getCurrentPrice());
+				 financialInfoBean.setFinanceApi(url);
+				 financialInfoBean.setApi(bean.getApi());
+				 financialInfoBean.setCurrentDayVolume(bean.getCurrentDayVolume());
+				 financialInfoBean.setFiveDayAvgVolume(bean.getFiveDayAvgVolume());
+				 financialInfoBean.setTenDayAvgVolume(bean.getTenDayAvgVolume());
+				 financialInfoBean.setThirtyDayAvgVolume(bean.getThirtyDayAvgVolume());
+				 financialInfoBean.setVolumeRating(bean.getVolumeRating());
+				 if(standaloneProfit == null){
+					 standaloneProfit="";
+				 }
+				 if(recommendation == null){
+					 recommendation="";
+				 }
+				 if(newsLine == null){
+					 newsLine="";
+				 }
+				 financialInfoBean.setStandaloneProfit(standaloneProfit);
+				 financialInfoBean.setRecommendation(recommendation);
+				 financialInfoBean.setNews(newsLine);
+				// System.out.println(financialInfoBean.getName()+">>"+standaloneProfit+">>"+recommendation+">>"+ newsLine);
+				 writeVolumeToCSVFile(financialInfoBean);
+				 epsUrlSet.add(url);
+			 }
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -105,29 +155,41 @@ public class FinancialEPSAnalysisRunner implements Runnable{
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.FIVE_STAR+","+bean.getApi()+"\n");
+						+bean.getVolumeRating()+","+bean.getEps()+","
+						+AMUMStockConstant.FIVE_STAR+","+bean.getStandaloneProfit()+","
+						+bean.getRecommendation()+","+bean.getNews()
+						+","+bean.getApi()+"\n");
 				System.out.println(bean.getName()+","+"^"+bean.getCurrentPrice()+","+bean.getCurrentDayVolume()+","+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.FIVE_STAR);
 				
 			}else if(epsValue > 75 && epsValue < 100){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.FOUR_STAR+","+bean.getApi()+"\n");
+						+bean.getVolumeRating()+","+bean.getEps()+","
+						+AMUMStockConstant.FOUR_STAR+","+bean.getStandaloneProfit()+","
+						+bean.getRecommendation()+","+bean.getNews()
+						+","+bean.getApi()+"\n");
 			}else if(epsValue > 50 && epsValue < 75){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.THREE_STAR+","+bean.getApi()+"\n");
+						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.THREE_STAR+","
+						+bean.getStandaloneProfit()+","	+bean.getRecommendation()+","+bean.getNews()
+						+","+bean.getApi()+"\n");
 			}else if(epsValue > 25 && epsValue < 50){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.TWO_STAR+","+bean.getApi()+"\n");
+						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.TWO_STAR+","
+						+bean.getStandaloneProfit()+","+bean.getRecommendation()+","+bean.getNews()
+						+","+bean.getApi()+"\n");
 			}else if(epsValue > 0 && epsValue < 25){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.ONE_STAR+","+bean.getApi()+"\n");
+						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.ONE_STAR+","
+						+bean.getStandaloneProfit()+","+bean.getRecommendation()+","+bean.getNews()
+						+","+bean.getApi()+"\n");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

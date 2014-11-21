@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import com.amumtrade.handler.MasterCombineTopConGainersHandler;
 
-public class MasterTopConurrentGainersHandlerTest {
+public class CombineTopAndConurrentGainersAnalyzerTest {
 
 	
 	
