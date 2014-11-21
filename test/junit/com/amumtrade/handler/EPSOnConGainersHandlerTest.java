@@ -9,7 +9,7 @@ public class EPSOnConGainersHandlerTest {
 		long startTime= System.currentTimeMillis();
 		
 		EPSOnConGainersHandler fah = new EPSOnConGainersHandler();
-		fah.execute();
+		fah.execute(startTime);
 		long endTime= System.currentTimeMillis();
 		long elapsedTime = endTime - startTime;
 		

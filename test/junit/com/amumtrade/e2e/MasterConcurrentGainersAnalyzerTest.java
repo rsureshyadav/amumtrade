@@ -14,7 +14,7 @@ public class MasterConcurrentGainersAnalyzerTest {
 		cgva.execute();
 		
 		EPSOnConGainersHandler fah = new EPSOnConGainersHandler();
-		fah.execute();
+		fah.execute(startTime);
 		
 		long endTime= System.currentTimeMillis();
 		long elapsedTime = endTime - startTime;

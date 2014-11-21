@@ -10,7 +10,7 @@ public class MasterCombineConGainersVolumeAnalyzerHandlerTest {
 		long startTime= System.currentTimeMillis();
 		
 		MasterCombineConGainersVolumeAnalyzerHandler mccvah = new MasterCombineConGainersVolumeAnalyzerHandler();
-		mccvah.execute();
+		mccvah.execute(startTime);
 		
 		
 		long endTime= System.currentTimeMillis();
