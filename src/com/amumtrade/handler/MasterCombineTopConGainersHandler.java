@@ -16,9 +16,9 @@ import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.util.StockUtil;
 
 public class MasterCombineTopConGainersHandler {
-	String conGainersCsvFileName = "config/amumEPSConcurrentGainersAnalyzer.csv";
-	String topGainersCsvFileName = "config/amumEPSTopGainersAnalyzer.csv";
-	String csvFileName = "config/amumCombineTopAndConurrentGainersAnalyzer.csv";
+	String conGainersCsvFileName = "config/output/AMUM_ConcurrentGainers_Analyzer.csv";
+	String topGainersCsvFileName = "config/output/AMUM_TopGainers_Analyzer.csv";
+	String csvFileName = "config/output/AMUM_Common_TopGainers_ConurrentGaniners_Analyzer.csv";
 	List<ConcurrentGainersBean> concurrentGainersList ;
 	List<ConcurrentGainersBean> topGainersList ;
 	Set<String> concurrentGainersApiSet;

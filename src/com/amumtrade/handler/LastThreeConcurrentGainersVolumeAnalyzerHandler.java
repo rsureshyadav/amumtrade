@@ -16,7 +16,7 @@ import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.factory.ConcurrentGainersVolumeSplitRunner;
 import com.amumtrade.marketstat.LastThreeDayConcurrentGainers;
 
-public class ConcurrentGainersVolumeAnalyzerHandler {
+public class LastThreeConcurrentGainersVolumeAnalyzerHandler {
 	
 
 	public void execute() throws IOException{
