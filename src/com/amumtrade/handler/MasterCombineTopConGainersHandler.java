@@ -28,7 +28,7 @@ public class MasterCombineTopConGainersHandler {
 		concurrentGainersList = new ArrayList<ConcurrentGainersBean>();
 		topGainersList = new ArrayList<ConcurrentGainersBean>();
 		concurrentGainersList = convertCsvToBean(concurrentGainersList,conGainersCsvFileName);
-		topGainersList =  convertCsvToBean(concurrentGainersList,conGainersCsvFileName);
+		topGainersList =  convertCsvToBean(concurrentGainersList,topGainersCsvFileName);
 		topGainersApiSet = new HashSet<String>();
 		concurrentGainersApiSet = new HashSet<String>();
 		apiBeanMap = new HashMap<String, ConcurrentGainersBean>();
