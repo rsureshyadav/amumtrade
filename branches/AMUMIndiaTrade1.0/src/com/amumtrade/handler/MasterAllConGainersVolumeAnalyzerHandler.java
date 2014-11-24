@@ -22,9 +22,11 @@ import com.amumtrade.marketstat.LastThreeDayConcurrentGainers;
 import com.amumtrade.util.StockUtil;
 
 public class MasterAllConGainersVolumeAnalyzerHandler {
-String csvFileName ="config/output/AMUM_ALL_ConcurrentGainers_Analyzer.csv";
-
+String csvInputFileName ="config/amumConcurrentGainersVolumeBasedList.csv";
+String csvOutputName ="config/output/AMUM_ALL_ConcurrentGainers_Analyzer.csv";
+long sTime;
 	public void execute(long startTime) throws IOException{
+		this.sTime = startTime;
 		LastThreeDayConcurrentGainers tcg = new LastThreeDayConcurrentGainers();
 		List<ConcurrentGainersBean> threeDayConGainersList = tcg.execute();
 		
@@ -36,7 +38,7 @@ String csvFileName ="config/output/AMUM_ALL_ConcurrentGainers_Analyzer.csv";
 		
 		List<ConcurrentGainersBean> finalConGainersList = getCommonConcurrentGainers(threeDayConGainersList,fiveDayConGainersList,eigthDayConGainersList);
 		runVolumeSplitter(finalConGainersList);
-		StockUtil.initiateEmail(csvFileName,startTime);
+		StockUtil.initiateEmail(csvInputFileName,startTime);
 	}
 
 	private List<ConcurrentGainersBean> getCommonConcurrentGainers(
@@ -85,8 +87,9 @@ String csvFileName ="config/output/AMUM_ALL_ConcurrentGainers_Analyzer.csv";
 	private void runVolumeSplitter(List<ConcurrentGainersBean> concurrentGainersList)throws IOException {
 		List<String> urlList = null;
 		Map<String,ConcurrentGainersBean> concurrentGainerMap = new HashMap<String,ConcurrentGainersBean>();
-		FileWriter fwo = new FileWriter( csvFileName, false );
-		BufferedWriter bwObj = null;
+		FileWriter fwo = new FileWriter( csvInputFileName, false );
+		BufferedWriter bwObjVolume = null;
+
 		try {
 			System.out.println(">>"+concurrentGainersList.size());
 			urlList = new ArrayList<String>();
@@ -95,26 +98,33 @@ String csvFileName ="config/output/AMUM_ALL_ConcurrentGainers_Analyzer.csv";
 				//System.out.println(gainerBean.getName()+">>"+gainerBean.getCurrentPrice());
 				concurrentGainerMap.put(gainerBean.getApi(), gainerBean);
 			}
-			bwObj = new BufferedWriter( fwo );  
-			bwObj.write("CompanyName,CurrentPrice,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating,Api"+"\n");
+			bwObjVolume = new BufferedWriter( fwo );  
+			bwObjVolume.write("CompanyName,CurrentPrice,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,VolumeRating,Api"+"\n");
 		
 			int i=0;
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
 			 for(String httpUrl : urlList){//for (int i = 0; i < 10; i++) {
 				// System.out.println(i);
-		            Runnable worker = new ConcurrentGainersVolumeSplitRunner(new URL(httpUrl),concurrentGainerMap,bwObj,"" + i);
+		            Runnable worker = new ConcurrentGainersVolumeSplitRunner(new URL(httpUrl),concurrentGainerMap,bwObjVolume,"" + i);
 		            executor.execute(worker);
 		            i++;
 		          }
 		        executor.shutdown();
 		        while (!executor.isTerminated()) {
 		        }
-		        System.out.println("Finished all threads Execution");
+		        
+		        if(bwObjVolume != null){
+					bwObjVolume.close();
+				}
+		        EPSOnConGainersHandler epsHandler = new EPSOnConGainersHandler();
+		        epsHandler.execute(sTime,csvOutputName);
+		        
+		        System.out.println("Finished all  threads Execution");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
-			if(bwObj != null){
-				bwObj.close();
+			if(bwObjVolume != null){
+				bwObjVolume.close();
 			}
 		}
 	}

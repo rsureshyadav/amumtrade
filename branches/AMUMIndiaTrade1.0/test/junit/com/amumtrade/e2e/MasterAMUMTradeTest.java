@@ -18,7 +18,7 @@ public class MasterAMUMTradeTest {
 		LastThreeConcurrentGainersVolumeAnalyzerHandler cgva = new LastThreeConcurrentGainersVolumeAnalyzerHandler();
 		cgva.execute();
 		EPSOnConGainersHandler fah = new EPSOnConGainersHandler();
-		fah.execute(startTime);
+		fah.execute(startTime,null);
 		
 		//TopGainers
 		TopGainersHandler topGainersHandler = new TopGainersHandler();
