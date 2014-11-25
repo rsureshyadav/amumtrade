@@ -18,7 +18,7 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
 public class SendAttachmentInEmail {
-   public  void execute(String csvFilePath, String logMessage, String executionTime) {
+   public  void execute(String csvFilePath, String logMessage, String executionTime, String htmlTextBody) {
       String fileName = csvFilePath.substring(csvFilePath.indexOf("AMUM_"));
       fileName = fileName.replace(".csv", "");
       // Recipient's email ID needs to be mentioned.
@@ -64,7 +64,7 @@ public class SendAttachmentInEmail {
          BodyPart messageBodyPart = new MimeBodyPart();
 
          // Now set the actual message
-         messageBodyPart.setText(executionTime);
+         messageBodyPart.setContent(htmlTextBody,"text/html");
 
          // Create a multipar message
          Multipart multipart = new MimeMultipart();
@@ -80,7 +80,7 @@ public class SendAttachmentInEmail {
          messageBodyPart.setFileName(filename);
          multipart.addBodyPart(messageBodyPart);
 
-         // Send the complete message parts
+        // Send the complete message parts
          message.setContent(multipart);
 
          // Send message

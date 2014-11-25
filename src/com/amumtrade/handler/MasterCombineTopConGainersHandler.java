@@ -13,6 +13,7 @@ import java.util.Map;
 import java.util.Set;
 
 import com.amumtrade.bean.ConcurrentGainersBean;
+import com.amumtrade.email.CsvToEmailBody;
 import com.amumtrade.util.StockUtil;
 
 public class MasterCombineTopConGainersHandler {
@@ -35,7 +36,9 @@ public class MasterCombineTopConGainersHandler {
 		topGainersApiSet = getTopGainersApiAPI();
 		concurrentGainersApiSet = getConcurrentGainersApi();
 		compareBothGainers();
-		StockUtil.initiateEmail(csvFileName,startTime);
+		CsvToEmailBody emailBody = new CsvToEmailBody();
+		String htmlText= emailBody.execute();
+		StockUtil.initiateEmail(csvFileName,startTime,htmlText);
 		
 	}
 	private void compareBothGainers() throws IOException {
