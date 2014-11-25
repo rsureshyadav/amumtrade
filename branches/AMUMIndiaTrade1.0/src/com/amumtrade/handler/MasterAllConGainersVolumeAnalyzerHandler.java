@@ -15,6 +15,8 @@ import java.util.concurrent.Executors;
 
 import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
+import com.amumtrade.constant.FileNameConstant;
+import com.amumtrade.email.CsvToEmailBody;
 import com.amumtrade.factory.ConcurrentGainersVolumeSplitRunner;
 import com.amumtrade.marketstat.LastEigthDayConcurrentGainers;
 import com.amumtrade.marketstat.LastFiveDayConcurrentGainers;
@@ -22,8 +24,8 @@ import com.amumtrade.marketstat.LastThreeDayConcurrentGainers;
 import com.amumtrade.util.StockUtil;
 
 public class MasterAllConGainersVolumeAnalyzerHandler {
-String csvInputFileName ="config/amumConcurrentGainersVolumeBasedList.csv";
-String csvOutputName ="config/output/AMUM_ALL_ConcurrentGainers_Analyzer.csv";
+//String csvInputFileName ="config/amumConcurrentGainersVolumeBasedList.csv";
+//String csvOutputName ="config/output/AMUM_ALL_ConcurrentGainers_Analyzer.csv";
 long sTime;
 	public void execute(long startTime) throws IOException{
 		this.sTime = startTime;
@@ -38,7 +40,10 @@ long sTime;
 		
 		List<ConcurrentGainersBean> finalConGainersList = getCommonConcurrentGainers(threeDayConGainersList,fiveDayConGainersList,eigthDayConGainersList);
 		runVolumeSplitter(finalConGainersList);
-		StockUtil.initiateEmail(csvInputFileName,startTime);
+		
+		CsvToEmailBody emailBody = new CsvToEmailBody();
+		String htmlText= emailBody.execute();
+		StockUtil.initiateEmail(FileNameConstant.ALL_CONCURRENT_GAINER,startTime,htmlText);
 	}
 
 	private List<ConcurrentGainersBean> getCommonConcurrentGainers(
@@ -87,7 +92,7 @@ long sTime;
 	private void runVolumeSplitter(List<ConcurrentGainersBean> concurrentGainersList)throws IOException {
 		List<String> urlList = null;
 		Map<String,ConcurrentGainersBean> concurrentGainerMap = new HashMap<String,ConcurrentGainersBean>();
-		FileWriter fwo = new FileWriter( csvInputFileName, false );
+		FileWriter fwo = new FileWriter( FileNameConstant.VOLUME_CONCURRENT_GAINERS, false );
 		BufferedWriter bwObjVolume = null;
 
 		try {
@@ -117,7 +122,7 @@ long sTime;
 					bwObjVolume.close();
 				}
 		        EPSOnConGainersHandler epsHandler = new EPSOnConGainersHandler();
-		        epsHandler.execute(sTime,csvOutputName);
+		        epsHandler.execute(sTime,FileNameConstant.ALL_CONCURRENT_GAINER);
 		        
 		        System.out.println("Finished all  threads Execution");
 		} catch (Exception e) {

@@ -15,6 +15,7 @@ import java.util.concurrent.Executors;
 
 import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
+import com.amumtrade.email.CsvToEmailBody;
 import com.amumtrade.factory.FinancialEPSAnalysisRunner;
 import com.amumtrade.util.StockUtil;
 
@@ -32,7 +33,9 @@ public class EPSOnConGainersHandler {
 			this.csvFileName = filename;
 		}
 		runFinanceRatingUrl(financeRatingList);
-		StockUtil.initiateEmail(csvFileName,startTime);
+		CsvToEmailBody emailBody = new CsvToEmailBody();
+		String htmlText= emailBody.execute();
+		StockUtil.initiateEmail(csvFileName,startTime,htmlText);
 	}
 	private void runFinanceRatingUrl(List<ConcurrentGainersBean> financeUrlList) throws IOException {
 		List<String> urlList = null;
