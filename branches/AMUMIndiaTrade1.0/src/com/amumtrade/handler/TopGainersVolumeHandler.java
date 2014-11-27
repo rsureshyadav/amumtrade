@@ -16,7 +16,7 @@ import java.util.concurrent.Executors;
 import com.amumtrade.bean.TopGainerBean;
 import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.constant.FileNameConstant;
-import com.amumtrade.factory.VolumeSplitRunner;
+import com.amumtrade.factory.VolumeRunner;
 
 public class TopGainersVolumeHandler {
 	private BufferedReader br;
@@ -50,7 +50,7 @@ public class TopGainersVolumeHandler {
 			int i=0;
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
 			 for(String httpUrl : urlList){
-				  Runnable worker = new VolumeSplitRunner(new URL(httpUrl),topGainerMap,bwObj,"" + i);
+				  Runnable worker = new VolumeRunner(new URL(httpUrl),topGainerMap,bwObj,"" + i);
 		            executor.execute(worker);
 		            i++;
 		          }

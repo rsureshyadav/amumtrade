@@ -17,7 +17,7 @@ import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.constant.FileNameConstant;
 import com.amumtrade.email.CsvToEmailBody;
-import com.amumtrade.factory.FinancialEPSAnalysisRunner;
+import com.amumtrade.factory.EPSRunner;
 import com.amumtrade.util.StockUtil;
 
 public class TopGainersEPSHandler {
@@ -53,7 +53,7 @@ public class TopGainersEPSHandler {
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
 			 for(String httpUrl : urlList){//for (int i = 0; i < 10; i++) {
 				// System.out.println(i);
-		            Runnable worker = new FinancialEPSAnalysisRunner(new URL(httpUrl),financialAnalyzerMap,bwObj,"" + i);
+		            Runnable worker = new EPSRunner(new URL(httpUrl),financialAnalyzerMap,bwObj,"" + i);
 		            executor.execute(worker);
 		            i++;
 		          }

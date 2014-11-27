@@ -13,13 +13,13 @@ import java.util.Set;
 import com.amumtrade.bean.TopGainerBean;
 import com.amumtrade.constant.AMUMStockConstant;
 
-public class VolumeSplitRunner implements Runnable {
+public class VolumeRunner implements Runnable {
 	private String command;
 	private URL urlConn;
 	private Map<String,TopGainerBean> topGainerMap;
 	private BufferedWriter bwObj;
 	
-	public VolumeSplitRunner(URL httpUrl,Map<String,TopGainerBean> topGainers,BufferedWriter bufferWriter,String s){
+	public VolumeRunner(URL httpUrl,Map<String,TopGainerBean> topGainers,BufferedWriter bufferWriter,String s){
 		this.urlConn=httpUrl;
 		this.topGainerMap = topGainers;
 		this.bwObj = bufferWriter;

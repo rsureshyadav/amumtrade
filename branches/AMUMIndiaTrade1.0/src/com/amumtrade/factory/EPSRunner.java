@@ -13,14 +13,14 @@ import java.util.Set;
 import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
 
-public class FinancialEPSAnalysisRunner implements Runnable{
+public class EPSRunner implements Runnable{
 
 	private String command;
 	private URL urlConn;
 	private Map<String,ConcurrentGainersBean> financialAnalysisMap;
 	private BufferedWriter bwObj;
 	
-	public FinancialEPSAnalysisRunner(URL httpUrl,Map<String,ConcurrentGainersBean> financialAnalysis,BufferedWriter bufferWriter,String s){
+	public EPSRunner(URL httpUrl,Map<String,ConcurrentGainersBean> financialAnalysis,BufferedWriter bufferWriter,String s){
 		this.urlConn=httpUrl;
 		this.financialAnalysisMap = financialAnalysis;
 		this.bwObj = bufferWriter;
@@ -105,7 +105,15 @@ public class FinancialEPSAnalysisRunner implements Runnable{
 							 standaloneProfit = "Yes";
 						 }else if(newsLine.contains("Buy") || newsLine.contains("buy")){
 							 if(newsLine.contains("Sudarshan Sukhani")){
-								 recommendation = "BUY*";  
+								 recommendation = "BUY - SS*";  
+							 }else if(newsLine.contains("KotakInvestment")){
+								 recommendation = "BUY - KI";  
+							 }else if(newsLine.contains("Santosh Nair")){
+								 recommendation = "BUY**";  
+							 }else if(newsLine.contains("Sonia Shenoy")){
+								 recommendation = "BUY**";  
+							 }else if(newsLine.contains("Menaka Doshi")){
+								 recommendation = "BUY**";  
 							 }else{
 								 recommendation = "BUY"; 
 							 }
