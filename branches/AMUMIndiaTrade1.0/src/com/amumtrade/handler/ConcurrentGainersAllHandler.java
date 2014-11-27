@@ -17,13 +17,13 @@ import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.constant.FileNameConstant;
 import com.amumtrade.email.CsvToEmailBody;
-import com.amumtrade.factory.ConcurrentGainersVolumeSplitRunner;
+import com.amumtrade.factory.ConcurrentGainersVolumeRunner;
 import com.amumtrade.marketstat.LastEigthDayConcurrentGainers;
 import com.amumtrade.marketstat.LastFiveDayConcurrentGainers;
 import com.amumtrade.marketstat.LastThreeDayConcurrentGainers;
 import com.amumtrade.util.StockUtil;
 
-public class MasterAllConGainersVolumeAnalyzerHandler {
+public class ConcurrentGainersAllHandler {
 //String csvInputFileName ="config/amumConcurrentGainersVolumeBasedList.csv";
 //String csvOutputName ="config/output/AMUM_ALL_ConcurrentGainers_Analyzer.csv";
 long sTime;
@@ -41,8 +41,9 @@ long sTime;
 		List<ConcurrentGainersBean> finalConGainersList = getCommonConcurrentGainers(threeDayConGainersList,fiveDayConGainersList,eigthDayConGainersList);
 		runVolumeSplitter(finalConGainersList);
 		
-		CsvToEmailBody emailBody = new CsvToEmailBody();
-		String htmlText= emailBody.execute();
+		/*CsvToEmailBody emailBody = new CsvToEmailBody();
+		String htmlText= emailBody.execute();*/
+		String htmlText="dummy";
 		StockUtil.initiateEmail(FileNameConstant.ALL_CONCURRENT_GAINER,startTime,htmlText);
 	}
 
@@ -92,11 +93,11 @@ long sTime;
 	private void runVolumeSplitter(List<ConcurrentGainersBean> concurrentGainersList)throws IOException {
 		List<String> urlList = null;
 		Map<String,ConcurrentGainersBean> concurrentGainerMap = new HashMap<String,ConcurrentGainersBean>();
-		FileWriter fwo = new FileWriter( FileNameConstant.VOLUME_CONCURRENT_GAINERS, false );
+		FileWriter fwo = new FileWriter( FileNameConstant.CURRENT_CONCURRENT_VOLUME_GAINERS, false );
 		BufferedWriter bwObjVolume = null;
 
 		try {
-			System.out.println(">>"+concurrentGainersList.size());
+			System.out.println("TOTAL CONCURRENT GAINERS VOLUME SIZE>>"+concurrentGainersList.size());
 			urlList = new ArrayList<String>();
 			for(ConcurrentGainersBean gainerBean : concurrentGainersList){
 				urlList.add(gainerBean.getApi());
@@ -110,7 +111,7 @@ long sTime;
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
 			 for(String httpUrl : urlList){//for (int i = 0; i < 10; i++) {
 				// System.out.println(i);
-		            Runnable worker = new ConcurrentGainersVolumeSplitRunner(new URL(httpUrl),concurrentGainerMap,bwObjVolume,"" + i);
+		            Runnable worker = new ConcurrentGainersVolumeRunner(new URL(httpUrl),concurrentGainerMap,bwObjVolume,"" + i);
 		            executor.execute(worker);
 		            i++;
 		          }
@@ -121,10 +122,10 @@ long sTime;
 		        if(bwObjVolume != null){
 					bwObjVolume.close();
 				}
-		        EPSOnConGainersHandler epsHandler = new EPSOnConGainersHandler();
-		        epsHandler.execute(sTime,FileNameConstant.ALL_CONCURRENT_GAINER);
+		        System.out.println("FINISHED ALL CONCURRENT GAINERS VOLUME THREAD EXECUTION...");
+		        ConcurrentGainersEPSHandler epsHandler = new ConcurrentGainersEPSHandler();
+		        epsHandler.executeGainers(sTime,FileNameConstant.ALL_CONCURRENT_GAINER);
 		        
-		        System.out.println("Finished all  threads Execution");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{

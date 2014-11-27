@@ -1,0 +1,785 @@
+Company Name,High,Low,Last Price,Prv Close,Change,Day Volume,FiveDay AvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating,Api
+Shreyas Shippin,171.35,171.35,171.35,163.20,8.15,4323,35066,21311,21608,3 star,http://www.moneycontrol.com/india/stockpricequote/shipping/shreyasshipping/SS12
+Oswal Minerals,25.25,25.25,25.25,24.05,1.20,3,981,794,460,3 star,http://www.moneycontrol.com/india/stockpricequote/miningminerals/oswalminerals/OM02
+Sical Logistics,167.55,166.50,167.55,159.60,7.95,6477,51294,79969,76372,2 star,http://www.moneycontrol.com/india/stockpricequote/trading/sicallogistics/SL15
+KLRF,31.85,29.55,31.85,30.35,1.50,3961,1356,1107,1134,5 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/klrf/KLR
+Oswal Minerals,25.25,25.25,25.25,24.05,1.20,3,981,794,460,3 star,http://www.moneycontrol.com/india/stockpricequote/miningminerals/oswalminerals/OM02
+Neo Corp,39.45,36.80,39.45,37.60,1.85,65830,92495,108732,78231,2 star,http://www.moneycontrol.com/india/stockpricequote/packaging/neocorpinternational/NS02
+Gillanders Arbu,71.90,66.10,70,66.70,3.30,7642,8909,16859,9281,2 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/gillandersarbuthnotco/GAC03
+SKM Egg Product,112.65,102,112.65,107.30,5.35,685966,143229,107509,189204,4 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/skmeggproductsexport(india)/SKM
+Gillanders Arbu,71.90,66.10,70,66.70,3.30,7642,8909,16859,9281,2 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/gillandersarbuthnotco/GAC03
+Shreyas Shippin,171.35,171.35,171.35,163.20,8.15,4323,35066,21311,21608,3 star,http://www.moneycontrol.com/india/stockpricequote/shipping/shreyasshipping/SS12
+KLRF,31.85,29.55,31.85,30.35,1.50,3961,1356,1107,1134,5 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/klrf/KLR
+Sical Logistics,167.55,166.50,167.55,159.60,7.95,6477,51294,79969,76372,2 star,http://www.moneycontrol.com/india/stockpricequote/trading/sicallogistics/SL15
+Neo Corp,39.45,36.80,39.45,37.60,1.85,65830,92495,108732,78231,2 star,http://www.moneycontrol.com/india/stockpricequote/packaging/neocorpinternational/NS02
+SKM Egg Product,112.65,102,112.65,107.30,5.35,685966,143229,107509,189204,4 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/skmeggproductsexport(india)/SKM
+Emkay Global,56.50,52,56.50,53.85,2.65,7243,4169,17269,14643,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-general/emkayglobalfinancialservices/EGF
+Emkay Global,56.50,52,56.50,53.85,2.65,7243,4169,17269,14643,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-general/emkayglobalfinancialservices/EGF
+Aro Granite,92,86.10,91,86.95,4.05,19565,77373,113883,57118,2 star,http://www.moneycontrol.com/india/stockpricequote/ceramicsgranite/arograniteindustries/AGI01
+Aro Granite,92,86.10,91,86.95,4.05,19565,77373,113883,57118,2 star,http://www.moneycontrol.com/india/stockpricequote/ceramicsgranite/arograniteindustries/AGI01
+Vimta Labs,79.50,75,79,75.40,3.60,41705,70886,69541,64230,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/vimtalabs/VL04
+Vimta Labs,79.50,75,79,75.40,3.60,41705,70886,69541,64230,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/vimtalabs/VL04
+Nahar Ent,64.60,61,63,60.20,2.80,16424,10179,7694,5429,5 star,http://www.moneycontrol.com/india/stockpricequote/textiles-compositemills/naharindustrialenterprises/NIE
+Nahar Ent,64.60,61,63,60.20,2.80,16424,10179,7694,5429,5 star,http://www.moneycontrol.com/india/stockpricequote/textiles-compositemills/naharindustrialenterprises/NIE
+Shreyans Ind,35,30.50,32,30.65,1.35,889,815,722,599,5 star,http://www.moneycontrol.com/india/stockpricequote/paper/shreyansindustries/SI20
+Motilal Oswal,241,228.50,239.50,229.25,10.25,246633,34466,33080,36414,4 star,http://www.moneycontrol.com/india/stockpricequote/finance-general/motilaloswalfinancialservices/MOF01
+Motilal Oswal,241,228.50,239.50,229.25,10.25,246633,34466,33080,36414,4 star,http://www.moneycontrol.com/india/stockpricequote/finance-general/motilaloswalfinancialservices/MOF01
+Shreyans Ind,35,30.50,32,30.65,1.35,889,815,722,599,5 star,http://www.moneycontrol.com/india/stockpricequote/paper/shreyansindustries/SI20
+Chemfab Alkalie,93.90,89,93,89.10,3.90,846,9659,10740,10121,2 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/chemfabalkalies/CA01
+IGL,458.80,437,456.50,437.60,18.90,558570,540377,564660,518149,2 star,http://www.moneycontrol.com/india/stockpricequote/oildrillingandexploration/indraprasthagas/IG04
+Bombay Burmah,438.90,412.55,430.50,412.55,17.95,503263,1112988,688217,384955,3 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/bombayburmahtradingcorporation/BBT
+Jubilant Ind,79,71.50,76.15,73,3.15,3917,3096,3437,3349,4 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/jubilantindustries/JI10
+Jubilant Ind,79,71.50,76.15,73,3.15,3917,3096,3437,3349,4 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/jubilantindustries/JI10
+Chemfab Alkalie,93.90,89,93,89.10,3.90,846,9659,10740,10121,2 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/chemfabalkalies/CA01
+Guj State Petro,114.80,109.90,112.40,107.90,4.50,3899663,2714876,1764438,1164620,5 star,http://www.moneycontrol.com/india/stockpricequote/oildrillingandexploration/gujaratstatepetronet/GSP02
+Bombay Burmah,438.90,412.55,430.50,412.55,17.95,503263,1112988,688217,384955,3 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/bombayburmahtradingcorporation/BBT
+Birla Nifty ETF,85.50,84.95,85.45,82,3.45,216,311,470,377,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/birlasunlifeniftyetf/BSL03
+Birla Nifty ETF,85.50,84.95,85.45,82,3.45,216,311,470,377,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/birlasunlifeniftyetf/BSL03
+Rel Capital,525,504.80,522,501.75,20.25,6245381,5912327,5355096,3693631,5 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/reliancecapital/RC
+Guj State Petro,114.80,109.90,112.40,107.90,4.50,3899663,2714876,1764438,1164620,5 star,http://www.moneycontrol.com/india/stockpricequote/oildrillingandexploration/gujaratstatepetronet/GSP02
+Rel Capital,525,504.80,522,501.75,20.25,6245381,5912327,5355096,3693631,5 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/reliancecapital/RC
+IGL,458.80,437,456.50,437.60,18.90,558570,540377,564660,518149,2 star,http://www.moneycontrol.com/india/stockpricequote/oildrillingandexploration/indraprasthagas/IG04
+Savera Ind,48,45,47.70,45.90,1.80,1129,3630,4045,4011,2 star,http://www.moneycontrol.com/india/stockpricequote/hotels/saveraindustries/SH
+Liberty Shoes,267.40,254,266.90,256.85,10.05,202636,68234,77798,128161,4 star,http://www.moneycontrol.com/india/stockpricequote/leatherproducts/libertyshoes/LS02
+Savera Ind,48,45,47.70,45.90,1.80,1129,3630,4045,4011,2 star,http://www.moneycontrol.com/india/stockpricequote/hotels/saveraindustries/SH
+Jindal Poly Inv,111,106.80,111,106.80,4.20,1232,4374,7712,5417,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-general/jindalpolyinvestmentfinancecompany/JPI02
+Jindal Poly Inv,111,106.80,111,106.80,4.20,1232,4374,7712,5417,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-general/jindalpolyinvestmentfinancecompany/JPI02
+Liberty Shoes,267.40,254,266.90,256.85,10.05,202636,68234,77798,128161,4 star,http://www.moneycontrol.com/india/stockpricequote/leatherproducts/libertyshoes/LS02
+Jocil,129.80,123.30,129.80,125,4.80,214,2009,3335,3148,2 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/jocil/J01
+Nahar Poly Film,31.30,29,31,29.85,1.15,2588,5475,18244,8850,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-spinning-cottonblended/naharpolyfilms/NIH
+Nahar Poly Film,31.30,29,31,29.85,1.15,2588,5475,18244,8850,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-spinning-cottonblended/naharpolyfilms/NIH
+Jocil,129.80,123.30,129.80,125,4.80,214,2009,3335,3148,2 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/jocil/J01
+Strides Arcolab,778.90,738.25,764,736.35,27.65,382486,181429,201997,264370,4 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/stridesarcolab/SA10
+Strides Arcolab,778.90,738.25,764,736.35,27.65,382486,181429,201997,264370,4 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/stridesarcolab/SA10
+Vadilal Ind,286.85,271.10,281.45,271.40,10.05,51169,190332,156117,60377,3 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/vadilalindustries/VI01
+Pratibha Ind,54.70,53.60,54,52.05,1.95,255486,230029,420428,287360,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/pratibhaindustries/PI33
+Pratibha Ind,54.70,53.60,54,52.05,1.95,255486,230029,420428,287360,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/pratibhaindustries/PI33
+Vadilal Ind,286.85,271.10,281.45,271.40,10.05,51169,190332,156117,60377,3 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/vadilalindustries/VI01
+Energy Dev,22.45,20.10,21.15,20.40,0.75,2412,16795,10828,5303,3 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/energydevelopmentcompany/EDC
+Energy Dev,22.45,20.10,21.15,20.40,0.75,2412,16795,10828,5303,3 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/energydevelopmentcompany/EDC
+Eveready Ind,193.80,181.95,189.60,182.95,6.65,1836818,1488025,1194624,808650,5 star,http://www.moneycontrol.com/india/stockpricequote/drycells/evereadyindustriesindia/EII02
+Eveready Ind,193.80,181.95,189.60,182.95,6.65,1836818,1488025,1194624,808650,5 star,http://www.moneycontrol.com/india/stockpricequote/drycells/evereadyindustriesindia/EII02
+Jubilant Food,1452.50,1396.50,1452,1401.90,50.10,249985,239060,328362,250823,2 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/jubilantfoodworks/JF04
+Harrisons Malay,62.50,58.25,60.85,58.75,2.10,73418,35415,50105,45984,4 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/harrisonsmalyalam/HM02
+Jubilant Food,1452.50,1396.50,1452,1401.90,50.10,249985,239060,328362,250823,2 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/jubilantfoodworks/JF04
+Harrisons Malay,62.50,58.25,60.85,58.75,2.10,73418,35415,50105,45984,4 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/harrisonsmalyalam/HM02
+Bafna Pharma,35.50,33.20,35.30,34.10,1.20,29665,132688,132152,74510,3 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/bafnapharmaceuticals/BP01
+Bafna Pharma,35.50,33.20,35.30,34.10,1.20,29665,132688,132152,74510,3 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/bafnapharmaceuticals/BP01
+Tata Global Bev,162.40,155.70,160.80,155.30,5.50,4007183,1676568,2312338,2319660,4 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/tataglobalbeverage/TT
+Tata Global Bev,162.40,155.70,160.80,155.30,5.50,4007183,1676568,2312338,2319660,4 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/tataglobalbeverage/TT
+Automotive Axle,738,700,729.90,705.30,24.60,8218,37645,31042,17835,3 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/automotiveaxles/AA06
+Automotive Axle,738,700,729.90,705.30,24.60,8218,37645,31042,17835,3 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/automotiveaxles/AA06
+Voltamp Trans,738,687,713.95,689.70,24.25,12500,7045,6661,4583,5 star,http://www.moneycontrol.com/india/stockpricequote/power-transmissionequipment/voltamptransformers/VT9
+Voltamp Trans,738,687,713.95,689.70,24.25,12500,7045,6661,4583,5 star,http://www.moneycontrol.com/india/stockpricequote/power-transmissionequipment/voltamptransformers/VT9
+OCL Iron,22.70,22,22.55,21.80,0.75,85,10116,12121,11494,2 star,http://www.moneycontrol.com/india/stockpricequote/steel-mediumsmall/oclironsteel/OCL03
+OCL Iron,22.70,22,22.55,21.80,0.75,85,10116,12121,11494,2 star,http://www.moneycontrol.com/india/stockpricequote/steel-mediumsmall/oclironsteel/OCL03
+Kemrock Indus,35.05,33,34.80,33.65,1.15,12224,12087,37523,29239,2 star,http://www.moneycontrol.com/india/stockpricequote/plastics/kemrockindustriesexports/KIE
+Kemrock Indus,35.05,33,34.80,33.65,1.15,12224,12087,37523,29239,2 star,http://www.moneycontrol.com/india/stockpricequote/plastics/kemrockindustriesexports/KIE
+Sah Petroleums,42.90,40.40,41.50,40.15,1.35,102500,863265,781342,292880,3 star,http://www.moneycontrol.com/india/stockpricequote/oildrillingandexploration/sahpetroleums/SP36
+Manaksia,134.90,128.05,133.25,128.85,4.40,258237,417172,229694,138285,3 star,http://www.moneycontrol.com/india/stockpricequote/steel-rolling/manaksia/M16
+Manaksia,134.90,128.05,133.25,128.85,4.40,258237,417172,229694,138285,3 star,http://www.moneycontrol.com/india/stockpricequote/steel-rolling/manaksia/M16
+Sah Petroleums,42.90,40.40,41.50,40.15,1.35,102500,863265,781342,292880,3 star,http://www.moneycontrol.com/india/stockpricequote/oildrillingandexploration/sahpetroleums/SP36
+Monsanto India,2920,2837,2873,2782.35,90.65,32447,23114,20187,30960,4 star,http://www.moneycontrol.com/india/stockpricequote/pesticidesagrochemicals/monsantoindia/MI39
+Monsanto India,2920,2837,2873,2782.35,90.65,32447,23114,20187,30960,4 star,http://www.moneycontrol.com/india/stockpricequote/pesticidesagrochemicals/monsantoindia/MI39
+Tips Industries,80.80,76.65,77.70,75.25,2.45,108761,80930,191693,87335,2 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/tipsindustries/TI25
+UCAL Fuel,144.40,139.80,141.25,136.85,4.40,162961,331252,373637,225611,2 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/ucalfuelsystems/UFS
+UCAL Fuel,144.40,139.80,141.25,136.85,4.40,162961,331252,373637,225611,2 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/ucalfuelsystems/UFS
+Tips Industries,80.80,76.65,77.70,75.25,2.45,108761,80930,191693,87335,2 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/tipsindustries/TI25
+JK Tyre & Ind,624,600,616.75,597.55,19.20,942601,1479311,1010414,917063,3 star,http://www.moneycontrol.com/india/stockpricequote/tyres/jktyreindustries/JKT01
+JK Tyre & Ind,624,600,616.75,597.55,19.20,942601,1479311,1010414,917063,3 star,http://www.moneycontrol.com/india/stockpricequote/tyres/jktyreindustries/JKT01
+Bannari A Spg,186,178,183,177.35,5.65,4097,62329,41707,18885,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-general/bannariammanspinningmills/BAS01
+Bannari A Spg,186,178,183,177.35,5.65,4097,62329,41707,18885,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-general/bannariammanspinningmills/BAS01
+Hindalco,174.55,168.80,174.55,169.15,5.40,7057269,8631663,9175292,9150164,2 star,http://www.moneycontrol.com/india/stockpricequote/aluminium/hindalcoindustries/HI
+Hindalco,174.55,168.80,174.55,169.15,5.40,8982093,8631663,9175292,9150164,2 star,http://www.moneycontrol.com/india/stockpricequote/aluminium/hindalcoindustries/HI
+Royal Orchid,42,39.15,42,40.70,1.30,1589,4697,5735,4212,2 star,http://www.moneycontrol.com/india/stockpricequote/hotels/royalorchidhotels/RO01
+Royal Orchid,42,39.15,42,40.70,1.30,1589,4697,5735,4212,2 star,http://www.moneycontrol.com/india/stockpricequote/hotels/royalorchidhotels/RO01
+TVS Motor,228.95,218.30,228,221,7,1930389,2124061,3125581,2772744,2 star,http://www.moneycontrol.com/india/stockpricequote/auto-23wheelers/tvsmotorcompany/TVS
+AXISCADES Engg,175.65,167.10,173,167.70,5.30,102971,249182,465330,185942,2 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/axiscadesengineeringtechnologies/AXI
+AXISCADES Engg,175.65,167.10,173,167.70,5.30,102971,249182,465330,185942,2 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/axiscadesengineeringtechnologies/AXI
+TVS Motor,228.95,218.30,228,221,7,1930389,2124061,3125581,2772744,2 star,http://www.moneycontrol.com/india/stockpricequote/auto-23wheelers/tvsmotorcompany/TVS
+Tata Elxsi,633.30,602.25,623,603.95,19.05,395868,141821,189229,312643,4 star,http://www.moneycontrol.com/india/stockpricequote/computers-software/tataelxsi/TE
+Surya Roshni,94.80,89.60,93.05,90.25,2.80,100820,60969,55893,61870,4 star,http://www.moneycontrol.com/india/stockpricequote/steel-tubespipes/suryaroshni/SR01
+Surya Roshni,94.80,89.60,93.05,90.25,2.80,100820,60969,55893,61870,4 star,http://www.moneycontrol.com/india/stockpricequote/steel-tubespipes/suryaroshni/SR01
+Tata Elxsi,633.30,602.25,623,603.95,19.05,395868,141821,189229,312643,4 star,http://www.moneycontrol.com/india/stockpricequote/computers-software/tataelxsi/TE
+KRBL,97.50,93.15,96,93.15,2.85,165645,280835,214342,219453,3 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/krbl/KRB01
+KRBL,97.50,93.15,96,93.15,2.85,165645,280835,214342,219453,3 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/krbl/KRB01
+Mandhana Ind,298,287.15,295.95,287.20,8.75,21514,82725,93153,47424,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-general/mandhanaindustries/MI24
+Mandhana Ind,298,287.15,295.95,287.20,8.75,21514,82725,93153,47424,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-general/mandhanaindustries/MI24
+Archidply Ind,40.65,36.15,39,37.85,1.15,104612,79415,81973,93671,4 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/archidplyindustries/AI
+Archidply Ind,40.65,36.15,39,37.85,1.15,104612,79415,81973,93671,4 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/archidplyindustries/AI
+Sudarshan Chem,108.45,99.70,103.70,100.80,2.90,119388,108301,249051,117051,2 star,http://www.moneycontrol.com/india/stockpricequote/dyespigments/sudarshanchemicalindustries/SCI08
+Sudarshan Chem,108.45,99.70,103.70,100.80,2.90,119388,108301,249051,117051,2 star,http://www.moneycontrol.com/india/stockpricequote/dyespigments/sudarshanchemicalindustries/SCI08
+AIA Engineering,1198.40,1130.20,1180.10,1147.05,33.05,39510,138687,119373,78397,3 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/aiaengineering/AIE01
+AIA Engineering,1198.40,1130.20,1180.10,1147.05,33.05,39510,138687,119373,78397,3 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/aiaengineering/AIE01
+Orient Refract,104.90,99.55,104.60,101.75,2.85,15105,137205,97883,69486,3 star,http://www.moneycontrol.com/india/stockpricequote/cement-productsbuildingmaterials/orientrefractories/OR01
+Texmaco Rail,124.50,121.20,122.85,119.50,3.35,847542,2354478,2410619,1700124,2 star,http://www.moneycontrol.com/india/stockpricequote/infrastructure-general/texmacorailengineering/TRE
+Texmaco Rail,124.50,121.20,122.85,119.50,3.35,847542,2354478,2410619,1700124,2 star,http://www.moneycontrol.com/india/stockpricequote/infrastructure-general/texmacorailengineering/TRE
+VTM,25.75,24.85,25.75,25.05,0.70,5332,15179,14960,8535,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-hosieryknitwear/vtm/VTM
+Orient Refract,104.90,99.55,104.60,101.75,2.85,15105,137205,97883,69486,3 star,http://www.moneycontrol.com/india/stockpricequote/cement-productsbuildingmaterials/orientrefractories/OR01
+Cimmco,73.80,68.25,70.25,68.35,1.90,90733,163863,90840,47246,3 star,http://www.moneycontrol.com/india/stockpricequote/diversified/cimmco/CB02
+Cimmco,73.80,68.25,70.25,68.35,1.90,90733,163863,90840,47246,3 star,http://www.moneycontrol.com/india/stockpricequote/diversified/cimmco/CB02
+VTM,25.75,24.85,25.75,25.05,0.70,5332,15179,14960,8535,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-hosieryknitwear/vtm/VTM
+Linde India,423.75,407.05,420,408.75,11.25,12474,34350,32092,19971,3 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/lindeindia/BOC
+Linde India,423.75,407.05,420,408.75,11.25,12474,34350,32092,19971,3 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/lindeindia/BOC
+Global Offshore,633.30,610,627.90,611.30,16.60,29541,115494,92456,55531,3 star,http://www.moneycontrol.com/india/stockpricequote/shipping/globaloffshoreservices/GOS
+Global Offshore,633.30,610,627.90,611.30,16.60,29541,115494,92456,55531,3 star,http://www.moneycontrol.com/india/stockpricequote/shipping/globaloffshoreservices/GOS
+Vaibhav Global,619,599.10,617,601.15,15.85,58564,267738,187256,73701,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/vaibhavglobal/VG02
+Vaibhav Global,619,599.10,617,601.15,15.85,58564,267738,187256,73701,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/vaibhavglobal/VG02
+Aegis Logistics,458.75,433.10,455,443.40,11.60,60023,125313,259611,100408,2 star,http://www.moneycontrol.com/india/stockpricequote/transportlogistics/aegislogistics/AL9
+Aegis Logistics,458.75,433.10,455,443.40,11.60,60023,125313,259611,100408,2 star,http://www.moneycontrol.com/india/stockpricequote/transportlogistics/aegislogistics/AL9
+Nahar Spinning,104.40,99.50,101.15,98.55,2.60,68934,46419,55497,44581,4 star,http://www.moneycontrol.com/india/stockpricequote/textiles-hosieryknitwear/naharspinningmills/NSM
+Ganesh Housing,145.50,139.90,142.05,138.45,3.60,7458,33180,35764,20658,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-housing/ganeshhousingcorporation/GHC02
+Ganesh Housing,145.50,139.90,142.05,138.45,3.60,7458,33180,35764,20658,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-housing/ganeshhousingcorporation/GHC02
+Nahar Spinning,104.40,99.50,101.15,98.55,2.60,68934,46419,55497,44581,4 star,http://www.moneycontrol.com/india/stockpricequote/textiles-hosieryknitwear/naharspinningmills/NSM
+Motor and Gen F,39.60,39.60,39.60,38.60,1,5,1751,1428,1557,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-leasinghirepurchase/motorgeneralfinance/MGF
+Oriental Hotels,24.15,23.50,23.80,23.20,0.60,2757,26969,19882,19268,3 star,http://www.moneycontrol.com/india/stockpricequote/hotels/orientalhotels/OH
+Motor and Gen F,39.60,39.60,39.60,38.60,1,5,1751,1428,1557,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-leasinghirepurchase/motorgeneralfinance/MGF
+Jindal Stainles,32.35,30.90,31.70,30.90,0.80,95556,147987,199386,149684,2 star,http://www.moneycontrol.com/india/stockpricequote/steel-mediumsmall/jindalstainless/JSL01
+Jindal Stainles,32.35,30.90,31.70,30.90,0.80,95556,147987,199386,149684,2 star,http://www.moneycontrol.com/india/stockpricequote/steel-mediumsmall/jindalstainless/JSL01
+Oriental Hotels,24.15,23.50,23.80,23.20,0.60,2757,26969,19882,19268,3 star,http://www.moneycontrol.com/india/stockpricequote/hotels/orientalhotels/OH
+Onward Tech,58.90,56.20,58.30,56.85,1.45,2825,26625,23590,12189,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/onwardtechnologies/OT
+Onward Tech,58.90,56.20,58.30,56.85,1.45,2825,26625,23590,12189,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/onwardtechnologies/OT
+Man Infra,35.20,32.35,34.15,33.30,0.85,3989794,6911769,3522851,1236532,3 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/maninfraconstruction/MI37
+Man Infra,35.20,32.35,34.15,33.30,0.85,3989794,6911769,3522851,1236532,3 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/maninfraconstruction/MI37
+Amtek Auto,206,200,203.75,198.90,4.85,1519786,3162086,3140324,1895116,3 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/amtekauto/AA01
+Amtek Auto,206,200,203.75,198.90,4.85,1519786,3162086,3140324,1895116,3 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/amtekauto/AA01
+PG Electroplast,95,94.90,95,92.75,2.25,73,11356,25239,14523,2 star,http://www.moneycontrol.com/india/stockpricequote/consumergoods-electronic/pgelectroplast/PE06
+PG Electroplast,95,94.90,95,92.75,2.25,73,11356,25239,14523,2 star,http://www.moneycontrol.com/india/stockpricequote/consumergoods-electronic/pgelectroplast/PE06
+KPR Mill,331.95,322.95,328.20,320.40,7.80,32144,80170,90424,74934,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-readymadeapparels/kprmill/M15
+RPP Infra Proj,143,138.25,139.45,136.15,3.30,94080,15064,40083,40965,4 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/rppinfraprojects/RIP01
+KPR Mill,331.95,322.95,328.20,320.40,7.80,32144,80170,90424,74934,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-readymadeapparels/kprmill/M15
+RPP Infra Proj,143,138.25,139.45,136.15,3.30,94080,15064,40083,40965,4 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/rppinfraprojects/RIP01
+Berger Paints,384.20,374.30,381.25,372.25,9,392386,419228,353703,359763,3 star,http://www.moneycontrol.com/india/stockpricequote/paintsvarnishes/bergerpaintsindia/BPI02
+Berger Paints,384.20,374.30,381.25,372.25,9,392386,419228,353703,359763,3 star,http://www.moneycontrol.com/india/stockpricequote/paintsvarnishes/bergerpaintsindia/BPI02
+Revathi CP,353,344.80,353,344.90,8.10,110,650,1268,847,2 star,http://www.moneycontrol.com/india/stockpricequote/compressors/revathicpequipment/RCP
+Revathi CP,353,344.80,353,344.90,8.10,110,650,1268,847,2 star,http://www.moneycontrol.com/india/stockpricequote/compressors/revathicpequipment/RCP
+Cybertech,51.85,48.95,51,49.80,1.20,19137,80770,160676,89074,2 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/cybertechsystemssoftware/CSS
+Cybertech,51.85,48.95,51,49.80,1.20,19137,80770,160676,89074,2 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/cybertechsystemssoftware/CSS
+Ramcoind,82.30,78.65,80.50,78.65,1.85,82945,179588,315394,309569,2 star,http://www.moneycontrol.com/india/stockpricequote/cement-productsbuildingmaterials/ramcoindustries/RI26
+West Coast Papr,61.75,59.20,60.90,59.50,1.40,52121,125386,249706,181687,2 star,http://www.moneycontrol.com/india/stockpricequote/paper/westcoastpapermills/WCP
+Ramcoind,82.30,78.65,80.50,78.65,1.85,82945,179588,315394,309569,2 star,http://www.moneycontrol.com/india/stockpricequote/cement-productsbuildingmaterials/ramcoindustries/RI26
+West Coast Papr,61.75,59.20,60.90,59.50,1.40,52121,125386,249706,181687,2 star,http://www.moneycontrol.com/india/stockpricequote/paper/westcoastpapermills/WCP
+Parrys Sugar,22.20,20.50,22,21.50,0.50,1963,254,690,604,4 star,http://www.moneycontrol.com/india/stockpricequote/miningminerals/parryssugarindustries/GMR01
+Parrys Sugar,22.20,20.50,22,21.50,0.50,1963,254,690,604,4 star,http://www.moneycontrol.com/india/stockpricequote/miningminerals/parryssugarindustries/GMR01
+Welspun Corp,77,73.65,75.65,73.95,1.70,76057,142429,348358,228114,2 star,http://www.moneycontrol.com/india/stockpricequote/steel-tubespipes/welspuncorp/WGS
+Welspun Corp,77,73.65,75.65,73.95,1.70,76057,142429,348358,228114,2 star,http://www.moneycontrol.com/india/stockpricequote/steel-tubespipes/welspuncorp/WGS
+Bharat Bijlee,561.90,534.20,549,536.65,12.35,964,2474,3359,2586,2 star,http://www.moneycontrol.com/india/stockpricequote/electricequipment/bharatbijlee/BB
+Steel Str Wheel,380.80,348,368.50,360.25,8.25,182206,230178,118230,49514,3 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/steelstripswheels/SSW02
+Bharat Bijlee,561.90,534.20,549,536.65,12.35,964,2474,3359,2586,2 star,http://www.moneycontrol.com/india/stockpricequote/electricequipment/bharatbijlee/BB
+Steel Str Wheel,380.80,348,368.50,360.25,8.25,182206,230178,118230,49514,3 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/steelstripswheels/SSW02
+Titagarh Wagons,334.40,324.10,328.95,321.55,7.40,211196,593014,385120,216645,3 star,http://www.moneycontrol.com/india/stockpricequote/infrastructure-general/titagarhwagons/TW04
+Titagarh Wagons,334.40,324.10,328.95,321.55,7.40,211196,593014,385120,216645,3 star,http://www.moneycontrol.com/india/stockpricequote/infrastructure-general/titagarhwagons/TW04
+BSL,35,33.25,34,33.25,0.75,1572,5778,14577,10210,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-weaving/bsl/BSL
+BSL,35,33.25,34,33.25,0.75,1572,5778,14577,10210,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-weaving/bsl/BSL
+Oudh Sugar Mill,23.40,21.95,22.60,22.10,0.50,4675,7197,12735,6445,2 star,http://www.moneycontrol.com/india/stockpricequote/sugar/oudhsugarmills/OSM
+Solar Ind,2650,2550,2630.50,2572.40,58.10,4400,4005,4184,3933,4 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/solarindustriesindia/SII04
+Oudh Sugar Mill,23.40,21.95,22.60,22.10,0.50,4675,7197,12735,6445,2 star,http://www.moneycontrol.com/india/stockpricequote/sugar/oudhsugarmills/OSM
+Solar Ind,2650,2550,2630.50,2572.40,58.10,4400,4005,4184,3933,4 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/solarindustriesindia/SII04
+JM Financial,52.80,49.75,52.15,51,1.15,1127768,1848341,1331854,1182440,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/jmfinancial/JMF
+JM Financial,52.80,49.75,52.15,51,1.15,1127768,1848341,1331854,1182440,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/jmfinancial/JMF
+DQ Entertain,25,24.10,25,24.45,0.55,14587,35640,118396,72770,2 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/dqentertainmentinternational/DEI01
+DQ Entertain,25,24.10,25,24.45,0.55,14587,35640,118396,72770,2 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/dqentertainmentinternational/DEI01
+Tata Comm,461.70,449.80,457.80,447.85,9.95,538403,625856,668386,656988,2 star,http://www.moneycontrol.com/india/stockpricequote/telecommunications-service/tatacommunications/TC17
+Tata Comm,461.70,449.80,457.80,447.85,9.95,538403,625856,668386,656988,2 star,http://www.moneycontrol.com/india/stockpricequote/telecommunications-service/tatacommunications/TC17
+TIL,415,403.30,405,396.35,8.65,5549,13978,39672,21778,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/til/TIL
+TIL,415,403.30,405,396.35,8.65,5549,13978,39672,21778,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/til/TIL
+Ramco System,449.95,423,435.90,426.65,9.25,2918,24563,20427,13811,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-software/ramcosystem/RS17
+Ramco System,449.95,423,435.90,426.65,9.25,2918,24563,20427,13811,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-software/ramcosystem/RS17
+KSB Pumps,574.95,545.40,571.50,559.45,12.05,5676,5436,15531,10476,2 star,http://www.moneycontrol.com/india/stockpricequote/pumps/ksbpumps/KSB
+KSB Pumps,574.95,545.40,571.50,559.45,12.05,5676,5436,15531,10476,2 star,http://www.moneycontrol.com/india/stockpricequote/pumps/ksbpumps/KSB
+Indo Count,342.95,323.50,336.20,329.15,7.05,50829,133416,201450,117544,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-spinning-cottonblended/indocountindustries/ICI07
+Indo Count,342.95,323.50,336.20,329.15,7.05,50829,133416,201450,117544,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-spinning-cottonblended/indocountindustries/ICI07
+Hexa Tradex,23.95,22.95,23.95,23.45,0.50,230,6543,5137,4319,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/hexatradex/HT03
+Hexa Tradex,23.95,22.95,23.95,23.45,0.50,230,6543,5137,4319,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/hexatradex/HT03
+Heritage Foods,407.40,393,402,393.70,8.30,83671,201543,171072,75106,3 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/heritagefoods/HFI
+Heritage Foods,407.40,393,402,393.70,8.30,83671,201543,171072,75106,3 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/heritagefoods/HFI
+Madhav Marbles,51.45,48.20,50.85,49.80,1.05,4211,88711,52700,19910,3 star,http://www.moneycontrol.com/india/stockpricequote/ceramicsgranite/madhavmarblesgranites/MMG
+Madhav Marbles,51.45,48.20,50.85,49.80,1.05,4211,88711,52700,19910,3 star,http://www.moneycontrol.com/india/stockpricequote/ceramicsgranite/madhavmarblesgranites/MMG
+Kalindee Rail,120.40,117.50,118.55,116.10,2.45,139756,365308,309840,192849,3 star,http://www.moneycontrol.com/india/stockpricequote/engineering/kalindeerailnirman(engineers)/KRN
+Kalindee Rail,120.40,117.50,118.55,116.10,2.45,139756,365308,309840,192849,3 star,http://www.moneycontrol.com/india/stockpricequote/engineering/kalindeerailnirman(engineers)/KRN
+CCL Products,147,141.70,145.10,142.10,3,204105,479512,916342,888221,2 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/cclproductsindia/CC10
+CCL Products,147,141.70,145.10,142.10,3,204105,479512,916342,888221,2 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/cclproductsindia/CC10
+Lumax Inds,412,404.15,408.90,400.50,8.40,21097,10697,14623,13762,4 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/lumaxindustries/LI05
+Lumax Inds,412,404.15,408.90,400.50,8.40,21097,10697,14623,13762,4 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/lumaxindustries/LI05
+Granules India,795,776,789,773.10,15.90,97388,122402,203195,163153,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/granulesindia/GI25
+Granules India,795,776,789,773.10,15.90,97388,122402,203195,163153,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/granulesindia/GI25
+Bata India,1269.50,1239.05,1263.15,1237.80,25.35,80087,132138,193191,151273,2 star,http://www.moneycontrol.com/india/stockpricequote/leatherproducts/bataindia/BI01
+Bata India,1269.50,1239.05,1263.15,1237.80,25.35,80087,132138,193191,151273,2 star,http://www.moneycontrol.com/india/stockpricequote/leatherproducts/bataindia/BI01
+PDS Multi,153.25,148,149,146.05,2.95,4242,7269,6428,0,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-general/pdsmultinationalfashions/PDS
+Shanthi Gears,141.60,136.20,139.05,136.30,2.75,52156,125735,126946,106751,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering/shanthigears/SG04
+Shanthi Gears,141.60,136.20,139.05,136.30,2.75,52156,125735,126946,106751,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering/shanthigears/SG04
+PDS Multi,153.25,148,149,146.05,2.95,4242,7269,6428,0,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-general/pdsmultinationalfashions/PDS
+Indo Rama Synth,20.40,19.80,20.30,19.90,0.40,16405,29204,66767,41586,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-spinning-syntheticblended/indoramasynthetics(india)/IRS
+Indo Rama Synth,20.40,19.80,20.30,19.90,0.40,16405,29204,66767,41586,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-spinning-syntheticblended/indoramasynthetics(india)/IRS
+Shivam Auto,80,70.65,73.90,72.45,1.45,41584,78288,164035,108313,2 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/shivamautotech/SA13
+Shivam Auto,80,70.65,73.90,72.45,1.45,41584,78288,164035,108313,2 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/shivamautotech/SA13
+EIH Assoc Hotel,219.90,216,219.50,215.25,4.25,562,6183,4702,3004,3 star,http://www.moneycontrol.com/india/stockpricequote/hotels/eihassociatedhotels/EIH01
+ARSS Infra,39,37.20,38.35,37.60,0.75,16299,62656,107334,71378,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/arssinfrastructureprojects/AIP
+ARSS Infra,39,37.20,38.35,37.60,0.75,16299,62656,107334,71378,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/arssinfrastructureprojects/AIP
+EIH Assoc Hotel,219.90,216,219.50,215.25,4.25,562,6183,4702,3004,3 star,http://www.moneycontrol.com/india/stockpricequote/hotels/eihassociatedhotels/EIH01
+Uniphos Ent,29.55,27.85,28.50,27.95,0.55,600,4480,9724,8442,2 star,http://www.moneycontrol.com/india/stockpricequote/trading/uniphosenterprises/UE
+Uniphos Ent,29.55,27.85,28.50,27.95,0.55,600,4480,9724,8442,2 star,http://www.moneycontrol.com/india/stockpricequote/trading/uniphosenterprises/UE
+Federal-Mogul,398.95,388.40,396,388.40,7.60,2901,19067,42410,21697,2 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/federal-mogulgoetze/FMG
+Federal-Mogul,398.95,388.40,396,388.40,7.60,2901,19067,42410,21697,2 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/federal-mogulgoetze/FMG
+Edelweiss,52.70,50.75,52,51,1,256732,760907,942692,925994,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-general/edelweissfinancialservices/EC01
+Edelweiss,52.70,50.75,52,51,1,256732,760907,942692,925994,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-general/edelweissfinancialservices/EC01
+J Kumar Infra,452,431.40,439,430.65,8.35,30780,58159,90265,68048,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/jkumarinfraprojects/KI01
+J Kumar Infra,452,431.40,439,430.65,8.35,30780,58159,90265,68048,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/jkumarinfraprojects/KI01
+Dynamatic Tech,2140,2052.30,2140,2099.50,40.50,649,1349,5569,4665,2 star,http://www.moneycontrol.com/india/stockpricequote/pumps/dynamatictechnologies/DT05
+Dynamatic Tech,2140,2052.30,2140,2099.50,40.50,649,1349,5569,4665,2 star,http://www.moneycontrol.com/india/stockpricequote/pumps/dynamatictechnologies/DT05
+Harita Seating,173.90,169,171.85,168.60,3.25,3181,6791,5683,5421,3 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/haritaseatingsystems/HSS02
+Indian Card,110,108.10,110,107.95,2.05,614,1403,2396,1275,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-machinery/indiancardclothing/ICC01
+Indian Card,110,108.10,110,107.95,2.05,614,1403,2396,1275,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-machinery/indiancardclothing/ICC01
+Jayshree Tea,92.50,89.70,91.25,89.55,1.70,38749,75112,80272,76093,2 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/jayshreeteaindustries/JTI
+Alchemist,38.45,36.40,37.80,37.10,0.70,4052,3375,8511,6068,2 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/alchemist/A12
+Alchemist,38.45,36.40,37.80,37.10,0.70,4052,3375,8511,6068,2 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/alchemist/A12
+Jayshree Tea,92.50,89.70,91.25,89.55,1.70,38749,75112,80272,76093,2 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/jayshreeteaindustries/JTI
+Hind Rectifiers,81,76.60,78,76.55,1.45,14122,30196,55455,28363,2 star,http://www.moneycontrol.com/india/stockpricequote/electricals/hindrectifiers/HR01
+Hind Rectifiers,81,76.60,78,76.55,1.45,14122,30196,55455,28363,2 star,http://www.moneycontrol.com/india/stockpricequote/electricals/hindrectifiers/HR01
+Harita Seating,173.90,169,171.85,168.60,3.25,3181,6791,5683,5421,3 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/haritaseatingsystems/HSS02
+Power Grid Corp,141.75,139.35,141.75,139.15,2.60,977414,8655117,6235880,5586636,3 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/powergridcorporationindia/PGC
+Power Grid Corp,141.75,139.35,141.75,139.15,2.60,977414,8655117,6235880,5586636,3 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/powergridcorporationindia/PGC
+BPCL,731.90,710,720.85,707.60,13.25,1647377,1147988,1419681,1498398,4 star,http://www.moneycontrol.com/india/stockpricequote/refineries/bharatpetroleumcorporation/BPC
+BPCL,731.90,710,720.85,707.60,13.25,1825032,1147988,1419681,1498398,4 star,http://www.moneycontrol.com/india/stockpricequote/refineries/bharatpetroleumcorporation/BPC
+Aarti Ind,286.95,275,285.70,280.50,5.20,110457,56047,55616,52527,5 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/aartiindustries/AI45
+Hinduja Found,44,42.75,43.95,43.15,0.80,1094,5486,5379,3451,3 star,http://www.moneycontrol.com/india/stockpricequote/castingsforgings/hindujafoundries/HF10
+Aarti Ind,286.95,275,285.70,280.50,5.20,110457,56047,55616,52527,5 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/aartiindustries/AI45
+Hinduja Found,44,42.75,43.95,43.15,0.80,1094,5486,5379,3451,3 star,http://www.moneycontrol.com/india/stockpricequote/castingsforgings/hindujafoundries/HF10
+Indiabulls Real,78.70,76.50,78.10,76.70,1.40,2681821,7464036,8485198,7912437,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-realestate/indiabullsrealestate/IRE01
+M&M Financial,303.50,293.55,301,295.55,5.45,543146,1122009,1447699,1342216,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-leasinghirepurchase/mahindramahindrafinancialservices/MMF04
+Natco Pharma,1350,1306.15,1341,1316.90,24.10,9016,43659,33556,40519,3 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/natcopharma/NP07
+Natco Pharma,1350,1306.15,1341,1316.90,24.10,9016,43659,33556,40519,3 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/natcopharma/NP07
+Indiabulls Real,78.70,76.50,78.10,76.70,1.40,2681821,7464036,8485198,7912437,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-realestate/indiabullsrealestate/IRE01
+M&M Financial,303.50,293.55,301,295.55,5.45,543146,1122009,1447699,1342216,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-leasinghirepurchase/mahindramahindrafinancialservices/MMF04
+Selan Explore,404.40,393.25,403,395.85,7.15,25138,55572,52983,43523,3 star,http://www.moneycontrol.com/india/stockpricequote/oildrillingandexploration/selanexplorationtechnology/SET
+Selan Explore,404.40,393.25,403,395.85,7.15,25138,55572,52983,43523,3 star,http://www.moneycontrol.com/india/stockpricequote/oildrillingandexploration/selanexplorationtechnology/SET
+Siti Cable,28.50,27.75,28.35,27.85,0.50,141429,438255,845590,515670,2 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/siticablenetwork/WWI
+Siti Cable,28.50,27.75,28.35,27.85,0.50,141429,438255,845590,515670,2 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/siticablenetwork/WWI
+Welspun Invest,39.75,35.60,36.80,36.15,0.65,520,2973,1719,1031,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/welspuninvestmentscommercials/WIC01
+Welspun Invest,39.75,35.60,36.80,36.15,0.65,520,2973,1719,1031,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/welspuninvestmentscommercials/WIC01
+HUL,786.95,766.80,783.40,769.75,13.65,506435,853812,781245,830484,3 star,http://www.moneycontrol.com/india/stockpricequote/personalcare/hindustanunilever/HU
+EngineersInd,229.50,222.05,226.60,222.65,3.95,471915,627301,727752,683890,2 star,http://www.moneycontrol.com/india/stockpricequote/infrastructure-general/engineersindia/EI14
+EngineersInd,229.50,222.05,226.60,222.65,3.95,471915,627301,727752,683890,2 star,http://www.moneycontrol.com/india/stockpricequote/infrastructure-general/engineersindia/EI14
+HUL,786.95,766.80,783.40,769.75,13.65,506435,853812,781245,830484,3 star,http://www.moneycontrol.com/india/stockpricequote/personalcare/hindustanunilever/HU
+Kernex Micro,64.90,63.60,64.45,63.35,1.10,11214,29663,27453,23360,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/kernexmicrosystems(india)/KMI
+Kernex Micro,64.90,63.60,64.45,63.35,1.10,11214,29663,27453,23360,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/kernexmicrosystems(india)/KMI
+Kesar Terminals,435.50,422,430.20,422.90,7.30,2614,13326,10926,12955,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/kesarterminalsinfrastructure/KTI04
+Kesar Terminals,435.50,422,430.20,422.90,7.30,2614,13326,10926,12955,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/kesarterminalsinfrastructure/KTI04
+Rossell India,102.75,99.55,100.95,99.25,1.70,6056,119099,67903,24678,3 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/rossellindia/RT08
+Rossell India,102.75,99.55,100.95,99.25,1.70,6056,119099,67903,24678,3 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/rossellindia/RT08
+Maral Overseas,21.20,20.45,21,20.65,0.35,350,19816,14179,13572,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-spinning-cottonblended/maraloverseas/MO
+Kirloskar Oil,285,276.35,284,279.30,4.70,13949,35091,29074,23614,3 star,http://www.moneycontrol.com/india/stockpricequote/engines/kirloskaroilengines/KOE03
+Maral Overseas,21.20,20.45,21,20.65,0.35,350,19816,14179,13572,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-spinning-cottonblended/maraloverseas/MO
+Kirloskar Oil,285,276.35,284,279.30,4.70,13949,35091,29074,23614,3 star,http://www.moneycontrol.com/india/stockpricequote/engines/kirloskaroilengines/KOE03
+NFL,37.35,35.75,36.85,36.25,0.60,158808,269446,596016,384049,2 star,http://www.moneycontrol.com/india/stockpricequote/fertilisers/nationalfertilizers/NF06
+Mcleod,250.75,245.10,249.15,245.05,4.10,160803,398542,520859,419727,2 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/mcleodrussel(india)/MRI02
+NFL,37.35,35.75,36.85,36.25,0.60,158808,269446,596016,384049,2 star,http://www.moneycontrol.com/india/stockpricequote/fertilisers/nationalfertilizers/NF06
+Mcleod,250.75,245.10,249.15,245.05,4.10,160803,398542,520859,419727,2 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/mcleodrussel(india)/MRI02
+PNB Gilts,27.75,27.45,27.75,27.30,0.45,109686,622051,516514,547283,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/pnbgilts/PNB04
+PNB Gilts,27.75,27.45,27.75,27.30,0.45,109686,622051,516514,547283,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/pnbgilts/PNB04
+Vardhman Poly,53,51.30,52.95,52.10,0.85,62,2863,2376,2229,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-spinning-cottonblended/vardhmanpolytex/VP09
+Merck,798.95,770.10,790.45,777.85,12.60,8248,12948,17725,17357,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/merck/M12
+Vardhman Poly,53,51.30,52.95,52.10,0.85,62,2863,2376,2229,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-spinning-cottonblended/vardhmanpolytex/VP09
+Merck,798.95,770.10,790.45,777.85,12.60,8248,12948,17725,17357,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/merck/M12
+Dishman Pharma,147.30,140.55,144,141.75,2.25,644009,523162,906218,734541,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/dishmanpharmaceuticalschemicals/DPC02
+Dishman Pharma,147.30,140.55,144,141.75,2.25,644009,523162,906218,734541,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/dishmanpharmaceuticalschemicals/DPC02
+Amara Raja Batt,773.70,747.30,761,749.10,11.90,130138,472683,454337,340708,3 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/amararajabatteries/ARB
+Amara Raja Batt,773.70,747.30,761,749.10,11.90,130138,472683,454337,340708,3 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/amararajabatteries/ARB
+Wockhardt,829,809.95,822,809.30,12.70,449391,1005256,962016,819925,3 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/wockhardt/W05
+Wockhardt,829,809.95,822,809.30,12.70,449391,1005256,962016,819925,3 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/wockhardt/W05
+Shoppers Stop,503.40,481.40,492.55,484.95,7.60,24156,40042,108208,102458,2 star,http://www.moneycontrol.com/india/stockpricequote/retail/shoppersstop/SS51
+Shoppers Stop,503.40,481.40,492.55,484.95,7.60,24156,40042,108208,102458,2 star,http://www.moneycontrol.com/india/stockpricequote/retail/shoppersstop/SS51
+TVS Srichakra,1630,1580,1598.75,1574.55,24.20,4811,12633,35167,24976,2 star,http://www.moneycontrol.com/india/stockpricequote/tyres/tvssrichakra/TVS03
+TVS Srichakra,1630,1580,1598.75,1574.55,24.20,4811,12633,35167,24976,2 star,http://www.moneycontrol.com/india/stockpricequote/tyres/tvssrichakra/TVS03
+Kabra Extrusion,84.90,80.65,83,81.75,1.25,10532,56716,46716,33421,3 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/kabraextrusiontechnik/KET
+Lakshmi Machine,4329.40,4232.10,4292.85,4228.65,64.20,1904,4610,6458,5815,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-machinery/lakshmimachineworks/LMW
+Welspun Ent,352.15,343,345.95,340.80,5.15,9308,28220,27305,19546,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/welspunenterprises/WE01
+Kabra Extrusion,84.90,80.65,83,81.75,1.25,10532,56716,46716,33421,3 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/kabraextrusiontechnik/KET
+Welspun Ent,352.15,343,345.95,340.80,5.15,9308,28220,27305,19546,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/welspunenterprises/WE01
+Lakshmi Machine,4329.40,4232.10,4292.85,4228.65,64.20,1904,4610,6458,5815,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-machinery/lakshmimachineworks/LMW
+Radico Khaitan,83.20,80.10,81.40,80.20,1.20,177718,365290,295265,239815,3 star,http://www.moneycontrol.com/india/stockpricequote/breweriesdistilleries/radicokhaitan/RK01
+Punjab Chemical,103.80,100,101.50,100,1.50,2462,9480,15707,6807,2 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/punjabchemicalscropprotection/PCC03
+Radico Khaitan,83.20,80.10,81.40,80.20,1.20,177718,365290,295265,239815,3 star,http://www.moneycontrol.com/india/stockpricequote/breweriesdistilleries/radicokhaitan/RK01
+Punjab Chemical,103.80,100,101.50,100,1.50,2462,9480,15707,6807,2 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/punjabchemicalscropprotection/PCC03
+Reliance Comm,105.20,102.25,104.50,102.95,1.55,2604059,5856772,7722945,5511703,2 star,http://www.moneycontrol.com/india/stockpricequote/telecommunications-service/reliancecommunications/RC13
+Reliance Comm,105.20,102.25,104.50,102.95,1.55,2604059,5856772,7722945,5511703,2 star,http://www.moneycontrol.com/india/stockpricequote/telecommunications-service/reliancecommunications/RC13
+Britannia,1679,1642.10,1676.85,1652.05,24.80,48719,119993,182737,142611,2 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/britanniaindustries/BI
+Britannia,1679,1642.10,1676.85,1652.05,24.80,48719,119993,182737,142611,2 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/britanniaindustries/BI
+Marksans Pharma,59.90,57.65,59,58.15,0.85,890006,4490691,3198906,3409498,3 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/marksanspharma/MP21
+Marksans Pharma,59.90,57.65,59,58.15,0.85,890006,4490691,3198906,3409498,3 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/marksanspharma/MP21
+Zydus Wellness,714,693.15,710,700.05,9.95,50606,32638,39809,31092,4 star,http://www.moneycontrol.com/india/stockpricequote/vanaspatioils/zyduswellness/ZW01
+Adhunik Metalik,29.50,28.50,29.25,28.85,0.40,28330,56388,72195,56563,2 star,http://www.moneycontrol.com/india/stockpricequote/steel-spongeiron/adhunikmetaliks/AM9
+Zydus Wellness,714,693.15,710,700.05,9.95,50606,32638,39809,31092,4 star,http://www.moneycontrol.com/india/stockpricequote/vanaspatioils/zyduswellness/ZW01
+Atlas Cycles,273,267.10,270.30,266.65,3.65,15040,63597,57630,63143,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/atlascycleindustries/ACI08
+C & C Construct,39.90,36,36.70,36.20,0.50,678,7167,10981,7264,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/ccconstructions/CCC01
+Adhunik Metalik,29.50,28.50,29.25,28.85,0.40,28330,56388,72195,56563,2 star,http://www.moneycontrol.com/india/stockpricequote/steel-spongeiron/adhunikmetaliks/AM9
+C & C Construct,39.90,36,36.70,36.20,0.50,678,7167,10981,7264,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/ccconstructions/CCC01
+Atul Auto,464.75,454,462.90,456.70,6.20,84636,359536,243985,133150,3 star,http://www.moneycontrol.com/india/stockpricequote/auto-23wheelers/atulauto/AA08
+Atlas Cycles,273,267.10,270.30,266.65,3.65,15040,63597,57630,63143,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/atlascycleindustries/ACI08
+R Shares Bank,1960,1933.60,1960,1933.65,26.35,10,127,110,89,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/r*sharesbankingetf/RMF02
+Fortis Health,108.75,106.25,107.95,106.50,1.45,93552,269118,322482,272824,2 star,http://www.moneycontrol.com/india/stockpricequote/hospitalsmedicalservices/fortishealthcare/FH
+R Shares Bank,1960,1933.60,1960,1933.65,26.35,10,127,110,89,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/r*sharesbankingetf/RMF02
+Fortis Health,108.75,106.25,107.95,106.50,1.45,93552,269118,322482,272824,2 star,http://www.moneycontrol.com/india/stockpricequote/hospitalsmedicalservices/fortishealthcare/FH
+Atul Auto,464.75,454,462.90,456.70,6.20,84636,359536,243985,133150,3 star,http://www.moneycontrol.com/india/stockpricequote/auto-23wheelers/atulauto/AA08
+MM Forgings,528,514.40,526.65,519.60,7.05,13745,73211,113032,111165,2 star,http://www.moneycontrol.com/india/stockpricequote/castingsforgings/mmforgings/MMF
+MM Forgings,528,514.40,526.65,519.60,7.05,13745,73211,113032,111165,2 star,http://www.moneycontrol.com/india/stockpricequote/castingsforgings/mmforgings/MMF
+Som Distillerie,211.45,203.15,205.75,203,2.75,13779,22570,23198,21743,2 star,http://www.moneycontrol.com/india/stockpricequote/breweriesdistilleries/somdistilleriesbreweries/SDB
+Som Distillerie,211.45,203.15,205.75,203,2.75,13779,22570,23198,21743,2 star,http://www.moneycontrol.com/india/stockpricequote/breweriesdistilleries/somdistilleriesbreweries/SDB
+Williamson Mago,73.05,69.60,71.75,70.80,0.95,6790,47717,25149,11198,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/williamsonmagorcompany/WMC
+Williamson Mago,73.05,69.60,71.75,70.80,0.95,6790,47717,25149,11198,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/williamsonmagorcompany/WMC
+Surana Solar,49.90,45,45.70,45.10,0.60,3817,156940,125282,98697,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/suranasolar/SV05
+Mangalam Cement,317.40,308.05,314.85,310.70,4.15,39748,157187,191943,173026,2 star,http://www.moneycontrol.com/india/stockpricequote/cement-major/mangalamcement/MC03
+Mangalam Cement,317.40,308.05,314.85,310.70,4.15,39748,157187,191943,173026,2 star,http://www.moneycontrol.com/india/stockpricequote/cement-major/mangalamcement/MC03
+Surana Solar,49.90,45,45.70,45.10,0.60,3817,156940,125282,98697,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/suranasolar/SV05
+Bodal Chemicals,31.20,28.65,30.55,30.15,0.40,121236,186621,260493,255129,2 star,http://www.moneycontrol.com/india/stockpricequote/dyespigments/bodalchemicals/BC15
+Bodal Chemicals,31.20,28.65,30.55,30.15,0.40,121236,186621,260493,255129,2 star,http://www.moneycontrol.com/india/stockpricequote/dyespigments/bodalchemicals/BC15
+JSW Energy,93.80,90.40,91.80,90.60,1.20,4005130,4862342,4719212,2441267,3 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/jswenergy/JE01
+JSW Energy,93.80,90.40,91.80,90.60,1.20,4005130,4862342,4719212,2441267,3 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/jswenergy/JE01
+MOSt NASDAQ 100,266,262,265.95,262.50,3.45,149,958,1467,1466,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/motilaloswalmostsharesnasdaq100etf/MOM02
+Manjushree Tech,404,397,403,397.80,5.20,7390,35140,47565,31995,2 star,http://www.moneycontrol.com/india/stockpricequote/packaging/manjushreetechnopack/MT14
+Sanghvi Movers,174,168.50,170.25,168.05,2.20,8002,13054,18869,16189,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/sanghvimovers/SM10
+Sanghvi Movers,174,168.50,170.25,168.05,2.20,8002,13054,18869,16189,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/sanghvimovers/SM10
+Manjushree Tech,404,397,403,397.80,5.20,7390,35140,47565,31995,2 star,http://www.moneycontrol.com/india/stockpricequote/packaging/manjushreetechnopack/MT14
+MOSt NASDAQ 100,266,262,265.95,262.50,3.45,149,958,1467,1466,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/motilaloswalmostsharesnasdaq100etf/MOM02
+Taj GVK Hotels,91.35,88.30,89.40,88.25,1.15,5058,14176,39659,25690,2 star,http://www.moneycontrol.com/india/stockpricequote/hotels/tajgvkhotelsresorts/TGV
+Taj GVK Hotels,91.35,88.30,89.40,88.25,1.15,5058,14176,39659,25690,2 star,http://www.moneycontrol.com/india/stockpricequote/hotels/tajgvkhotelsresorts/TGV
+Infosys,4363,4312,4356,4300.45,55.55,1051465,1241900,947404,1224498,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-software/infosys/IT
+Infosys,4363,4312,4356,4300.45,55.55,1051465,1241900,947404,1224498,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-software/infosys/IT
+Castrol,484.40,474.90,481,474.90,6.10,243060,737769,847114,441725,2 star,http://www.moneycontrol.com/india/stockpricequote/lubricants/castrolindia/CI01
+Castrol,484.40,474.90,481,474.90,6.10,243060,737769,847114,441725,2 star,http://www.moneycontrol.com/india/stockpricequote/lubricants/castrolindia/CI01
+TD Power System,425,412.95,423.55,418.25,5.30,3193,7516,109400,55606,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/tdpowersystems/TPS01
+TD Power System,425,412.95,423.55,418.25,5.30,3193,7516,109400,55606,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/tdpowersystems/TPS01
+Nitin Spinners,28.25,27.55,28.25,27.90,0.35,34326,162388,230747,159423,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-spinning-cottonblended/nitinspinners/NS12
+Star Ferro,90,86.20,88.80,87.70,1.10,9775,17279,17950,16473,2 star,http://www.moneycontrol.com/india/stockpricequote/steel-mediumsmall/starferrocement/SFC02
+Nitin Spinners,28.25,27.55,28.25,27.90,0.35,34326,162388,230747,159423,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-spinning-cottonblended/nitinspinners/NS12
+Speciality Rest,186.50,179.20,184.45,182.20,2.25,12007,32619,131346,74626,2 star,http://www.moneycontrol.com/india/stockpricequote/hotels/specialityrestaurants/SR06
+Star Ferro,90,86.20,88.80,87.70,1.10,9775,17279,17950,16473,2 star,http://www.moneycontrol.com/india/stockpricequote/steel-mediumsmall/starferrocement/SFC02
+Speciality Rest,186.50,179.20,184.45,182.20,2.25,12007,32619,131346,74626,2 star,http://www.moneycontrol.com/india/stockpricequote/hotels/specialityrestaurants/SR06
+Godrej Consumer,980,956.45,972.45,961,11.45,27283,162250,159285,138252,3 star,http://www.moneycontrol.com/india/stockpricequote/personalcare/godrejconsumerproducts/GCP
+Godrej Consumer,980,956.45,972.45,961,11.45,27283,162250,159285,138252,3 star,http://www.moneycontrol.com/india/stockpricequote/personalcare/godrejconsumerproducts/GCP
+NCL Industries,42.55,41.60,42.55,42.05,0.50,870,11269,34175,23172,2 star,http://www.moneycontrol.com/india/stockpricequote/cement-mini/nclindustries/NCL
+NCL Industries,42.55,41.60,42.55,42.05,0.50,870,11269,34175,23172,2 star,http://www.moneycontrol.com/india/stockpricequote/cement-mini/nclindustries/NCL
+Ramco Cements,348.50,340.55,344.55,340.55,4,67921,191525,224392,146617,2 star,http://www.moneycontrol.com/india/stockpricequote/cement-major/theramcocements/MC
+Ramco Cements,348.50,340.55,344.55,340.55,4,67921,191525,224392,146617,2 star,http://www.moneycontrol.com/india/stockpricequote/cement-major/theramcocements/MC
+Elgi Rubber,26.20,25.05,25.85,25.55,0.30,2169,14867,13408,13998,3 star,http://www.moneycontrol.com/india/stockpricequote/tyres/elgirubbercompany/ERC01
+Elgi Rubber,26.20,25.05,25.85,25.55,0.30,2169,14867,13408,13998,3 star,http://www.moneycontrol.com/india/stockpricequote/tyres/elgirubbercompany/ERC01
+Gallantt Metal,27.30,25.30,26.20,25.90,0.30,22677,185309,172066,68962,3 star,http://www.moneycontrol.com/india/stockpricequote/steel-spongeiron/gallanttmetal/GM02
+Elecon Eng,53.90,52.55,52.90,52.30,0.60,139866,563282,633428,369650,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/eleconengineeringcompany/EEC
+Action Const,40.45,38.10,39.50,39.05,0.45,130154,443467,996212,543624,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/actionconstructionequipment/ACE3
+Gallantt Metal,27.30,25.30,26.20,25.90,0.30,22677,185309,172066,68962,3 star,http://www.moneycontrol.com/india/stockpricequote/steel-spongeiron/gallanttmetal/GM02
+Elecon Eng,53.90,52.55,52.90,52.30,0.60,139866,563282,633428,369650,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/eleconengineeringcompany/EEC
+Triveni Turbine,103.45,100.15,102.15,101,1.15,85247,132312,583762,246514,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/triveniturbine/TT14
+Action Const,40.45,38.10,39.50,39.05,0.45,130154,443467,996212,543624,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/actionconstructionequipment/ACE3
+Triveni Turbine,103.45,100.15,102.15,101,1.15,85247,132312,583762,246514,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/triveniturbine/TT14
+Vivimed Labs,373,362.20,369.95,365.85,4.10,7619,11068,18299,16170,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/vivimedlabs/VL07
+Vivimed Labs,373,362.20,369.95,365.85,4.10,7619,11068,18299,16170,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/vivimedlabs/VL07
+GlaxoSmithKline,2965,2902.25,2940,2907.75,32.25,5758,13731,13598,12385,3 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/glaxosmithklinepharmaceuticals/GSK
+GlaxoSmithKline,2965,2902.25,2940,2907.75,32.25,5758,13731,13598,12385,3 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/glaxosmithklinepharmaceuticals/GSK
+Mahindra CIE,230,224.20,225.85,223.40,2.45,31221,159699,294622,261307,2 star,http://www.moneycontrol.com/india/stockpricequote/castingsforgings/mahindracieautomotive/MF19
+Mahindra CIE,230,224.20,225.85,223.40,2.45,31221,159699,294622,261307,2 star,http://www.moneycontrol.com/india/stockpricequote/castingsforgings/mahindracieautomotive/MF19
+Blue Star,351.05,342.50,348.25,344.45,3.80,15587,54405,74331,74080,2 star,http://www.moneycontrol.com/india/stockpricequote/consumergoods-whitegoods/bluestar/BS
+Blue Star,351.05,342.50,348.25,344.45,3.80,15587,54405,74331,74080,2 star,http://www.moneycontrol.com/india/stockpricequote/consumergoods-whitegoods/bluestar/BS
+V-Guard Ind,1136,1111.10,1123,1111,12,21928,82094,71501,44295,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/v-guardindustries/VI02
+Amtek India,88.40,86.90,87.75,86.80,0.95,152070,672774,674380,588828,2 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/amtekindia/AI49
+Amtek India,88.40,86.90,87.75,86.80,0.95,152070,672774,674380,588828,2 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/amtekindia/AI49
+V-Guard Ind,1136,1111.10,1123,1111,12,21928,82094,71501,44295,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/v-guardindustries/VI02
+Shemaroo Ent,204,198,200.65,198.50,2.15,47180,349186,286563,150327,3 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/shemarooentertainment/SE03
+Indian Terrain,549,515,519.10,513.55,5.55,6143,8285,24309,13976,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-readymadeapparels/indianterrainfashions/ITF
+Shemaroo Ent,204,198,200.65,198.50,2.15,47180,349186,286563,150327,3 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/shemarooentertainment/SE03
+Indian Terrain,549,515,519.10,513.55,5.55,6143,8285,24309,13976,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-readymadeapparels/indianterrainfashions/ITF
+Time Techno,52.20,51.25,51.85,51.30,0.55,73677,498624,482064,257635,3 star,http://www.moneycontrol.com/india/stockpricequote/packaging/timetechnoplast/TT03
+Time Techno,52.20,51.25,51.85,51.30,0.55,73677,498624,482064,257635,3 star,http://www.moneycontrol.com/india/stockpricequote/packaging/timetechnoplast/TT03
+Rushil Decor,48.05,47.10,47.85,47.35,0.50,1623,49460,80289,59787,2 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/rushildecor/RD02
+Rushil Decor,48.05,47.10,47.85,47.35,0.50,1623,49460,80289,59787,2 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/rushildecor/RD02
+Geometric,134.90,131.50,133.35,131.95,1.40,127982,1145871,918983,582482,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-software/geometric/G03
+Geometric,134.90,131.50,133.35,131.95,1.40,127982,1145871,918983,582482,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-software/geometric/G03
+Sabero Organics,188.90,186,187,185.05,1.95,364,8201,14296,10905,2 star,http://www.moneycontrol.com/india/stockpricequote/pesticidesagrochemicals/saberoorganicsgujarat/SOG
+Sabero Organics,188.90,186,187,185.05,1.95,364,8201,14296,10905,2 star,http://www.moneycontrol.com/india/stockpricequote/pesticidesagrochemicals/saberoorganicsgujarat/SOG
+M&M,1290.90,1275.05,1287.15,1273.75,13.40,541729,1510942,1200382,1064172,3 star,http://www.moneycontrol.com/india/stockpricequote/auto-carsjeeps/mahindramahindra/MM
+M&M,1290.90,1275.05,1287.15,1273.75,13.40,541729,1510942,1200382,1064172,3 star,http://www.moneycontrol.com/india/stockpricequote/auto-carsjeeps/mahindramahindra/MM
+NRB Industrial,29.40,28.15,29.40,29.10,0.30,569,10911,21809,16535,2 star,http://www.moneycontrol.com/india/stockpricequote/bearings/nrbindustrialbearings/NRB01
+NRB Industrial,29.40,28.15,29.40,29.10,0.30,569,10911,21809,16535,2 star,http://www.moneycontrol.com/india/stockpricequote/bearings/nrbindustrialbearings/NRB01
+Asian Paints,718,709.20,712,704.75,7.25,855266,1097510,1733965,1516419,2 star,http://www.moneycontrol.com/india/stockpricequote/paintsvarnishes/asianpaints/AP31
+Asian Paints,718,709.20,712,704.75,7.25,855266,1097510,1733965,1516419,2 star,http://www.moneycontrol.com/india/stockpricequote/paintsvarnishes/asianpaints/AP31
+Alicon Castallo,238.90,234.35,236,233.65,2.35,7192,49668,70458,34921,2 star,http://www.moneycontrol.com/india/stockpricequote/castingsforgings/aliconcastalloy/EC06
+Alicon Castallo,238.90,234.35,236,233.65,2.35,7192,49668,70458,34921,2 star,http://www.moneycontrol.com/india/stockpricequote/castingsforgings/aliconcastalloy/EC06
+KPIT Tech,171.90,166,170.10,168.40,1.70,314617,750323,701761,571956,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/kpittechnologies/KPI02
+KPIT Tech,171.90,166,170.10,168.40,1.70,314617,750323,701761,571956,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/kpittechnologies/KPI02
+Industrial Inv,78.05,75.15,75.15,74.40,0.75,52,1680,966,593,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/industrialinvestmenttrust/IIT01
+Industrial Inv,78.05,75.15,75.15,74.40,0.75,52,1680,966,593,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/industrialinvestmenttrust/IIT01
+Future Life,82.40,80.05,81.15,80.35,0.80,45192,190224,273049,231372,2 star,http://www.moneycontrol.com/india/stockpricequote/retail/futurelifestylefashions/FLF01
+Future Life,82.40,80.05,81.15,80.35,0.80,45192,190224,273049,231372,2 star,http://www.moneycontrol.com/india/stockpricequote/retail/futurelifestylefashions/FLF01
+Firstsource Sol,35.85,35,35.40,35.05,0.35,796989,1806157,2142438,1705523,2 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/firstsourcesolutions/FS07
+Firstsource Sol,35.85,35,35.40,35.05,0.35,796989,1806157,2142438,1705523,2 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/firstsourcesolutions/FS07
+Oracle Fin Serv,3305,3254.75,3300.20,3267.95,32.25,37059,31296,25028,25689,5 star,http://www.moneycontrol.com/india/stockpricequote/computers-software/oraclefinancialservicessoftware/OFS01
+Oracle Fin Serv,3305,3254.75,3300.20,3267.95,32.25,37438,31296,25028,25689,5 star,http://www.moneycontrol.com/india/stockpricequote/computers-software/oraclefinancialservicessoftware/OFS01
+TV18 Broadcast,30.80,30.20,30.50,30.20,0.30,1131808,8988011,5523066,3541947,3 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/tv18broadcast/IBN
+TV18 Broadcast,30.80,30.20,30.50,30.20,0.30,1131808,8988011,5523066,3541947,3 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/tv18broadcast/IBN
+CESC,695,684.85,691.80,685.10,6.70,118080,408282,516694,490639,2 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/cesc/CES
+Nandan Denim,47.25,46,46.65,46.20,0.45,62476,86592,85100,80085,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-denim/nandandenim/NE06
+Nandan Denim,47.25,46,46.65,46.20,0.45,62476,86592,85100,80085,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-denim/nandandenim/NE06
+CESC,695,684.85,691.80,685.10,6.70,118080,408282,516694,490639,2 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/cesc/CES
+Eros Intl,351.45,338,344.50,341.20,3.30,262453,375010,409754,277878,2 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/erosinternationalmedia/EIM
+Eros Intl,351.45,338,344.50,341.20,3.30,262453,375010,409754,277878,2 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/erosinternationalmedia/EIM
+Godfrey Phillip,3080,3030,3058.40,3029.95,28.45,3337,18478,13343,7053,3 star,http://www.moneycontrol.com/india/stockpricequote/cigarettes/godfreyphillipsindia/GPI
+Godfrey Phillip,3080,3030,3058.40,3029.95,28.45,3337,18478,13343,7053,3 star,http://www.moneycontrol.com/india/stockpricequote/cigarettes/godfreyphillipsindia/GPI
+KEC Intl,104,101.40,102.15,101.20,0.95,280598,257677,313018,297385,2 star,http://www.moneycontrol.com/india/stockpricequote/power-transmissionequipment/kecinternational/KEC04
+KEC Intl,104,101.40,102.15,101.20,0.95,280598,257677,313018,297385,2 star,http://www.moneycontrol.com/india/stockpricequote/power-transmissionequipment/kecinternational/KEC04
+Finolex Cables,269.45,261.05,265.45,263,2.45,76155,460924,442801,366239,3 star,http://www.moneycontrol.com/india/stockpricequote/cables-telephone/finolexcables/FC01
+Finolex Cables,269.45,261.05,265.45,263,2.45,76155,460924,442801,366239,3 star,http://www.moneycontrol.com/india/stockpricequote/cables-telephone/finolexcables/FC01
+Kohinoor Foods,45.80,43.20,44,43.60,0.40,13000,43405,58233,51078,2 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/kohinoorfoods/KF15
+Kohinoor Foods,45.80,43.20,44,43.60,0.40,13000,43405,58233,51078,2 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/kohinoorfoods/KF15
+JagsonpalPharma,33.85,32.50,33.25,32.95,0.30,29391,410466,221458,121398,3 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/jagsonpalpharmaceuticals/JP02
+JagsonpalPharma,33.85,32.50,33.25,32.95,0.30,29391,410466,221458,121398,3 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/jagsonpalpharmaceuticals/JP02
+Aries Agro,114.40,107.60,110.40,109.40,1,129680,521240,458524,171017,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/ariesagro/AA02
+Aries Agro,114.40,107.60,110.40,109.40,1,129680,521240,458524,171017,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/ariesagro/AA02
+Gokaldas Export,68.25,65.80,67.50,66.90,0.60,36056,69269,84717,62212,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-readymadeapparels/gokaldasexports/GE05
+Visaka Ind,132.90,129.10,131.75,130.60,1.15,40362,133735,95343,49011,3 star,http://www.moneycontrol.com/india/stockpricequote/cement-productsbuildingmaterials/visakaindustries/VI11
+Visaka Ind,132.90,129.10,131.75,130.60,1.15,40362,133735,95343,49011,3 star,http://www.moneycontrol.com/india/stockpricequote/cement-productsbuildingmaterials/visakaindustries/VI11
+Gokaldas Export,68.25,65.80,67.50,66.90,0.60,36056,69269,84717,62212,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-readymadeapparels/gokaldasexports/GE05
+Sun Pharma,852,840,847,839.60,7.40,973994,2426647,2615594,2247139,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/sunpharmaceuticalindustries/SPI
+Sun Pharma,852,840,847,839.60,7.40,973994,2426647,2615594,2247139,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/sunpharmaceuticalindustries/SPI
+Reliance Power,68.90,67.45,68.60,68,0.60,3505702,17146212,12551140,7288170,3 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/reliancepower/RP
+Zodiac Clothing,403,399.10,399.15,395.65,3.50,34,1336,905,401,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-readymadeapparels/zodiacclothingcompany/ZCC
+Zodiac Clothing,403,399.10,399.15,395.65,3.50,34,1336,905,401,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-readymadeapparels/zodiacclothingcompany/ZCC
+Reliance Power,68.90,67.45,68.60,68,0.60,3505702,17146212,12551140,7288170,3 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/reliancepower/RP
+Brooks Labs,47.85,46.05,46.75,46.35,0.40,42269,380253,487640,190100,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/brookslaboratories/BL
+Brooks Labs,47.85,46.05,46.75,46.35,0.40,42269,380253,487640,190100,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/brookslaboratories/BL
+Emco,41.80,40.25,40.95,40.60,0.35,80833,173911,425519,366282,2 star,http://www.moneycontrol.com/india/stockpricequote/electricequipment/emco/E05
+Emco,41.80,40.25,40.95,40.60,0.35,80833,173911,425519,366282,2 star,http://www.moneycontrol.com/india/stockpricequote/electricequipment/emco/E05
+Mah Scooters,1028.60,1005,1018,1009.50,8.50,1584,10922,6578,4601,3 star,http://www.moneycontrol.com/india/stockpricequote/auto-23wheelers/maharashtrascooters/MS01
+Celestial Labs,30.45,29.50,29.90,29.65,0.25,31845,82339,85888,85822,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/celestiallabs/CL05
+Mah Scooters,1028.60,1005,1018,1009.50,8.50,1584,10922,6578,4601,3 star,http://www.moneycontrol.com/india/stockpricequote/auto-23wheelers/maharashtrascooters/MS01
+Lumax Auto Tech,296.60,290.70,293.70,291.25,2.45,8831,94430,81333,39564,3 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/lumaxautotechnologies/LAT01
+AMD Industries,24.85,22.40,24.10,23.90,0.20,655,12094,32337,27812,2 star,http://www.moneycontrol.com/india/stockpricequote/packaging/amdindustries/AMD02
+Lumax Auto Tech,296.60,290.70,293.70,291.25,2.45,8831,94430,81333,39564,3 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/lumaxautotechnologies/LAT01
+Celestial Labs,30.45,29.50,29.90,29.65,0.25,31845,82339,85888,85822,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/celestiallabs/CL05
+AMD Industries,24.85,22.40,24.10,23.90,0.20,655,12094,32337,27812,2 star,http://www.moneycontrol.com/india/stockpricequote/packaging/amdindustries/AMD02
+Oswal ChemandFe,30.80,29.60,30.15,29.90,0.25,21637,66857,86446,83272,2 star,http://www.moneycontrol.com/india/stockpricequote/fertilisers/oswalchemicalsfertilisers/OCF
+Oswal ChemandFe,30.80,29.60,30.15,29.90,0.25,21637,66857,86446,83272,2 star,http://www.moneycontrol.com/india/stockpricequote/fertilisers/oswalchemicalsfertilisers/OCF
+Dalmia Bharat,499,483,493,488.90,4.10,2108,25676,55830,48809,2 star,http://www.moneycontrol.com/india/stockpricequote/cement-major/dalmiabharat/DBE
+Dalmia Bharat,499,483,493,488.90,4.10,2108,25676,55830,48809,2 star,http://www.moneycontrol.com/india/stockpricequote/cement-major/dalmiabharat/DBE
+Banaras Beads,55,52.50,54.40,53.95,0.45,2408,21494,22934,10860,2 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/banarasbeads/BB03
+Banaras Beads,55,52.50,54.40,53.95,0.45,2408,21494,22934,10860,2 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/banarasbeads/BB03
+Plastiblends,286.05,281,284.45,282.10,2.35,4796,32149,42903,38482,2 star,http://www.moneycontrol.com/india/stockpricequote/plastics/plastiblendsindia/PI13
+Plastiblends,286.05,281,284.45,282.10,2.35,4796,32149,42903,38482,2 star,http://www.moneycontrol.com/india/stockpricequote/plastics/plastiblendsindia/PI13
+Transport Corp,288.75,277,285,282.65,2.35,91322,280663,417666,277498,2 star,http://www.moneycontrol.com/india/stockpricequote/transportlogistics/transportcorporationindia/TCI04
+Transport Corp,288.75,277,285,282.65,2.35,91322,280663,417666,277498,2 star,http://www.moneycontrol.com/india/stockpricequote/transportlogistics/transportcorporationindia/TCI04
+Gujarat Apollo,118,116,116.50,115.55,0.95,2772,8702,6909,5963,3 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/gujaratapolloindustries/GAI03
+Rupa and Comp,228,228,228,226.15,1.85,1,2786,6352,5158,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-hosieryknitwear/rupacompany/RC14
+Rupa and Comp,228,228,228,226.15,1.85,1,2786,6352,5158,2 star,http://www.moneycontrol.com/india/stockpricequote/textiles-hosieryknitwear/rupacompany/RC14
+Gujarat Apollo,118,116,116.50,115.55,0.95,2772,8702,6909,5963,3 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/gujaratapolloindustries/GAI03
+Balmer Lawrie,616.30,611,613.20,608.25,4.95,22383,93403,141460,72573,2 star,http://www.moneycontrol.com/india/stockpricequote/packaging/balmerlawriecompany/BLC
+Balmer Lawrie,616.30,611,613.20,608.25,4.95,22383,93403,141460,72573,2 star,http://www.moneycontrol.com/india/stockpricequote/packaging/balmerlawriecompany/BLC
+Mcnally Bh Engg,88.30,86.25,86.90,86.20,0.70,7456,43677,58124,45873,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering/mcnallybharatengineering/MBE
+Mcnally Bh Engg,88.30,86.25,86.90,86.20,0.70,7456,43677,58124,45873,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering/mcnallybharatengineering/MBE
+Tata Inv Corp,584,570.05,579,574.45,4.55,9839,65126,50234,32062,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/tatainvestmentcorporation/TIC
+Tata Inv Corp,584,570.05,579,574.45,4.55,9839,65126,50234,32062,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/tatainvestmentcorporation/TIC
+Tinplate,71.30,69.85,70.50,69.95,0.55,58172,385990,265172,277204,3 star,http://www.moneycontrol.com/india/stockpricequote/metals-nonferrous/tinplatecompanyindia/TCI02
+Gitanjali Gems,52.50,51.55,52,51.60,0.40,146060,684518,541288,608042,3 star,http://www.moneycontrol.com/india/stockpricequote/diamondcuttingpreciousmetalsjewellery/gitanjaligems/GG03
+Tinplate,71.30,69.85,70.50,69.95,0.55,58172,385990,265172,277204,3 star,http://www.moneycontrol.com/india/stockpricequote/metals-nonferrous/tinplatecompanyindia/TCI02
+IDFC,155.70,153.10,154.80,153.60,1.20,2023256,5057313,6147567,6102205,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-termlendinginstitutions/idfc/IDF
+Gitanjali Gems,52.50,51.55,52,51.60,0.40,146060,684518,541288,608042,3 star,http://www.moneycontrol.com/india/stockpricequote/diamondcuttingpreciousmetalsjewellery/gitanjaligems/GG03
+IDFC,155.70,153.10,154.80,153.60,1.20,2023256,5057313,6147567,6102205,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-termlendinginstitutions/idfc/IDF
+CARE,1456,1416.75,1442.05,1431.10,10.95,7773,78024,103297,69952,2 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/creditanalysisresearch/CAR
+Guj Sidhee Cem,32.70,31.80,32.35,32.10,0.25,36093,281413,209461,151363,3 star,http://www.moneycontrol.com/india/stockpricequote/cement-major/gujaratsidheecement/GSC02
+Guj Sidhee Cem,32.70,31.80,32.35,32.10,0.25,36093,281413,209461,151363,3 star,http://www.moneycontrol.com/india/stockpricequote/cement-major/gujaratsidheecement/GSC02
+CARE,1456,1416.75,1442.05,1431.10,10.95,7773,78024,103297,69952,2 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/creditanalysisresearch/CAR
+Dewan Housing,405.95,397,400.50,397.45,3.05,634978,439801,867402,648325,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-housing/dewanhousingfinancecorporation/DHF
+Dewan Housing,405.95,397,400.50,397.45,3.05,634978,439801,867402,648325,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-housing/dewanhousingfinancecorporation/DHF
+DCM Shriram,174.65,170.60,172.30,171,1.30,56409,461719,354230,164278,3 star,http://www.moneycontrol.com/india/stockpricequote/diversified/dcmshriram/DCM02
+DCM Shriram,174.65,170.60,172.30,171,1.30,56409,461719,354230,164278,3 star,http://www.moneycontrol.com/india/stockpricequote/diversified/dcmshriram/DCM02
+Goa Carbon,86.75,84.50,85.80,85.15,0.65,9930,49453,145514,118226,2 star,http://www.moneycontrol.com/india/stockpricequote/petrochemicals/goacarbon/GC04
+INOX Leisure,174.85,171.85,173.60,172.30,1.30,28698,440718,276341,186411,3 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/inoxleisure/INO01
+INOX Leisure,174.85,171.85,173.60,172.30,1.30,28698,440718,276341,186411,3 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/inoxleisure/INO01
+Goa Carbon,86.75,84.50,85.80,85.15,0.65,9930,49453,145514,118226,2 star,http://www.moneycontrol.com/india/stockpricequote/petrochemicals/goacarbon/GC04
+Persistent,1447.85,1422,1434.25,1423.60,10.65,14931,94485,77334,60308,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-software/persistentsystems/PS15
+Persistent,1447.85,1422,1434.25,1423.60,10.65,14931,94485,77334,60308,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-software/persistentsystems/PS15
+Tara Jewels,89.35,87.05,88.25,87.60,0.65,1580,6949,9051,6160,2 star,http://www.moneycontrol.com/india/stockpricequote/diamondcuttingpreciousmetalsjewellery/tarajewels/TJ01
+Tara Jewels,89.35,87.05,88.25,87.60,0.65,1580,6949,9051,6160,2 star,http://www.moneycontrol.com/india/stockpricequote/diamondcuttingpreciousmetalsjewellery/tarajewels/TJ01
+Man Industries,84.25,80.75,82.95,82.35,0.60,328165,574167,774937,662630,2 star,http://www.moneycontrol.com/india/stockpricequote/steel-tubespipes/manindustries(india)/MII
+Man Industries,84.25,80.75,82.95,82.35,0.60,328165,574167,774937,662630,2 star,http://www.moneycontrol.com/india/stockpricequote/steel-tubespipes/manindustries(india)/MII
+Tilaknagar Ind,29,28.20,28.45,28.25,0.20,406658,1477051,1269416,795067,3 star,http://www.moneycontrol.com/india/stockpricequote/breweriesdistilleries/tilaknagarindustries/TI09
+aurionPro Sol,300,297,298.90,296.80,2.10,8839,37638,53670,46370,2 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/aurionprosolutions/PS12
+Mangalam Drugs,21.50,20.95,21.25,21.10,0.15,8608,27115,34254,17476,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/mangalamdrugsorganics/MDO
+Tilaknagar Ind,29,28.20,28.45,28.25,0.20,406658,1477051,1269416,795067,3 star,http://www.moneycontrol.com/india/stockpricequote/breweriesdistilleries/tilaknagarindustries/TI09
+Mangalam Drugs,21.50,20.95,21.25,21.10,0.15,8608,27115,34254,17476,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/mangalamdrugsorganics/MDO
+Rane Holdings,609,590,594,589.95,4.05,4931,8747,6162,4380,3 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/raneholdings/RH01
+Rolta,108.70,106.10,107.55,106.80,0.75,325275,712153,1492151,1045019,2 star,http://www.moneycontrol.com/india/stockpricequote/computers-software/roltaindia/RI15
+aurionPro Sol,300,297,298.90,296.80,2.10,8839,37638,53670,46370,2 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/aurionprosolutions/PS12
+Rane Holdings,609,590,594,589.95,4.05,4931,8747,6162,4380,3 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/raneholdings/RH01
+Cipla,637.50,626.30,633.30,628.95,4.35,523245,2597671,2191440,1763861,3 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/cipla/C
+Cipla,637.50,626.30,633.30,628.95,4.35,523245,2597671,2191440,1763861,3 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/cipla/C
+Rolta,108.70,106.10,107.55,106.80,0.75,325275,712153,1492151,1045019,2 star,http://www.moneycontrol.com/india/stockpricequote/computers-software/roltaindia/RI15
+Hindustan Media,213.60,208.50,211.80,210.40,1.40,11711,91673,170890,120297,2 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/hindustanmediaventures/HMV
+Hindustan Media,213.60,208.50,211.80,210.40,1.40,11711,91673,170890,120297,2 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/hindustanmediaventures/HMV
+MBL Infra,393.50,385.10,388,385.40,2.60,7690,18402,41836,41269,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/mblinfrastructures/MI06
+MBL Infra,393.50,385.10,388,385.40,2.60,7690,18402,41836,41269,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/mblinfrastructures/MI06
+JK Bank,129.40,126.80,128.90,128.05,0.85,629944,406669,641328,498093,2 star,http://www.moneycontrol.com/india/stockpricequote/banks-privatesector/jammukashmirbank/JKB
+JK Bank,129.40,126.80,128.90,128.05,0.85,629944,406669,641328,498093,2 star,http://www.moneycontrol.com/india/stockpricequote/banks-privatesector/jammukashmirbank/JKB
+OnMobile Global,61.95,58.40,60.75,60.35,0.40,1234992,2339126,2752943,2338421,2 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/onmobileglobal/OG01
+TCI Finance,47,44,46.45,46.15,0.30,15389,42837,111934,54259,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/tcifinance/TCI01
+TCI Finance,47,44,46.45,46.15,0.30,15389,42837,111934,54259,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/tcifinance/TCI01
+OnMobile Global,61.95,58.40,60.75,60.35,0.40,1234992,2339126,2752943,2338421,2 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/onmobileglobal/OG01
+Everest Ind,299.70,296,296.90,295,1.90,38491,67524,66394,52840,3 star,http://www.moneycontrol.com/india/stockpricequote/cement-productsbuildingmaterials/everestindustries/EI19
+Sanghvi Forging,42,38.20,40.25,40,0.25,867,18058,12316,9020,3 star,http://www.moneycontrol.com/india/stockpricequote/castingsforgings/sanghviforgingengineering/SFE
+Everest Ind,299.70,296,296.90,295,1.90,38491,67524,66394,52840,3 star,http://www.moneycontrol.com/india/stockpricequote/cement-productsbuildingmaterials/everestindustries/EI19
+Sanghvi Forging,42,38.20,40.25,40,0.25,867,18058,12316,9020,3 star,http://www.moneycontrol.com/india/stockpricequote/castingsforgings/sanghviforgingengineering/SFE
+SAIL,89.85,86.20,87.90,87.35,0.55,5024453,3479078,4911263,4197159,4 star,http://www.moneycontrol.com/india/stockpricequote/steel-large/steelauthorityindia/SAI
+Deep Industries,73.75,72.05,73,72.55,0.45,12068,68856,120600,109238,2 star,http://www.moneycontrol.com/india/stockpricequote/oildrillingandexploration/deepindustries/DI24
+SAIL,89.85,86.20,87.90,87.35,0.55,5024453,3479078,4911263,4197159,4 star,http://www.moneycontrol.com/india/stockpricequote/steel-large/steelauthorityindia/SAI
+Deep Industries,73.75,72.05,73,72.55,0.45,12068,68856,120600,109238,2 star,http://www.moneycontrol.com/india/stockpricequote/oildrillingandexploration/deepindustries/DI24
+Tata Coffee,1022.40,993,1016,1009.70,6.30,139980,280404,268445,132308,3 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/tatacoffee/TC14
+Tata Coffee,1022.40,993,1016,1009.70,6.30,139980,280404,268445,132308,3 star,http://www.moneycontrol.com/india/stockpricequote/plantations-teacoffee/tatacoffee/TC14
+Reliance Infra,611.60,594.20,602.85,599.15,3.70,1642400,2012959,2282173,2077315,2 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/relianceinfrastructure/RI38
+Reliance Infra,611.60,594.20,602.85,599.15,3.70,1642400,2012959,2282173,2077315,2 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/relianceinfrastructure/RI38
+Vesuvius India,723,700,701.95,697.65,4.30,1277,9920,5930,5503,3 star,http://www.moneycontrol.com/india/stockpricequote/cement-productsbuildingmaterials/vesuviusindia/VI06
+Jindal PolyFilm,303.30,292.35,297.20,295.40,1.80,134900,117242,187809,176611,2 star,http://www.moneycontrol.com/india/stockpricequote/packaging/jindalpolyfilms/JPF01
+Vesuvius India,723,700,701.95,697.65,4.30,1277,9920,5930,5503,3 star,http://www.moneycontrol.com/india/stockpricequote/cement-productsbuildingmaterials/vesuviusindia/VI06
+Jindal PolyFilm,303.30,292.35,297.20,295.40,1.80,134900,117242,187809,176611,2 star,http://www.moneycontrol.com/india/stockpricequote/packaging/jindalpolyfilms/JPF01
+Hitachi Home,815.95,795.10,808.70,803.80,4.90,60234,296498,543794,280543,2 star,http://www.moneycontrol.com/india/stockpricequote/consumergoods-whitegoods/hitachihomelifesolutions/HHL
+Hitachi Home,815.95,795.10,808.70,803.80,4.90,60234,296498,543794,280543,2 star,http://www.moneycontrol.com/india/stockpricequote/consumergoods-whitegoods/hitachihomelifesolutions/HHL
+RSWM,192.50,189,190.25,189.10,1.15,3299,34241,27646,28256,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-spinning-syntheticblended/rswm/RSW01
+RSWM,192.50,189,190.25,189.10,1.15,3299,34241,27646,28256,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-spinning-syntheticblended/rswm/RSW01
+Seamec,118.25,114.65,115.70,115,0.70,7717,36216,89146,60760,2 star,http://www.moneycontrol.com/india/stockpricequote/shipping/seamec/S14
+Seamec,118.25,114.65,115.70,115,0.70,7717,36216,89146,60760,2 star,http://www.moneycontrol.com/india/stockpricequote/shipping/seamec/S14
+Bliss GVS,75.65,73,74.25,73.80,0.45,257816,326676,187116,154119,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/blissgvspharma/BGV
+FAG Bearings,3299.95,3212.10,3269,3249.45,19.55,4127,4768,9238,8324,2 star,http://www.moneycontrol.com/india/stockpricequote/bearings/fagbearingsindia/FAG
+Bliss GVS,75.65,73,74.25,73.80,0.45,257816,326676,187116,154119,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/blissgvspharma/BGV
+FAG Bearings,3299.95,3212.10,3269,3249.45,19.55,4127,4768,9238,8324,2 star,http://www.moneycontrol.com/india/stockpricequote/bearings/fagbearingsindia/FAG
+Indraprastha,50.60,50,50.25,49.95,0.30,17192,59952,97048,96121,2 star,http://www.moneycontrol.com/india/stockpricequote/hospitalsmedicalservices/indraprasthamedicalcorporation/IMC03
+Nitco,25.75,24.50,25,24.85,0.15,21831,36999,68765,61244,2 star,http://www.moneycontrol.com/india/stockpricequote/ceramicsgranite/nitco/N52
+Nitco,25.75,24.50,25,24.85,0.15,21831,36999,68765,61244,2 star,http://www.moneycontrol.com/india/stockpricequote/ceramicsgranite/nitco/N52
+Indraprastha,50.60,50,50.25,49.95,0.30,17192,59952,97048,96121,2 star,http://www.moneycontrol.com/india/stockpricequote/hospitalsmedicalservices/indraprasthamedicalcorporation/IMC03
+Godawari Power,147,143.35,145.85,145,0.85,7776,58777,50676,34933,3 star,http://www.moneycontrol.com/india/stockpricequote/steel-spongeiron/godawaripowerispat/GPI7
+Godawari Power,147,143.35,145.85,145,0.85,7776,58777,50676,34933,3 star,http://www.moneycontrol.com/india/stockpricequote/steel-spongeiron/godawaripowerispat/GPI7
+Supreme Infra,253,246,250.50,249.05,1.45,1643,20323,25445,10965,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/supremeinfrastructureindia/SII03
+Coromandel Int,320.80,312.55,314.35,312.55,1.80,27283,328134,215476,201003,3 star,http://www.moneycontrol.com/india/stockpricequote/fertilisers/coromandelinternational/CI45
+Supreme Infra,253,246,250.50,249.05,1.45,1643,20323,25445,10965,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/supremeinfrastructureindia/SII03
+Coromandel Int,320.80,312.55,314.35,312.55,1.80,27283,328134,215476,201003,3 star,http://www.moneycontrol.com/india/stockpricequote/fertilisers/coromandelinternational/CI45
+Ajanta Pharma,2312,2252.85,2281.40,2268.35,13.05,12638,69848,71783,53560,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/ajantapharma/AP22
+Ajanta Pharma,2312,2252.85,2281.40,2268.35,13.05,12638,69848,71783,53560,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/ajantapharma/AP22
+Oberoi Realty,261.70,252.50,257,255.55,1.45,75735,280857,247927,220177,3 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-realestate/oberoirealty/OR
+Oberoi Realty,261.70,252.50,257,255.55,1.45,75735,280857,247927,220177,3 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-realestate/oberoirealty/OR
+Kansai Nerolac,2004,1982.60,1991.70,1980.45,11.25,1886,54110,33064,17959,3 star,http://www.moneycontrol.com/india/stockpricequote/paintsvarnishes/kansainerolacpaints/KNP
+Kansai Nerolac,2004,1982.60,1991.70,1980.45,11.25,1886,54110,33064,17959,3 star,http://www.moneycontrol.com/india/stockpricequote/paintsvarnishes/kansainerolacpaints/KNP
+Bharat Elec,2337,2292.40,2315,2302.20,12.80,86067,127944,100000,111451,3 star,http://www.moneycontrol.com/india/stockpricequote/electricals/bharatelectronics/BE03
+Bharat Elec,2337,2292.40,2315,2302.20,12.80,86067,127944,100000,111451,3 star,http://www.moneycontrol.com/india/stockpricequote/electricals/bharatelectronics/BE03
+ACC,1458.50,1438.85,1446.50,1438.45,8.05,214848,283921,261262,270153,3 star,http://www.moneycontrol.com/india/stockpricequote/cement-major/acc/ACC06
+ACC,1458.50,1438.85,1446.50,1438.45,8.05,214848,283921,261262,270153,3 star,http://www.moneycontrol.com/india/stockpricequote/cement-major/acc/ACC06
+Trent,1463.15,1434.05,1450,1442,8,1528,19118,31316,22501,2 star,http://www.moneycontrol.com/india/stockpricequote/retail/trent/T04
+Trent,1463.15,1434.05,1450,1442,8,1528,19118,31316,22501,2 star,http://www.moneycontrol.com/india/stockpricequote/retail/trent/T04
+GlaxoSmith Con,5775,5720.05,5727,5695.45,31.55,714,14225,10520,9112,3 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/glaxosmithklineconsumerhealthcare/GSC04
+Ranbaxy Labs,621.80,610.55,619.05,615.65,3.40,742472,2229582,1835427,1478365,3 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/ranbaxylaboratories/RL
+GlaxoSmith Con,5775,5720.05,5727,5695.45,31.55,714,14225,10520,9112,3 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/glaxosmithklineconsumerhealthcare/GSC04
+Ranbaxy Labs,621.80,610.55,619.05,615.65,3.40,742472,2229582,1835427,1478365,3 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/ranbaxylaboratories/RL
+Ruchi Soya,37.70,37,37.50,37.30,0.20,43720,145395,400745,394782,2 star,http://www.moneycontrol.com/india/stockpricequote/edibleoilssolventextraction/ruchisoyaindustries/RSI
+Akzo Nobel,1290,1268,1273.20,1266.40,6.80,165885,22186,22653,21744,4 star,http://www.moneycontrol.com/india/stockpricequote/paintsvarnishes/akzonobelindia/ICI
+Ruchi Soya,37.70,37,37.50,37.30,0.20,43720,145395,400745,394782,2 star,http://www.moneycontrol.com/india/stockpricequote/edibleoilssolventextraction/ruchisoyaindustries/RSI
+Akzo Nobel,1290,1268,1273.20,1266.40,6.80,165885,22186,22653,21744,4 star,http://www.moneycontrol.com/india/stockpricequote/paintsvarnishes/akzonobelindia/ICI
+De Nora India,154,150.90,152,151.20,0.80,1510,4885,12257,6261,2 star,http://www.moneycontrol.com/india/stockpricequote/electricequipment/denoraindia/DNI
+De Nora India,154,150.90,152,151.20,0.80,1510,4885,12257,6261,2 star,http://www.moneycontrol.com/india/stockpricequote/electricequipment/denoraindia/DNI
+Idea Cellular,164.15,162.50,163.90,163.05,0.85,1078372,3986660,3407835,3799325,3 star,http://www.moneycontrol.com/india/stockpricequote/telecommunications-service/ideacellular/IC8
+Idea Cellular,164.15,162.50,163.90,163.05,0.85,1078372,3986660,3407835,3799325,3 star,http://www.moneycontrol.com/india/stockpricequote/telecommunications-service/ideacellular/IC8
+Essar Oil,96.80,94.55,96,95.50,0.50,64306,836977,545451,366781,3 star,http://www.moneycontrol.com/india/stockpricequote/refineries/essaroil/EO01
+Essar Oil,96.80,94.55,96,95.50,0.50,64306,836977,545451,366781,3 star,http://www.moneycontrol.com/india/stockpricequote/refineries/essaroil/EO01
+Vinati Organics,428.95,421,425.75,423.55,2.20,41841,69278,44597,39852,3 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/vinatiorganics/VO01
+Vinati Organics,428.95,421,425.75,423.55,2.20,41841,69278,44597,39852,3 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/vinatiorganics/VO01
+Blue Dart,5830,5762.20,5810,5780.10,29.90,1019,7316,9584,9023,2 star,http://www.moneycontrol.com/india/stockpricequote/couriers/bluedartexpress/BDE
+Blue Dart,5830,5762.20,5810,5780.10,29.90,1019,7316,9584,9023,2 star,http://www.moneycontrol.com/india/stockpricequote/couriers/bluedartexpress/BDE
+TRF,409,398.30,402.30,400.25,2.05,28292,97569,251575,143101,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/trf/TRF
+TRF,409,398.30,402.30,400.25,2.05,28292,97569,251575,143101,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/trf/TRF
+Hathway Cable,356.85,350.55,352.05,350.25,1.80,7514,88821,97926,79764,2 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/hathwaycabledatacom/HCD
+Hathway Cable,356.85,350.55,352.05,350.25,1.80,7514,88821,97926,79764,2 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/hathwaycabledatacom/HCD
+Nilkamal,352,345,345.45,343.70,1.75,19063,65766,79182,51410,2 star,http://www.moneycontrol.com/india/stockpricequote/plastics/nilkamal/NP08
+Nilkamal,352,345,345.45,343.70,1.75,19063,65766,79182,51410,2 star,http://www.moneycontrol.com/india/stockpricequote/plastics/nilkamal/NP08
+Gillette India,3290,3180.10,3206.75,3190.65,16.10,2112,12754,13240,9583,2 star,http://www.moneycontrol.com/india/stockpricequote/personalcare/gilletteindia/GI22
+Gillette India,3290,3180.10,3206.75,3190.65,16.10,2180,12754,13240,9583,2 star,http://www.moneycontrol.com/india/stockpricequote/personalcare/gilletteindia/GI22
+Schneider Elect,148,145.85,147,146.25,0.75,14169,75195,102767,71018,2 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/schneiderelectricinfrastructure/SEI04
+Schneider Elect,148,145.85,147,146.25,0.75,14169,75195,102767,71018,2 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/schneiderelectricinfrastructure/SEI04
+Karur Vysya,525.40,520,523,520.40,2.60,41048,219108,155440,119003,3 star,http://www.moneycontrol.com/india/stockpricequote/banks-privatesector/karurvysyabank/KVB
+Karur Vysya,525.40,520,523,520.40,2.60,41048,219108,155440,119003,3 star,http://www.moneycontrol.com/india/stockpricequote/banks-privatesector/karurvysyabank/KVB
+Eicher Motors,14410.10,14263.05,14337.05,14267.75,69.30,13455,55877,79919,54244,2 star,http://www.moneycontrol.com/india/stockpricequote/auto-lcvshcvs/eichermotors/EM
+Eicher Motors,14410.10,14263.05,14337.05,14267.75,69.30,14580,55877,79919,54244,2 star,http://www.moneycontrol.com/india/stockpricequote/auto-lcvshcvs/eichermotors/EM
+JK Paper,31.95,31.45,31.60,31.45,0.15,8118,69639,60232,55557,3 star,http://www.moneycontrol.com/india/stockpricequote/paper/jkpaper/JKP01
+JK Paper,31.95,31.45,31.60,31.45,0.15,8118,69639,60232,55557,3 star,http://www.moneycontrol.com/india/stockpricequote/paper/jkpaper/JKP01
+Swelect Energy,429,420.20,424.15,422.15,2,1186,8177,11087,7217,2 star,http://www.moneycontrol.com/india/stockpricequote/electricequipment/swelectenergysystems/NPS
+Swelect Energy,429,420.20,424.15,422.15,2,1186,8177,11087,7217,2 star,http://www.moneycontrol.com/india/stockpricequote/electricequipment/swelectenergysystems/NPS
+Power Finance,303.95,299,300,298.60,1.40,1030495,2582659,3314352,3150594,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-termlendinginstitutions/powerfinancecorporation/PFC02
+Power Finance,303.95,299,300,298.60,1.40,1030495,2582659,3314352,3150594,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-termlendinginstitutions/powerfinancecorporation/PFC02
+Container Corp,1452.10,1434,1450,1443.25,6.75,9959,140259,153619,92393,2 star,http://www.moneycontrol.com/india/stockpricequote/transportlogistics/containercorporationindia/CCI
+Container Corp,1452.10,1434,1450,1443.25,6.75,9959,140259,153619,92393,2 star,http://www.moneycontrol.com/india/stockpricequote/transportlogistics/containercorporationindia/CCI
+Ashapura Mine,64.65,63,63.80,63.50,0.30,21977,109422,124954,107419,2 star,http://www.moneycontrol.com/india/stockpricequote/miningminerals/ashapuraminechem/AM07
+Ashapura Mine,64.65,63,63.80,63.50,0.30,21977,109422,124954,107419,2 star,http://www.moneycontrol.com/india/stockpricequote/miningminerals/ashapuraminechem/AM07
+Sona Koyo Stee,54.10,52.70,53.25,53,0.25,48464,262623,305647,270641,2 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/sonakoyosteeringsystems/SKS04
+Sona Koyo Stee,54.10,52.70,53.25,53,0.25,48464,262623,305647,270641,2 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/sonakoyosteeringsystems/SKS04
+ICRA,2664.95,2596.20,2634.50,2622.45,12.05,619,1102,3414,1979,2 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/icra/ICR
+ICRA,2664.95,2596.20,2634.50,2622.45,12.05,619,1102,3414,1979,2 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/icra/ICR
+Atlanta,66.90,65.05,65.40,65.10,0.30,22098,76760,154530,139349,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/atlanta/A9
+Atlanta,66.90,65.05,65.40,65.10,0.30,22098,76760,154530,139349,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/atlanta/A9
+Guj Mineral,136.70,134.35,135.30,134.70,0.60,30125,250857,272603,197616,2 star,http://www.moneycontrol.com/india/stockpricequote/miningminerals/gujaratmineraldevelopmentcorporation/GMD
+Guj Mineral,136.70,134.35,135.30,134.70,0.60,30125,250857,272603,197616,2 star,http://www.moneycontrol.com/india/stockpricequote/miningminerals/gujaratmineraldevelopmentcorporation/GMD
+MRF,33675,32880,33135,32989.70,145.30,18139,14750,11155,10167,5 star,http://www.moneycontrol.com/india/stockpricequote/tyres/mrf/MRF
+MRF,33675,32880,33135,32989.70,145.30,18139,14750,11155,10167,5 star,http://www.moneycontrol.com/india/stockpricequote/tyres/mrf/MRF
+IIFL Holdings,185,181.75,184.40,183.60,0.80,4289,77060,192432,140893,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-general/iiflholdings/II15
+Praj Industries,69.50,67.50,68.50,68.20,0.30,282693,668176,1904928,1164133,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/prajindustries/PI17
+IIFL Holdings,185,181.75,184.40,183.60,0.80,4289,77060,192432,140893,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-general/iiflholdings/II15
+Praj Industries,69.50,67.50,68.50,68.20,0.30,282693,668176,1904928,1164133,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering-heavy/prajindustries/PI17
+Cox & Kings,296.40,291,293,291.75,1.25,151415,637168,606820,539016,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/coxkings/CK
+Cox & Kings,296.40,291,293,291.75,1.25,151415,637168,606820,539016,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/coxkings/CK
+Pidilite Ind,445.20,440,441.55,439.65,1.90,44075,703273,707239,363443,2 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/pidiliteindustries/PI11
+Pidilite Ind,445.20,440,441.55,439.65,1.90,44075,703273,707239,363443,2 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/pidiliteindustries/PI11
+ECE Industries,133.90,128.20,128.20,127.65,0.55,1173,9572,23788,9266,2 star,http://www.moneycontrol.com/india/stockpricequote/electricals/eceindustries/ECE
+ECE Industries,133.90,128.20,128.20,127.65,0.55,1173,9572,23788,9266,2 star,http://www.moneycontrol.com/india/stockpricequote/electricals/eceindustries/ECE
+State Bk Travan,486.65,477.10,480.90,478.85,2.05,13900,86978,102673,76855,2 star,http://www.moneycontrol.com/india/stockpricequote/banks-publicsector/statebanktravancore/SBT
+Munjal Auto Ind,118,111.80,116.25,115.75,0.50,141123,77659,67156,99492,4 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/munjalautoindustries/MAI04
+Munjal Auto Ind,118,111.80,116.25,115.75,0.50,141123,77659,67156,99492,4 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/munjalautoindustries/MAI04
+State Bk Travan,486.65,477.10,480.90,478.85,2.05,13900,86978,102673,76855,2 star,http://www.moneycontrol.com/india/stockpricequote/banks-publicsector/statebanktravancore/SBT
+Mahindra Holida,254,251,253,251.95,1.05,26064,104535,86764,74540,3 star,http://www.moneycontrol.com/india/stockpricequote/hotels/mahindraholidaysresortsindia/MHR
+Mahindra Holida,254,251,253,251.95,1.05,26064,104535,86764,74540,3 star,http://www.moneycontrol.com/india/stockpricequote/hotels/mahindraholidaysresortsindia/MHR
+Siyaram Silk,810,794.10,803,799.55,3.45,1042,15318,13314,8213,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-weaving/siyaramsilkmills/SSM05
+Siyaram Silk,810,794.10,803,799.55,3.45,1042,15318,13314,8213,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-weaving/siyaramsilkmills/SSM05
+KCP,62,59.05,60.55,60.30,0.25,21646,109434,240136,109522,2 star,http://www.moneycontrol.com/india/stockpricequote/cement-major/kcp/KCP
+KCP,62,59.05,60.55,60.30,0.25,21646,109434,240136,109522,2 star,http://www.moneycontrol.com/india/stockpricequote/cement-major/kcp/KCP
+UPL,340.50,332.20,339.85,338.50,1.35,1059398,1277295,1651159,1585217,2 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/upl/UP04
+Sunteck Realty,303,299.55,301,299.80,1.20,12583,66504,76299,41027,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-realestate/sunteckrealty/SR05
+UPL,340.50,332.20,339.85,338.50,1.35,1059398,1277295,1651159,1585217,2 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/upl/UP04
+MOSt Gold ETF,2531.95,2514.90,2514.95,2505,9.95,9,350,477,327,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/motilaloswalmostsharesgoldetf/MOM03
+MOSt Gold ETF,2531.95,2514.90,2514.95,2505,9.95,9,350,477,327,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/motilaloswalmostsharesgoldetf/MOM03
+Aurobindo Pharm,1093,1072.50,1086.60,1082.30,4.30,409917,1166574,1440726,1406978,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/aurobindopharma/AP
+Sunteck Realty,303,299.55,301,299.80,1.20,12583,66504,76299,41027,2 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-realestate/sunteckrealty/SR05
+Aurobindo Pharm,1093,1072.50,1086.60,1082.30,4.30,409917,1166574,1440726,1406978,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/aurobindopharma/AP
+Muthoot Finance,189,187.10,188.35,187.60,0.75,20154,178020,139948,176724,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/muthootfinance/MF10
+Muthoot Finance,189,187.10,188.35,187.60,0.75,20154,178020,139948,176724,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/muthootfinance/MF10
+Easun Reyrl,51,49.70,50,49.80,0.20,8010,53278,56164,37426,2 star,http://www.moneycontrol.com/india/stockpricequote/electricequipment/easunreyrolle/ER
+Easun Reyrl,51,49.70,50,49.80,0.20,8010,53278,56164,37426,2 star,http://www.moneycontrol.com/india/stockpricequote/electricequipment/easunreyrolle/ER
+Orissa Minerals,3248.90,3205,3229.95,3217.45,12.50,399,2687,3318,3209,2 star,http://www.moneycontrol.com/india/stockpricequote/miningminerals/orissamineralsdevelopmentcompany/OMD
+Orissa Minerals,3248.90,3205,3229.95,3217.45,12.50,399,2687,3318,3209,2 star,http://www.moneycontrol.com/india/stockpricequote/miningminerals/orissamineralsdevelopmentcompany/OMD
+SRS,26.40,25.30,25.90,25.80,0.10,69002,104054,143107,136671,2 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/srs/S17
+SRS,26.40,25.30,25.90,25.80,0.10,69002,104054,143107,136671,2 star,http://www.moneycontrol.com/india/stockpricequote/mediaentertainment/srs/S17
+Tata Power,91.65,90.45,91.10,90.75,0.35,1712519,3914599,3830171,3894051,3 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/tatapowercompany/TPC
+Tata Power,91.65,90.45,91.10,90.75,0.35,1712519,3914599,3830171,3894051,3 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/tatapowercompany/TPC
+Yes Bank,688.75,676.05,686.15,683.55,2.60,1216990,2650649,2198980,2092610,3 star,http://www.moneycontrol.com/india/stockpricequote/banks-privatesector/yesbank/YB
+Yes Bank,688.75,676.05,686.15,683.55,2.60,1216990,2650649,2198980,2092610,3 star,http://www.moneycontrol.com/india/stockpricequote/banks-privatesector/yesbank/YB
+Phillips Carbon,136.45,133.10,135,134.50,0.50,60290,446920,832137,426486,2 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/phillipscarbonblack/PCB01
+Phillips Carbon,136.45,133.10,135,134.50,0.50,60290,446920,832137,426486,2 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/phillipscarbonblack/PCB01
+PTL Enterprises,40.90,40.55,40.55,40.40,0.15,1162,5862,9896,7416,2 star,http://www.moneycontrol.com/india/stockpricequote/tyres/ptlenterprises/PTL06
+PTL Enterprises,40.90,40.55,40.55,40.40,0.15,1162,5862,9896,7416,2 star,http://www.moneycontrol.com/india/stockpricequote/tyres/ptlenterprises/PTL06
+Kewal Kiran,1779.95,1750.95,1779.95,1773.70,6.25,247,6011,3951,3872,3 star,http://www.moneycontrol.com/india/stockpricequote/retail/kewalkiranclothing/KKC02
+Aarti Drugs,810,787.60,798.20,795.60,2.60,1443,6971,29215,14672,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/aartidrugs/AD
+Aarti Drugs,810,787.60,798.20,795.60,2.60,1443,6971,29215,14672,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/aartidrugs/AD
+Kewal Kiran,1779.95,1750.95,1779.95,1773.70,6.25,247,6011,3951,3872,3 star,http://www.moneycontrol.com/india/stockpricequote/retail/kewalkiranclothing/KKC02
+Punjab & Sind,61.50,60.50,61.15,60.95,0.20,69749,633830,580632,492880,3 star,http://www.moneycontrol.com/india/stockpricequote/banks-publicsector/punjabsindbank/PSB
+Aptech,80.35,78.85,79.30,79.05,0.25,114842,299732,351857,315774,2 star,http://www.moneycontrol.com/india/stockpricequote/computers-software-training/aptech/A11
+Aptech,80.35,78.85,79.30,79.05,0.25,114842,299732,351857,315774,2 star,http://www.moneycontrol.com/india/stockpricequote/computers-software-training/aptech/A11
+Punjab & Sind,61.50,60.50,61.15,60.95,0.20,69749,633830,580632,492880,3 star,http://www.moneycontrol.com/india/stockpricequote/banks-publicsector/punjabsindbank/PSB
+EIH,109.40,108.30,108.60,108.25,0.35,156795,490441,309561,205849,3 star,http://www.moneycontrol.com/india/stockpricequote/hotels/eih/EIH
+EIH,109.40,108.30,108.60,108.25,0.35,156795,490441,309561,205849,3 star,http://www.moneycontrol.com/india/stockpricequote/hotels/eih/EIH
+State B Bikaner,598,586.20,594,592.10,1.90,13456,155570,212655,91776,2 star,http://www.moneycontrol.com/india/stockpricequote/banks-publicsector/statebankbikanerjaipur/SBB02
+Savita Oil Tech,707.90,687,697,694.85,2.15,985,6954,5378,6586,3 star,http://www.moneycontrol.com/india/stockpricequote/petrochemicals/savitaoiltechnologies/SOT01
+Savita Oil Tech,707.90,687,697,694.85,2.15,985,6954,5378,6586,3 star,http://www.moneycontrol.com/india/stockpricequote/petrochemicals/savitaoiltechnologies/SOT01
+State B Bikaner,598,586.20,594,592.10,1.90,13456,155570,212655,91776,2 star,http://www.moneycontrol.com/india/stockpricequote/banks-publicsector/statebankbikanerjaipur/SBB02
+Axis Gold ETF,2479,2452,2475,2467.35,7.65,159,380,663,630,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/axismutualfund-goldetf/AMF02
+Indiabulls Hsg,452.25,442.50,446,444.65,1.35,164704,1079733,884704,1071842,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-housing/indiabullshousingfinance/IHF01
+Axis Gold ETF,2479,2452,2475,2467.35,7.65,159,380,663,630,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/axismutualfund-goldetf/AMF02
+Indiabulls Hsg,452.25,442.50,446,444.65,1.35,164704,1079733,884704,1071842,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-housing/indiabullshousingfinance/IHF01
+Rain Industries,50.20,49.20,49.50,49.35,0.15,86437,1025313,713016,487042,3 star,http://www.moneycontrol.com/india/stockpricequote/cement-major/rainindustries/RC12
+Rain Industries,50.20,49.20,49.50,49.35,0.15,86437,1025313,713016,487042,3 star,http://www.moneycontrol.com/india/stockpricequote/cement-major/rainindustries/RC12
+BharatiShipyard,35.75,34.50,35.50,35.40,0.10,9586,50984,93517,51293,2 star,http://www.moneycontrol.com/india/stockpricequote/shipping/bharatishipyard/BS13
+BharatiShipyard,35.75,34.50,35.50,35.40,0.10,9586,50984,93517,51293,2 star,http://www.moneycontrol.com/india/stockpricequote/shipping/bharatishipyard/BS13
+Globus Spirits,71.95,71.05,71.75,71.55,0.20,13130,41614,143131,70318,2 star,http://www.moneycontrol.com/india/stockpricequote/breweriesdistilleries/globusspirits/GS
+Globus Spirits,71.95,71.05,71.75,71.55,0.20,13130,41614,143131,70318,2 star,http://www.moneycontrol.com/india/stockpricequote/breweriesdistilleries/globusspirits/GS
+Nestle,6309.85,6239,6277,6260.35,16.65,1415,25743,21700,20277,3 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/nestleindia/NI
+Shakti Pumps,215.75,211.65,214,213.40,0.60,27871,182114,391632,179251,2 star,http://www.moneycontrol.com/india/stockpricequote/pumps/shaktipumps(india)/SPI08
+Nestle,6309.85,6239,6277,6260.35,16.65,1415,25743,21700,20277,3 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/nestleindia/NI
+Shakti Pumps,215.75,211.65,214,213.40,0.60,27871,182114,391632,179251,2 star,http://www.moneycontrol.com/india/stockpricequote/pumps/shaktipumps(india)/SPI08
+Marico Kaya Ent,900.45,871.25,878.20,875.90,2.30,51061,184701,225913,133381,2 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/maricokayaenterprises/MKE01
+Marico Kaya Ent,900.45,871.25,878.20,875.90,2.30,51061,184701,225913,133381,2 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/maricokayaenterprises/MKE01
+HFCL,20.45,19.95,20.20,20.15,0.05,1728619,6254395,8183821,7972046,2 star,http://www.moneycontrol.com/india/stockpricequote/telecommunications-equipment/himachalfuturisticcommunication/HFC
+HFCL,20.45,19.95,20.20,20.15,0.05,1728619,6254395,8183821,7972046,2 star,http://www.moneycontrol.com/india/stockpricequote/telecommunications-equipment/himachalfuturisticcommunication/HFC
+NTPC,142.95,141.30,142.15,141.80,0.35,809184,5992121,6871645,5202260,2 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/ntpc/NTP
+NTPC,142.95,141.30,142.15,141.80,0.35,809184,5992121,6871645,5202260,2 star,http://www.moneycontrol.com/india/stockpricequote/power-generationdistribution/ntpc/NTP
+Bajaj Hind,21.30,20.60,20.80,20.75,0.05,893632,2250181,4445762,2448287,2 star,http://www.moneycontrol.com/india/stockpricequote/sugar/bajajhindusthan/BH06
+Bajaj Hind,21.30,20.60,20.80,20.75,0.05,893632,2250181,4445762,2448287,2 star,http://www.moneycontrol.com/india/stockpricequote/sugar/bajajhindusthan/BH06
+Birla Ericsson,63.65,62,62.20,62.05,0.15,2956,25045,56583,48565,2 star,http://www.moneycontrol.com/india/stockpricequote/cables-telephone/birlaericssonopticals/BEO
+Hatsun Agro,310.50,307.45,309.50,308.75,0.75,6065,4888,15201,7651,2 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/hatsunagroproducts/HAP
+Birla Ericsson,63.65,62,62.20,62.05,0.15,2956,25045,56583,48565,2 star,http://www.moneycontrol.com/india/stockpricequote/cables-telephone/birlaericssonopticals/BEO
+Hatsun Agro,310.50,307.45,309.50,308.75,0.75,6065,4888,15201,7651,2 star,http://www.moneycontrol.com/india/stockpricequote/foodprocessing/hatsunagroproducts/HAP
+Sanofi India,3698.95,3671,3682.05,3674,8.05,2869,10505,11332,10088,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/sanofiindia/AP26
+Sanofi India,3698.95,3671,3682.05,3674,8.05,2869,10505,11332,10088,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/sanofiindia/AP26
+KNR Construct,311,302.50,305.45,304.80,0.65,4273,71743,64993,36442,3 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/knrconstructions/KC13
+KNR Construct,311,302.50,305.45,304.80,0.65,4273,71743,64993,36442,3 star,http://www.moneycontrol.com/india/stockpricequote/constructioncontracting-civil/knrconstructions/KC13
+Rainbow Papers,75.30,74.05,74.35,74.20,0.15,31431,55382,56381,54384,2 star,http://www.moneycontrol.com/india/stockpricequote/paper/rainbowpapers/RP01
+Rainbow Papers,75.30,74.05,74.35,74.20,0.15,31431,55382,56381,54384,2 star,http://www.moneycontrol.com/india/stockpricequote/paper/rainbowpapers/RP01
+Religare Gold,2515,2480,2515,2510,5,4,57,99,77,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/religaregoldexchangetradedfund/RGE
+Religare Gold,2515,2480,2515,2510,5,4,57,99,77,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/religaregoldexchangetradedfund/RGE
+GE Shipping,386.90,383.05,383.05,382.30,0.75,10941,358179,249397,121894,3 star,http://www.moneycontrol.com/india/stockpricequote/shipping/greateasternshippingcompany/GES
+GE Shipping,386.90,383.05,383.05,382.30,0.75,10941,358179,249397,121894,3 star,http://www.moneycontrol.com/india/stockpricequote/shipping/greateasternshippingcompany/GES
+Indiabulls Sec,25.25,24.70,24.95,24.90,0.05,182932,2011639,1239701,725563,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/indiabullssecurities/IS13
+Indiabulls Sec,25.25,24.70,24.95,24.90,0.05,182932,2011639,1239701,725563,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/indiabullssecurities/IS13
+Balrampur Chini,61,60.05,60.40,60.30,0.10,136900,786149,2498454,1173370,2 star,http://www.moneycontrol.com/india/stockpricequote/sugar/balrampurchinimills/BCM
+Balrampur Chini,61,60.05,60.40,60.30,0.10,136900,786149,2498454,1173370,2 star,http://www.moneycontrol.com/india/stockpricequote/sugar/balrampurchinimills/BCM
+Dhunseri Invest,181.90,170.15,175,174.70,0.30,13065,7794,12346,5073,4 star,http://www.moneycontrol.com/india/stockpricequote/finance-general/dhunseriinvestments/DI27
+Dhunseri Invest,181.90,170.15,175,174.70,0.30,13065,7794,12346,5073,4 star,http://www.moneycontrol.com/india/stockpricequote/finance-general/dhunseriinvestments/DI27
+Rajapalayam,323.50,323.50,323.50,322.95,0.55,35,1893,1609,1809,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-spinning-cottonblended/rajapalayammills/RM06
+Rajapalayam,323.50,323.50,323.50,322.95,0.55,35,1893,1609,1809,3 star,http://www.moneycontrol.com/india/stockpricequote/textiles-spinning-cottonblended/rajapalayammills/RM06
+Cyient,519,513.20,515.80,514.90,0.90,106658,177130,117749,114561,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-software/cyient/IE07
+Cyient,519,513.20,515.80,514.90,0.90,106658,177130,117749,114561,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-software/cyient/IE07
+Petronet LNG,200.95,197.05,198.20,197.90,0.30,463156,1337882,1093194,1276920,3 star,http://www.moneycontrol.com/india/stockpricequote/oildrillingandexploration/petronetlng/PLN
+Gallantt Ispat,396.30,394.50,395.70,395.10,0.60,16241,27272,23056,24163,3 star,http://www.moneycontrol.com/india/stockpricequote/steel-spongeiron/gallanttispat/GI
+Gallantt Ispat,396.30,394.50,395.70,395.10,0.60,16241,27272,23056,24163,3 star,http://www.moneycontrol.com/india/stockpricequote/steel-spongeiron/gallanttispat/GI
+Petronet LNG,200.95,197.05,198.20,197.90,0.30,463156,1337882,1093194,1276920,3 star,http://www.moneycontrol.com/india/stockpricequote/oildrillingandexploration/petronetlng/PLN
+Tree House,443.95,428.65,429.05,428.45,0.60,92941,99767,78615,74816,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-software-training/treehouseeducationaccessories/THE01
+Tree House,443.95,428.65,429.05,428.45,0.60,92941,99767,78615,74816,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-software-training/treehouseeducationaccessories/THE01
+Punj Lloyd,36.85,36,36.20,36.15,0.05,276112,878176,1854243,1366337,2 star,http://www.moneycontrol.com/india/stockpricequote/infrastructure-general/punjlloyd/PL9
+Punj Lloyd,36.85,36,36.20,36.15,0.05,276112,878176,1854243,1366337,2 star,http://www.moneycontrol.com/india/stockpricequote/infrastructure-general/punjlloyd/PL9
+ANG Industries,40.25,38.65,39,38.95,0.05,32674,123903,73349,38914,3 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/angindustries/ANG
+ANG Industries,40.25,38.65,39,38.95,0.05,32674,123903,73349,38914,3 star,http://www.moneycontrol.com/india/stockpricequote/autoancillaries/angindustries/ANG
+Shilpa,538,526.40,533,532.30,0.70,2475,8713,9661,9398,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/shilpamedicare/SM19
+Shilpa,538,526.40,533,532.30,0.70,2475,8713,9661,9398,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/shilpamedicare/SM19
+Hind Copper,77.20,76.35,76.65,76.55,0.10,92755,311960,280363,273821,3 star,http://www.moneycontrol.com/india/stockpricequote/metals-nonferrous/hindustancopper/HC07
+Hind Copper,77.20,76.35,76.65,76.55,0.10,92755,311960,280363,273821,3 star,http://www.moneycontrol.com/india/stockpricequote/metals-nonferrous/hindustancopper/HC07
+Kakatiya Cement,115.90,112.15,113,112.85,0.15,1509,3841,12094,6295,2 star,http://www.moneycontrol.com/india/stockpricequote/cement-mini/kakatiyacements/KC01
+Kakatiya Cement,115.90,112.15,113,112.85,0.15,1509,3841,12094,6295,2 star,http://www.moneycontrol.com/india/stockpricequote/cement-mini/kakatiyacements/KC01
+Sandesh,525.95,511.05,521.85,521.20,0.65,709,5635,19638,13962,2 star,http://www.moneycontrol.com/india/stockpricequote/printingstationery/sandesh/S01
+Sandesh,525.95,511.05,521.85,521.20,0.65,709,5635,19638,13962,2 star,http://www.moneycontrol.com/india/stockpricequote/printingstationery/sandesh/S01
+Bajaj Electric,211.85,205.15,208.55,208.30,0.25,173522,684159,1069850,462080,2 star,http://www.moneycontrol.com/india/stockpricequote/domesticappliances/bajajelectricals/BE
+Bajaj Electric,211.85,205.15,208.55,208.30,0.25,173522,684159,1069850,462080,2 star,http://www.moneycontrol.com/india/stockpricequote/domesticappliances/bajajelectricals/BE
+Accel Frontline,125,121.40,122.80,122.65,0.15,14872,40602,28380,17488,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/accelfrontline/AF29
+Accel Frontline,125,121.40,122.80,122.65,0.15,14872,40602,28380,17488,3 star,http://www.moneycontrol.com/india/stockpricequote/computers-softwaremediumsmall/accelfrontline/AF29
+Jubilant Life,135,133.35,133.75,133.60,0.15,22457,197461,283996,202535,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/jubilantlifesciences/JO03
+Jubilant Life,135,133.35,133.75,133.60,0.15,22457,197461,283996,202535,2 star,http://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/jubilantlifesciences/JO03
+Shrenuj and Co,53,51.95,52.15,52.10,0.05,71610,58573,56043,55893,5 star,http://www.moneycontrol.com/india/stockpricequote/diamondcuttingpreciousmetalsjewellery/shrenujcompany/SC13
+Shrenuj and Co,53,51.95,52.15,52.10,0.05,71610,58573,56043,55893,5 star,http://www.moneycontrol.com/india/stockpricequote/diamondcuttingpreciousmetalsjewellery/shrenujcompany/SC13
+Siemens,913,903.40,904.35,903.40,0.95,142780,368461,399708,279168,2 star,http://www.moneycontrol.com/india/stockpricequote/infrastructure-general/siemens/S
+Siemens,913,903.40,904.35,903.40,0.95,142780,368461,399708,279168,2 star,http://www.moneycontrol.com/india/stockpricequote/infrastructure-general/siemens/S
+R Shares Gold,2358.85,2345.10,2357.85,2355.45,2.40,1239,4242,4007,3522,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/r*sharesgoldetf/RMF
+R Shares Gold,2358.85,2345.10,2357.85,2355.45,2.40,1239,4242,4007,3522,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/r*sharesgoldetf/RMF
+Flexituff Intl,220,212.50,215,214.80,0.20,15930,21512,35860,30759,2 star,http://www.moneycontrol.com/india/stockpricequote/packaging/flexituffinternational/FI08
+Flexituff Intl,220,212.50,215,214.80,0.20,15930,21512,35860,30759,2 star,http://www.moneycontrol.com/india/stockpricequote/packaging/flexituffinternational/FI08
+Prakash Ind,59.10,57.40,57.45,57.40,0.05,126339,253582,508676,395694,2 star,http://www.moneycontrol.com/india/stockpricequote/diversified/prakashindustries/PI18
+Prakash Ind,59.10,57.40,57.45,57.40,0.05,126339,253582,508676,395694,2 star,http://www.moneycontrol.com/india/stockpricequote/diversified/prakashindustries/PI18
+Thangamayil,185,176.10,185,184.85,0.15,3965,4185,4591,2837,2 star,http://www.moneycontrol.com/india/stockpricequote/diamondcuttingpreciousmetalsjewellery/thangamayiljewellery/TJ
+Thangamayil,185,176.10,185,184.85,0.15,3965,4185,4591,2837,2 star,http://www.moneycontrol.com/india/stockpricequote/diamondcuttingpreciousmetalsjewellery/thangamayiljewellery/TJ
+MT Educare,129.20,127,127.40,127.30,0.10,15583,93955,143986,110372,2 star,http://www.moneycontrol.com/india/stockpricequote/computers-software-training/mteducare/ME14
+MT Educare,129.20,127,127.40,127.30,0.10,15583,93955,143986,110372,2 star,http://www.moneycontrol.com/india/stockpricequote/computers-software-training/mteducare/ME14
+Vinyl Chemicals,64,61.55,63.50,63.45,0.05,58483,60565,89669,47885,2 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/vinylchemicals(india)/VCI02
+Vinyl Chemicals,64,61.55,63.50,63.45,0.05,58483,60565,89669,47885,2 star,http://www.moneycontrol.com/india/stockpricequote/chemicals/vinylchemicals(india)/VCI02
+CPSE ETF,25.80,25.65,25.71,25.69,0.02,510697,802556,832034,693404,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/goldmansachsmutualfund-cpseetf/CPS01
+CPSE ETF,25.80,25.65,25.71,25.69,0.02,510697,802556,832034,693404,2 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/goldmansachsmutualfund-cpseetf/CPS01
+Technofab Engg,135,131.50,133.90,133.80,0.10,1111,3686,4866,4818,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering/technofabengineering/TE13
+Technofab Engg,135,131.50,133.90,133.80,0.10,1111,3686,4866,4818,2 star,http://www.moneycontrol.com/india/stockpricequote/engineering/technofabengineering/TE13
+Finolex Ind,286.80,281.25,284.25,284.15,0.10,11473,119842,223438,161509,2 star,http://www.moneycontrol.com/india/stockpricequote/petrochemicals/finolexindustries/FI
+Finolex Ind,286.80,281.25,284.25,284.15,0.10,11473,119842,223438,161509,2 star,http://www.moneycontrol.com/india/stockpricequote/petrochemicals/finolexindustries/FI
+Kotak Nifty ETF,847,844.10,844.20,843.89,0.31,4801,42530,24459,24173,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/kotakmahindramutualfund-niftyetf/KMM01
+Kotak Nifty ETF,847,844.10,844.20,843.89,0.31,4801,42530,24459,24173,3 star,http://www.moneycontrol.com/india/stockpricequote/finance-investments/kotakmahindramutualfund-niftyetf/KMM01
+Andhra Sugar,127.60,125.45,125.55,125.50,0.05,10800,17935,29316,18786,2 star,http://www.moneycontrol.com/india/stockpricequote/sugar/andhrasugars/AS18
+Andhra Sugar,127.60,125.45,125.55,125.50,0.05,10800,17935,29316,18786,2 star,http://www.moneycontrol.com/india/stockpricequote/sugar/andhrasugars/AS18
+Videocon Ind,161.90,160.30,161.50,161.45,0.05,17406,110670,151749,144242,2 star,http://www.moneycontrol.com/india/stockpricequote/consumergoods-electronic/videoconindustries/VLF
+Bharti Infratel,301.40,297.75,300,299.95,0.05,297602,1808787,1253548,1031502,3 star,http://www.moneycontrol.com/india/stockpricequote/telecommunications-equipment/bhartiinfratel/BI14
+Dhanuka Agritec,565,555.30,560.65,560.55,0.10,4547,37534,41762,41035,2 star,http://www.moneycontrol.com/india/stockpricequote/pesticidesagrochemicals/dhanukaagritech/DA01
+Videocon Ind,161.90,160.30,161.50,161.45,0.05,17406,110670,151749,144242,2 star,http://www.moneycontrol.com/india/stockpricequote/consumergoods-electronic/videoconindustries/VLF
+Bharti Infratel,301.40,297.75,300,299.95,0.05,297602,1808787,1253548,1031502,3 star,http://www.moneycontrol.com/india/stockpricequote/telecommunications-equipment/bhartiinfratel/BI14
+Dhanuka Agritec,565,555.30,560.65,560.55,0.10,4399,37534,41762,41035,2 star,http://www.moneycontrol.com/india/stockpricequote/pesticidesagrochemicals/dhanukaagritech/DA01
+Advanta,375.90,362.05,366.55,366.50,0.05,18733,127657,104646,75188,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/advanta/AI39
+Advanta,375.90,362.05,366.55,366.50,0.05,18733,127657,104646,75188,3 star,http://www.moneycontrol.com/india/stockpricequote/miscellaneous/advanta/AI39

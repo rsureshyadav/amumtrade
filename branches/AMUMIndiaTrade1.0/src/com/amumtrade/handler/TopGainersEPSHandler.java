@@ -15,12 +15,13 @@ import java.util.concurrent.Executors;
 
 import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
+import com.amumtrade.constant.FileNameConstant;
 import com.amumtrade.email.CsvToEmailBody;
 import com.amumtrade.factory.FinancialEPSAnalysisRunner;
 import com.amumtrade.util.StockUtil;
 
-public class EPSOnTopGainersHandler {
-	String csvFileName="config/output/AMUM_TopGainers_Analyzer.csv";
+public class TopGainersEPSHandler {
+	String csvFileName=FileNameConstant.ALL_TOP_GAINER;
 	List<ConcurrentGainersBean> topGainersWithRatingList ;
 	BufferedReader br;
 
@@ -29,8 +30,9 @@ public class EPSOnTopGainersHandler {
 		topGainersWithRatingList = convertTopGainersVolumeCsvToBean();
 		List<ConcurrentGainersBean> gainerRatingList  = convertUrlToFinancialUrl(topGainersWithRatingList);
 		runFinanceRatingUrl(gainerRatingList);
-		CsvToEmailBody emailBody = new CsvToEmailBody();
-		String htmlText= emailBody.execute();
+		/*CsvToEmailBody emailBody = new CsvToEmailBody();
+		String htmlText= emailBody.execute();*/
+		String htmlText="dummy";
 		StockUtil.initiateEmail(csvFileName,startTime,htmlText);
 	}
 	private void runFinanceRatingUrl(List<ConcurrentGainersBean> gainerUrlList) throws IOException {
@@ -39,7 +41,7 @@ public class EPSOnTopGainersHandler {
 		FileWriter fwo = new FileWriter( csvFileName, false );
 		BufferedWriter bwObj = null;
 		try {
-			System.out.println(">>"+gainerUrlList.size());
+			System.out.println("TOTAL CURRENT TOP GAINERS EPS SIZE>>"+gainerUrlList.size());
 			urlList = new ArrayList<String>();
 			for(ConcurrentGainersBean topGainerBean : gainerUrlList){
 				urlList.add(topGainerBean.getFinanceApi());
@@ -58,7 +60,7 @@ public class EPSOnTopGainersHandler {
 		        executor.shutdown();
 		        while (!executor.isTerminated()) {
 		        }
-		        System.out.println("Finished all threads Execution");
+		        System.out.println("FINISHED CURRENT TOP GAINERS EPS SIZE THREADS EXECUTIONS...");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
@@ -102,7 +104,7 @@ public class EPSOnTopGainersHandler {
 	private List<ConcurrentGainersBean> convertTopGainersVolumeCsvToBean() throws IOException {
 		List<ConcurrentGainersBean>  gainerBeanList= new ArrayList<ConcurrentGainersBean>();
 		ConcurrentGainersBean gainerBean = null;
-		String csvFile = "config/amumTopGainerVolumeBasedList.csv";
+		String csvFile = FileNameConstant.VOLUME_TOP_GAINERS;
 		String line = "";
 		String cvsSplitBy = ",";
 		int skipFirstLineHeader=0;

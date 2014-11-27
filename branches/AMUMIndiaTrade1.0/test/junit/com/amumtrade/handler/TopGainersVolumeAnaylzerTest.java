@@ -10,7 +10,7 @@ public class TopGainersVolumeAnaylzerTest {
 		TopGainersHandler topGainersHandler = new TopGainersHandler();
 		topGainersHandler.execute();
 		//This will add the volume for the Top Gainers
-		TopGainerVolumeAnaylzerHandler volumeAnaylzer = new TopGainerVolumeAnaylzerHandler();
+		TopGainersVolumeHandler volumeAnaylzer = new TopGainersVolumeHandler();
 		volumeAnaylzer.execute();
 		
 		long endTime= System.currentTimeMillis();

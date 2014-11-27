@@ -8,7 +8,7 @@ public class EPSOnTopGainersHandlerTest {
 	public void executeStockMarketStat() throws Exception{
 		long startTime= System.currentTimeMillis();
 		
-		EPSOnTopGainersHandler epsTopGainer = new EPSOnTopGainersHandler();
+		TopGainersEPSHandler epsTopGainer = new TopGainersEPSHandler();
 		epsTopGainer.execute(startTime);
 		long endTime= System.currentTimeMillis();
 		long elapsedTime = endTime - startTime;

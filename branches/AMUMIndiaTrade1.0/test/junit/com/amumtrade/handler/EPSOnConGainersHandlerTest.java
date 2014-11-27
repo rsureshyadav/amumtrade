@@ -8,8 +8,8 @@ public class EPSOnConGainersHandlerTest {
 	public void executeStockMarketStat() throws Exception{
 		long startTime= System.currentTimeMillis();
 		
-		EPSOnConGainersHandler fah = new EPSOnConGainersHandler();
-		fah.execute(startTime,null);
+		ConcurrentGainersEPSHandler fah = new ConcurrentGainersEPSHandler();
+		fah.execute(startTime);
 		long endTime= System.currentTimeMillis();
 		long elapsedTime = endTime - startTime;
 		

@@ -13,25 +13,26 @@ import java.util.concurrent.Executors;
 
 import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
-import com.amumtrade.factory.ConcurrentGainersVolumeSplitRunner;
+import com.amumtrade.constant.FileNameConstant;
+import com.amumtrade.factory.ConcurrentGainersVolumeRunner;
 import com.amumtrade.marketstat.LastThreeDayConcurrentGainers;
 
-public class LastThreeConcurrentGainersVolumeAnalyzerHandler {
+public class CurrentConcurrentGainersVolumeHandler {
 	
 
 	public void execute() throws IOException{
 		LastThreeDayConcurrentGainers cg = new LastThreeDayConcurrentGainers();
 		List<ConcurrentGainersBean> concurrentGainersList = cg.execute();
-		runVolumeSplitter(concurrentGainersList);
+		writeVolumeToFile(concurrentGainersList, FileNameConstant.CURRENT_CONCURRENT_VOLUME_GAINERS);
 	}
 
-	private void runVolumeSplitter(List<ConcurrentGainersBean> concurrentGainersList)throws IOException {
+	private void writeVolumeToFile(List<ConcurrentGainersBean> concurrentGainersList, String csvFileName)throws IOException {
 		List<String> urlList = null;
 		Map<String,ConcurrentGainersBean> concurrentGainerMap = new HashMap<String,ConcurrentGainersBean>();
-		FileWriter fwo = new FileWriter( "config/amumConcurrentGainersVolumeBasedList.csv", false );
+		FileWriter fwo = new FileWriter( csvFileName, false );
 		BufferedWriter bwObj = null;
 		try {
-			System.out.println(">>"+concurrentGainersList.size());
+			System.out.println("TOTAL CURRENT_CONCURRENT_VOLUME_GAINERS >>"+concurrentGainersList.size());
 			urlList = new ArrayList<String>();
 			for(ConcurrentGainersBean gainerBean : concurrentGainersList){
 				urlList.add(gainerBean.getApi());
@@ -45,14 +46,14 @@ public class LastThreeConcurrentGainersVolumeAnalyzerHandler {
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
 			 for(String httpUrl : urlList){//for (int i = 0; i < 10; i++) {
 				// System.out.println(i);
-		            Runnable worker = new ConcurrentGainersVolumeSplitRunner(new URL(httpUrl),concurrentGainerMap,bwObj,"" + i);
+		            Runnable worker = new ConcurrentGainersVolumeRunner(new URL(httpUrl),concurrentGainerMap,bwObj,"" + i);
 		            executor.execute(worker);
 		            i++;
 		          }
 		        executor.shutdown();
 		        while (!executor.isTerminated()) {
 		        }
-		        System.out.println("Finished all threads Execution");
+		        System.out.println("Finished all threads Execution of CURRENT_CONCURRENT_VOLUME_GAINERS");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{

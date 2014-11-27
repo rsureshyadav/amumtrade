@@ -9,10 +9,10 @@ import com.amumtrade.util.StockUtil;
 
 public class CsvToEmailBody {
 
-	public String execute() throws IOException{
+	public String execute(String fileName) throws IOException{
 		String emailText = null;
 		try {
-			List<ConcurrentGainersBean> beanList  = StockUtil.convertCsvToBean(FileNameConstant.ALL_CONCURRENT_GAINER);
+			List<ConcurrentGainersBean> beanList  = StockUtil.convertCsvToBean(fileName);
 			if(beanList != null){
 				emailText = getEmailBodyFromBean(beanList);
 				emailText = FileNameConstant.HTML_TEMPLATE.replace("@htmlBody", emailText);

@@ -11,6 +11,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import com.amumtrade.constant.FileNameConstant;
+
 public class TopGainersHandler {
 	public static Set<String> nameSet = new HashSet<String>();
 	public static String stockURL = "http://www.moneycontrol.com/stocks/marketstats/gainerloser.php?optex=NSE&opttopic=topgainers&index=-2&more=true";
@@ -57,7 +59,7 @@ public class TopGainersHandler {
 		String percentGain=null;
 		BufferedWriter bwObj = null;
 		BufferedReader in = null;
-		FileWriter fwo = new FileWriter( "config/amumTopGainerList.csv", false );
+		FileWriter fwo = new FileWriter( FileNameConstant.TOP_GAINERS, false );
 		try {
 			 URL website = new URL(stockURL);
 			 bwObj = new BufferedWriter( fwo );  

@@ -13,13 +13,13 @@ import java.util.Set;
 import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
 
-public class ConcurrentGainersVolumeSplitRunner implements Runnable {
+public class ConcurrentGainersVolumeRunner implements Runnable {
 	private String command;
 	private URL urlConn;
 	private Map<String,ConcurrentGainersBean> concurrentGainerMap;
 	private BufferedWriter bwObj;
 	
-	public ConcurrentGainersVolumeSplitRunner(URL httpUrl,Map<String,ConcurrentGainersBean> concurrentGainers,BufferedWriter bufferWriter,String s){
+	public ConcurrentGainersVolumeRunner(URL httpUrl,Map<String,ConcurrentGainersBean> concurrentGainers,BufferedWriter bufferWriter,String s){
 		this.urlConn=httpUrl;
 		this.concurrentGainerMap = concurrentGainers;
 		this.bwObj = bufferWriter;

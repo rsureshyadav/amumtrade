@@ -2,14 +2,14 @@ package com.amumtrade.e2e;
 
 import org.junit.Test;
 
-import com.amumtrade.handler.MasterAllConGainersVolumeAnalyzerHandler;
+import com.amumtrade.handler.ConcurrentGainersAllHandler;
 
 public class MasterAllConGainersVolumeAnalyzerTest {
 	@Test
 	public void executeStockMarketStat() throws Exception{
 		long startTime= System.currentTimeMillis();
 		
-		MasterAllConGainersVolumeAnalyzerHandler mccvah = new MasterAllConGainersVolumeAnalyzerHandler();
+		ConcurrentGainersAllHandler mccvah = new ConcurrentGainersAllHandler();
 		mccvah.execute(startTime);
 		
 		

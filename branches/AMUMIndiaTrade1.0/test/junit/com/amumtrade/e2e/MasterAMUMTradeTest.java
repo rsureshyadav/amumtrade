@@ -2,39 +2,39 @@ package com.amumtrade.e2e;
 
 import org.junit.Test;
 
-import com.amumtrade.handler.EPSOnConGainersHandler;
-import com.amumtrade.handler.EPSOnTopGainersHandler;
-import com.amumtrade.handler.LastThreeConcurrentGainersVolumeAnalyzerHandler;
-import com.amumtrade.handler.MasterAllConGainersVolumeAnalyzerHandler;
-import com.amumtrade.handler.MasterCombineTopConGainersHandler;
-import com.amumtrade.handler.TopGainerVolumeAnaylzerHandler;
+import com.amumtrade.handler.ConcurrentGainersAllHandler;
+import com.amumtrade.handler.ConcurrentGainersEPSHandler;
+import com.amumtrade.handler.CurrentConcurrentGainersTopGainersHandler;
+import com.amumtrade.handler.CurrentConcurrentGainersVolumeHandler;
+import com.amumtrade.handler.TopGainersEPSHandler;
 import com.amumtrade.handler.TopGainersHandler;
+import com.amumtrade.handler.TopGainersVolumeHandler;
 
 public class MasterAMUMTradeTest {
 	@Test
 	public void executeStockMarketStat() throws Exception{
 		long startTime= System.currentTimeMillis();
-		//Last Three ConcurrentGainers
-		LastThreeConcurrentGainersVolumeAnalyzerHandler cgva = new LastThreeConcurrentGainersVolumeAnalyzerHandler();
-		cgva.execute();
-		EPSOnConGainersHandler fah = new EPSOnConGainersHandler();
-		fah.execute(startTime,null);
-		
+		//Current ConcurrentGainers
+		CurrentConcurrentGainersVolumeHandler volumeHandler = new CurrentConcurrentGainersVolumeHandler();
+		volumeHandler.execute();
+		ConcurrentGainersEPSHandler epsHandler = new ConcurrentGainersEPSHandler();
+		epsHandler.execute(startTime);
+	
 		//TopGainers
 		TopGainersHandler topGainersHandler = new TopGainersHandler();
 		topGainersHandler.execute();
-		TopGainerVolumeAnaylzerHandler volumeAnaylzer = new TopGainerVolumeAnaylzerHandler();
+		TopGainersVolumeHandler volumeAnaylzer = new TopGainersVolumeHandler();
 		volumeAnaylzer.execute();
-		EPSOnTopGainersHandler epsTopGainer = new EPSOnTopGainersHandler();
+		TopGainersEPSHandler epsTopGainer = new TopGainersEPSHandler();
 		epsTopGainer.execute(startTime);
 		
 		//Combined ConcurrentGainers & TopGainers  
-		MasterCombineTopConGainersHandler ctcgh = new MasterCombineTopConGainersHandler();
-		ctcgh.execute(startTime);
+		CurrentConcurrentGainersTopGainersHandler combineHandler = new CurrentConcurrentGainersTopGainersHandler();
+		combineHandler.execute(startTime);
 		
 		//All ConcurrentGainers
-		MasterAllConGainersVolumeAnalyzerHandler mccvah = new MasterAllConGainersVolumeAnalyzerHandler();
-		mccvah.execute(startTime);
+		ConcurrentGainersAllHandler allConcurrentHandler = new ConcurrentGainersAllHandler();
+		allConcurrentHandler.execute(startTime);
 		
 		long endTime= System.currentTimeMillis();
 		long elapsedTime = endTime - startTime;
