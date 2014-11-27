@@ -7,7 +7,7 @@ public class ConcurrentGainersAnalyzerTest {
 	public void executeStockMarketStat() throws Exception{
 		long startTime= System.currentTimeMillis();
 		
-		LastThreeConcurrentGainersVolumeAnalyzerHandler cgva = new LastThreeConcurrentGainersVolumeAnalyzerHandler();
+		CurrentConcurrentGainersVolumeHandler cgva = new CurrentConcurrentGainersVolumeHandler();
 		cgva.execute();
 		
 		

@@ -13,13 +13,14 @@ import java.util.Map;
 import java.util.Set;
 
 import com.amumtrade.bean.ConcurrentGainersBean;
+import com.amumtrade.constant.FileNameConstant;
 import com.amumtrade.email.CsvToEmailBody;
 import com.amumtrade.util.StockUtil;
 
-public class MasterCombineTopConGainersHandler {
-	String conGainersCsvFileName = "config/output/AMUM_ConcurrentGainers_Analyzer.csv";
-	String topGainersCsvFileName = "config/output/AMUM_TopGainers_Analyzer.csv";
-	String csvFileName = "config/output/AMUM_Common_TopGainers_ConurrentGaniners_Analyzer.csv";
+public class CurrentConcurrentGainersTopGainersHandler {
+	String conGainersCsvFileName = FileNameConstant.ALL_CURRENT_CONCURRENT_GAINER;
+	String topGainersCsvFileName = FileNameConstant.ALL_TOP_GAINER;
+	String csvFileName = FileNameConstant.ALL_TOP_GAINERS_CONCURRENT_GAINERS;
 	List<ConcurrentGainersBean> concurrentGainersList ;
 	List<ConcurrentGainersBean> topGainersList ;
 	Set<String> concurrentGainersApiSet;
@@ -36,8 +37,9 @@ public class MasterCombineTopConGainersHandler {
 		topGainersApiSet = getTopGainersApiAPI();
 		concurrentGainersApiSet = getConcurrentGainersApi();
 		compareBothGainers();
-		CsvToEmailBody emailBody = new CsvToEmailBody();
-		String htmlText= emailBody.execute();
+		/*CsvToEmailBody emailBody = new CsvToEmailBody();
+		String htmlText= emailBody.execute();*/
+		String htmlText="dummy";
 		StockUtil.initiateEmail(csvFileName,startTime,htmlText);
 		
 	}

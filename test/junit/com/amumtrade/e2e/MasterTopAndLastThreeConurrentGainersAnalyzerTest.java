@@ -2,7 +2,7 @@ package com.amumtrade.e2e;
 
 import org.junit.Test;
 
-import com.amumtrade.handler.MasterCombineTopConGainersHandler;
+import com.amumtrade.handler.CurrentConcurrentGainersTopGainersHandler;
 
 public class MasterTopAndLastThreeConurrentGainersAnalyzerTest {
 
@@ -12,7 +12,7 @@ public class MasterTopAndLastThreeConurrentGainersAnalyzerTest {
 	public void executeStockMarketStat() throws Exception{
 		long startTime= System.currentTimeMillis();
 		
-		MasterCombineTopConGainersHandler ctcgh = new MasterCombineTopConGainersHandler();
+		CurrentConcurrentGainersTopGainersHandler ctcgh = new CurrentConcurrentGainersTopGainersHandler();
 		ctcgh.execute(startTime);
 		
 		long endTime= System.currentTimeMillis();

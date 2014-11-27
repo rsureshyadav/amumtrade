@@ -15,35 +15,43 @@ import java.util.concurrent.Executors;
 
 import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
+import com.amumtrade.constant.FileNameConstant;
 import com.amumtrade.email.CsvToEmailBody;
 import com.amumtrade.factory.FinancialEPSAnalysisRunner;
 import com.amumtrade.util.StockUtil;
 
-public class EPSOnConGainersHandler {
+public class ConcurrentGainersEPSHandler {
 	//amumEPSConcurrentGainersAnalyzer
-	String csvFileName = "config/output/AMUM_ConcurrentGainers_Analyzer.csv";
+	//String csvFileName = "config/output/AMUM_ConcurrentGainers_Analyzer.csv";
 	List<ConcurrentGainersBean> concurrentGainersWithRatingList ;
 	BufferedReader br;
 
-	public void execute(long startTime, String filename) throws IOException{
+	public void execute(long startTime) throws IOException{
 		concurrentGainersWithRatingList = new ArrayList<ConcurrentGainersBean>();
 		concurrentGainersWithRatingList = convertConGainersCsvToBean();
 		List<ConcurrentGainersBean> financeRatingList  = convertUrlToFinancialUrl(concurrentGainersWithRatingList);
-		if(filename != null){
-			this.csvFileName = filename;
-		}
-		runFinanceRatingUrl(financeRatingList);
+		runFinanceRatingUrl(financeRatingList,FileNameConstant.ALL_CURRENT_CONCURRENT_GAINER);
 		CsvToEmailBody emailBody = new CsvToEmailBody();
-		String htmlText= emailBody.execute();
+		String htmlText= emailBody.execute(FileNameConstant.ALL_CURRENT_CONCURRENT_GAINER);
+		StockUtil.initiateEmail(FileNameConstant.ALL_CURRENT_CONCURRENT_GAINER,startTime,htmlText);
+	}
+	public void executeGainers(long startTime, String csvFileName) throws IOException{
+		concurrentGainersWithRatingList = new ArrayList<ConcurrentGainersBean>();
+		concurrentGainersWithRatingList = convertConGainersCsvToBean();
+		List<ConcurrentGainersBean> financeRatingList  = convertUrlToFinancialUrl(concurrentGainersWithRatingList);
+		runFinanceRatingUrl(financeRatingList, csvFileName);
+		/*CsvToEmailBody emailBody = new CsvToEmailBody();
+		String htmlText= emailBody.execute();*/
+		String htmlText = "dummy";
 		StockUtil.initiateEmail(csvFileName,startTime,htmlText);
 	}
-	private void runFinanceRatingUrl(List<ConcurrentGainersBean> financeUrlList) throws IOException {
+	private void runFinanceRatingUrl(List<ConcurrentGainersBean> financeUrlList,String filePath) throws IOException {
 		List<String> urlList = null;
 		Map<String,ConcurrentGainersBean> financialAnalyzerMap = new HashMap<String,ConcurrentGainersBean>();
-		FileWriter fwo = new FileWriter( csvFileName, false );
+		FileWriter fwo = new FileWriter(filePath, false );
 		BufferedWriter bwObj = null;
 		try {
-			System.out.println(">>"+financeUrlList.size());
+			System.out.println("TOTAL CONCURRENT GAINERS EPS SIZE>>"+financeUrlList.size());
 			urlList = new ArrayList<String>();
 			for(ConcurrentGainersBean financeAnalyzerBean : financeUrlList){
 				urlList.add(financeAnalyzerBean.getFinanceApi());
@@ -54,7 +62,6 @@ public class EPSOnConGainersHandler {
 			int i=0;
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
 			 for(String httpUrl : urlList){//for (int i = 0; i < 10; i++) {
-				// System.out.println(i);
 		            Runnable worker = new FinancialEPSAnalysisRunner(new URL(httpUrl),financialAnalyzerMap,bwObj,"" + i);
 		            executor.execute(worker);
 		            i++;
@@ -62,7 +69,7 @@ public class EPSOnConGainersHandler {
 		        executor.shutdown();
 		        while (!executor.isTerminated()) {
 		        }
-		        System.out.println("Finished all threads Execution");
+		        System.out.println("FINISHED ALL CONCURRENT GAINERS EPS THREAD EXECUTION...");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
@@ -106,7 +113,7 @@ public class EPSOnConGainersHandler {
 	private List<ConcurrentGainersBean> convertConGainersCsvToBean() throws IOException {
 		List<ConcurrentGainersBean>  gainerBeanList= new ArrayList<ConcurrentGainersBean>();
 		ConcurrentGainersBean gainerBean = null;
-		String csvFile = "config/amumConcurrentGainersVolumeBasedList.csv";
+		String csvFile = FileNameConstant.CURRENT_CONCURRENT_VOLUME_GAINERS;
 		String line = "";
 		String cvsSplitBy = ",";
 		int skipFirstLineHeader=0;

@@ -15,10 +15,10 @@ import java.util.concurrent.Executors;
 
 import com.amumtrade.bean.TopGainerBean;
 import com.amumtrade.constant.AMUMStockConstant;
+import com.amumtrade.constant.FileNameConstant;
 import com.amumtrade.factory.VolumeSplitRunner;
 
-public class TopGainerVolumeAnaylzerHandler {
-	public  String stockURL = "http://www.moneycontrol.com";
+public class TopGainersVolumeHandler {
 	private BufferedReader br;
 	List<TopGainerBean> topGainerWithVolume ;
 	
@@ -30,14 +30,14 @@ public class TopGainerVolumeAnaylzerHandler {
 	private void runVolumeSplitter(List<TopGainerBean> gainersBeanList) throws IOException{
 		List<String> urlList = null;
 		Map<String,TopGainerBean> topGainerMap = new HashMap<String,TopGainerBean>();
-		FileWriter fwo = new FileWriter( "config/amumTopGainerVolumeBasedList.csv", false );
+		FileWriter fwo = new FileWriter( FileNameConstant.VOLUME_TOP_GAINERS, false );
 		BufferedWriter bwObj = null;
 		
 		try {
-			System.out.println(">>"+gainersBeanList.size());
+			System.out.println("TOP GAINERS VOLUME EXECUTION SIZE>>"+gainersBeanList.size());
 			urlList = new ArrayList<String>();
 			for(TopGainerBean gainerBean : gainersBeanList){
-				String httpURL = stockURL+gainerBean.getApi().trim();
+				String httpURL = AMUMStockConstant.STOCK_URL+gainerBean.getApi().trim();
 				if(!httpURL.contains("///")){
 					urlList.add(httpURL);
 					topGainerMap.put(httpURL, gainerBean);
@@ -49,16 +49,15 @@ public class TopGainerVolumeAnaylzerHandler {
 			
 			int i=0;
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
-			 for(String httpUrl : urlList){//for (int i = 0; i < 10; i++) {
-				// System.out.println(i);
-		            Runnable worker = new VolumeSplitRunner(new URL(httpUrl),topGainerMap,bwObj,"" + i);
+			 for(String httpUrl : urlList){
+				  Runnable worker = new VolumeSplitRunner(new URL(httpUrl),topGainerMap,bwObj,"" + i);
 		            executor.execute(worker);
 		            i++;
 		          }
 		        executor.shutdown();
 		        while (!executor.isTerminated()) {
 		        }
-		        System.out.println("Finished all threads Execution");
+		        System.out.println("FINISHED TOP GAINERS VOLUME THREADS EXECUTION..");
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -74,7 +73,7 @@ public class TopGainerVolumeAnaylzerHandler {
 	private List<TopGainerBean> getTopGainersCsvToBean() throws IOException {
 		List<TopGainerBean>  gainerBeanList= new ArrayList<TopGainerBean>();
 		TopGainerBean gainerBean = null;
-		String csvFile = "config/amumTopGainerList.csv";
+		String csvFile =FileNameConstant.TOP_GAINERS;
 		String line = "";
 		String cvsSplitBy = ",";
 		int skipFirstLineHeader=0;

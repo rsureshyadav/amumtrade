@@ -2,8 +2,8 @@ package com.amumtrade.e2e;
 
 import org.junit.Test;
 
-import com.amumtrade.handler.EPSOnTopGainersHandler;
-import com.amumtrade.handler.TopGainerVolumeAnaylzerHandler;
+import com.amumtrade.handler.TopGainersEPSHandler;
+import com.amumtrade.handler.TopGainersVolumeHandler;
 import com.amumtrade.handler.TopGainersHandler;
 
 public class MasterTopGainersAnaylzerTest {
@@ -14,10 +14,10 @@ public class MasterTopGainersAnaylzerTest {
 		TopGainersHandler topGainersHandler = new TopGainersHandler();
 		topGainersHandler.execute();
 		//This will add the volume for the Top Gainers
-		TopGainerVolumeAnaylzerHandler volumeAnaylzer = new TopGainerVolumeAnaylzerHandler();
+		TopGainersVolumeHandler volumeAnaylzer = new TopGainersVolumeHandler();
 		volumeAnaylzer.execute();
 		//This will compare with EPS
-		EPSOnTopGainersHandler epsTopGainer = new EPSOnTopGainersHandler();
+		TopGainersEPSHandler epsTopGainer = new TopGainersEPSHandler();
 		epsTopGainer.execute(startTime);
 		long endTime= System.currentTimeMillis();
 		long elapsedTime = endTime - startTime;
