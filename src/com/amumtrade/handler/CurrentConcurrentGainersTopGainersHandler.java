@@ -13,8 +13,8 @@ import java.util.Map;
 import java.util.Set;
 
 import com.amumtrade.bean.ConcurrentGainersBean;
+import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.constant.FileNameConstant;
-import com.amumtrade.email.CsvToEmailBody;
 import com.amumtrade.util.StockUtil;
 
 public class CurrentConcurrentGainersTopGainersHandler {
@@ -46,18 +46,32 @@ public class CurrentConcurrentGainersTopGainersHandler {
 	private void compareBothGainers() throws IOException {
 		FileWriter fwo = new FileWriter( csvFileName, false );
 		BufferedWriter bwObj = null;
+		Set<String> gainersVsPostiveBreakOut;
 		try {
 			if(topGainersApiSet != null && !topGainersApiSet.isEmpty()
 					&& concurrentGainersApiSet != null && !concurrentGainersApiSet.isEmpty()){
 				bwObj = new BufferedWriter( fwo );  
-				bwObj.write("CompanyName,CurrentPrice,DayVolume,FiveDayVolume,TenDayVolume,ThirtyDayVolume,VolumeRating,EPS,EPSRating,StanaloneProfit,Recommendation,News,API"+"\n");
+				bwObj.write("CompanyName,CurrentPrice,DayVolume,FiveDayVolume,TenDayVolume,ThirtyDayVolume,VolumeRating,EPS,EPSRating,StanaloneProfit,Recommendation,News,PositiveBreakOut,API"+"\n");
 			
 				topGainersApiSet.retainAll(concurrentGainersApiSet);
+				
+				//Check with postive breakouts
+				//PositiveBreakoutHandler breakoutHandler = new PositiveBreakoutHandler();
+				//Set<String> positiveBreakoutSet = breakoutHandler.execute();
+			////	gainersVsPostiveBreakOut = StockUtil.compareWithPostiveBreakOutSet(positiveBreakoutSet,topGainersApiSet);
 				for(String api : topGainersApiSet){
-					//System.out.println(api);
-					createCSVFile(apiBeanMap.get(api),bwObj);
+					//String apiKey = StockUtil.getUrlToKeyAPI(api); 
+				//	if(gainersVsPostiveBreakOut.contains(apiKey)){
+				//		ConcurrentGainersBean bean = apiBeanMap.get(api);
+				//		bean.setPositiveBreakout(AMUMStockConstant.YES);
+				//		createCSVFile(bean,bwObj);
+				//		System.out.println(apiKey+" POSITIVE BREAKOUT STOCK");
+					//}else{
+					//	ConcurrentGainersBean bean = apiBeanMap.get(api);
+					//	bean.setPositiveBreakout("");
+						createCSVFile( apiBeanMap.get(api),bwObj);
+					//}
 				}
-
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -68,12 +82,16 @@ public class CurrentConcurrentGainersTopGainersHandler {
 		}
 		
 	}
+
+
 	private void createCSVFile(ConcurrentGainersBean bean, BufferedWriter bwObj) {
 		try {
 			bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 					+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 					+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-					+bean.getVolumeRating()+","+bean.getEps()+","+bean.getEpsRating()+","+bean.getStandaloneProfit()+","+bean.getRecommendation()+","+bean.getNews()+","+bean.getApi()+"\n");
+					+bean.getVolumeRating()+","+bean.getEps()+","+bean.getEpsRating()+","
+					+bean.getStandaloneProfit()+","+bean.getRecommendation()+","+bean.getNews()+","
+					+bean.getPositiveBreakout()+","+bean.getApi()+"\n");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -125,7 +143,8 @@ public class CurrentConcurrentGainersTopGainersHandler {
 					gainerBean.setStandaloneProfit(conGainers[9]);
 					gainerBean.setRecommendation(conGainers[10]);
 					gainerBean.setNews(conGainers[11]);
-					gainerBean.setApi(conGainers[12]);
+					gainerBean.setPositiveBreakout(conGainers[12]);
+					gainerBean.setApi(conGainers[13]);
 					gainerBeanList.add(gainerBean);
 				}
 				skipFirstLineHeader++;

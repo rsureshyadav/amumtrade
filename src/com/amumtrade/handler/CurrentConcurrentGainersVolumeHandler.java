@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -16,6 +17,7 @@ import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.constant.FileNameConstant;
 import com.amumtrade.factory.ConcurrentGainersVolumeRunner;
 import com.amumtrade.marketstat.LastThreeDayConcurrentGainers;
+import com.amumtrade.util.StockUtil;
 
 public class CurrentConcurrentGainersVolumeHandler {
 	
@@ -40,13 +42,18 @@ public class CurrentConcurrentGainersVolumeHandler {
 				concurrentGainerMap.put(gainerBean.getApi(), gainerBean);
 			}
 			bwObj = new BufferedWriter( fwo );  
-			bwObj.write("CompanyName,CurrentPrice,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating,Api"+"\n");
-		
+			bwObj.write("CompanyName,CurrentPrice,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating,PostiveBreakOut,Api"+"\n");
+			Set<String> keyNameSet = StockUtil.getAPIKeyNameList(urlList);
+			boolean postiveBreakOutFlag = false;
 			int i=0;
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
-			 for(String httpUrl : urlList){//for (int i = 0; i < 10; i++) {
-				// System.out.println(i);
-		            Runnable worker = new ConcurrentGainersVolumeRunner(new URL(httpUrl),concurrentGainerMap,bwObj,"" + i);
+			 for(String httpUrlApi : urlList){//for (int i = 0; i < 10; i++) {
+					 if(keyNameSet.contains(httpUrlApi)){
+						 postiveBreakOutFlag = true; 
+					 }else{
+						 postiveBreakOutFlag = false;
+					 }
+		            Runnable worker = new ConcurrentGainersVolumeRunner(new URL(httpUrlApi),concurrentGainerMap,bwObj,postiveBreakOutFlag,"" + i);
 		            executor.execute(worker);
 		            i++;
 		          }

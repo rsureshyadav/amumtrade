@@ -13,7 +13,7 @@ public class TopGainerBean {
 	private String fiveDayAvgVolume;
 	private String tenDayAvgVolume;
 	private String thirtyDayAvgVolume;
-	
+	private String postiveBreakOut;
 	public String getCompanyName() {
 		return companyName;
 	}
@@ -85,6 +85,12 @@ public class TopGainerBean {
 	}
 	public void setCurrentDayVolume(String currentDayVolume) {
 		this.currentDayVolume = currentDayVolume;
+	}
+	public String getPostiveBreakOut() {
+		return postiveBreakOut;
+	}
+	public void setPostiveBreakOut(String postiveBreakOut) {
+		this.postiveBreakOut = postiveBreakOut;
 	}
 	
 	

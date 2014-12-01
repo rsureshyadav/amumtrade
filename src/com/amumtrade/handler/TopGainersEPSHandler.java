@@ -48,7 +48,7 @@ public class TopGainersEPSHandler {
 				financialAnalyzerMap.put(topGainerBean.getFinanceApi(), topGainerBean);
 			}
 			bwObj = new BufferedWriter( fwo );  
-			bwObj.write("CompanyName,CurrentPrice,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,VolumeRating,EPS,EPSRating,StandaloneProfit,Recommendation,News,API"+"\n");
+			bwObj.write("CompanyName,CurrentPrice,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,VolumeRating,EPS,EPSRating,StandaloneProfit,Recommendation,News,PositiveBreakOut,API"+"\n");
 			int i=0;
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
 			 for(String httpUrl : urlList){//for (int i = 0; i < 10; i++) {
@@ -93,7 +93,8 @@ public class TopGainersEPSHandler {
 					bean.setTenDayAvgVolume(record.getTenDayAvgVolume());
 					bean.setThirtyDayAvgVolume(record.getThirtyDayAvgVolume());
 					bean.setVolumeRating(record.getVolumeRating());
-					
+					bean.setPositiveBreakout(record.getPositiveBreakout());
+
 					financeUrlList.add(bean);
 			}
 		} catch (Exception e) {
@@ -121,7 +122,8 @@ public class TopGainersEPSHandler {
 					gainerBean.setTenDayAvgVolume(topGainers[8]);
 					gainerBean.setThirtyDayAvgVolume(topGainers[9]);
 					gainerBean.setVolumeRating(topGainers[10]);
-					gainerBean.setApi(topGainers[11]);
+					gainerBean.setPositiveBreakout(topGainers[11]);
+					gainerBean.setApi(topGainers[12]);
 					gainerBeanList.add(gainerBean);
 				}
 				skipFirstLineHeader++;
