@@ -31,7 +31,7 @@ public class MasterAMUMTradeTest {
 		//Combined ConcurrentGainers & TopGainers  
 		CurrentConcurrentGainersTopGainersHandler combineHandler = new CurrentConcurrentGainersTopGainersHandler();
 		combineHandler.execute(startTime);
-		
+	
 		//All ConcurrentGainers
 		ConcurrentGainersAllHandler allConcurrentHandler = new ConcurrentGainersAllHandler();
 		allConcurrentHandler.execute(startTime);

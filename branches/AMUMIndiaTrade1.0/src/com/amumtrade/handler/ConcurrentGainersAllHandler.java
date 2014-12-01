@@ -68,11 +68,9 @@ long sTime;
 				}
 				for(ConcurrentGainersBean bean : fiveDayConGainersList){
 					fiveDayConGainersAPI.add(bean.getApi());
-					//gainersBeanMap.put(bean.getApi(), bean);
 				}
 				for(ConcurrentGainersBean bean : eigthDayConGainersList){
 					eigthDayConGainersAPI.add(bean.getApi());
-					//gainersBeanMap.put(bean.getApi(), bean);
 				}
 				threeDayConGainersAPI.retainAll(fiveDayConGainersAPI);
 				threeDayConGainersAPI.retainAll(eigthDayConGainersAPI);
@@ -101,17 +99,23 @@ long sTime;
 			urlList = new ArrayList<String>();
 			for(ConcurrentGainersBean gainerBean : concurrentGainersList){
 				urlList.add(gainerBean.getApi());
-				//System.out.println(gainerBean.getName()+">>"+gainerBean.getCurrentPrice());
 				concurrentGainerMap.put(gainerBean.getApi(), gainerBean);
 			}
 			bwObjVolume = new BufferedWriter( fwo );  
-			bwObjVolume.write("CompanyName,CurrentPrice,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,VolumeRating,Api"+"\n");
-		
+			bwObjVolume.write("CompanyName,CurrentPrice,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,VolumeRating,PostiveBreakOut,Api"+"\n");
+			
+			Set<String> keyNameSet = StockUtil.getAPIKeyNameList(urlList);
+			boolean postiveBreakOutFlag = false;
 			int i=0;
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
-			 for(String httpUrl : urlList){//for (int i = 0; i < 10; i++) {
-				// System.out.println(i);
-		            Runnable worker = new ConcurrentGainersVolumeRunner(new URL(httpUrl),concurrentGainerMap,bwObjVolume,"" + i);
+			 for(String httpUrl : urlList){
+				 String httpUrlApi = StockUtil.getUrlToKeyAPI(httpUrl);
+				 if(keyNameSet.contains(httpUrlApi)){
+					 postiveBreakOutFlag = true; 
+				 }else{
+					 postiveBreakOutFlag = false;
+				 }
+		            Runnable worker = new ConcurrentGainersVolumeRunner(new URL(httpUrl),concurrentGainerMap,bwObjVolume,postiveBreakOutFlag,"" + i);
 		            executor.execute(worker);
 		            i++;
 		          }

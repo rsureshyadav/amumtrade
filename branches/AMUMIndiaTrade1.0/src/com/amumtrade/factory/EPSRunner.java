@@ -66,8 +66,6 @@ public class EPSRunner implements Runnable{
 		boolean isnewsLine = false;
 		Set<String> epsUrlSet = null;
 
-
-
 		ConcurrentGainersBean financialInfoBean;
 		try {
 			epsUrlSet = new HashSet<String>();
@@ -105,9 +103,9 @@ public class EPSRunner implements Runnable{
 							 standaloneProfit = "Yes";
 						 }else if(newsLine.contains("Buy") || newsLine.contains("buy")){
 							 if(newsLine.contains("Sudarshan Sukhani")){
-								 recommendation = "BUY - SS*";  
+								 recommendation = "BUY - SS**";  
 							 }else if(newsLine.contains("KotakInvestment")){
-								 recommendation = "BUY - KI";  
+								 recommendation = "BUY**";  
 							 }else if(newsLine.contains("Santosh Nair")){
 								 recommendation = "BUY**";  
 							 }else if(newsLine.contains("Sonia Shenoy")){
@@ -141,6 +139,7 @@ public class EPSRunner implements Runnable{
 				 financialInfoBean.setTenDayAvgVolume(bean.getTenDayAvgVolume());
 				 financialInfoBean.setThirtyDayAvgVolume(bean.getThirtyDayAvgVolume());
 				 financialInfoBean.setVolumeRating(bean.getVolumeRating());
+				 financialInfoBean.setPositiveBreakout(bean.getPositiveBreakout());
 				 if(standaloneProfit == null){
 					 standaloneProfit="";
 				 }
@@ -153,7 +152,6 @@ public class EPSRunner implements Runnable{
 				 financialInfoBean.setStandaloneProfit(standaloneProfit);
 				 financialInfoBean.setRecommendation(recommendation);
 				 financialInfoBean.setNews(newsLine);
-				// System.out.println(financialInfoBean.getName()+">>"+standaloneProfit+">>"+recommendation+">>"+ newsLine);
 				 writeVolumeToCSVFile(financialInfoBean);
 				 epsUrlSet.add(url);
 			 }
@@ -172,7 +170,7 @@ public class EPSRunner implements Runnable{
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+bean.getVolumeRating()+","+bean.getEps()+","
 						+AMUMStockConstant.FIVE_STAR+","+bean.getStandaloneProfit()+","
-						+bean.getRecommendation()+","+bean.getNews()
+						+bean.getRecommendation()+","+bean.getNews()+","+bean.getPositiveBreakout()
 						+","+bean.getApi()+"\n");
 				System.out.println(bean.getName()+","+"^"+bean.getCurrentPrice()+","+bean.getCurrentDayVolume()+","+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.FIVE_STAR);
 				
@@ -182,28 +180,31 @@ public class EPSRunner implements Runnable{
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+bean.getVolumeRating()+","+bean.getEps()+","
 						+AMUMStockConstant.FOUR_STAR+","+bean.getStandaloneProfit()+","
-						+bean.getRecommendation()+","+bean.getNews()
+						+bean.getRecommendation()+","+bean.getNews()+","+bean.getPositiveBreakout()
 						+","+bean.getApi()+"\n");
 			}else if(epsValue > 50 && epsValue < 75){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.THREE_STAR+","
-						+bean.getStandaloneProfit()+","	+bean.getRecommendation()+","+bean.getNews()
+						+bean.getStandaloneProfit()+","	+bean.getRecommendation()+","
+						+bean.getNews()+","+bean.getPositiveBreakout()
 						+","+bean.getApi()+"\n");
 			}else if(epsValue > 25 && epsValue < 50){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.TWO_STAR+","
-						+bean.getStandaloneProfit()+","+bean.getRecommendation()+","+bean.getNews()
+						+bean.getStandaloneProfit()+","+bean.getRecommendation()+","
+						+bean.getNews()+","+bean.getPositiveBreakout()
 						+","+bean.getApi()+"\n");
 			}else if(epsValue > 0 && epsValue < 25){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.ONE_STAR+","
-						+bean.getStandaloneProfit()+","+bean.getRecommendation()+","+bean.getNews()
+						+bean.getStandaloneProfit()+","+bean.getRecommendation()+","
+						+bean.getNews()+","+bean.getPositiveBreakout()
 						+","+bean.getApi()+"\n");
 			}
 		} catch (Exception e) {

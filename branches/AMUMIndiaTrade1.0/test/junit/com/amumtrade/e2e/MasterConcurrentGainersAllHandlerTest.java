@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import com.amumtrade.handler.ConcurrentGainersAllHandler;
 
-public class MasterAllConGainersVolumeAnalyzerTest {
+public class MasterConcurrentGainersAllHandlerTest {
 	@Test
 	public void executeStockMarketStat() throws Exception{
 		long startTime= System.currentTimeMillis();

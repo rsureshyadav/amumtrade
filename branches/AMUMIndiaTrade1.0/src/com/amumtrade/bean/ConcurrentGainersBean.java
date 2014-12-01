@@ -25,6 +25,7 @@ public class ConcurrentGainersBean {
 	private String standaloneProfit;
 	private String recommendation;
 	private String news;
+	private String positiveBreakout;
 	public String getName() {
 		return name;
 	}
@@ -156,6 +157,12 @@ public class ConcurrentGainersBean {
 	}
 	public void setNews(String news) {
 		this.news = news;
+	}
+	public String getPositiveBreakout() {
+		return positiveBreakout;
+	}
+	public void setPositiveBreakout(String positiveBreakout) {
+		this.positiveBreakout = positiveBreakout;
 	}
 	
 	

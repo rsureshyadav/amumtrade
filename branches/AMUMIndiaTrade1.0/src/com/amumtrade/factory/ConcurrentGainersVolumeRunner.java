@@ -18,12 +18,13 @@ public class ConcurrentGainersVolumeRunner implements Runnable {
 	private URL urlConn;
 	private Map<String,ConcurrentGainersBean> concurrentGainerMap;
 	private BufferedWriter bwObj;
-	
-	public ConcurrentGainersVolumeRunner(URL httpUrl,Map<String,ConcurrentGainersBean> concurrentGainers,BufferedWriter bufferWriter,String s){
+	private boolean postiveFlag;
+	public ConcurrentGainersVolumeRunner(URL httpUrl,Map<String,ConcurrentGainersBean> concurrentGainers,BufferedWriter bufferWriter,boolean postiveBreakOutFlag, String s){
 		this.urlConn=httpUrl;
 		this.concurrentGainerMap = concurrentGainers;
 		this.bwObj = bufferWriter;
 		this.command=s;
+		this.postiveFlag = postiveBreakOutFlag;
 	}
 	
 	@Override
@@ -108,7 +109,6 @@ public class ConcurrentGainersVolumeRunner implements Runnable {
 					 if(fiveDayAvgVolume != null && tenDayAvgVolume!=null 
 							 && thirtyDayAvgVolume!=null
 							 && !urlSet.contains(url) ){
-					 //System.out.println(">5Day>>"+fiveDayAvgVolume+">10Day>>"+tenDayAvgVolume+">30Day>>"+thirtyDayAvgVolume);
 					 
 					 	 concurrentBean = new ConcurrentGainersBean();
 					 	 concurrentBean.setCurrentDayVolume(currentDayVolume);
@@ -116,13 +116,14 @@ public class ConcurrentGainersVolumeRunner implements Runnable {
 						 concurrentBean.setTenDayAvgVolume(tenDayAvgVolume);
 						 concurrentBean.setThirtyDayAvgVolume(thirtyDayAvgVolume);
 						 ConcurrentGainersBean bean = concurrentGainerMap.get(url);
-						// if(url.equalsIgnoreCase(bean.getApi())){
-							 concurrentBean.setName(bean.getName());
-							 concurrentBean.setCurrentPrice(bean.getCurrentPrice());
-							 concurrentBean.setApi(url);
-						//	 System.out.println(bean.getName()+">>"+bean.getCurrentPrice());
-					//	 }
-						 //System.out.println(">5Day>>"+gainerBean.getFiveDayAvgVolume()+">10Day>>"+gainerBean.getTenDayAvgVolume()+">30Day>>"+gainerBean.getThirtyDayAvgVolume());
+						 concurrentBean.setName(bean.getName());
+						 concurrentBean.setCurrentPrice(bean.getCurrentPrice());
+						 concurrentBean.setApi(url);
+						 if(postiveFlag){
+							 concurrentBean.setPositiveBreakout(AMUMStockConstant.YES);
+						 }else{
+							 concurrentBean.setPositiveBreakout("");
+						 }
 						 fiveDayAvgVolume = null;
 						 tenDayAvgVolume = null;
 						 thirtyDayAvgVolume = null; 
@@ -153,23 +154,23 @@ public class ConcurrentGainersVolumeRunner implements Runnable {
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+AMUMStockConstant.FIVE_STAR+","+bean.getApi()+"\n");
+						+AMUMStockConstant.FIVE_STAR+","+bean.getPositiveBreakout()+","+bean.getApi()+"\n");
 				System.out.println(bean.getName()+","+"^"+bean.getCurrentPrice()+","+bean.getCurrentDayVolume()+","+AMUMStockConstant.FIVE_STAR);
 			}else if(dayVolume >= fiveDayAvgVolume && dayVolume >= tenDayAvgVolume && dayVolume >= thirtyDayAvgVolume){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+AMUMStockConstant.FOUR_STAR+","+bean.getApi()+"\n");
+						+AMUMStockConstant.FOUR_STAR+","+bean.getPositiveBreakout()+","+bean.getApi()+"\n");
 			}else if(fiveDayAvgVolume > tenDayAvgVolume && fiveDayAvgVolume >thirtyDayAvgVolume){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+AMUMStockConstant.THREE_STAR+","+bean.getApi()+"\n");
+						+AMUMStockConstant.THREE_STAR+","+bean.getPositiveBreakout()+","+bean.getApi()+"\n");
 			}else if(fiveDayAvgVolume <= tenDayAvgVolume && tenDayAvgVolume>=thirtyDayAvgVolume){
 				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
-						+AMUMStockConstant.TWO_STAR+","+bean.getApi()+"\n");
+						+AMUMStockConstant.TWO_STAR+","+bean.getPositiveBreakout()+","+bean.getApi()+"\n");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

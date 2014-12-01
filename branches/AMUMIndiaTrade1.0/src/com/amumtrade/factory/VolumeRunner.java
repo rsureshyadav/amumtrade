@@ -77,9 +77,6 @@ public class VolumeRunner implements Runnable {
 					 currentDayVolume = currentDayVolume.substring(currentDayVolume.indexOf("<strong>"),currentDayVolume.lastIndexOf("</strong>"));
 					 currentDayVolume = currentDayVolume.replace("<strong>", "");
 					 currentDayVolume = currentDayVolume.replace(",", "");
-		/*			 System.out.println("volume>>"+volume);
-					 System.out.println("toolTip3>>"+toolTip3);
-					 System.out.println("toolTip3Count>>"+toolTip3Count);*/
 				 }else if(inputLine.contains("<div class=\"tooltip3\">") || toolTip3){
 					 toolTip3 = true;
 					 if(toolTip3Count >22){
@@ -89,19 +86,16 @@ public class VolumeRunner implements Runnable {
 						 fiveDayAvgVolume = fiveDayAvgVolume.substring(fiveDayAvgVolume.indexOf("<strong>"),fiveDayAvgVolume.lastIndexOf("</strong>"));
 						 fiveDayAvgVolume = fiveDayAvgVolume.replace("<strong>", "");
 						 fiveDayAvgVolume = fiveDayAvgVolume.replace(",", "");
-				//		 System.out.println("5 Day avg Volume>>"+fiveDayAvgVolume);
 					 }else if(toolTip3Count ==14){
 						 tenDayAvgVolume = inputLine.trim();
 						 tenDayAvgVolume = tenDayAvgVolume.substring(tenDayAvgVolume.indexOf("<strong>"),tenDayAvgVolume.lastIndexOf("</strong>"));
 						 tenDayAvgVolume = tenDayAvgVolume.replace("<strong>", "");
 						 tenDayAvgVolume = tenDayAvgVolume.replace(",", "");
-					//	 System.out.println("10 Day avg Volume>>"+tenDayAvgVolume); 
 					 }else if(toolTip3Count ==22){
 						 thirtyDayAvgVolume = inputLine.trim();
 						 thirtyDayAvgVolume = thirtyDayAvgVolume.substring(thirtyDayAvgVolume.indexOf("<strong>"),thirtyDayAvgVolume.lastIndexOf("</strong>"));
 						 thirtyDayAvgVolume = thirtyDayAvgVolume.replace("<strong>", "");
 						 thirtyDayAvgVolume = thirtyDayAvgVolume.replace(",", "");
-						// System.out.println("30 Day avg Volume>>"+thirtyDayAvgVolume); 
 					 }
 					 toolTip3Count++;
 					 if(fiveDayAvgVolume != null && tenDayAvgVolume!=null 
@@ -115,7 +109,6 @@ public class VolumeRunner implements Runnable {
 							 && !fiveDayAvgVolume.isEmpty()
 							 && !tenDayAvgVolume.isEmpty()
 							 && !thirtyDayAvgVolume.isEmpty()){
-					 //System.out.println(">5Day>>"+fiveDayAvgVolume+">10Day>>"+tenDayAvgVolume+">30Day>>"+thirtyDayAvgVolume);
 					 
 					 	 gainerBean = new TopGainerBean();
 					 	 gainerBean.setCurrentDayVolume(currentDayVolume);
@@ -131,8 +124,8 @@ public class VolumeRunner implements Runnable {
 						 gainerBean.setPrvClose(bean.getPrvClose());
 						 gainerBean.setChange(bean.getChange());
 						 gainerBean.setPercentGain(bean.getPercentGain());
+						 gainerBean.setPostiveBreakOut(bean.getPostiveBreakOut());
 						 gainerBean.setApi(url);
-						 //System.out.println(">5Day>>"+gainerBean.getFiveDayAvgVolume()+">10Day>>"+gainerBean.getTenDayAvgVolume()+">30Day>>"+gainerBean.getThirtyDayAvgVolume());
 						 fiveDayAvgVolume = null;
 						 tenDayAvgVolume = null;
 						 thirtyDayAvgVolume = null; 
@@ -162,23 +155,23 @@ private void writeVolumeToCSVFile(TopGainerBean bean) {
 				bwObj.write(bean.getCompanyName()+","+bean.getHigh()+","+ bean.getLow()+","
 						+ bean.getLastPrice()+","+ bean.getPrvClose()+","+ bean.getChange()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","+bean.getTenDayAvgVolume()+","
-						+bean.getThirtyDayAvgVolume()+","+AMUMStockConstant.FIVE_STAR+","+bean.getApi()+"\n");
+						+bean.getThirtyDayAvgVolume()+","+AMUMStockConstant.FIVE_STAR+","+bean.getPostiveBreakOut()+","+bean.getApi()+"\n");
 				System.out.println(bean.getCompanyName()+","+"^"+bean.getChange()+","+bean.getCurrentDayVolume()+","+AMUMStockConstant.FIVE_STAR);
 			}else if(dayVolume >= fiveDayAvgVolume && dayVolume >= tenDayAvgVolume && dayVolume >= thirtyDayAvgVolume){
 				bwObj.write(bean.getCompanyName()+","+bean.getHigh()+","+ bean.getLow()+","
 						+ bean.getLastPrice()+","+ bean.getPrvClose()+","+ bean.getChange()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","+bean.getTenDayAvgVolume()+","
-						+bean.getThirtyDayAvgVolume()+","+AMUMStockConstant.FOUR_STAR+","+bean.getApi()+"\n");
+						+bean.getThirtyDayAvgVolume()+","+AMUMStockConstant.FOUR_STAR+","+bean.getPostiveBreakOut()+","+bean.getApi()+"\n");
 			}else if(fiveDayAvgVolume > tenDayAvgVolume && fiveDayAvgVolume >thirtyDayAvgVolume){
 				bwObj.write(bean.getCompanyName()+","+bean.getHigh()+","+ bean.getLow()+","
 						+ bean.getLastPrice()+","+ bean.getPrvClose()+","+ bean.getChange()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","+bean.getTenDayAvgVolume()+","
-						+bean.getThirtyDayAvgVolume()+","+AMUMStockConstant.THREE_STAR+","+bean.getApi()+"\n");
+						+bean.getThirtyDayAvgVolume()+","+AMUMStockConstant.THREE_STAR+","+bean.getPostiveBreakOut()+","+bean.getApi()+"\n");
 			}else if(fiveDayAvgVolume <= tenDayAvgVolume && tenDayAvgVolume>=thirtyDayAvgVolume){
 				bwObj.write(bean.getCompanyName()+","+bean.getHigh()+","+ bean.getLow()+","
 						+ bean.getLastPrice()+","+ bean.getPrvClose()+","+ bean.getChange()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","+bean.getTenDayAvgVolume()+","
-						+bean.getThirtyDayAvgVolume()+","+AMUMStockConstant.TWO_STAR+","+bean.getApi()+"\n");
+						+bean.getThirtyDayAvgVolume()+","+AMUMStockConstant.TWO_STAR+","+bean.getPostiveBreakOut()+","+bean.getApi()+"\n");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

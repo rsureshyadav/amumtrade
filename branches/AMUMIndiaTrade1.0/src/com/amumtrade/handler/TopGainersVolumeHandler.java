@@ -44,7 +44,7 @@ public class TopGainersVolumeHandler {
 				}
 			}
 			bwObj = new BufferedWriter( fwo );  
-			bwObj.write("Company Name,High,Low,Last Price,Prv Close,Change,Day Volume,FiveDay AvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating,Api"+"\n");
+			bwObj.write("Company Name,High,Low,Last Price,Prv Close,Change,Day Volume,FiveDay AvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating,PostiveBreakOut,Api"+"\n");
 			
 			
 			int i=0;
@@ -92,7 +92,8 @@ public class TopGainersVolumeHandler {
 					gainerBean.setPrvClose(topGainers[4]);
 					gainerBean.setChange(topGainers[5]);
 					gainerBean.setPercentGain(topGainers[6]);
-					gainerBean.setApi(topGainers[7]);
+					gainerBean.setPostiveBreakOut(topGainers[7]);
+					gainerBean.setApi(topGainers[8]);
 					gainerBeanList.add(gainerBean);
 				}
 				skipFirstLineHeader++;

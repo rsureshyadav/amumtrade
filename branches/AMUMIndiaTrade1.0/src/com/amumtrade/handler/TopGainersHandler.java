@@ -11,7 +11,9 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.constant.FileNameConstant;
+import com.amumtrade.util.StockUtil;
 
 public class TopGainersHandler {
 	public static Set<String> nameSet = new HashSet<String>();
@@ -57,21 +59,23 @@ public class TopGainersHandler {
 		String prvClose=null;
 		String change=null;
 		String percentGain=null;
+		String postiveBreakOut=null;
 		BufferedWriter bwObj = null;
 		BufferedReader in = null;
 		FileWriter fwo = new FileWriter( FileNameConstant.TOP_GAINERS, false );
 		try {
+			PositiveBreakoutHandler breakoutHandler = new PositiveBreakoutHandler();
+			Set<String> positiveBreakoutSet = breakoutHandler.execute();
+			
 			 URL website = new URL(stockURL);
 			 bwObj = new BufferedWriter( fwo );  
-			 bwObj.write("Company Name,High,Low,Last Price,Prv Close,Change,% Gain,API"+"\n");
+			 bwObj.write("Company Name,High,Low,Last Price,Prv Close,Change,% Gain,PositiveBreakOut,API"+"\n");
 			 in= new BufferedReader(new InputStreamReader(website.openStream()));
 				        String inputLine;
-				        //boolean isRun = false;
 		        		boolean highLastPriceflag=false;
 		        		boolean changePercentGain=false;
 				        while ((inputLine = in.readLine()) != null)
 				        {
-				        	//<td align="left" class="brdrgtgry"><a href='/india/stockpricequote/finance-general/microsecfinancialservices/MFS' class='bl_12'><b>Microsec Fin</b></a></td>
 				        	if(inputLine.contains("<td align=\"left\" class=\"brdrgtgry\">")){
 				        		companyName = inputLine.trim();
 				        		companyName=companyName.substring(companyName.indexOf("<b>"));
@@ -82,13 +86,12 @@ public class TopGainersHandler {
 				        		api = api.substring(api.indexOf("<a href="), api.lastIndexOf("class='bl_12'"));
 				        		api = api.replace("<a href=", "");
 				        		api = api.replace("'", "");
-					        		
-				        		//isRun = true;
-				        		//if(companyName.equalsIgnoreCase("Radha Madhav")){
-				        			
-				        		//	System.out.println("Company: "+companyName);
-				        		//}
-
+				        		String apiKey = StockUtil.getUrlToKeyAPI(api);
+				        		if(positiveBreakoutSet.contains(apiKey)){
+				        			postiveBreakOut = AMUMStockConstant.YES;
+				        		}else{
+				        			postiveBreakOut = "";
+				        		}
 				        	}else if(inputLine.contains("<td width=\"13%\" align=\"right\" class=\"brdrgtgry\">")){
 				        		if(!highLastPriceflag){
 				        			high=inputLine.trim();
@@ -97,9 +100,6 @@ public class TopGainersHandler {
 				        			high=high.replace("</td>", "");
 				        			high=high.replace(",", "");
 				        			high=high.replace(".00", "");
-				        		//	if(companyName.equalsIgnoreCase("Radha Madhav")){
-					        		//System.out.println("High: "+high);
-				        		//	}
 				        			highLastPriceflag=true;
 				        		}else if(highLastPriceflag){
 				        			prvClose=inputLine.trim();
@@ -108,12 +108,8 @@ public class TopGainersHandler {
 				        			prvClose=prvClose.replace("</td>", "");
 				        			prvClose=prvClose.replace(",", "");
 				        			prvClose=prvClose.replace(".00", "");
-				        		//	if(companyName.equalsIgnoreCase("Radha Madhav")){
-					        		//System.out.println("prvClose: "+prvClose);
-				        			//}
 				        			highLastPriceflag=false;
 				        		}
-				        		//System.out.println(inputLine.trim());
 				        	}else if(inputLine.contains("<td width=\"13%\" align=\"right\" class=\"brdrgtgry\" >")){
 				        		low=inputLine.trim();
 				        		low=low.substring(low.indexOf("brdrgtgry\" >"));
@@ -121,16 +117,14 @@ public class TopGainersHandler {
 				        		low=low.replace("</td>", "");
 				        		low=low.replace(",", "");
 				        		low=low.replace(".00", "");
-				        		//System.out.println("Low :"+low);
-			        		}else if(inputLine.contains("<td width=\"14%\" align=\"right\" class=\"brdrgtgry\">")){
+				        	}else if(inputLine.contains("<td width=\"14%\" align=\"right\" class=\"brdrgtgry\">")){
 				        		lastPrice=inputLine.trim();
 				        		lastPrice=lastPrice.substring(lastPrice.indexOf("brdrgtgry\">"));
 				        		lastPrice=lastPrice.replace("brdrgtgry\">", "");
 				        		lastPrice=lastPrice.replace("</td>", "");
 				        		lastPrice=lastPrice.replace(",", "");
 				        		lastPrice=lastPrice.replace(".00", "");
-				        		//System.out.println("Last Price :"+lastPrice);
-			        		}else if(inputLine.contains("<td width=\"14%\" align=\"right\" class=\"brdrgtgry\" style=\"color:#008E00\">")){ 
+				        	}else if(inputLine.contains("<td width=\"14%\" align=\"right\" class=\"brdrgtgry\" style=\"color:#008E00\">")){ 
 				        		if(!changePercentGain){
 				        			change=inputLine.trim();
 				        			change=change.substring(change.indexOf("color:#008E00\">"));
@@ -138,7 +132,6 @@ public class TopGainersHandler {
 				        			change=change.replace("</td>", "");
 				        			change=change.replace(",", "");
 				        			change=change.replace(".00", "");
-				        		//	System.out.println("Change :"+change);
 				        			changePercentGain=true;
 				        		}else if(changePercentGain){
 				        			percentGain=inputLine.trim();
@@ -147,13 +140,9 @@ public class TopGainersHandler {
 				        			percentGain=percentGain.replace("</td>", "");
 				        			percentGain=percentGain.replace(",", "");
 				        			percentGain=percentGain.replace(".00", "");
-				        		//	if(companyName.equalsIgnoreCase("Radha Madhav")){
-					        //		System.out.println("Percent Gain: "+percentGain);
-				        		//	}
 				        			changePercentGain=false;
 				        		}
-				        		//System.out.println(inputLine.trim());
-				        		String finalTopGainer= companyName+","+high+","+ low+","+ lastPrice+","+ prvClose+","+ change+","+percentGain+","+api;
+				        		String finalTopGainer= companyName+","+high+","+ low+","+ lastPrice+","+ prvClose+","+ change+","+percentGain+","+postiveBreakOut+","+api;
 				        		
 				        		
 				        		if(nameSet.add(companyName)){
