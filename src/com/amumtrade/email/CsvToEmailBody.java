@@ -41,7 +41,7 @@ public class CsvToEmailBody {
 							+"<th>"+bean.getStandaloneProfit()+"</th>"
 							+"<th>"+bean.getRecommendation()+"</th>"
 							+"<th>"+bean.getNews()+"</th></tr>\n");
-				}else{
+				}else if(bean.getRecommendation().contains("BUY")|| bean.getRecommendation().contains("buy")){
 					htmlText.append("<tr><td>"+bean.getName()+"</td>"
 							+ "<td>"+bean.getCurrentPrice()+"</td>"
 							+"<td>"+bean.getCurrentDayVolume()+"</td>"
