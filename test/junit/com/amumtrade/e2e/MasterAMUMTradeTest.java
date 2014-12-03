@@ -6,6 +6,7 @@ import com.amumtrade.handler.ConcurrentGainersAllHandler;
 import com.amumtrade.handler.ConcurrentGainersEPSHandler;
 import com.amumtrade.handler.CurrentConcurrentGainersTopGainersHandler;
 import com.amumtrade.handler.CurrentConcurrentGainersVolumeHandler;
+import com.amumtrade.handler.OnlyBuyersHandler;
 import com.amumtrade.handler.TopGainersEPSHandler;
 import com.amumtrade.handler.TopGainersHandler;
 import com.amumtrade.handler.TopGainersVolumeHandler;
@@ -13,7 +14,7 @@ import com.amumtrade.handler.TopGainersVolumeHandler;
 public class MasterAMUMTradeTest {
 	@Test
 	public void executeStockMarketStat() throws Exception{
-		long startTime= System.currentTimeMillis();
+		long startTime= System.currentTimeMillis();/*
 		//Current ConcurrentGainers
 		CurrentConcurrentGainersVolumeHandler volumeHandler = new CurrentConcurrentGainersVolumeHandler();
 		volumeHandler.execute();
@@ -34,8 +35,11 @@ public class MasterAMUMTradeTest {
 	
 		//All ConcurrentGainers
 		ConcurrentGainersAllHandler allConcurrentHandler = new ConcurrentGainersAllHandler();
-		allConcurrentHandler.execute(startTime);
+		allConcurrentHandler.execute(startTime);*/
 		
+		//OnlyBuyers
+		OnlyBuyersHandler handler = new OnlyBuyersHandler();
+		handler.execute(startTime);
 		long endTime= System.currentTimeMillis();
 		long elapsedTime = endTime - startTime;
 			
