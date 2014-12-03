@@ -7,7 +7,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import com.amumtrade.bean.ConcurrentGainersBean;
 
@@ -77,5 +79,40 @@ public class StockUtil {
 			}
 		}
 		return gainerBeanList;
+	}
+	
+	public static String getUrlToKeyAPI(String url) {
+		url = url.substring(url.lastIndexOf("/"));
+		url = url.replace("/", "");
+		return url;
+	}
+	public static Set<String> compareWithPostiveBreakOutSet(Set<String> positiveBreakoutSet, Set<String> gainersApiSet) {
+		try {
+			Set<String> gainersApiKeySet = getAPIKeyNameSet(gainersApiSet);
+			positiveBreakoutSet.retainAll(gainersApiKeySet);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return positiveBreakoutSet;
+	}
+	
+	public static Set<String> getAPIKeyNameSet(Set<String> gainersApiSet) {
+		Set<String> apiKeySet = new HashSet<String>();
+		for(String url : gainersApiSet){
+			url = url.substring(url.lastIndexOf("/"));
+			url = url.replace("/", "");
+			apiKeySet.add(url);
+		}
+		return apiKeySet;
+	}
+	
+	public static Set<String> getAPIKeyNameList(List<String> gainersApiList) {
+		Set<String> apiKeyList = new HashSet<String>();
+		for(String url : gainersApiList){
+			url = url.substring(url.lastIndexOf("/"));
+			url = url.replace("/", "");
+			apiKeyList.add(url);
+		}
+		return apiKeyList;
 	}
 }
