@@ -26,6 +26,11 @@ public class ConcurrentGainersBean {
 	private String recommendation;
 	private String news;
 	private String positiveBreakout;
+	private String sector;
+	private String bidQuantity;
+	private String difference ;
+	private String percentChange;
+	
 	public String getName() {
 		return name;
 	}
@@ -163,6 +168,30 @@ public class ConcurrentGainersBean {
 	}
 	public void setPositiveBreakout(String positiveBreakout) {
 		this.positiveBreakout = positiveBreakout;
+	}
+	public String getSector() {
+		return sector;
+	}
+	public void setSector(String sector) {
+		this.sector = sector;
+	}
+	public String getBidQuantity() {
+		return bidQuantity;
+	}
+	public void setBidQuantity(String bidQuantity) {
+		this.bidQuantity = bidQuantity;
+	}
+	public String getDifference() {
+		return difference;
+	}
+	public void setDifference(String difference) {
+		this.difference = difference;
+	}
+	public String getPercentChange() {
+		return percentChange;
+	}
+	public void setPercentChange(String percentChange) {
+		this.percentChange = percentChange;
 	}
 	
 	
