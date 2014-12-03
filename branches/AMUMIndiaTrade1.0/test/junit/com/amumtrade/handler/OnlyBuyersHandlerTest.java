@@ -8,7 +8,7 @@ public class OnlyBuyersHandlerTest {
 	public void fetchOnlyBuyersStock() throws Exception{
 		long startTime= System.currentTimeMillis();
 		OnlyBuyersHandler handler = new OnlyBuyersHandler();
-		handler.execute();
+		handler.execute(startTime);
 		long endTime= System.currentTimeMillis();
 		long elapsedTime = endTime - startTime;
 			

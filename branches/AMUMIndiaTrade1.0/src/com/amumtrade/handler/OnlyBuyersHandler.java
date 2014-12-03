@@ -19,6 +19,7 @@ import java.util.concurrent.Executors;
 import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.constant.FileNameConstant;
+import com.amumtrade.email.CsvToEmailBody;
 import com.amumtrade.factory.OnlyBuyersEPSRunner;
 import com.amumtrade.factory.OnlyBuyersVolumeRunner;
 import com.amumtrade.util.StockUtil;
@@ -30,13 +31,22 @@ public class OnlyBuyersHandler {
 
 	Map<String,ConcurrentGainersBean> onlyBuyersMap = null;
 	
-	public void execute() throws IOException{
+	public void execute(long startTime) throws IOException{
 		try {
-			//executeOnlyBuyersVolume();
+			executeOnlyBuyersVolume();
 			executeOnlyBuyersEPS();
+			sendEPSEmail(startTime);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+
+	private void sendEPSEmail(long startTime) throws IOException {
+		CsvToEmailBody emailBody = new CsvToEmailBody();
+		String htmlText= emailBody.execute(FileNameConstant.ONLY_BUYERS);
+		StockUtil.initiateEmail(FileNameConstant.ONLY_BUYERS,startTime,htmlText);
+		
 	}
 
 
@@ -62,7 +72,6 @@ public class OnlyBuyersHandler {
 				epsApiurlList.add(epsApiBean.getFinanceApi());
 				onlyBuyersMap.put(epsApiBean.getFinanceApi(),epsApiBean);
 			}
-			System.out.println(epsApiurlList);
 	    	
 			int i=0;
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
@@ -116,7 +125,7 @@ public class OnlyBuyersHandler {
 					buyersList.add(buyersBean);
 				}
 				skipFirstLineHeader++;
-			}
+		}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
@@ -139,13 +148,13 @@ public class OnlyBuyersHandler {
 			List<ConcurrentGainersBean> onlyBuyersList = runOnlyBuyerURL(URL);
 			System.out.println("ONLY BUYERS FOR VOLUME EXECUTION SIZE>>"+onlyBuyersList.size());
 			
-			int count = 0;
+			//int count = 0;
 			for(ConcurrentGainersBean bean : onlyBuyersList){
-				if(count< 5){
+				//if(count< 5){
 					onlyBuyersMap.put(bean.getApi(), bean);
 					urlList.add(bean.getApi());
-				}
-				count++;
+				//}
+				//count++;
 			}
 			
 			int i=0;
