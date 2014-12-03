@@ -41,9 +41,8 @@ long sTime;
 		List<ConcurrentGainersBean> finalConGainersList = getCommonConcurrentGainers(threeDayConGainersList,fiveDayConGainersList,eigthDayConGainersList);
 		runVolumeSplitter(finalConGainersList);
 		
-		/*CsvToEmailBody emailBody = new CsvToEmailBody();
-		String htmlText= emailBody.execute();*/
-		String htmlText="dummy";
+		CsvToEmailBody emailBody = new CsvToEmailBody();
+		String htmlText= emailBody.execute(FileNameConstant.ALL_CONCURRENT_GAINER);
 		StockUtil.initiateEmail(FileNameConstant.ALL_CONCURRENT_GAINER,startTime,htmlText);
 	}
 
@@ -104,18 +103,18 @@ long sTime;
 			bwObjVolume = new BufferedWriter( fwo );  
 			bwObjVolume.write("CompanyName,CurrentPrice,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,VolumeRating,PostiveBreakOut,Api"+"\n");
 			
-			Set<String> keyNameSet = StockUtil.getAPIKeyNameList(urlList);
+			//Set<String> keyNameSet = StockUtil.getAPIKeyNameList(urlList);
 			boolean postiveBreakOutFlag = false;
 			int i=0;
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
 			 for(String httpUrl : urlList){
-				 String httpUrlApi = StockUtil.getUrlToKeyAPI(httpUrl);
-				 if(keyNameSet.contains(httpUrlApi)){
+				// String httpUrlApi = StockUtil.getUrlToKeyAPI(httpUrl);
+				/* if(keyNameSet.contains(httpUrlApi)){
 					 postiveBreakOutFlag = true; 
 				 }else{
 					 postiveBreakOutFlag = false;
 				 }
-		            Runnable worker = new ConcurrentGainersVolumeRunner(new URL(httpUrl),concurrentGainerMap,bwObjVolume,postiveBreakOutFlag,"" + i);
+		        */    Runnable worker = new ConcurrentGainersVolumeRunner(new URL(httpUrl),concurrentGainerMap,bwObjVolume,postiveBreakOutFlag,"" + i);
 		            executor.execute(worker);
 		            i++;
 		          }

@@ -13,8 +13,8 @@ import java.util.Map;
 import java.util.Set;
 
 import com.amumtrade.bean.ConcurrentGainersBean;
-import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.constant.FileNameConstant;
+import com.amumtrade.email.CsvToEmailBody;
 import com.amumtrade.util.StockUtil;
 
 public class CurrentConcurrentGainersTopGainersHandler {
@@ -37,9 +37,9 @@ public class CurrentConcurrentGainersTopGainersHandler {
 		topGainersApiSet = getTopGainersApiAPI();
 		concurrentGainersApiSet = getConcurrentGainersApi();
 		compareBothGainers();
-		/*CsvToEmailBody emailBody = new CsvToEmailBody();
-		String htmlText= emailBody.execute();*/
-		String htmlText="dummy";
+
+		CsvToEmailBody emailBody = new CsvToEmailBody();
+		String htmlText= emailBody.execute(csvFileName);
 		StockUtil.initiateEmail(csvFileName,startTime,htmlText);
 		
 	}

@@ -40,9 +40,10 @@ public class ConcurrentGainersEPSHandler {
 		concurrentGainersWithRatingList = convertConGainersCsvToBean();
 		List<ConcurrentGainersBean> financeRatingList  = convertUrlToFinancialUrl(concurrentGainersWithRatingList);
 		runFinanceRatingUrl(financeRatingList, csvFileName);
-		/*CsvToEmailBody emailBody = new CsvToEmailBody();
-		String htmlText= emailBody.execute();*/
-		String htmlText = "dummy";
+		
+		CsvToEmailBody emailBody = new CsvToEmailBody();
+		String htmlText= emailBody.execute(csvFileName);
+		StockUtil.initiateEmail(csvFileName,startTime,htmlText);
 		StockUtil.initiateEmail(csvFileName,startTime,htmlText);
 	}
 	private void runFinanceRatingUrl(List<ConcurrentGainersBean> financeUrlList,String filePath) throws IOException {
