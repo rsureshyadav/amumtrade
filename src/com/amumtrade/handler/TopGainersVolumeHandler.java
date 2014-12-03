@@ -44,8 +44,7 @@ public class TopGainersVolumeHandler {
 				}
 			}
 			bwObj = new BufferedWriter( fwo );  
-			bwObj.write("Company Name,High,Low,Last Price,Prv Close,Change,Day Volume,FiveDay AvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating,PostiveBreakOut,Api"+"\n");
-			
+			bwObj.write("Company Name,High,Low,Last Price,Prv Close,Change,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating,Api"+"\n");
 			
 			int i=0;
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);

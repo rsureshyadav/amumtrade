@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import com.amumtrade.bean.ConcurrentGainersBean;
@@ -114,5 +115,29 @@ public class StockUtil {
 			apiKeyList.add(url);
 		}
 		return apiKeyList;
+	}
+	
+	public static List<ConcurrentGainersBean> convertUrlToEPSUrl(Map<String, ConcurrentGainersBean> onlyBuyersMap,
+			Set<String> urlList) {
+		List<ConcurrentGainersBean> beanList = new ArrayList<ConcurrentGainersBean>();
+		ConcurrentGainersBean bean = null; 
+		String urlSplitBy = "/";
+		String apiUrl = null;
+
+		try {
+			for(String url: urlList){
+				bean = new ConcurrentGainersBean();
+				bean = onlyBuyersMap.get(url);
+				apiUrl = bean.getApi();
+				apiUrl = apiUrl.replace("http://", "");
+				String[] apiUrlSplit = apiUrl.split(urlSplitBy);
+				apiUrl = "http://"+apiUrlSplit[0]+"/"+"financials"+"/"+apiUrlSplit[4]+"/"+"ratios"+"/"+apiUrlSplit[5]+"#"+apiUrlSplit[5];
+				bean.setFinanceApi(apiUrl);
+				beanList.add(bean);
+		}
+	} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return beanList;
 	}
 }
