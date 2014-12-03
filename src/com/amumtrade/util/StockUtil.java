@@ -22,9 +22,9 @@ public class StockUtil {
 			DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 			Date date = new Date();
 			startDateTimeLog = dateFormat.format(date);
-		/*	SendAttachmentInEmail email = new SendAttachmentInEmail();
+			SendAttachmentInEmail email = new SendAttachmentInEmail();
 			email.execute(filePath, startDateTimeLog, getTotalExecutionTime(startTime),htmlText);
-	*/	} catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		

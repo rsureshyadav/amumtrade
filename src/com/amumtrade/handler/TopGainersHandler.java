@@ -86,12 +86,12 @@ public class TopGainersHandler {
 				        		api = api.substring(api.indexOf("<a href="), api.lastIndexOf("class='bl_12'"));
 				        		api = api.replace("<a href=", "");
 				        		api = api.replace("'", "");
-				        		String apiKey = StockUtil.getUrlToKeyAPI(api);
-				        		if(positiveBreakoutSet.contains(apiKey)){
+				        		//String apiKey = StockUtil.getUrlToKeyAPI(api);
+				        		/*if(positiveBreakoutSet.contains(apiKey)){
 				        			postiveBreakOut = AMUMStockConstant.YES;
 				        		}else{
 				        			postiveBreakOut = "";
-				        		}
+				        		}*/
 				        	}else if(inputLine.contains("<td width=\"13%\" align=\"right\" class=\"brdrgtgry\">")){
 				        		if(!highLastPriceflag){
 				        			high=inputLine.trim();

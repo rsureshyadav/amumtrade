@@ -43,16 +43,16 @@ public class CurrentConcurrentGainersVolumeHandler {
 			}
 			bwObj = new BufferedWriter( fwo );  
 			bwObj.write("CompanyName,CurrentPrice,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,Rating,PostiveBreakOut,Api"+"\n");
-			Set<String> keyNameSet = StockUtil.getAPIKeyNameList(urlList);
+			//Set<String> keyNameSet = StockUtil.getAPIKeyNameList(urlList);
 			boolean postiveBreakOutFlag = false;
 			int i=0;
 			 ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
 			 for(String httpUrlApi : urlList){//for (int i = 0; i < 10; i++) {
-					 if(keyNameSet.contains(httpUrlApi)){
+					 /*if(keyNameSet.contains(httpUrlApi)){
 						 postiveBreakOutFlag = true; 
 					 }else{
 						 postiveBreakOutFlag = false;
-					 }
+					 }*/
 		            Runnable worker = new ConcurrentGainersVolumeRunner(new URL(httpUrlApi),concurrentGainerMap,bwObj,postiveBreakOutFlag,"" + i);
 		            executor.execute(worker);
 		            i++;

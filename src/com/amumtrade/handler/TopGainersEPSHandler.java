@@ -30,9 +30,9 @@ public class TopGainersEPSHandler {
 		topGainersWithRatingList = convertTopGainersVolumeCsvToBean();
 		List<ConcurrentGainersBean> gainerRatingList  = convertUrlToFinancialUrl(topGainersWithRatingList);
 		runFinanceRatingUrl(gainerRatingList);
-		/*CsvToEmailBody emailBody = new CsvToEmailBody();
-		String htmlText= emailBody.execute();*/
-		String htmlText="dummy";
+
+		CsvToEmailBody emailBody = new CsvToEmailBody();
+		String htmlText= emailBody.execute(csvFileName);
 		StockUtil.initiateEmail(csvFileName,startTime,htmlText);
 	}
 	private void runFinanceRatingUrl(List<ConcurrentGainersBean> gainerUrlList) throws IOException {
