@@ -13,14 +13,14 @@ import java.util.Set;
 import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
 
-public class OnlyBuyersEPSRunner implements Runnable{
+public class PositiveTurnAroundVolumeEPSRunner implements Runnable{
 
 	private String command;
 	private URL urlConn;
 	private Map<String,ConcurrentGainersBean> financialAnalysisMap;
 	private BufferedWriter bwObj;
 	
-	public OnlyBuyersEPSRunner(URL httpUrl,Map<String,ConcurrentGainersBean> financialAnalysis,BufferedWriter bufferWriter,String s){
+	public PositiveTurnAroundVolumeEPSRunner(URL httpUrl,Map<String,ConcurrentGainersBean> financialAnalysis,BufferedWriter bufferWriter,String s){
 		this.urlConn=httpUrl;
 		this.financialAnalysisMap = financialAnalysis;
 		this.bwObj = bufferWriter;
@@ -66,7 +66,6 @@ public class OnlyBuyersEPSRunner implements Runnable{
 		boolean isnewsLine = false;
 		Set<String> epsUrlSet = null;
 
-		ConcurrentGainersBean financialInfoBean;
 		try {
 			epsUrlSet = new HashSet<String>();
 
@@ -127,23 +126,9 @@ public class OnlyBuyersEPSRunner implements Runnable{
 				 }
 			    }
 			 if(eps != null && !eps.contains("-") && !epsUrlSet.contains(url)){
-				 financialInfoBean = new ConcurrentGainersBean();
-				 financialInfoBean.setEps(eps);
 				 ConcurrentGainersBean bean = financialAnalysisMap.get(url);
-				 financialInfoBean.setCompanyName(bean.getCompanyName());
-				 financialInfoBean.setSector(bean.getSector());
-				 financialInfoBean.setBidQuantity(bean.getBidQuantity());
-				 financialInfoBean.setCurrentPrice(bean.getCurrentPrice());
-				 financialInfoBean.setDifference(bean.getDifference());
-				 financialInfoBean.setPercentChange(bean.getPercentChange());
-				 financialInfoBean.setCurrentVolume(bean.getCurrentVolume());
-				 financialInfoBean.setCurrentDayVolume(bean.getCurrentDayVolume());
-				 financialInfoBean.setFiveDayAvgVolume(bean.getFiveDayAvgVolume());
-				 financialInfoBean.setTenDayAvgVolume(bean.getTenDayAvgVolume());
-				 financialInfoBean.setThirtyDayAvgVolume(bean.getThirtyDayAvgVolume());
-				 financialInfoBean.setVolumeRating(bean.getVolumeRating());
-				 financialInfoBean.setFinanceApi(url);
-				 financialInfoBean.setApi(bean.getApi());
+				 bean.setEps(eps);
+				 bean.setFinanceApi(url);
 				 if(standaloneProfit == null){
 					 standaloneProfit="";
 				 }
@@ -153,10 +138,10 @@ public class OnlyBuyersEPSRunner implements Runnable{
 				 if(newsLine == null){
 					 newsLine="";
 				 }
-				 financialInfoBean.setStandaloneProfit(standaloneProfit);
-				 financialInfoBean.setRecommendation(recommendation);
-				 financialInfoBean.setNews(newsLine);
-				 writeVolumeToCSVFile(financialInfoBean);
+				 bean.setStandaloneProfit(standaloneProfit);
+				 bean.setRecommendation(recommendation);
+				 bean.setNews(newsLine);
+				 writeVolumeToCSVFile(bean);
 				 epsUrlSet.add(url);
 			 }
 		} catch (Exception e) {
@@ -170,10 +155,9 @@ public class OnlyBuyersEPSRunner implements Runnable{
 		try {
 			epsValue = Double.valueOf(bean.getEps());
 			if(epsValue > 100){
-				bwObj.write(bean.getCompanyName()+","+bean.getSector()+","+bean.getBidQuantity()+","
-						+bean.getCurrentPrice()+","+bean.getDifference()+","
-						+bean.getPercentChange()+","+bean.getCurrentVolume()+","
-						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getQuarterSale()+","+ bean.getPrevYearSale()+","
+						+ bean.getPercentChgSale()+","+ bean.getQuarterNetProfit()+","+ bean.getPrevYearNetProfit()+","
+						+bean.getNetProfitChg()+","	+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+bean.getVolumeRating()+","+bean.getEps()+","
 						+AMUMStockConstant.FIVE_STAR+","+bean.getStandaloneProfit()+","
@@ -182,40 +166,36 @@ public class OnlyBuyersEPSRunner implements Runnable{
 				System.out.println(bean.getCompanyName()+","+"^"+bean.getCurrentPrice()+","+bean.getCurrentDayVolume()+","+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.FIVE_STAR);
 				
 			}else if(epsValue > 75 && epsValue < 100){
-				bwObj.write(bean.getCompanyName()+","+bean.getSector()+","+bean.getBidQuantity()+","
-						+bean.getCurrentPrice()+","+bean.getDifference()+","
-						+bean.getPercentChange()+","+bean.getCurrentVolume()+","
-						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getQuarterSale()+","+ bean.getPrevYearSale()+","
+						+ bean.getPercentChgSale()+","+ bean.getQuarterNetProfit()+","+ bean.getPrevYearNetProfit()+","
+						+bean.getNetProfitChg()+","	+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+bean.getVolumeRating()+","+bean.getEps()+","
 						+AMUMStockConstant.FOUR_STAR+","+bean.getStandaloneProfit()+","
 						+bean.getRecommendation()+","+bean.getNews()
 						+","+bean.getApi()+"\n");
 			}else if(epsValue > 50 && epsValue < 75){
-				bwObj.write(bean.getCompanyName()+","+bean.getSector()+","+bean.getBidQuantity()+","
-						+bean.getCurrentPrice()+","+bean.getDifference()+","
-						+bean.getPercentChange()+","+bean.getCurrentVolume()+","
-						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getQuarterSale()+","+ bean.getPrevYearSale()+","
+						+ bean.getPercentChgSale()+","+ bean.getQuarterNetProfit()+","+ bean.getPrevYearNetProfit()+","
+						+bean.getNetProfitChg()+","	+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+bean.getVolumeRating()+","+bean.getEps()+","
 						+AMUMStockConstant.THREE_STAR+","+bean.getStandaloneProfit()+","
 						+bean.getRecommendation()+","+bean.getNews()
 						+","+bean.getApi()+"\n");
 			}else if(epsValue > 25 && epsValue < 50){
-				bwObj.write(bean.getCompanyName()+","+bean.getSector()+","+bean.getBidQuantity()+","
-						+bean.getCurrentPrice()+","+bean.getDifference()+","
-						+bean.getPercentChange()+","+bean.getCurrentVolume()+","
-						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getQuarterSale()+","+ bean.getPrevYearSale()+","
+						+ bean.getPercentChgSale()+","+ bean.getQuarterNetProfit()+","+ bean.getPrevYearNetProfit()+","
+						+bean.getNetProfitChg()+","	+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+bean.getVolumeRating()+","+bean.getEps()+","
 						+AMUMStockConstant.TWO_STAR+","+bean.getStandaloneProfit()+","
 						+bean.getRecommendation()+","+bean.getNews()
 						+","+bean.getApi()+"\n");
 			}else if(epsValue > 0 && epsValue < 25){
-				bwObj.write(bean.getCompanyName()+","+bean.getSector()+","+bean.getBidQuantity()+","
-						+bean.getCurrentPrice()+","+bean.getDifference()+","
-						+bean.getPercentChange()+","+bean.getCurrentVolume()+","
-						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getQuarterSale()+","+ bean.getPrevYearSale()+","
+						+ bean.getPercentChgSale()+","+ bean.getQuarterNetProfit()+","+ bean.getPrevYearNetProfit()+","
+						+bean.getNetProfitChg()+","	+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+bean.getVolumeRating()+","+bean.getEps()+","
 						+AMUMStockConstant.ONE_STAR+","+bean.getStandaloneProfit()+","

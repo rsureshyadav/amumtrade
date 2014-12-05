@@ -33,16 +33,16 @@ public class OnlyBuyersHandler {
 	
 	public void execute(long startTime) throws IOException{
 		try {
-			executeOnlyBuyersVolume();
-			executeOnlyBuyersEPS();
-			sendEPSEmail(startTime);
+			executeVolume();
+			executeVolumeEPS();
+			sendVolumeEPSEmail(startTime);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
 
-	private void sendEPSEmail(long startTime) throws IOException {
+	private void sendVolumeEPSEmail(long startTime) throws IOException {
 		CsvToEmailBody emailBody = new CsvToEmailBody();
 		String htmlText= emailBody.execute(FileNameConstant.ONLY_BUYERS);
 		StockUtil.initiateEmail(FileNameConstant.ONLY_BUYERS,startTime,htmlText);
@@ -50,7 +50,7 @@ public class OnlyBuyersHandler {
 	}
 
 
-	private void executeOnlyBuyersEPS()throws IOException {
+	private void executeVolumeEPS()throws IOException {
 		BufferedWriter bwObj = null;
 		onlyBuyersMap = new HashMap<String,ConcurrentGainersBean>();
 		try {
@@ -109,7 +109,7 @@ public class OnlyBuyersHandler {
 				if(skipFirstLineHeader!=0){ 
 					buyersBean = new ConcurrentGainersBean();
 					String[] topGainers = line.split(cvsSplitBy);
-					buyersBean.setName(topGainers[0]);
+					buyersBean.setCompanyName(topGainers[0]);
 					buyersBean.setSector(topGainers[1]);
 					buyersBean.setBidQuantity(topGainers[2]);
 					buyersBean.setCurrentPrice(topGainers[3]);
@@ -136,7 +136,7 @@ public class OnlyBuyersHandler {
 		return buyersList;
 	}
 	
-	private void executeOnlyBuyersVolume() throws IOException{
+	private void executeVolume() throws IOException{
 		BufferedWriter bwObj = null;
 		onlyBuyersMap = new HashMap<String,ConcurrentGainersBean>();
 
@@ -272,7 +272,7 @@ public class OnlyBuyersHandler {
 						  if(!setToskipDuplicate.contains(api)){
 							  bean = new ConcurrentGainersBean();
 							  bean.setApi(api);
-							  bean.setName(companyName);
+							  bean.setCompanyName(companyName);
 							  bean.setSector(sector);
 							  bean.setBidQuantity(bidQuantity);
 							  bean.setCurrentPrice(currentPrice);

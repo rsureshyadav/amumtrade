@@ -86,7 +86,7 @@ public class CurrentConcurrentGainersTopGainersHandler {
 
 	private void createCSVFile(ConcurrentGainersBean bean, BufferedWriter bwObj) {
 		try {
-			bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
+			bwObj.write(bean.getCompanyName()+","+bean.getCurrentPrice()+","
 					+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 					+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 					+bean.getVolumeRating()+","+bean.getEps()+","+bean.getEpsRating()+","
@@ -131,7 +131,7 @@ public class CurrentConcurrentGainersTopGainersHandler {
 				if(skipFirstLineHeader!=0){ 
 					gainerBean = new ConcurrentGainersBean();
 					String[] conGainers = line.split(cvsSplitBy);
-					gainerBean.setName(conGainers[0]);
+					gainerBean.setCompanyName(conGainers[0]);
 					gainerBean.setCurrentPrice(conGainers[1]);
 					gainerBean.setCurrentDayVolume(conGainers[2]);
 					gainerBean.setFiveDayAvgVolume(conGainers[3]);
