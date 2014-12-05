@@ -130,7 +130,7 @@ public class EPSRunner implements Runnable{
 				 financialInfoBean = new ConcurrentGainersBean();
 				 financialInfoBean.setEps(eps);
 				 ConcurrentGainersBean bean = financialAnalysisMap.get(url);
-				 financialInfoBean.setName(bean.getName());
+				 financialInfoBean.setCompanyName(bean.getCompanyName());
 				 financialInfoBean.setCurrentPrice(bean.getCurrentPrice());
 				 financialInfoBean.setFinanceApi(url);
 				 financialInfoBean.setApi(bean.getApi());
@@ -165,17 +165,17 @@ public class EPSRunner implements Runnable{
 		try {
 			epsValue = Double.valueOf(bean.getEps());
 			if(epsValue > 100){
-				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+bean.getVolumeRating()+","+bean.getEps()+","
 						+AMUMStockConstant.FIVE_STAR+","+bean.getStandaloneProfit()+","
 						+bean.getRecommendation()+","+bean.getNews()+","+bean.getPositiveBreakout()
 						+","+bean.getApi()+"\n");
-				System.out.println(bean.getName()+","+"^"+bean.getCurrentPrice()+","+bean.getCurrentDayVolume()+","+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.FIVE_STAR);
+				System.out.println(bean.getCompanyName()+","+"^"+bean.getCurrentPrice()+","+bean.getCurrentDayVolume()+","+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.FIVE_STAR);
 				
 			}else if(epsValue > 75 && epsValue < 100){
-				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+bean.getVolumeRating()+","+bean.getEps()+","
@@ -183,7 +183,7 @@ public class EPSRunner implements Runnable{
 						+bean.getRecommendation()+","+bean.getNews()+","+bean.getPositiveBreakout()
 						+","+bean.getApi()+"\n");
 			}else if(epsValue > 50 && epsValue < 75){
-				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.THREE_STAR+","
@@ -191,7 +191,7 @@ public class EPSRunner implements Runnable{
 						+bean.getNews()+","+bean.getPositiveBreakout()
 						+","+bean.getApi()+"\n");
 			}else if(epsValue > 25 && epsValue < 50){
-				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.TWO_STAR+","
@@ -199,7 +199,7 @@ public class EPSRunner implements Runnable{
 						+bean.getNews()+","+bean.getPositiveBreakout()
 						+","+bean.getApi()+"\n");
 			}else if(epsValue > 0 && epsValue < 25){
-				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+bean.getVolumeRating()+","+bean.getEps()+","+AMUMStockConstant.ONE_STAR+","

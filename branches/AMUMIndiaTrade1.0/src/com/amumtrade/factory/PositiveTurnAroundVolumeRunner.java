@@ -13,14 +13,14 @@ import java.util.Set;
 import com.amumtrade.bean.ConcurrentGainersBean;
 import com.amumtrade.constant.AMUMStockConstant;
 
-public class OnlyBuyersVolumeRunner implements Runnable {
+public class PositiveTurnAroundVolumeRunner implements Runnable {
 	private String command;
 	private URL urlConn;
-	private Map<String,ConcurrentGainersBean> onlyBuyerMap;
+	private Map<String,ConcurrentGainersBean> postiveTurnAroundMap;
 	private BufferedWriter bwObj;
-	public OnlyBuyersVolumeRunner(URL httpUrl,Map<String,ConcurrentGainersBean> topGainers,BufferedWriter bufferWriter,String s){
+	public PositiveTurnAroundVolumeRunner(URL httpUrl,Map<String,ConcurrentGainersBean> positiveMap,BufferedWriter bufferWriter,String s){
 		this.urlConn=httpUrl;
-		this.onlyBuyerMap = topGainers;
+		this.postiveTurnAroundMap = positiveMap;
 		this.bwObj = bufferWriter;
 		this.command=s;
 	}
@@ -63,7 +63,6 @@ public class OnlyBuyersVolumeRunner implements Runnable {
 		int toolTip3Count =0;
 		
 		Set<String> urlSet = null;
-		ConcurrentGainersBean onlyBuyerBean;
 		try {
 			urlSet = new HashSet<String>();
 			 while ((inputLine = bufferReader.readLine()) != null)
@@ -106,25 +105,17 @@ public class OnlyBuyersVolumeRunner implements Runnable {
 							 && !tenDayAvgVolume.isEmpty()
 							 && !thirtyDayAvgVolume.isEmpty()){
 					 
-					 	 onlyBuyerBean = new ConcurrentGainersBean();
-					 	 onlyBuyerBean.setCurrentDayVolume(currentDayVolume);
-						 onlyBuyerBean.setFiveDayAvgVolume(fiveDayAvgVolume);
-						 onlyBuyerBean.setTenDayAvgVolume(tenDayAvgVolume);
-						 onlyBuyerBean.setThirtyDayAvgVolume(thirtyDayAvgVolume);
-						 ConcurrentGainersBean bean = onlyBuyerMap.get(url);
-						 onlyBuyerBean.setCompanyName(bean.getCompanyName());
-						 onlyBuyerBean.setSector(bean.getSector());
-						 onlyBuyerBean.setBidQuantity(bean.getBidQuantity());
-						 onlyBuyerBean.setCurrentPrice(bean.getCurrentPrice());
-						 onlyBuyerBean.setDifference(bean.getDifference());
-						 onlyBuyerBean.setPercentChange(bean.getPercentChange());
-						 onlyBuyerBean.setCurrentVolume(bean.getCurrentVolume());
-						 onlyBuyerBean.setApi(bean.getApi());
+						 ConcurrentGainersBean bean = postiveTurnAroundMap.get(url);
+						 bean.setCurrentDayVolume(currentDayVolume);
+						 bean.setFiveDayAvgVolume(fiveDayAvgVolume);
+						 bean.setTenDayAvgVolume(tenDayAvgVolume);
+						 bean.setThirtyDayAvgVolume(thirtyDayAvgVolume);
+						 
 						 fiveDayAvgVolume = null;
 						 tenDayAvgVolume = null;
 						 thirtyDayAvgVolume = null; 
 						 urlSet.add(url);
-						 writeVolumeToCSVFile(onlyBuyerBean);
+						 writeVolumeToCSVFile(bean);
 					 }
 				 }
 		        
@@ -147,25 +138,25 @@ private void writeVolumeToCSVFile(ConcurrentGainersBean bean) {
 			int thirtyDayAvgVolume = Integer.parseInt(bean.getThirtyDayAvgVolume());
 			if(dayVolume >= fiveDayAvgVolume && dayVolume >= tenDayAvgVolume && dayVolume >= thirtyDayAvgVolume 
 					&& fiveDayAvgVolume > tenDayAvgVolume && fiveDayAvgVolume >thirtyDayAvgVolume){
-				bwObj.write(bean.getCompanyName()+","+bean.getSector()+","+ bean.getBidQuantity()+","
-						+ bean.getCurrentPrice()+","+ bean.getDifference()+","+ bean.getPercentChange()+","+ bean.getCurrentVolume()+","
-						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","+bean.getTenDayAvgVolume()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getQuarterSale()+","+ bean.getPrevYearSale()+","
+						+ bean.getPercentChgSale()+","+ bean.getQuarterNetProfit()+","+ bean.getPrevYearNetProfit()+","
+						+bean.getNetProfitChg()+","+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","+bean.getTenDayAvgVolume()+","
 						+bean.getThirtyDayAvgVolume()+","+AMUMStockConstant.FIVE_STAR+","+bean.getApi()+"\n");
-				System.out.println(bean.getCompanyName()+","+"^"+bean.getDifference()+","+bean.getCurrentDayVolume()+","+AMUMStockConstant.FIVE_STAR);
+				System.out.println(bean.getCompanyName()+","+AMUMStockConstant.FIVE_STAR);
 			}else if(dayVolume >= fiveDayAvgVolume && dayVolume >= tenDayAvgVolume && dayVolume >= thirtyDayAvgVolume){
-				bwObj.write(bean.getCompanyName()+","+bean.getSector()+","+ bean.getBidQuantity()+","
-						+ bean.getCurrentPrice()+","+ bean.getDifference()+","+ bean.getPercentChange()+","+ bean.getCurrentVolume()+","
-						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","+bean.getTenDayAvgVolume()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getQuarterSale()+","+ bean.getPrevYearSale()+","
+						+ bean.getPercentChgSale()+","+ bean.getQuarterNetProfit()+","+ bean.getPrevYearNetProfit()+","
+						+bean.getNetProfitChg()+","+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","+bean.getTenDayAvgVolume()+","
 						+bean.getThirtyDayAvgVolume()+","+AMUMStockConstant.FOUR_STAR+","+bean.getApi()+"\n");
 			}else if(fiveDayAvgVolume > tenDayAvgVolume && fiveDayAvgVolume >thirtyDayAvgVolume){
-				bwObj.write(bean.getCompanyName()+","+bean.getSector()+","+ bean.getBidQuantity()+","
-						+ bean.getCurrentPrice()+","+ bean.getDifference()+","+ bean.getPercentChange()+","+ bean.getCurrentVolume()+","
-						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","+bean.getTenDayAvgVolume()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getQuarterSale()+","+ bean.getPrevYearSale()+","
+						+ bean.getPercentChgSale()+","+ bean.getQuarterNetProfit()+","+ bean.getPrevYearNetProfit()+","
+						+bean.getNetProfitChg()+","+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","+bean.getTenDayAvgVolume()+","
 						+bean.getThirtyDayAvgVolume()+","+AMUMStockConstant.THREE_STAR+","+bean.getApi()+"\n");
 			}else if(fiveDayAvgVolume <= tenDayAvgVolume && tenDayAvgVolume>=thirtyDayAvgVolume){
-				bwObj.write(bean.getCompanyName()+","+bean.getSector()+","+ bean.getBidQuantity()+","
-						+ bean.getCurrentPrice()+","+ bean.getDifference()+","+ bean.getPercentChange()+","+ bean.getCurrentVolume()+","
-						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","+bean.getTenDayAvgVolume()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getQuarterSale()+","+ bean.getPrevYearSale()+","
+						+ bean.getPercentChgSale()+","+ bean.getQuarterNetProfit()+","+ bean.getPrevYearNetProfit()+","
+						+bean.getNetProfitChg()+","+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","+bean.getTenDayAvgVolume()+","
 						+bean.getThirtyDayAvgVolume()+","+AMUMStockConstant.TWO_STAR+","+bean.getApi()+"\n");
 			}
 		} catch (Exception e) {

@@ -22,8 +22,8 @@ public class StockUtil {
 			DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 			Date date = new Date();
 			startDateTimeLog = dateFormat.format(date);
-			SendAttachmentInEmail email = new SendAttachmentInEmail();
-			email.execute(filePath, startDateTimeLog, getTotalExecutionTime(startTime),htmlText);
+			/*SendAttachmentInEmail email = new SendAttachmentInEmail();
+			email.execute(filePath, startDateTimeLog, getTotalExecutionTime(startTime),htmlText);*/
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -54,7 +54,7 @@ public class StockUtil {
 			while ((line = br.readLine()) != null) {
 					gainerBean = new ConcurrentGainersBean();
 					String[] conGainers = line.split(cvsSplitBy);
-					gainerBean.setName(conGainers[0]);
+					gainerBean.setCompanyName(conGainers[0]);
 					gainerBean.setCurrentPrice(conGainers[1]);
 					gainerBean.setCurrentDayVolume(conGainers[2]);
 					gainerBean.setFiveDayAvgVolume(conGainers[3]);

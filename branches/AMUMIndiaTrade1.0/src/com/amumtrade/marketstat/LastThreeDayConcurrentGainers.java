@@ -146,7 +146,7 @@ public class LastThreeDayConcurrentGainers {
 		    			&& eigthDayAgoPrice != null
 		    			&& eigthDayAgoPercentChange  != null ){
 		    			 bean.setApi(urlAPI);
-		    			 bean.setName(companyName);
+		    			 bean.setCompanyName(companyName);
 		    			 bean.setCurrentPrice(currentPrice);
 		    			 bean.setCurrentPercentChange(currentPercentChange);
 		    			 bean.setCurrentVolume(currentVolume);

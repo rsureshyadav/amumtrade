@@ -29,7 +29,7 @@ public class CsvToEmailBody {
 		try {
 			for(ConcurrentGainersBean bean : beanList){
 				if(skipFirstLineHeader==0){ 
-					htmlText.append("<tr><th>"+bean.getName()+"</th>"
+					htmlText.append("<tr><th>"+bean.getCompanyName()+"</th>"
 							+ "<th>"+bean.getCurrentPrice()+"</th>"
 							+"<th>"+bean.getCurrentDayVolume()+"</th>"
 							+"<th>"+bean.getFiveDayAvgVolume()+"</th>"
@@ -42,7 +42,7 @@ public class CsvToEmailBody {
 							+"<th>"+bean.getRecommendation()+"</th>"
 							+"<th>"+bean.getNews()+"</th></tr>\n");
 				}else if(bean.getRecommendation().contains("BUY")|| bean.getRecommendation().contains("buy")){
-					htmlText.append("<tr><td>"+bean.getName()+"</td>"
+					htmlText.append("<tr><td>"+bean.getCompanyName()+"</td>"
 							+ "<td>"+bean.getCurrentPrice()+"</td>"
 							+"<td>"+bean.getCurrentDayVolume()+"</td>"
 							+"<td>"+bean.getFiveDayAvgVolume()+"</td>"

@@ -94,7 +94,7 @@ public class ConcurrentGainersEPSHandler {
 					String[] apiUrlSplit = apiUrl.split(urlSplitBy);
 					apiUrl = "http://"+apiUrlSplit[0]+"/"+"financials"+"/"+apiUrlSplit[4]+"/"+"ratios"+"/"+apiUrlSplit[5]+"#"+apiUrlSplit[5];
 					//System.out.println(apiUrl);
-					bean.setName(record.getName());
+					bean.setCompanyName(record.getCompanyName());
 					bean.setApi(record.getApi());
 					bean.setFinanceApi(apiUrl);
 					bean.setCurrentPrice(record.getCurrentPrice());
@@ -125,7 +125,7 @@ public class ConcurrentGainersEPSHandler {
 				if(skipFirstLineHeader!=0){ 
 					gainerBean = new ConcurrentGainersBean();
 					String[] conGainers = line.split(cvsSplitBy);
-					gainerBean.setName(conGainers[0]);
+					gainerBean.setCompanyName(conGainers[0]);
 					gainerBean.setCurrentPrice(conGainers[1]);
 					gainerBean.setCurrentDayVolume(conGainers[2]);
 					gainerBean.setFiveDayAvgVolume(conGainers[3]);

@@ -2,7 +2,7 @@ package com.amumtrade.bean;
 
 public class ConcurrentGainersBean {
 
-	private String name;
+	private String companyName;
 	private String api;
 	private String financeApi;
 	private String currentPrice ;
@@ -31,11 +31,19 @@ public class ConcurrentGainersBean {
 	private String difference ;
 	private String percentChange;
 	
-	public String getName() {
-		return name;
+	String positiveAPI = null;
+	String quarterSale = null;
+	String prevYearSale = null;
+	String percentChgSale = null;
+	String quarterNetProfit = null;
+	String prevYearNetProfit = null;
+	String netProfitChg = null;
+	
+	public String getCompanyName() {
+		return companyName;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
 	}
 	public String getApi() {
 		return api;
@@ -192,6 +200,48 @@ public class ConcurrentGainersBean {
 	}
 	public void setPercentChange(String percentChange) {
 		this.percentChange = percentChange;
+	}
+	public String getPositiveAPI() {
+		return positiveAPI;
+	}
+	public void setPositiveAPI(String positiveAPI) {
+		this.positiveAPI = positiveAPI;
+	}
+	public String getQuarterSale() {
+		return quarterSale;
+	}
+	public void setQuarterSale(String quarterSale) {
+		this.quarterSale = quarterSale;
+	}
+	public String getPrevYearSale() {
+		return prevYearSale;
+	}
+	public void setPrevYearSale(String prevYearSale) {
+		this.prevYearSale = prevYearSale;
+	}
+	public String getPercentChgSale() {
+		return percentChgSale;
+	}
+	public void setPercentChgSale(String percentChgSale) {
+		this.percentChgSale = percentChgSale;
+	}
+	public String getQuarterNetProfit() {
+		return quarterNetProfit;
+	}
+	public void setQuarterNetProfit(String quarterNetProfit) {
+		this.quarterNetProfit = quarterNetProfit;
+	}
+	public String getPrevYearNetProfit() {
+		return prevYearNetProfit;
+	}
+	public void setPrevYearNetProfit(String prevYearNetProfit) {
+		this.prevYearNetProfit = prevYearNetProfit;
+	}
+	public String getNetProfitChg() {
+		return netProfitChg;
+	}
+	public void setNetProfitChg(String netProfitChg) {
+		this.netProfitChg = netProfitChg;
 	}
 	
 	

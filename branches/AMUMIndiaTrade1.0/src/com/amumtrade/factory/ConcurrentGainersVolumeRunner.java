@@ -116,7 +116,7 @@ public class ConcurrentGainersVolumeRunner implements Runnable {
 						 concurrentBean.setTenDayAvgVolume(tenDayAvgVolume);
 						 concurrentBean.setThirtyDayAvgVolume(thirtyDayAvgVolume);
 						 ConcurrentGainersBean bean = concurrentGainerMap.get(url);
-						 concurrentBean.setName(bean.getName());
+						 concurrentBean.setCompanyName(bean.getCompanyName());
 						 concurrentBean.setCurrentPrice(bean.getCurrentPrice());
 						 concurrentBean.setApi(url);
 						 if(postiveFlag){
@@ -151,23 +151,23 @@ public class ConcurrentGainersVolumeRunner implements Runnable {
 			int thirtyDayAvgVolume = Integer.parseInt(bean.getThirtyDayAvgVolume());
 			if(dayVolume >= fiveDayAvgVolume && dayVolume >= tenDayAvgVolume && dayVolume >= thirtyDayAvgVolume 
 					&& fiveDayAvgVolume > tenDayAvgVolume && fiveDayAvgVolume >thirtyDayAvgVolume){
-				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+AMUMStockConstant.FIVE_STAR+","+bean.getPositiveBreakout()+","+bean.getApi()+"\n");
-				System.out.println(bean.getName()+","+"^"+bean.getCurrentPrice()+","+bean.getCurrentDayVolume()+","+AMUMStockConstant.FIVE_STAR);
+				System.out.println(bean.getCompanyName()+","+"^"+bean.getCurrentPrice()+","+bean.getCurrentDayVolume()+","+AMUMStockConstant.FIVE_STAR);
 			}else if(dayVolume >= fiveDayAvgVolume && dayVolume >= tenDayAvgVolume && dayVolume >= thirtyDayAvgVolume){
-				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+AMUMStockConstant.FOUR_STAR+","+bean.getPositiveBreakout()+","+bean.getApi()+"\n");
 			}else if(fiveDayAvgVolume > tenDayAvgVolume && fiveDayAvgVolume >thirtyDayAvgVolume){
-				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+AMUMStockConstant.THREE_STAR+","+bean.getPositiveBreakout()+","+bean.getApi()+"\n");
 			}else if(fiveDayAvgVolume <= tenDayAvgVolume && tenDayAvgVolume>=thirtyDayAvgVolume){
-				bwObj.write(bean.getName()+","+bean.getCurrentPrice()+","
+				bwObj.write(bean.getCompanyName()+","+bean.getCurrentPrice()+","
 						+bean.getCurrentDayVolume()+","+bean.getFiveDayAvgVolume()+","
 						+bean.getTenDayAvgVolume()+","+bean.getThirtyDayAvgVolume()+","
 						+AMUMStockConstant.TWO_STAR+","+bean.getPositiveBreakout()+","+bean.getApi()+"\n");
