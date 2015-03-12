@@ -27,7 +27,6 @@ public class ConcurrentGainersVolumeRunner implements Runnable {
 		this.postiveFlag = postiveBreakOutFlag;
 	}
 	
-	@Override
 	public void run() {
 		 try {
 				processCommand();

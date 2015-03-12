@@ -23,7 +23,6 @@ public class AMUMStockMetricsDAO implements Runnable {
 		this.bwObj = bwObj;
 	}
 
-	@Override
 	public void run() {
 
 		URL url;

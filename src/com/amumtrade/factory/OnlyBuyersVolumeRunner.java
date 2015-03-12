@@ -24,7 +24,6 @@ public class OnlyBuyersVolumeRunner implements Runnable {
 		this.bwObj = bufferWriter;
 		this.command=s;
 	}
-	@Override
 	public void run() {
 	        try {
 				processCommand();
