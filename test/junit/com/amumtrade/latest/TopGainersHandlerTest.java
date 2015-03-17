@@ -9,8 +9,8 @@ public class TopGainersHandlerTest {
 
 	@Test
 	public void fetchBuyersStock() throws Exception{
-		/*TopGainersHandler handler = new TopGainersHandler();
-		handler.execute();*/
+		TopGainersHandler handler = new TopGainersHandler();
+		handler.execute();
 		SentimeterChartHandler sch = new SentimeterChartHandler();
 		sch.execute();
 		}

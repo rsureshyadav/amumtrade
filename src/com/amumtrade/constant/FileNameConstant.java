@@ -5,6 +5,8 @@ package com.amumtrade.constant;
 public class FileNameConstant {
 	public static final String CURRENT_CONCURRENT_VOLUME_GAINERS="config/CurrentConcurrentGainersVolume.csv";
 	public static final String TOP_GAINERS="config/CurrentTopGainers.csv";
+	public static final String FINAL_TOP_GAINERS="config/FinalTopGainers.csv";
+
 	public static final String VOLUME_TOP_GAINERS="config/CurrentTopGainersVolume.csv";
 	public static final String VOLUME_ONLY_BUYERS="config/OnlyBuyersVolume.csv";
 	public static final String VOLUME_POSITIVE_TRUNAROUND_STOCK="config/PositiveStockVolume.csv";
@@ -30,4 +32,9 @@ public class FileNameConstant {
 											    "</table>\n"+
 											    "</body>\n"+
 											    "</html>";
+	public static final String TOP_GAINERS_HEADER="Company Name,High,Low,Last Price,Prv Close,Change,% Gain,API";
+	public static final String FINAL_TOP_GAINERS_HEADER="Company Name,High,Low,Last Price,Prv Close,Change,% Gain,API,Status";
+	public static final String NEW = "NEW";
+	public static final String REMOVE = "REMOVE";
+	public static final String OLD ="OLD";
 }

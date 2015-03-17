@@ -25,8 +25,8 @@ public class SentimeterChartHandler {
 		long startTime= System.currentTimeMillis();
 		getFinalRatingFile();
 		//////////////////////////////////////////
-		/*List<TopGainerBean> gainersBeanList = getTopGainersCsvToBean();
-		runSentimeterRating(gainersBeanList);*/
+		List<TopGainerBean> gainersBeanList = getTopGainersCsvToBean();
+		runSentimeterRating(gainersBeanList);
 		////////////////////////////////////////
 		long endTime= System.currentTimeMillis();
 		long elapsedTime = endTime - startTime;
@@ -80,7 +80,7 @@ public class SentimeterChartHandler {
 	private List<TopGainerBean> getTopGainersCsvToBean() throws IOException {
 		List<TopGainerBean>  gainerBeanList= new ArrayList<TopGainerBean>();
 		TopGainerBean gainerBean = null;
-		String csvFile =FileNameConstant.TOP_GAINERS;
+		String csvFile =FileNameConstant.FINAL_TOP_GAINERS;
 		String line = "";
 		String cvsSplitBy = ",";
 		int skipFirstLineHeader=0;
@@ -92,16 +92,19 @@ public class SentimeterChartHandler {
 					//if (skipFirstLineHeader!=0 && skipFirstLineHeader<=2){ //For Testing with first 10 entrys 
 					gainerBean = new TopGainerBean();
 					String[] topGainers = line.split(cvsSplitBy);
-					gainerBean.setCompanyName(topGainers[0]);
-					gainerBean.setHigh(topGainers[1]);
-					gainerBean.setLow(topGainers[2]);
-					gainerBean.setLastPrice(topGainers[3]);
-					gainerBean.setPrvClose(topGainers[4]);
-					gainerBean.setChange(topGainers[5]);
-					gainerBean.setPercentGain(topGainers[6]);
-					gainerBean.setPostiveBreakOut(topGainers[7]);
-					gainerBean.setApi(topGainers[8]);
-					gainerBeanList.add(gainerBean);
+					if(topGainers[8] != null && topGainers[8].equalsIgnoreCase(FileNameConstant.NEW)){
+						gainerBean.setCompanyName(topGainers[0]);
+						gainerBean.setHigh(topGainers[1]);
+						gainerBean.setLow(topGainers[2]);
+						gainerBean.setLastPrice(topGainers[3]);
+						gainerBean.setPrvClose(topGainers[4]);
+						gainerBean.setChange(topGainers[5]);
+						gainerBean.setPercentGain(topGainers[6]);
+						gainerBean.setApi(topGainers[7]);
+						gainerBean.setStatus(topGainers[8]);
+						gainerBeanList.add(gainerBean);
+					}
+						
 				}
 				skipFirstLineHeader++;
 			}
@@ -121,12 +124,20 @@ public class SentimeterChartHandler {
 		String line = "";
 
 		List<String> srcGainerList = new ArrayList<String>();
-		List<String> destGainerList = new ArrayList<String>();
-		List<String> finalList;
+		List<String> src1GainerList = new ArrayList<String>();
+
+		List<String> finalGainerList = new ArrayList<String>();
+		List<String> dest1GainerList = new ArrayList<String>();
+		List<String> dest2GainerList = new ArrayList<String>();
+
+		BufferedWriter bwObj = null;
+		BufferedReader in = null;
+		FileWriter fwo = new FileWriter( FileNameConstant.FINAL_TOP_GAINERS, false );
+		
 		try {
-			String csvSrcFile =FileNameConstant.TOP_GAINERS;
-			String csvDestFile =FileNameConstant.DEST_TOP_GAINER_PATH;
-			br = new BufferedReader(new FileReader(csvSrcFile));
+			String csvNewFile =FileNameConstant.TOP_GAINERS;
+			String csvOldFile =FileNameConstant.DEST_TOP_GAINER_PATH;
+			br = new BufferedReader(new FileReader(csvNewFile));
 			line = "";
 			while ((line = br.readLine()) != null) {
 				if(skipSrcFirstLineHeader!=0){ 
@@ -134,29 +145,54 @@ public class SentimeterChartHandler {
 				}
 				skipSrcFirstLineHeader++;
 			}
-			
-			br = new BufferedReader(new FileReader(csvDestFile));
+
+			br = new BufferedReader(new FileReader(csvOldFile));
 			line = "";
 			while ((line = br.readLine()) != null) {
 				if(skipDestFirstLineHeader!=0){ 
-					destGainerList.add(line);
+					dest1GainerList.add(line);
 				}
 				skipDestFirstLineHeader++;
 			}
+
+			dest2GainerList.addAll(dest1GainerList);
+			src1GainerList.addAll(srcGainerList);
 			
-			System.out.println(srcGainerList.size());
-			System.out.println(destGainerList.size());
-			srcGainerList.removeAll(destGainerList);
-			System.out.println("---------------------------");
-			System.out.println(srcGainerList.size());
-			System.out.println(destGainerList.size());
-			for(String s : srcGainerList){
-				System.out.println(s);
+			src1GainerList.removeAll(dest1GainerList);
+			for(String s: src1GainerList){
+				if(s != null && s.trim().length()>0){
+					finalGainerList.add(s.trim()+","+FileNameConstant.NEW); 
+				}
+
 			}
-			System.out.println("---------------------------");
+			
+			dest1GainerList.removeAll(srcGainerList);
+			for(String s: dest1GainerList){
+				finalGainerList.add(s.trim()+","+FileNameConstant.REMOVE); 
+			}
+			
+			dest2GainerList.retainAll(srcGainerList);
+
+			for(String s: dest2GainerList){
+				finalGainerList.add(s.trim()+","+FileNameConstant.OLD); 
+			}
+
+			 bwObj = new BufferedWriter( fwo );  
+			 bwObj.write(FileNameConstant.FINAL_TOP_GAINERS_HEADER+"\n");
+			
+			for(String finalLine: finalGainerList){
+				bwObj.write(finalLine+"\n");
+			}
 
 		} catch (Exception e) {
 			// TODO: handle exception
+		}finally{
+			if(bwObj!=null){
+				bwObj.close();
+			}
+			if(in !=null){
+				in.close();
+			}
 		}
 		
 	}

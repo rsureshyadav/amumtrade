@@ -15,6 +15,7 @@ public class TopGainerBean {
 	private String thirtyDayAvgVolume;
 	private String postiveBreakOut;
 	private String sentimeterRating;
+	private String status;
 
 	public String getCompanyName() {
 		return companyName;
@@ -99,6 +100,12 @@ public class TopGainerBean {
 	}
 	public void setSentimeterRating(String sentimeterRating) {
 		this.sentimeterRating = sentimeterRating;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 	
 	

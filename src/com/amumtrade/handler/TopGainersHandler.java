@@ -86,11 +86,11 @@ public class TopGainersHandler {
 		FileWriter fwo = new FileWriter( FileNameConstant.TOP_GAINERS, false );
 		try {
 			PositiveBreakoutHandler breakoutHandler = new PositiveBreakoutHandler();
-			Set<String> positiveBreakoutSet = breakoutHandler.execute();
+			//Set<String> positiveBreakoutSet = breakoutHandler.execute();
 			
 			 URL website = new URL(stockURL);
 			 bwObj = new BufferedWriter( fwo );  
-			 bwObj.write("Company Name,High,Low,Last Price,Prv Close,Change,% Gain,PositiveBreakOut,API"+"\n");
+			 bwObj.write(FileNameConstant.TOP_GAINERS_HEADER+"\n");
 			 in= new BufferedReader(new InputStreamReader(website.openStream()));
 				        String inputLine;
 		        		boolean highLastPriceflag=false;
@@ -163,7 +163,7 @@ public class TopGainersHandler {
 				        			percentGain=percentGain.replace(".00", "");
 				        			changePercentGain=false;
 				        		}
-				        		String finalTopGainer= companyName+","+high+","+ low+","+ lastPrice+","+ prvClose+","+ change+","+percentGain+","+postiveBreakOut+","+api;
+				        		String finalTopGainer= companyName+","+high+","+ low+","+ lastPrice+","+ prvClose+","+ change+","+percentGain+","+api;
 				        		
 				        		
 				        		if(nameSet.add(companyName)){
