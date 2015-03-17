@@ -2,10 +2,14 @@ package com.amumtrade.handler;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.nio.channels.FileChannel;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -21,13 +25,14 @@ public class TopGainersHandler {
 	 static Map<String, String> topGainerList= new HashMap<String, String>();
 	public void execute() throws Exception{
 		long startTime= System.currentTimeMillis();
-
 		try {
+			prevTopGainerFile(FileNameConstant.TOP_GAINERS,FileNameConstant.DEST_TOP_GAINER_PATH);
 			//http://www.moneycontrol.com/stocks/marketstats/gainerloser.php?optex=NSE&opttopic=topgainers&index=-2&more=true
 			//http://www.moneycontrol.com/stocks/marketstats/onlysellers.php
 			//http://www.moneycontrol.com/stocks/marketstats/bsegainer/index.html
 			//http://www.moneycontrol.com/stocks/marketstats/bsemact1/index.html
 			//http://www.moneycontrol.com/stocks/marketstats/nse_vshockers/index.html
+			
 			getTopGainer(stockURL);
 		
 		} catch (Exception e) {
@@ -43,6 +48,22 @@ public class TopGainersHandler {
 			
 			 System.out.println("Execution total time  ==> "+ h +" : "+ m +" : "+ s);
 		
+	}
+
+	private void prevTopGainerFile(String srcPath, String destPath)throws IOException {
+		File source = new File(srcPath);
+		File dest = new File(destPath);
+
+		FileChannel inputChannel = null;
+		FileChannel outputChannel = null;
+		try {
+			inputChannel = new FileInputStream(source).getChannel();
+			outputChannel = new FileOutputStream(dest).getChannel();
+			outputChannel.transferFrom(inputChannel, 0, inputChannel.size());
+		} finally {
+			inputChannel.close();
+			outputChannel.close();
+		}
 	}
 
 	public static  Map<String, String> getTopGainerList() throws Exception{

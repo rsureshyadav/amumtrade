@@ -16,8 +16,9 @@ public class FileNameConstant {
 	public static final String ALL_CURRENT_CONCURRENT_GAINER="config/output/AMUM_Current_ConcurrentGainers.csv";
 	public static final String ONLY_BUYERS="config/output/AMUM_Only_Buyers.csv";
 	public static final String POSITIVE_TRUNAROUND_STOCK="config/output/AMUM_Positive_Turnarounds.csv";
-
-
+	public static final String TOP_GAINERS_SENTIMETER_RATING="config/output/TopGainersRating.csv";
+	
+	public static final String DEST_TOP_GAINER_PATH="config/data/CurrentTopGainers.csv";
 	
 	public static final String HTML_STYLE="<style>table {border-collapse: collapse;}table, td, th {border: 1px solid black;}</style>";
 	public static final String HTML_TEMPLATE =  "<html>\n" +
