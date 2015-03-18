@@ -21,17 +21,16 @@ import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.constant.FileNameConstant;
 import com.amumtrade.email.CsvToEmailBody;
 import com.amumtrade.factory.OnlyBuyersEPSRunner;
-import com.amumtrade.factory.OnlyBuyersVolumeRunner;
 import com.amumtrade.util.StockUtil;
 
-public class OnlyBuyersHandler {
-	String URL = "http://www.moneycontrol.com/stocks/marketstats/onlybuyers.php?optex=NSE&opttopic=buyers&index=9&sort=perchg";
+public class BuyersHandler {
+	String URL = FileNameConstant.ONLY_BUYERS_URL;
 	Set<String> urlList = null;
 	Set<String> epsApiurlList = null;
 
 	Map<String,ConcurrentGainersBean> onlyBuyersMap = null;
 	
-	public void execute(long startTime) throws IOException{
+	public void execute() throws IOException{
 		try {
 			executeVolume();
 			//executeVolumeEPS();
@@ -143,31 +142,15 @@ public class OnlyBuyersHandler {
 		try {
 			FileWriter fwo = new FileWriter(FileNameConstant.VOLUME_ONLY_BUYERS, false);
 			bwObj = new BufferedWriter( fwo );  
-			bwObj.write("CompanyName,Sector,BidQty,LastPrice,Diff,% Chg,VolumeTraded,DayVolume,FiveDayAvgVolume,TenDayAvgVolume,ThirtyDayAvgVolume,VolumeRating,Api"+"\n");
+			bwObj.write(FileNameConstant.BUYERS_HEADER+"\n");
 			urlList = new HashSet<String>();
-			List<ConcurrentGainersBean> onlyBuyersList = runOnlyBuyerURL(URL);
-			System.out.println("ONLY BUYERS FOR VOLUME EXECUTION SIZE>>"+onlyBuyersList.size());
+			List<ConcurrentGainersBean> buyersList = getOnlyBuyer(URL);
+			System.out.println("ONLY BUYERS FOR VOLUME EXECUTION SIZE>>"+buyersList.size());
 			
-			//int count = 0;
-			for(ConcurrentGainersBean bean : onlyBuyersList){
-				//if(count< 5){
-					onlyBuyersMap.put(bean.getApi(), bean);
-					urlList.add(bean.getApi());
-				//}
-				//count++;
+			for(ConcurrentGainersBean bean : buyersList){
+				bwObj.write(bean.getCompanyName()+","+bean.getCurrentPrice()
+						+","+bean.getPercentChange()+","+bean.getApi()+"\n");
 			}
-			
-			int i=0;
-			ExecutorService executor = Executors.newFixedThreadPool(AMUMStockConstant.THREAD_COUNT);
-			for(String url : urlList){
-				Runnable worker = new OnlyBuyersVolumeRunner(new URL(url),onlyBuyersMap,bwObj,"" + i);
-	            executor.execute(worker);
-	            i++;
-			}
-			executor.shutdown();
-			while (!executor.isTerminated()) {
-	        }
-	        System.out.println("FINISHED ONLY BUYERS VOLUME THREADS EXECUTION..");
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -180,7 +163,7 @@ public class OnlyBuyersHandler {
 	}
 
 
-	private List<ConcurrentGainersBean> runOnlyBuyerURL(String stockURL) {
+	public static List<ConcurrentGainersBean> getOnlyBuyer(String stockURL) {
 		BufferedReader in = null;
 		String inputLine;
 		ConcurrentGainersBean bean;

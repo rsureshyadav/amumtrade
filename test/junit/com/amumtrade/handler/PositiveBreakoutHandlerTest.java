@@ -1,5 +1,7 @@
 package com.amumtrade.handler;
 
+import java.util.Set;
+
 import org.junit.Test;
 
 public class PositiveBreakoutHandlerTest {
@@ -8,8 +10,10 @@ public class PositiveBreakoutHandlerTest {
 	long startTime= System.currentTimeMillis();
 	
 	PositiveBreakoutHandler cgva = new PositiveBreakoutHandler();
-	cgva.execute();
-	
+	Set<String> positiveBreakoutSet  = cgva.execute();
+	for(String s : positiveBreakoutSet){
+		System.out.println(s);
+	}
 	
 	long endTime= System.currentTimeMillis();
 	long elapsedTime = endTime - startTime;

@@ -10,18 +10,18 @@ import java.util.List;
 import java.util.Set;
 
 import com.amumtrade.bean.ConcurrentGainersBean;
+import com.amumtrade.constant.FileNameConstant;
 
 public class LastThreeDayConcurrentGainers {
 	
-	private String moneyControlApiUrl =  "http://www.moneycontrol.com";
-	private String concurrentGainersUrl =  "http://www.moneycontrol.com/india/stockmarket/concurrent-gainers/marketstatistics/nse/3days.html";
+	private String concurrentGainersUrl = FileNameConstant.LAST_THREE_DAY_GAINER_URL;
 	private List<ConcurrentGainersBean> concurrentGainersList;
 	public List<ConcurrentGainersBean>  execute() throws IOException{
 		concurrentGainersList = new ArrayList<ConcurrentGainersBean>();
-		concurrentGainersList = readFromMoneyControl(concurrentGainersUrl);
+		concurrentGainersList = getLastThreeDayGainers(concurrentGainersUrl);
 		return concurrentGainersList;
 	}
-	private List<ConcurrentGainersBean> readFromMoneyControl(String url) throws IOException{
+	public static List<ConcurrentGainersBean> getLastThreeDayGainers(String url) throws IOException{
 		List<ConcurrentGainersBean> recordList = null;
 		BufferedReader in = null;
 		URL website = null;
@@ -57,7 +57,7 @@ public class LastThreeDayConcurrentGainers {
 			    			 urlAPI = inputLine.trim();
 			    			 urlAPI = urlAPI.substring(urlAPI.indexOf("<a href='"),urlAPI.lastIndexOf("'>"));
 			    			 urlAPI = urlAPI.replace("<a href='", "");
-			    			 urlAPI = moneyControlApiUrl+urlAPI.trim();
+			    			 urlAPI = FileNameConstant.MONEYCONTROL_URL+urlAPI.trim();
 			    			 //<a href='/india/stockpricequote/pharmaceuticals/ahlconparenteral(india)/API01'>Ahlcon Parent
 
 			    			 companyName = inputLine.trim();

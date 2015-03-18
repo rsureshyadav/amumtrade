@@ -5,23 +5,25 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.nio.channels.FileChannel;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import com.amumtrade.constant.AMUMStockConstant;
+import com.amumtrade.bean.TopGainerBean;
 import com.amumtrade.constant.FileNameConstant;
-import com.amumtrade.util.StockUtil;
 
 public class TopGainersHandler {
 	public static Set<String> nameSet = new HashSet<String>();
-	public static String stockURL = "http://www.moneycontrol.com/stocks/marketstats/gainerloser.php?optex=NSE&opttopic=topgainers&index=-2&more=true";
+	public static String stockURL = FileNameConstant.TOP_GAINERS_URL;
 	 static Map<String, String> topGainerList= new HashMap<String, String>();
 	public void execute() throws Exception{
 		long startTime= System.currentTimeMillis();
@@ -32,8 +34,7 @@ public class TopGainersHandler {
 			//http://www.moneycontrol.com/stocks/marketstats/bsegainer/index.html
 			//http://www.moneycontrol.com/stocks/marketstats/bsemact1/index.html
 			//http://www.moneycontrol.com/stocks/marketstats/nse_vshockers/index.html
-			
-			getTopGainer(stockURL);
+			getTopGainersList(stockURL);
 		
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -49,7 +50,47 @@ public class TopGainersHandler {
 			 System.out.println("Execution total time  ==> "+ h +" : "+ m +" : "+ s);
 		
 	}
-
+	public static List<TopGainerBean>  getTopGainersList(String URL) throws IOException{
+		//getTopGainer(URL);
+		List<TopGainerBean> gainersBeanList = getTopGainersCsvToBean();
+		return gainersBeanList;
+		
+	}
+	
+	private static List<TopGainerBean> getTopGainersCsvToBean() throws IOException {
+		BufferedReader br = null;
+		List<TopGainerBean>  gainerBeanList= new ArrayList<TopGainerBean>();
+		TopGainerBean gainerBean = null;
+		String csvFile =FileNameConstant.TOP_GAINERS;
+		String line = "";
+		String cvsSplitBy = ",";
+		int skipFirstLineHeader=0;
+		try {
+			br = new BufferedReader(new FileReader(csvFile));
+			while ((line = br.readLine()) != null) {
+				if(skipFirstLineHeader!=0){ 
+					gainerBean = new TopGainerBean();
+					String[] topGainers = line.split(cvsSplitBy);
+						gainerBean.setCompanyName(topGainers[0]);
+						gainerBean.setHigh(topGainers[1]);
+						gainerBean.setLow(topGainers[2]);
+						gainerBean.setLastPrice(topGainers[3]);
+						gainerBean.setPrvClose(topGainers[4]);
+						gainerBean.setChange(topGainers[5]);
+						gainerBean.setApi(topGainers[7]);
+						gainerBeanList.add(gainerBean);
+				}
+				skipFirstLineHeader++;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally{
+			if(br !=null){
+				br.close();
+			}
+		}
+		return gainerBeanList;
+	}
 	private void prevTopGainerFile(String srcPath, String destPath)throws IOException {
 		File source = new File(srcPath);
 		File dest = new File(destPath);
@@ -68,10 +109,11 @@ public class TopGainersHandler {
 
 	public static  Map<String, String> getTopGainerList() throws Exception{
 		getTopGainer(stockURL);
+		
 		return topGainerList;
 	}
 
-	public static void getTopGainer(String stockURL) throws IOException {
+	private static void getTopGainer(String stockURL) throws IOException {
 		String companyName=null;
 		String api=null;
 		String high=null;

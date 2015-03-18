@@ -18,7 +18,7 @@ import com.amumtrade.constant.AMUMStockConstant;
 import com.amumtrade.constant.FileNameConstant;
 import com.amumtrade.email.CsvToEmailBody;
 import com.amumtrade.factory.ConcurrentGainersVolumeRunner;
-import com.amumtrade.marketstat.LastEigthDayConcurrentGainers;
+import com.amumtrade.marketstat.LastEightDayConcurrentGainers;
 import com.amumtrade.marketstat.LastFiveDayConcurrentGainers;
 import com.amumtrade.marketstat.LastThreeDayConcurrentGainers;
 import com.amumtrade.util.StockUtil;
@@ -35,7 +35,7 @@ long sTime;
 		LastFiveDayConcurrentGainers fcg = new LastFiveDayConcurrentGainers();
 		List<ConcurrentGainersBean> fiveDayConGainersList = fcg.execute();
 		
-		LastEigthDayConcurrentGainers ecg = new LastEigthDayConcurrentGainers();
+		LastEightDayConcurrentGainers ecg = new LastEightDayConcurrentGainers();
 		List<ConcurrentGainersBean> eigthDayConGainersList = ecg.execute();
 		
 		List<ConcurrentGainersBean> finalConGainersList = getCommonConcurrentGainers(threeDayConGainersList,fiveDayConGainersList,eigthDayConGainersList);
@@ -46,7 +46,7 @@ long sTime;
 		StockUtil.initiateEmail(FileNameConstant.ALL_CONCURRENT_GAINER,startTime,htmlText);
 	}
 
-	private List<ConcurrentGainersBean> getCommonConcurrentGainers(
+	public static List<ConcurrentGainersBean> getCommonConcurrentGainers(
 			List<ConcurrentGainersBean> threeDayConGainersList,
 			List<ConcurrentGainersBean> fiveDayConGainersList,
 			List<ConcurrentGainersBean> eigthDayConGainersList) {

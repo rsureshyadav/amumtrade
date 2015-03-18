@@ -28,17 +28,19 @@ public static void main(String str[]){
 	
 	dest1.removeAll(src);
 	for(String s: dest1){
+		System.out.println(s);
 		dest.add(s+",Y");
 	}
-	
+	System.out.println("---------------------------");
 	dest2.retainAll(src);
 	for(String s: dest2){
 		dest.add(s+",N");
+		System.out.println(s);
 	}
 	
 	System.out.println("------------------------------");
 	for(String s: dest){
-		System.out.println(s);
+		//System.out.println(s);
 	}
 }
 }

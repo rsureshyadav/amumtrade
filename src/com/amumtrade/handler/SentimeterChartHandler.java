@@ -45,7 +45,7 @@ public class SentimeterChartHandler {
 		BufferedWriter bwObj = null;
 		
 		try {
-			System.out.println("TOP GAINERS VOLUME EXECUTION SIZE>>"+gainersBeanList.size());
+			System.out.println("TOP GAINERS SENTIMETER EXECUTION SIZE>>"+gainersBeanList.size());
 			urlList = new ArrayList<String>();
 			for(TopGainerBean gainerBean : gainersBeanList){
 				String httpURL = AMUMStockConstant.STOCK_URL+gainerBean.getApi().trim();
